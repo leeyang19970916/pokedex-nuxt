@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout :name="'defalut'">
+    <NuxtPage></NuxtPage>
+  </NuxtLayout>
 </template>
+<script setup lang="ts"></script>
