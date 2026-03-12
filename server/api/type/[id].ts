@@ -1,10 +1,11 @@
-// https://pokeapi.co/api/v2/pokemon/ditto
+import { POKEMON_API_URL } from "~/constants";
+import type { TypeDetailRes } from "~/types/nameType";
 
 export default defineEventHandler(async (event) => {
-  const url = "https://pokeapi.co/api/v2/type/";
-  const config = useRuntimeConfig();
+  const id = getRouterParam(event, "id");
+  const url = `${POKEMON_API_URL}/type/${id}`;
   try {
-    const res = await $fetch(url);
+    const res = await $fetch<TypeDetailRes>(url);
     return res;
   } catch (e) {
     console.error("Error fetching data:", e);

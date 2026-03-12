@@ -1,7 +1,9 @@
 <template>
   <div>
-    Custom HEADER
+    <img :src="FakeBg" alt="" />
     <slot></slot>
-    FOOTER
   </div>
 </template>
+<script setup lang="ts">
+import FakeBg from "~/assets/image/fake_bg.png";
+</script>

@@ -11,7 +11,7 @@
 
 <style scoped>
 .bg-pikmin {
-  background-image: url("@/assets/image/bg-pikmin.png");
+  background-image: url("/app/assets/image/image.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

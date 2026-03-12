@@ -1,5 +1,6 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
+  srcDir: "app/",
   // 讓 Nuxt 知道你要用這些超能力
   modules: [
     "@nuxtjs/tailwindcss",
