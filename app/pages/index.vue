@@ -31,6 +31,7 @@ const redirectByType = async (item: TypeResult) => {
 
 <template>
   <div>
+    <PokemonIndexHeader></PokemonIndexHeader>
     <!-- 1. 首頁 Header
      title,random_pokemon -->
     <!-- 2. 篩選器 Searchbar 收合 -->
@@ -38,3 +39,7 @@ const redirectByType = async (item: TypeResult) => {
     <!-- 4. list 列表 pokemon_card ,查看更多 -->
   </div>
 </template>
+
+<script lang="ts" setup>
+import PokemonIndexHeader from "~/components/PokemonIndex/Header.vue";
+</script>

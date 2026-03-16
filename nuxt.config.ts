@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     "@element-plus/nuxt",
     "@nuxt/eslint",
   ],
-
+  css: ["~/assets/styles/reset.scss"],
   // SCSS 全域變數配置 (如果你有全域變數檔)
   vite: {
     css: {
