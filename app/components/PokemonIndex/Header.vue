@@ -6,17 +6,17 @@
     <div class="animation-background">
       <img class="w-full" :src="AnimationBackground" alt="" />
     </div>
-    <Title class="absolute top-0 z-50"></Title>
-    <PokemonRandomContainer></PokemonRandomContainer>
-    <SearchbarContainer></SearchbarContainer>
+    <IndexWrapper class="absolute top-0 z-50"></IndexWrapper>
+    <PokeImgRandomWrapper />
+    <FilterWrapper class="absolute top-[67%]"></FilterWrapper>
   </div>
 </template>
 <script setup lang="ts">
 import TopBackground from "~/assets/image/header/list_top_bg.jpg";
 import AnimationBackground from "~/assets/image/header/animation_bg.png";
-import Title from "../Title.vue";
-import PokemonRandomContainer from "./PokemonRandomContainer.vue";
-import SearchbarContainer from "./SearchbarContainer.vue";
+import IndexWrapper from "../IndexWrapper.vue";
+import PokeImgRandomWrapper from "./PokeRandomWrapper/index.vue";
+import FilterWrapper from "../FilterWrapper/index.vue";
 </script>
 
 <style scoped lang="scss">

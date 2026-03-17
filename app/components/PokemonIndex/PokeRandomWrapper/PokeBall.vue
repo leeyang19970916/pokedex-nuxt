@@ -19,7 +19,7 @@ const props = withDefaults(
   }>(),
   {
     isMain: false,
-  },
+  }
 );
 </script>
 <style>
@@ -31,12 +31,12 @@ const props = withDefaults(
   /* 核心核心：多層 box-shadow */
   /* 語法：x軸 y軸 模糊半徑 擴散半徑 顏色 */
   box-shadow:
-    /* 1. 內層光暈 (讓球邊緣亮起來) - inset */
-    inset 0 0 10px 2px rgba(0, 210, 255, 0.4),
+    /* 1. 內層光暈 (讓球邊緣亮起來) - inset */ inset 0 0 10px 2px
+      hsla(191, 100%, 50%, 0.4),
     /* 2. 外層光暈 (渲染出氣氛) */ 0 0 15px 1px rgba(0, 210, 255, 0.3);
 
   /* 輔助特效：讓整個東西看起來在發光 */
-  filter: drop-shadow(0 0 3px #00d2ff);
+  filter: drop-shadow(0 0 3px hsl(191, 100%, 50%));
 
   /* 讓它浮動一下增加動感 */
   animation: glow-float 4s ease-in-out infinite;
