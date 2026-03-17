@@ -32,6 +32,7 @@ const redirectByType = async (item: TypeResult) => {
 <template>
   <div>
     <PokemonIndexHeader></PokemonIndexHeader>
+    <div class=""></div>
     <!-- 1. 首頁 Header
      title,random_pokemon -->
     <!-- 2. 篩選器 Searchbar 收合 -->
