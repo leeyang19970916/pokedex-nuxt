@@ -1,6 +1,8 @@
 <template>
-  <div class="flex flex-col bg-[#1b252f]">
-    <slot></slot>
+  <div class="flex flex-col items-center bg-[#1b252f]">
+    <div class="max-w-[1400px]">
+      <slot />
+    </div>
   </div>
 </template>
 <script lang="ts" setup></script>

@@ -18,7 +18,7 @@
     </template>
   </el-dropdown>
 
-  <el-dropdown trigger="contextmenu" @visible-change="handleVisible2">
+  <!-- <el-dropdown trigger="contextmenu" @visible-change="handleVisible2">
     <span class="el-dropdown-link"> Dropdown List2 </span>
     <template #dropdown>
       <el-dropdown-menu>
@@ -29,7 +29,7 @@
         <el-dropdown-item divided>Action 5</el-dropdown-item>
       </el-dropdown-menu>
     </template>
-  </el-dropdown>
+  </el-dropdown> -->
 </template>
 
 <script setup lang="ts">

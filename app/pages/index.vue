@@ -32,9 +32,11 @@ const redirectByType = async (item: TypeResult) => {
 <template>
   <div>
     <PokemonIndexHeader />
-    <SortWrapper />
-    <div class="grid grid-cols-4 gap-4 p-[2em_3%]">
-      <PokemonCard v-for="(item, index) in 10" :key="index" />
+    <div :style="{ 'background-image': `url(${BottomBackground})` }">
+      <SortWrapper />
+      <div class="grid grid-cols-4 gap-4 p-[2em_3%]">
+        <PokemonCard v-for="(item, index) in 10" :key="index" />
+      </div>
     </div>
     <!-- 1. 首頁 Header
      title,random_pokemon -->
@@ -47,4 +49,5 @@ const redirectByType = async (item: TypeResult) => {
 <script lang="ts" setup>
 import PokemonIndexHeader from "~/components/PokemonIndex/Header.vue";
 import PokemonCard from "~/components/PokemonCard.vue";
+import BottomBackground from "~/assets/image/header/list_bottom_bg.jpg";
 </script>

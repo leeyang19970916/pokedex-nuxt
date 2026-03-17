@@ -1,6 +1,6 @@
 <template>
   <div
-    class="m-[0_auto] min-w-[950px] max-w-[1400px] top-background h-[600px]"
+    class="m-[0_auto] top-background h-[600px]"
     :style="{ 'background-image': `url(${TopBackground})` }"
   >
     <div class="animation-background">
