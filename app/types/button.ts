@@ -1,1 +1,1 @@
-export type ButtonMode = "outline" | "solid" | "text-only";
+export type ButtonMode = "outline" | "solid";

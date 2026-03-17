@@ -21,17 +21,18 @@
       </template>
       This is dialog content.
     </el-dialog>
-    <Types
+    <Tag
       v-for="(type, index) in POKEMON_TYPES"
       :key="index"
       :mode="'outline'"
-      :type="type"
+      :type="'type'"
+      :option="type"
     />
   </div>
 </template>
 <script setup lang="ts">
 import { POKEMON_TYPES } from "~/constants";
-import Types from "../Tags/PokeType.vue";
+import Tag from "../Tags/index.vue";
 const input = ref("");
 const visible = ref(false);
 </script>
