@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative z-100">
     <img :src="PokemonCard" alt="" />
     <img class="absolute w-[60%] left-[20%] top-[8%]" :src="Fake" alt="" />
     <span class="poke-id">0001</span>

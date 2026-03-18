@@ -1,6 +1,7 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
   srcDir: "app/",
+  compatibilityDate: "2026-03-18",
   // 讓 Nuxt 知道你要用這些超能力
   modules: [
     "@nuxtjs/tailwindcss",

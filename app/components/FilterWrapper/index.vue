@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div
+    class="h-150px w-full p-[1rem_3%] rounded-lg border-[3px] border-primary shadow-[0_0_10px_10px] shadow-primary"
+  >
     <div class="text-primary title">使用名稱或圖鑑編號搜索 {{ visible }}</div>
     <div class="flex items-center gap-6">
       <div><el-input v-model="input" placeholder="请输入内容"></el-input></div>
