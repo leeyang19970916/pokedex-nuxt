@@ -23,13 +23,15 @@
       </template>
       This is dialog content.
     </el-dialog>
-    <Tag
-      v-for="(type, index) in POKEMON_TYPES"
-      :key="index"
-      :mode="'outline'"
-      :type="'type'"
-      :option="type"
-    />
+    <div class="flex">
+      <Tag
+        v-for="(type, index) in POKEMON_TYPES"
+        :key="index"
+        :mode="'outline'"
+        :type="'type'"
+        :option="type"
+      />
+    </div>
   </div>
 </template>
 <script setup lang="ts">
