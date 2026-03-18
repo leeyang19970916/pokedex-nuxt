@@ -1,15 +1,16 @@
 <template>
   <div
-    class="h-150px w-full p-[1rem_3%] rounded-lg border-[3px] border-primary shadow-[0_0_10px_10px] shadow-primary"
+    class="min-h-150px w-full p-[1rem_3%] rounded-lg border-[3px] border-primary shadow-[0_0_10px_10px] shadow-primary flex flex-col gap-4"
   >
-    <div class="text-primary title">使用名稱或圖鑑編號搜索 {{ visible }}</div>
     <div class="flex items-center gap-6">
-      <div><el-input v-model="input" placeholder="请输入内容"></el-input></div>
-      <div>
-        <el-button type="warning" @click="visible = true">進階搜索</el-button>
-      </div>
-      <div><el-button type="warning">隨機顯示</el-button></div>
+      <el-input
+        v-model="input"
+        placeholder="请输入使用名稱或圖鑑編號搜索"
+      ></el-input>
+      <el-button type="warning" @click="visible = true">進階搜索</el-button>
     </div>
+
+    <SearchResultWrapper />
 
     <el-dialog v-model="visible" :show-close="false" width="500">
       <template #header="{ close, titleId, titleClass }">
@@ -23,20 +24,12 @@
       </template>
       This is dialog content.
     </el-dialog>
-    <div class="flex">
-      <Tag
-        v-for="(type, index) in POKEMON_TYPES"
-        :key="index"
-        :mode="'outline'"
-        :type="'type'"
-        :option="type"
-      />
-    </div>
   </div>
 </template>
 <script setup lang="ts">
 import { POKEMON_TYPES } from "~/constants";
 import Tag from "../Tags/index.vue";
+import SearchResultWrapper from "./SearchResultWrapper.vue";
 const input = ref("");
 const visible = ref(false);
 </script>

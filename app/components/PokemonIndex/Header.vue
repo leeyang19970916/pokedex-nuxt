@@ -1,6 +1,6 @@
 <template>
   <div
-    class="m-[0_auto] top-background h-[600px]"
+    class="m-[0_auto] top-background h-[450px] relative overflow-hidden"
     :style="{ 'background-image': `url(${TopBackground})` }"
   >
     <div class="abs-center animation-background">

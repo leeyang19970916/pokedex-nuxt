@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full text-center font-bold border-[2px] rounded-full"
+    class="w-[90px] text-center font-bold border-[2px] rounded-full"
     :class="tagClass"
     @click="onClick"
   >
@@ -25,7 +25,7 @@ const tagClass = computed(() => {
   const { mode, type, option } = props;
   if (type === "region") {
     if (mode === "solid") {
-      return `bg-white text-black`;
+      return `bg-white text-slate-900`;
     }
     if (mode === "outline") {
       return `text-white border-white`;
