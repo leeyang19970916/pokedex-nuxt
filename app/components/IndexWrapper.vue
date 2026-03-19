@@ -1,7 +1,7 @@
 <template>
   <div>
     <img :src="TitleBg" alt="" />
-    <span class="text-[1.25rem] abs-center">{{ INDEX }}</span>
+    <span class="text-[1.25rem] text-slate-900 abs-center">{{ INDEX }}</span>
   </div>
 </template>
 <script setup lang="ts">

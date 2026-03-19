@@ -1,6 +1,6 @@
 <template>
   <div class="relative z-100">
-    <img :src="PokemonCard" alt="" />
+    <img :src="PokemonCard" alt="" class="w-full" />
     <img class="absolute w-[60%] left-[20%] top-[8%]" :src="Fake" alt="" />
     <span class="poke-id">0001</span>
     <span class="poke-name">妙挖種子</span>

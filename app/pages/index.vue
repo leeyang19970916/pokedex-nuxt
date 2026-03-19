@@ -1,18 +1,4 @@
-<!-- <template>
-  <div>
-    <button @click="() => refresh()">1212</button>
-    <div v-for="item in data" :key="item.name">
-      <button @click="() => redirectByType(item)">
-        {{ item.name }}
-      </button>
-    </div>
-    <pre>
-      {{ selectedData }}
-    </pre>
-  </div>
-</template>
-
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import type { TypeResult } from "~/types/nameType";
 
 const { data, refresh, status } = await useFetch("/api/type/list");
@@ -27,17 +13,17 @@ const redirectByType = async (item: TypeResult) => {
   selectedData.value = await $fetch(`/api/type/${id}`);
   // navigateTo('')
 };
-</script> -->
+</script>  -->
 
 <template>
   <div>
     <PokemonIndexHeader />
     <div
-      class="px-[3%]"
+      class="px-[3%] flex flex-col gap-6"
       :style="{ 'background-image': `url(${BottomBackground})` }"
     >
-      <FilterWrapper></FilterWrapper>
-      <SortWrapper />
+      <FilterWrapper />
+      <SortWrapper class="m-[0_0_0_auto]" />
       <div class="grid grid-cols-4 gap-4">
         <PokemonCard v-for="(item, index) in 10" :key="index" />
       </div>

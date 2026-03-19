@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 * {
-  @apply box-border;
-  color: #000;
+  @apply box-border text-white;
   font-family: "Noto Sans", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
