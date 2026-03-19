@@ -39,25 +39,20 @@
     </template>
 
     <div class="py-4 space-y-6 text-white">
-      <PokeInput></PokeInput>
+      <PokeInput v-model="input" placeholder="請輸入名稱或圖鑑編號搜索..." />
 
       <div class="space-y-2">
         <label class="block text-primary/80 text-sm font-medium tracking-wide"
           >屬性</label
         >
         <div class="flex flex-wrap gap-2">
-          <span
-            class="px-4 py-1 rounded-full border border-poke-fire-400 text-poke-fire-400 text-sm cursor-pointer hover:bg-poke-fire-500 hover:text-white transition-all"
-            >火</span
-          >
-          <span
-            class="px-4 py-1 rounded-full border border-poke-water-400 text-poke-water-400 text-sm cursor-pointer hover:bg-poke-water-500 hover:text-white transition-all"
-            >水</span
-          >
-          <span
-            class="px-4 py-1 rounded-full border border-poke-grass-400 text-poke-grass-400 text-sm cursor-pointer hover:bg-poke-grass-500 hover:text-white transition-all"
-            >草</span
-          >
+          <Tag
+            v-for="(type, index) in POKEMON_TYPES"
+            :key="index"
+            :mode="'outline'"
+            :type="'type'"
+            :option="type"
+          />
         </div>
       </div>
 
@@ -66,31 +61,13 @@
           >封域地區</label
         >
         <div class="flex flex-wrap gap-2">
-          <span
-            class="px-4 py-1 rounded-md border border-gray-600 text-gray-400 text-sm cursor-pointer hover:border-primary/60 hover:text-primary/80 transition-all"
-          >
-            關都
-          </span>
-          <span
-            class="px-4 py-1 rounded-md border border-gray-600 text-gray-400 text-sm cursor-pointer hover:border-primary/60 hover:text-primary/80 transition-all"
-          >
-            城都
-          </span>
-          <span
-            class="px-4 py-1 rounded-md border border-primary text-primary bg-primary/10 text-sm cursor-pointer shadow-[0_0_8px_rgba(179,234,254,0.3)] transition-all"
-          >
-            豐緣
-          </span>
-          <span
-            class="px-4 py-1 rounded-md border border-gray-600 text-gray-400 text-sm cursor-pointer hover:border-primary/60 hover:text-primary/80 transition-all"
-          >
-            神奧
-          </span>
-          <span
-            class="px-4 py-1 rounded-md border border-gray-600 text-gray-400 text-sm cursor-pointer hover:border-primary/60 hover:text-primary/80 transition-all"
-          >
-            帕底亞
-          </span>
+          <Tag
+            v-for="(region, index) in POKEMON_REGIONS"
+            :key="index"
+            type="region"
+            :option="region"
+            :mode="'outline'"
+          ></Tag>
         </div>
       </div>
 
@@ -149,8 +126,11 @@
 </template>
 
 <script setup lang="ts">
+import { POKEMON_TYPES, POKEMON_REGIONS } from "~/constants";
 import PokeInput from "../PokeInput/index.vue";
 import PokeSelect from "../PokeSelect/index.vue";
+import Tag from "~/components/Tags/index.vue";
+
 const model = defineModel<boolean>();
 // script setup 裡準備資料
 const abilityOptions = [
@@ -163,6 +143,7 @@ const abilityOptions = [
 
 // 記得綁定一個變數來接選到的值
 const selectedAbility = ref("");
+const input = ref("");
 </script>
 
 <style>

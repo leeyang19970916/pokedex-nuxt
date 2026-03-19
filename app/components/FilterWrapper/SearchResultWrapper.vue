@@ -37,10 +37,14 @@
         class="text-primary/70 text-sm font-bold tracking-widest min-w-[70px] pt-0.5"
         >地區：</span
       >
-      <div class="text-white text-sm font-medium tracking-wide">
-        <span class="text-primary border-b border-primary/40 pb-0.5"
-          >封域地區</span
-        >
+      <div class="w-full flex flex-wrap gap-2">
+        <Tag
+          v-for="(region, index) in POKEMON_REGIONS"
+          :key="index"
+          type="region"
+          :option="region"
+          :mode="'outline'"
+        />
       </div>
     </div>
 
@@ -57,7 +61,7 @@
 </template>
 
 <script setup lang="ts">
-import { POKEMON_TYPES } from "~/constants";
+import { POKEMON_TYPES, POKEMON_REGIONS } from "~/constants";
 import Tag from "~/components/Tags/index.vue";
 </script>
 

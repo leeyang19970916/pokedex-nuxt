@@ -24,7 +24,7 @@ export default {
           steel: { 400: "#aac8f0", 500: "#96b4dc" },
           fairy: { 400: "#ffafdc", 500: "#ff7eb8" },
         },
-      }, // 👈 就是這裡！你原本漏了關閉 colors 的大括號跟逗號
+      },
       screens: {
         sm: "640px",
         md: "768px",
@@ -36,9 +36,9 @@ export default {
   },
   safelist: [
     {
-      // 👈 這裡我也幫你補上 -(400|500) 了，這樣動態拼接才會活過來
-      pattern:
-        /^(bg|text|border)-poke-(normal|grass|fire|water|electric|bug|flying|rock|poison|ground|ice|fighting|psychic|ghost|dragon|dark|steel|fairy)-(400|500)$/,
+      pattern: /^(bg|text|border|shadow)-poke-(.*)-(400|500)$/,
+      // 告訴 Tailwind：這些顏色我可能會加上 hover 效果喔
+      variants: ["hover"],
     },
   ],
   plugins: [],

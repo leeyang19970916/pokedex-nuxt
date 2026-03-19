@@ -4,8 +4,9 @@
     <img class="absolute w-[60%] left-[20%] top-[8%]" :src="Fake" alt="" />
     <span class="poke-id">0001</span>
     <span class="poke-name">妙挖種子</span>
-    <div class="poke_tags flex gap-4 justify-between items-center">
+    <div class="poke_tags flex gap-2 justify-between items-center">
       <Tag
+        class="w-full"
         v-for="(opt, index) in fakeArr"
         :key="index"
         :mode="'solid'"

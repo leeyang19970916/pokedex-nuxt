@@ -22,16 +22,16 @@ export const POKEMON_TYPES = [
 ] as const; // 使用 as const 讓 TypeScript 記住精確的字串值
 
 export const POKEMON_REGIONS = [
-  { label: "關都地區", value: "kanto" },
-  { label: "城都地區", value: "johto" },
-  { label: "豐緣地區", value: "hoenn" },
-  { label: "神奧地區", value: "sinnoh" },
-  { label: "合眾地區", value: "unova" },
-  { label: "卡洛斯地區", value: "kalos" },
-  { label: "阿羅拉地區", value: "alola" },
-  { label: "伽勒爾地區", value: "galar" },
-  { label: "洗翠地區", value: "hisui" },
-  { label: "帕底亞地區", value: "paldean" },
+  { label: "關都", value: "kanto" },
+  { label: "城都", value: "johto" },
+  { label: "豐緣", value: "hoenn" },
+  { label: "神奧", value: "sinnoh" },
+  { label: "合眾", value: "unova" },
+  { label: "卡洛斯", value: "kalos" },
+  { label: "阿羅拉", value: "alola" },
+  { label: "伽勒爾", value: "galar" },
+  { label: "洗翠", value: "hisui" },
+  { label: "帕底亞", value: "paldean" },
 ] as const;
 
 // constants/pokemon.ts
