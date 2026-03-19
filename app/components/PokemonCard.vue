@@ -25,12 +25,12 @@ const fakeArr = POKEMON_TYPES.slice(0, 2);
 </script>
 <style lang="scss" scoped>
 .poke-id {
-  @apply w-[80%] absolute left-[10%] top-[57%] text-primary text-[1.6vw];
+  @apply w-[80%] absolute left-[10%] top-[58%] text-primary text-xl;
 }
 .poke-name {
-  @apply w-[80%] absolute left-[10%] top-[62%] text-white text-[2.2vw];
+  @apply w-[80%] absolute left-[10%] top-[64%] text-white text-2xl;
 }
 .poke_tags {
-  @apply w-[80%] absolute left-[10%] bottom-[5%] text-[1.2vw];
+  @apply w-[80%] absolute left-[10%] bottom-[5%] text-lg;
 }
 </style>
