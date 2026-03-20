@@ -7,7 +7,7 @@
       <img class="w-full" :src="AnimationBackground" alt="" />
     </div>
     <IndexWrapper class="absolute top-0 z-50"></IndexWrapper>
-    <PokeImgRandomWrapper />
+    <PokeImgRandomWrapper :list="props.list" />
   </div>
 </template>
 <script setup lang="ts">
@@ -15,6 +15,11 @@ import TopBackground from "~/assets/image/header/list_top_bg.png";
 import AnimationBackground from "~/assets/image/header/animation_bg.png";
 import IndexWrapper from "../IndexWrapper.vue";
 import PokeImgRandomWrapper from "./PokeRandomWrapper/index.vue";
+import type { PokeCard } from "~/types/pokemon";
+
+const props = defineProps<{
+  list: PokeCard[];
+}>();
 </script>
 
 <style scoped lang="scss">

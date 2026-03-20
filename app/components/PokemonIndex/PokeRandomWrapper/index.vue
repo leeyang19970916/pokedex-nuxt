@@ -2,31 +2,40 @@
   <div>
     <div class="start">
       <PokemonBall
-        v-for="(item, index) in leftWings"
-        :key="index"
+        v-for="(poke, index) in list.slice(0, 6)"
+        :key="`${poke.id}+${index}`"
         class="poke"
         :class="`start-${index}`"
+        :poke
       />
     </div>
     <div class="center abs-center">
-      <PokemonBall class="w-[200px] h-[200px]" :is-main="true" />
+      <PokemonBall
+        v-if="mainPoke"
+        :poke="mainPoke"
+        class="w-[200px] h-[200px]"
+        :is-main="true"
+      />
     </div>
     <div class="end">
       <PokemonBall
-        v-for="(item, index) in rightWings"
-        :key="index"
+        v-for="(poke, index) in list.slice(7, 13)"
+        :key="`${poke.id}+${index}`"
         class="poke"
         :class="`end-${index}`"
+        :poke
       />
     </div>
   </div>
 </template>
 <script lang="ts" setup>
+import type { PokeCard } from "~/types/pokemon";
 import PokemonBall from "./PokeBall.vue";
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D"];
-const leftWings = array.slice(0, 6);
-const centerItem = array[6];
-const rightWings = array.slice(7, 13);
+
+const props = defineProps<{
+  list: PokeCard[];
+}>();
+const mainPoke = computed(() => props.list[6]);
 </script>
 <style lang="scss" scoped>
 .poke {

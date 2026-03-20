@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- detail page to pokemon -->
-    123
+    進來了？？？？？
   </div>
 </template>
 <script setup lang="ts"></script>

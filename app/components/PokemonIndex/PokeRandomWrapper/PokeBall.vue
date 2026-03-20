@@ -6,16 +6,17 @@
         :src="PokemonBallImg"
         alt=""
       />
-      <img class="abs-center w-[80%] h-[80%]" :src="FakeImg" alt="" />
+      <img class="abs-center w-[80%] h-[80%]" :src="poke.image" alt="" />
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import PokemonBallImg from "~/assets/image/header/pokemon_ball_bg.png";
-import FakeImg from "~/assets/image/fake_pokemon.png";
+import type { PokeCard } from "~/types/pokemon";
 const props = withDefaults(
   defineProps<{
     isMain?: boolean;
+    poke: PokeCard;
   }>(),
   {
     isMain: false,
@@ -24,12 +25,7 @@ const props = withDefaults(
 </script>
 <style>
 .ball-glow-wrapper {
-  /* width: 150px;
-  height: 150px; */
-  border-radius: 999px;
-
-  /* 核心核心：多層 box-shadow */
-  /* 語法：x軸 y軸 模糊半徑 擴散半徑 顏色 */
+  @apply rounded-full;
   box-shadow:
     /* 1. 內層光暈 (讓球邊緣亮起來) - inset */ inset 0 0 10px 2px
       hsla(191, 100%, 50%, 0.4),

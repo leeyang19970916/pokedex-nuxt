@@ -1,39 +1,43 @@
-// https://pokeapi.co/api/v2/pokemon/ditto
+import { POKEMON_API_URL, MAX_COUNT } from "~/constants";
+import type { PokeCard } from "~/types/pokemon";
 
-import { POKEMON_API_URL } from "~/constants";
-import type { PokeListRes } from "~/types/pokemon";
+function getRandomNums(params: { limit: number; min: number; max: number }) {
+  const selected = new Set();
+  const { limit, min, max } = params;
+  // 當數量還沒抽滿時，持續抽取
+  while (selected.size < limit) {
+    const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    selected.add(randomNum);
+  }
+
+  // 將 Set 轉換回陣列回傳
+  return Array.from(selected);
+}
 
 export default defineEventHandler(async (event) => {
-  const url = `${POKEMON_API_URL}/pokemon`;
-  const query = getQuery(event);
   try {
-    const res: PokeListRes = await $fetch(url, {
-      query: {
-        limit: query.limit || 0,
-        offset: query.offset || 0,
-      },
-    });
-    const detailPromises = res.results.map((i) => $fetch(i.url));
-    const rawDetails = await Promise.all(detailPromises);
-    // 4. 資料清洗：把 PokeAPI 那幾百行沒用的欄位拔掉，只留前端卡片需要的！
-    const perfectPokemons = rawDetails.map((detail: any) => ({
+    const url = `${POKEMON_API_URL}/pokemon`;
+    const query = getQuery<{
+      limit: number;
+    }>(event);
+
+    const params = {
+      limit: query.limit,
+      min: 1,
+      max: MAX_COUNT,
+    };
+    const randomNums = getRandomNums(params);
+    const promises = randomNums.map((id) => $fetch(`${url}/${id}`));
+    const res = await Promise.all(promises);
+    const result: PokeCard[] = res.map((detail: any) => ({
       id: detail.id,
       name: detail.name,
-      // 直接幫前端把深藏在物件裡的圖片網址挖出來
       image:
         detail.sprites.other["official-artwork"].front_default ||
         detail.sprites.front_default,
-      // 把屬性陣列洗乾淨，只留下 ['grass', 'poison'] 這種乾淨的字串陣列
       types: detail.types.map((t: any) => t.type.name),
     }));
-
-    // 5. 重新包裝回傳格式，把原本的 results 替換成我們的完美資料
-    return {
-      count: res.count, // 保留總筆數 (前端算分頁會用到)
-      next: res.next, // 保留下一頁的網址
-      previous: res.previous, // 保留上一頁的網址
-      results: perfectPokemons, // 👑 這是前端最愛的完美陣列！
-    };
+    return result;
   } catch (e) {
     console.error("Error fetching data:", e);
     throw createError({

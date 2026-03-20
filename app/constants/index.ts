@@ -1,4 +1,5 @@
 export const POKEMON_API_URL = "https://pokeapi.co/api/v2";
+export const MAX_COUNT = 1025;
 export const INDEX = "寶可夢圖鑑";
 export const POKEMON_TYPES = [
   { label: "一般", value: "normal" },

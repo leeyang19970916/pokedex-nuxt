@@ -1,27 +1,45 @@
 <template>
-  <div class="relative z-100">
+  <div class="relative z-100" @click="redirect">
     <img :src="PokemonCard" alt="" class="w-full" />
-    <img class="absolute w-[60%] left-[20%] top-[8%]" :src="Fake" alt="" />
-    <span class="poke-id">0001</span>
-    <span class="poke-name">妙挖種子</span>
+    <img
+      class="absolute w-[60%] left-[20%] top-[8%]"
+      :src="poke.image"
+      alt=""
+    />
+    <span class="poke-id">{{ poke.id }}</span>
+    <span class="poke-name">{{ poke.name }}</span>
     <div class="poke_tags flex gap-2 justify-between items-center">
       <Tag
-        class="w-full"
-        v-for="(opt, index) in fakeArr"
-        :key="index"
+        class="!w-1/2 !cursor-auto"
+        v-for="(option, index) in typeOption"
+        :key="`${option.value}-${index}`"
         :mode="'solid'"
         :type="'type'"
-        :option="opt"
+        :option="option"
       ></Tag>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
 import PokemonCard from "~/assets/image/card_bg.png";
-import Fake from "~/assets/image/fake_pokemon.png";
 import Tag from "~/components/Tags/index.vue";
 import { POKEMON_TYPES } from "~/constants";
-const fakeArr = POKEMON_TYPES.slice(0, 2);
+import type { PokeCard } from "~/types/pokemon";
+
+const props = defineProps<{
+  poke: PokeCard;
+}>();
+const typeOption = computed(() => {
+  const targetType = new Set(props.poke.types);
+  return POKEMON_TYPES.filter((i) => targetType.has(i.value));
+});
+
+const redirect = () => {
+  const id = props.poke.id;
+  navigateTo({
+    path: `/pokemon/${id}`,
+  });
+};
 </script>
 <style lang="scss" scoped>
 .poke-id {
