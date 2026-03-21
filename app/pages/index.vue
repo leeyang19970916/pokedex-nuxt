@@ -12,7 +12,7 @@
       <SortWrapper class="m-[0_0_0_auto]" />
       <div v-if="!listState.isLoading" class="grid grid-cols-4 gap-4">
         <PokemonCard
-          v-for="poke in listState.list"
+          v-for="poke in pokeStore.pokeList"
           :key="`${poke.id}-${poke.name}`"
           :poke
         />
@@ -28,6 +28,7 @@ import PokemonCard from "~/components/PokemonCard.vue";
 import BottomBackground from "~/assets/image/header/list_bottom_bg.jpg";
 import FilterWrapper from "~/components/FilterWrapper/index.vue";
 import type { PokeCard } from "~/types/pokemon";
+import { usePokeStore } from "~/store/pokeStore";
 
 interface State {
   list: PokeCard[];
@@ -43,23 +44,21 @@ const LIST_STATE: State = {
   isLoading: false,
 };
 
-const listState = ref<State>(structuredClone(LIST_STATE));
-
+const pokeStore = usePokeStore();
 const randomList = useFetch("/api/pokemon/random", {
   query: {
     limit: 13,
   },
 });
-const list = useFetch("/api/pokemon/fetchList", {
-  query: {
-    limit: listState.value.limit,
-    offset: listState.value.offset,
-  },
+const { data } = useFetch("/api/pokemon/fetchPokemonList", {
+  key: "pokeIndex",
 });
-if (list.data.value) {
-  listState.value.list = [...list.data.value.results];
-  listState.value.isLoading = false;
+
+if (data.value) {
+  pokeStore.setList(data.value);
 }
+
+const listState = ref<State>(structuredClone(LIST_STATE));
 
 const getMore = async () => {
   try {
@@ -70,7 +69,7 @@ const getMore = async () => {
         offset: listState.value.offset,
       },
     });
-    listState.value.list = [...listState.value.list, ...res.results];
+    listState.value.list = [...listState.value.list];
   } catch (e) {
     console.log(e);
   }

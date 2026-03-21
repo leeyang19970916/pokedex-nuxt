@@ -9,8 +9,8 @@ export default defineEventHandler(async (event) => {
   try {
     const res: PokeListRes = await $fetch(url, {
       query: {
-        limit: query.limit || 0,
-        offset: query.offset || 0,
+        limit: 2000,
+        offset: 0,
       },
     });
     const getPromises = res.results.map((i) => $fetch(i.url));

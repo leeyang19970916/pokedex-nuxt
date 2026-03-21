@@ -29,13 +29,11 @@ export default defineEventHandler(async (event) => {
     const randomNums = getRandomNums(params);
     const promises = randomNums.map((id) => $fetch(`${url}/${id}`));
     const res = await Promise.all(promises);
-    const result: PokeCard[] = res.map((detail: any) => ({
+    const result: Pick<PokeCard, "id" | "image">[] = res.map((detail: any) => ({
       id: detail.id,
-      name: detail.name,
       image:
         detail.sprites.other["official-artwork"].front_default ||
         detail.sprites.front_default,
-      types: detail.types.map((t: any) => t.type.name),
     }));
     return result;
   } catch (e) {

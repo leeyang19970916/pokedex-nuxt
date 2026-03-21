@@ -33,7 +33,7 @@ import type { PokeCard } from "~/types/pokemon";
 import PokemonBall from "./PokeBall.vue";
 
 const props = defineProps<{
-  list: PokeCard[];
+  list: Pick<PokeCard, "id" | "image">[];
 }>();
 const mainPoke = computed(() => props.list[6]);
 </script>

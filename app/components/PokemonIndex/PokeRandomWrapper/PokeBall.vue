@@ -18,7 +18,7 @@ import type { PokeCard } from "~/types/pokemon";
 const props = withDefaults(
   defineProps<{
     isMain?: boolean;
-    poke: PokeCard;
+    poke: Pick<PokeCard, "id" | "image">;
   }>(),
   {
     isMain: false,

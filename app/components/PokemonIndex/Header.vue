@@ -18,7 +18,7 @@ import PokeImgRandomWrapper from "./PokeRandomWrapper/index.vue";
 import type { PokeCard } from "~/types/pokemon";
 
 const props = defineProps<{
-  list: PokeCard[];
+  list: Pick<PokeCard, "id" | "image">[];
 }>();
 </script>
 
