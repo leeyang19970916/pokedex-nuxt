@@ -1,13 +1,15 @@
 <template>
-  <div>
-    <div class="relative delay-150" :class="{ 'ball-glow-wrapper': isMain }">
-      <img
-        :class="{ 'border rounded-full': isMain }"
-        :src="PokemonBallImg"
-        alt=""
-      />
-      <img class="abs-center w-[80%] h-[80%]" :src="poke.image" alt="" />
-    </div>
+  <div
+    class="relative delay-150 cursor-pointer"
+    :class="{ 'ball-glow-wrapper': isMain }"
+    @click="redirect"
+  >
+    <img
+      :class="{ 'border rounded-full': isMain }"
+      :src="PokemonBallImg"
+      alt=""
+    />
+    <img class="abs-center w-[80%] h-[80%]" :src="poke.image" alt="" />
   </div>
 </template>
 <script setup lang="ts">
@@ -22,6 +24,13 @@ const props = withDefaults(
     isMain: false,
   }
 );
+
+const redirect = () => {
+  const id = props.poke.id;
+  navigateTo({
+    path: `/pokemon/${id}`,
+  });
+};
 </script>
 <style>
 .ball-glow-wrapper {

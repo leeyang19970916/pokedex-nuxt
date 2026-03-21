@@ -58,7 +58,7 @@
 
       <div class="space-y-2">
         <label class="block text-primary/80 text-sm font-medium tracking-wide"
-          >封域地區</label
+          >地區</label
         >
         <div class="flex flex-wrap gap-2">
           <Tag
