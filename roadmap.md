@@ -7,3 +7,20 @@
 改成一個禮拜，每個禮拜五都給薩布他們去鑒定，很重要，有人督促才會有效率
 兩個月要完成，拖再久也不好，雖然不太懂element+ ,也不夠懂Nuxt
 但就是加油摟！盡力局
+
+2026/3/23
+[] 把ability串接串完
+[] 規劃一下flow,作法，emits | provide/injects | pinia
+[] detail-page切版 純UI
+[] 找中文語言包,做雙語
+[] searhForm(Hard)
+[] list串接到底該怎麼辦？
+[] 學graphQL,理解他用法
+[] supabase串接後端，做User系統，喜愛功能
+
+[list討論]
+
+- mock起來？
+- 打ＡＰＩ前先去訪問cookies?沒有的話再去打ＡＰＩ,不然把它存在瀏覽器
+- 寫supabase 寫ＮＯＤＥＪＳ去撈取資料（非常麻煩，應該不要做）
+- 把資料mock起來放supabase(跟mock在前端的意思是差不多的)

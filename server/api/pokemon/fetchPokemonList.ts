@@ -43,7 +43,7 @@ export default defineCachedFunction(
       const cleanData = res.data.pokemon_v2_pokemon.map((p: any) => {
         // 1. 處理屬性
         const types = p.pokemon_v2_pokemontypes.map(
-          (t: any) => t.pokemon_v2_type.name
+          (t: any) => t.pokemon_v2_type.name,
         );
 
         // 2. 處理六圍數值 (轉成物件格式)
@@ -52,7 +52,7 @@ export default defineCachedFunction(
             acc[curr.pokemon_v2_stat.name] = curr.base_stat;
             return acc;
           },
-          {}
+          {},
         );
 
         // 3. 直接用 ID 組合出最高畫質的官方圖片
@@ -82,5 +82,5 @@ export default defineCachedFunction(
       });
     }
   },
-  { maxAge: 86400, name: "graphql-pokemon-all-v1" }
+  { maxAge: 86400, name: "graphql-pokemon-all-v1" },
 ); // 快取 24 小時
