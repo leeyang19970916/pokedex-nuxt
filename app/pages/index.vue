@@ -22,6 +22,7 @@
         />
       </div>
       <button @click="next">view more</button>
+      {{ abilities.data.value }}
     </div>
   </div>
 </template>
@@ -33,7 +34,9 @@ import BottomBackground from "~/assets/image/header/list_bottom_bg.jpg";
 import FilterWrapper from "~/components/FilterWrapper/index.vue";
 import type { PokeListQuery, PokeCard, PokeSort } from "~/types/pokemon";
 import { POKEMON_SORT_OPTIONS } from "~/constants";
+import { usePokeStore } from "~/store/pokeStore";
 
+const pokeStore = usePokeStore();
 const INIT_LIST_QUERY: PokeListQuery = {
   limit: 20,
   offset: 0,
@@ -71,6 +74,16 @@ const { data, error, status } = await useFetch("/api/pokemon/fetchList", {
     ...INIT_LIST_QUERY,
   },
 });
+
+const abilities = useFetch("/api/pokemon/fetchAbilities", {
+  lazy: true,
+  query: {
+    limit: 400,
+  },
+});
+if (abilities.status.value === "success" && abilities.data.value) {
+  pokeStore.setAbilities(abilities.data.value);
+}
 
 if (data.value && status.value === "success") {
   state.value.isLoading = false;
