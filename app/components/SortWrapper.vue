@@ -75,7 +75,7 @@ import { ref, computed, onMounted, onUnmounted } from "vue";
 import { POKEMON_SORT_OPTIONS } from "~/constants";
 
 // 雙向綁定當前的排序值
-const model = defineModel<string>({ default: "id_asc" });
+const model = defineModel<string>({ default: POKEMON_SORT_OPTIONS[0].value });
 
 const isOpen = ref(false);
 const dropdownRef = ref<HTMLElement | null>(null);

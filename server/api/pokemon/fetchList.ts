@@ -1,42 +1,19 @@
-// // https://pokeapi.co/api/v2/pokemon/ditto
+import PokeData from "../data/pokeData.json";
+import type { PokeListQuery, PokeCard } from "~/types/pokemon";
 
-// import { POKEMON_API_URL } from "~/constants";
-// import type {  PokeCard } from "~/types/pokemon";
+export default defineEventHandler(async (event) => {
+  let list = [...PokeData] as PokeCard[];
+  const query = getQuery<PokeListQuery>(event);
 
-// export default defineEventHandler(async (event) => {
-//   const url = `${POKEMON_API_URL}/pokemon`;
-//   const query = getQuery(event);
-//   try {
-//     const res: PokeCard[] = await $fetch(url, {
-//       query: {
-//         limit: 30,
-//         offset: 30,
-//       },
-//     });
-//     const getPromises = res.results.map((i) => $fetch(i.url));
-//     const getPokeDetails = await Promise.all(getPromises);
-//     // 4. 資料清洗：把 PokeAPI 那幾百行沒用的欄位拔掉，只留前端卡片需要的！
-//     const pokes: PokeCard[] = getPokeDetails.map((detail: any) => ({
-//       id: detail.id,
-//       name: detail.name,
-//       image:
-//         detail.sprites.other["official-artwork"].front_default ||
-//         detail.sprites.front_default,
-//       types: detail.types.map((t: any) => t.type.name),
-//     }));
+  const limit: number = query.limit || 20;
+  const offset = query.offset || 0;
+  const searchForm = query.searchForm || undefined;
+  console.log(query, "query");
+  const filteredList = list; //篩選後的陣列
 
-//     // 5. 重新包裝回傳格式，把原本的 results 替換成我們的完美資料
-//     return {
-//       count: res.count, // 保留總筆數 (前端算分頁會用到)
-//       next: res.next, // 保留下一頁的網址
-//       previous: res.previous, // 保留上一頁的網址
-//       results: pokes,
-//     };
-//   } catch (e) {
-//     console.error("Error fetching data:", e);
-//     throw createError({
-//       statusCode: 500,
-//       message: "Failed to fetch data from the API",
-//     });
-//   }
-// });
+  const paginatedlist = list.slice(offset, offset + limit); //切割後頁數的陣列
+  return {
+    total: filteredList.length,
+    list: paginatedlist,
+  };
+});

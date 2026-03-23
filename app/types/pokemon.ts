@@ -10,6 +10,13 @@ export type PokeCard = {
   height: number;
   weight: number;
   types: PokeType[];
-  ability: any[];
-  stats: any[];
+  abilities: string[];
+  stats: Record<string, any>;
+  region: string;
+};
+export type PokeListQuery = {
+  limit: number;
+  offset: number;
+  searchForm: any;
+  sort: any;
 };

@@ -46,4 +46,3 @@ const onClick = () => {
   emit("click", props.option);
 };
 </script>
-box-shadow: 0 0 .25em .03em #0094e5
