@@ -13,10 +13,6 @@
         :disabled="disabled"
         class="w-full bg-black/40 border border-primary/40 rounded-md pl-4 pr-10 py-2 text-white focus:outline-none focus:border-primary focus:shadow-[0_0_10px_rgba(179,234,254,0.3)] appearance-none cursor-pointer transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        <option value="" disabled class="bg-gray-900 text-gray-400">
-          {{ placeholder }}
-        </option>
-
         <option
           v-for="opt in options"
           :key="opt.value"
@@ -49,25 +45,20 @@
 </template>
 
 <script setup lang="ts">
-// 雙向綁定的值
-const model = defineModel<string | number>({ default: "" });
-
 // 定義傳入的屬性
-interface OptionItem {
-  label: string;
-  value: string | number;
-}
+import type { PokeAbility } from "~/types/pokemon";
 
-withDefaults(
+const props = withDefaults(
   defineProps<{
     label?: string;
-    placeholder?: string;
-    options: OptionItem[];
+    options: PokeAbility[];
     disabled?: boolean;
   }>(),
   {
-    placeholder: "請選擇...",
     disabled: false,
-  }
+  },
 );
+const model = defineModel<PokeAbility["value"]>({
+  default: undefined,
+});
 </script>

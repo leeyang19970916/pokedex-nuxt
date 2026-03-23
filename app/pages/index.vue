@@ -8,7 +8,7 @@
       class="px-[3%] pb-[10%] flex flex-col gap-6"
       :style="{ 'background-image': `url(${BottomBackground})` }"
     >
-      <FilterWrapper @search="(val:any) => handleFilter(val)" />
+      <FilterWrapper @search="(val: any) => handleFilter(val)" />
       <SortWrapper
         v-model="state.sort"
         class="m-[0_0_0_auto]"
@@ -22,7 +22,6 @@
         />
       </div>
       <button @click="next">view more</button>
-      {{ abilities.data.value }}
     </div>
   </div>
 </template>
@@ -32,7 +31,7 @@ import PokemonIndexHeader from "~/components/PokemonIndex/Header.vue";
 import PokemonCard from "~/components/PokemonCard.vue";
 import BottomBackground from "~/assets/image/header/list_bottom_bg.jpg";
 import FilterWrapper from "~/components/FilterWrapper/index.vue";
-import type { PokeListQuery, PokeCard, PokeSort } from "~/types/pokemon";
+import type { PokeListQuery, PokeCard } from "~/types/pokemon";
 import { POKEMON_SORT_OPTIONS } from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
 
@@ -125,7 +124,7 @@ const handleSort = () => {
 };
 const fetchUpdateist = async (
   query: PokeListQuery,
-  isAppend: boolean = false
+  isAppend: boolean = false,
 ) => {
   console.log(query, "query: fetchUpdateist");
   state.value.isLoading = true;

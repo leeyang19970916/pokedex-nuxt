@@ -25,3 +25,8 @@ export type PokeListQuery = {
   searchForm: any;
   sort: PokeSort;
 };
+export type PokeAbility = {
+  label: string;
+  value: string | undefined;
+  id: Id;
+};

@@ -22,7 +22,7 @@ const props = withDefaults(
   }>(),
   {
     isMain: false,
-  }
+  },
 );
 
 const redirect = () => {
@@ -36,8 +36,8 @@ const redirect = () => {
 .ball-glow-wrapper {
   @apply rounded-full;
   box-shadow:
-    /* 1. 內層光暈 (讓球邊緣亮起來) - inset */ inset 0 0 10px 2px
-      hsla(191, 100%, 50%, 0.4),
+    /* 1. 內層光暈 (讓球邊緣亮起來) - inset */
+    inset 0 0 10px 2px hsla(191, 100%, 50%, 0.4),
     /* 2. 外層光暈 (渲染出氣氛) */ 0 0 15px 1px rgba(0, 210, 255, 0.3);
 
   /* 輔助特效：讓整個東西看起來在發光 */

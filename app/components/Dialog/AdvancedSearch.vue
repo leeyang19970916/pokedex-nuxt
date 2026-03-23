@@ -75,8 +75,7 @@
         <PokeSelect
           v-model="selectedAbility"
           label="特性"
-          placeholder="請選擇特性..."
-          :options="abilityOptions"
+          :options="pokeStore.abilities"
         ></PokeSelect>
 
         <div class="space-y-2">
@@ -130,19 +129,13 @@ import { POKEMON_TYPES, POKEMON_REGIONS } from "~/constants";
 import PokeInput from "../PokeInput/index.vue";
 import PokeSelect from "../PokeSelect/index.vue";
 import Tag from "~/components/Tags/index.vue";
+import { usePokeStore } from "~/store/pokeStore";
 
 const model = defineModel<boolean>();
-// script setup 裡準備資料
-const abilityOptions = [
-  { label: "茂盛 (Overgrow)", value: "overgrow" },
-  { label: "猛火 (Blaze)", value: "blaze" },
-  { label: "激流 (Torrent)", value: "torrent" },
-  { label: "威嚇 (Intimidate)", value: "intimidate" },
-  { label: "飄浮 (Levitate)", value: "levitate" },
-];
+const pokeStore = usePokeStore();
 
 // 記得綁定一個變數來接選到的值
-const selectedAbility = ref("");
+const selectedAbility = ref(undefined);
 const input = ref("");
 </script>
 
@@ -157,7 +150,8 @@ const input = ref("");
   backdrop-filter: blur(12px) !important;
   /* 加上你專屬的 primary border 跟發光效果 */
   border: 1px solid rgba(179, 234, 254, 0.4) !important;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8),
+  box-shadow:
+    0 0 30px rgba(0, 0, 0, 0.8),
     inset 0 0 20px rgba(179, 234, 254, 0.05) !important;
   border-radius: 12px !important;
 }
