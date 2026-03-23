@@ -1,19 +1,46 @@
 import PokeData from "../data/pokeData.json";
-import type { PokeListQuery, PokeCard } from "~/types/pokemon";
+import type { PokeListQuery, PokeCard, PokeSort } from "~/types/pokemon";
 
 export default defineEventHandler(async (event) => {
-  let list = [...PokeData] as PokeCard[];
-  const query = getQuery<PokeListQuery>(event);
+  try {
+    let list = [...PokeData] as PokeCard[];
 
-  const limit: number = query.limit || 20;
-  const offset = query.offset || 0;
-  const searchForm = query.searchForm || undefined;
-  console.log(query, "query");
-  const filteredList = list; //篩選後的陣列
+    const query = getQuery<PokeListQuery>(event);
 
-  const paginatedlist = list.slice(offset, offset + limit); //切割後頁數的陣列
-  return {
-    total: filteredList.length,
-    list: paginatedlist,
-  };
+    const limit = Number(query.limit) || 20;
+    const offset = Number(query.offset) || 0;
+    const searchForm = query.searchForm || undefined;
+    const sort = query.sort;
+    let filteredList: PokeCard[] = list; //篩選後的陣列
+
+    filteredList = sortBy(filteredList, sort);
+
+    const paginatedlist = filteredList.slice(offset, offset + limit); //切割後頁數的陣列
+    return {
+      total: filteredList.length,
+      list: paginatedlist,
+    };
+  } catch (e) {
+    throw createError({
+      status: 500,
+      message: "api error",
+    });
+  }
 });
+const sortBy = (list: PokeCard[], sort: PokeSort) => {
+  if (sort === "height_asc") {
+    list = list.sort((a, b) => a.height - b.height);
+  } else if (sort === "height_desc") {
+    list = list.sort((a, b) => b.height - a.height);
+  } else if (sort === "weight_asc") {
+    list = list.sort((a, b) => a.weight - b.weight);
+  } else if (sort === "weight_desc") {
+    list = list.sort((a, b) => b.weight - a.weight);
+  } else if (sort === "id_asc") {
+    list = list.sort((a, b) => a.id - b.id);
+  } else if (sort === "id_desc") {
+    list = list.sort((a, b) => b.id - a.id);
+  }
+
+  return list;
+};

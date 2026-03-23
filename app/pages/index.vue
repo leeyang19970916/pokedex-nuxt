@@ -8,22 +8,21 @@
       class="px-[3%] pb-[10%] flex flex-col gap-6"
       :style="{ 'background-image': `url(${BottomBackground})` }"
     >
-      <FilterWrapper @search="(val:any) => search('flter', val)" />
+      <FilterWrapper @search="(val:any) => handleFilter(val)" />
       <SortWrapper
+        v-model="state.sort"
         class="m-[0_0_0_auto]"
-        @search="(val:any) => search('sort', val)"
+        @search="handleSort()"
       />
       <div class="grid grid-cols-4 gap-4">
         <PokemonCard
-          v-for="poke in listState.list"
+          v-for="poke in state.list"
           :key="`${poke.id}-${poke.name}`"
           :poke
         />
       </div>
-      <button @click="() => search('next')">view more</button>
+      <button @click="next">view more</button>
     </div>
-    {{ data }}
-    {{ status }}
   </div>
 </template>
 
@@ -32,67 +31,106 @@ import PokemonIndexHeader from "~/components/PokemonIndex/Header.vue";
 import PokemonCard from "~/components/PokemonCard.vue";
 import BottomBackground from "~/assets/image/header/list_bottom_bg.jpg";
 import FilterWrapper from "~/components/FilterWrapper/index.vue";
-import type { PokeListQuery, PokeCard } from "~/types/pokemon";
-import { usePokeStore } from "~/store/pokeStore";
+import type { PokeListQuery, PokeCard, PokeSort } from "~/types/pokemon";
+import { POKEMON_SORT_OPTIONS } from "~/constants";
 
 const INIT_LIST_QUERY: PokeListQuery = {
   limit: 20,
   offset: 0,
-  searchForm: {},
-  sort: "",
+  searchForm: "",
+  sort: POKEMON_SORT_OPTIONS[0].value,
 };
 
 interface State {
   total: number;
   list: PokeCard[];
-  limit: number;
-  offset: number;
+  limit: PokeListQuery["limit"];
+  offset: PokeListQuery["offset"];
   isLoading: boolean;
+  searchForm: PokeListQuery["searchForm"];
+  sort: PokeListQuery["sort"];
 }
-
-const LIST_STATE: State = {
+const state = ref<State>({
   total: 0,
   list: [],
   limit: INIT_LIST_QUERY.limit,
   offset: INIT_LIST_QUERY.offset,
-  isLoading: false,
-};
+  isLoading: true,
+  searchForm: INIT_LIST_QUERY.searchForm,
+  sort: INIT_LIST_QUERY.sort,
+});
+
 const randomList = useFetch("/api/pokemon/random", {
   lazy: true,
   query: {
     limit: 13,
   },
 });
-const { data, status } = await useFetch("/api/pokemon/fetchList", {
-  key: "pokeList",
+const { data, error, status } = await useFetch("/api/pokemon/fetchList", {
   query: {
     ...INIT_LIST_QUERY,
   },
 });
 
-const listState = ref<State>(structuredClone(LIST_STATE));
-
-if (data.value?.list && status.value === "success") {
-  console.log(data, "data???");
-  listState.value.isLoading = false;
-  listState.value.list = data.value.list;
-  listState.value.total = data.value.total;
+if (data.value && status.value === "success") {
+  state.value.isLoading = false;
+  state.value.list = data.value.list;
+  state.value.total = data.value.total;
+} else if (error.value) {
+  console.error("初始化 API 壞了：", error.value?.message);
 }
+state.value.isLoading = false;
 
-const search = async (type: any, val?: any) => {
-  // const query = {
-  //   ...INIT_LIST_QUERY,
-  //   offset: INIT_LIST_QUERY.offset + INIT_LIST_QUERY.limit,
-  // };
-  listState.value.isLoading = true;
-  listState.value.offset += listState.value.limit;
-  const { list, total } = await $fetch("/api/pokemon/fetchList", {
-    query: {
-      ...INIT_LIST_QUERY,
-      offset: listState.value.offset,
-    },
-  });
-  listState.value.list = [...listState.value.list, ...list];
-  listState.value.total = total;
+const next = () => {
+  state.value.offset += state.value.limit;
+  const query: PokeListQuery = {
+    limit: state.value.limit,
+    offset: state.value.offset,
+    sort: state.value.sort,
+    searchForm: state.value.searchForm,
+  };
+  fetchUpdateist(query, true);
+};
+const handleFilter = (val: any) => {
+  const query: PokeListQuery = {
+    limit: INIT_LIST_QUERY.limit,
+    offset: INIT_LIST_QUERY.offset,
+    sort: state.value.sort,
+    searchForm: val,
+  };
+  fetchUpdateist(query);
+};
+const handleSort = () => {
+  const { sort } = state.value;
+  const query: PokeListQuery = {
+    limit: INIT_LIST_QUERY.limit,
+    offset: INIT_LIST_QUERY.offset,
+    sort,
+    searchForm: state.value.searchForm,
+  };
+  fetchUpdateist(query);
+};
+const fetchUpdateist = async (
+  query: PokeListQuery,
+  isAppend: boolean = false
+) => {
+  console.log(query, "query: fetchUpdateist");
+  state.value.isLoading = true;
+  try {
+    const { list, total } = await $fetch("/api/pokemon/fetchList", {
+      query,
+    });
+
+    if (isAppend) {
+      state.value.list.push(...list);
+    } else {
+      state.value.list = list;
+    }
+    state.value.total = total;
+    state.value.isLoading = false;
+  } catch (e) {
+    state.value.isLoading = false;
+    console.log(e);
+  }
 };
 </script>

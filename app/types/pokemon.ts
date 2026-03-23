@@ -1,8 +1,13 @@
-import { POKEMON_TYPES, POKEMON_REGIONS } from "~/constants";
+import {
+  POKEMON_TYPES,
+  POKEMON_REGIONS,
+  POKEMON_SORT_OPTIONS,
+} from "~/constants";
 export type Id = number;
 export type Url = string;
 export type PokeType = (typeof POKEMON_TYPES)[number]["value"];
 export type PokeRegion = (typeof POKEMON_REGIONS)[number]["value"];
+export type PokeSort = (typeof POKEMON_SORT_OPTIONS)[number]["value"];
 export type PokeCard = {
   id: Id;
   name: string;
@@ -18,5 +23,5 @@ export type PokeListQuery = {
   limit: number;
   offset: number;
   searchForm: any;
-  sort: any;
+  sort: PokeSort;
 };

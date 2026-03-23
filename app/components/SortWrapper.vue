@@ -73,9 +73,14 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import { POKEMON_SORT_OPTIONS } from "~/constants";
+import type { PokeSort } from "~/types/pokemon";
+
+const emit = defineEmits<{
+  (e: "search", val: PokeSort): void;
+}>();
 
 // 雙向綁定當前的排序值
-const model = defineModel<string>({ default: POKEMON_SORT_OPTIONS[0].value });
+const model = defineModel<PokeSort>({ default: POKEMON_SORT_OPTIONS[0].value });
 
 const isOpen = ref(false);
 const dropdownRef = ref<HTMLElement | null>(null);
@@ -87,9 +92,10 @@ const currentLabel = computed(() => {
 });
 
 // 選擇選項的動作
-const selectOption = (val: string) => {
+const selectOption = (val: PokeSort) => {
   model.value = val;
   isOpen.value = false; // 選完自動關閉
+  emit("search", model.value);
 };
 
 // --- 以下是「點擊外面自動關閉」的貼心功能 ---
