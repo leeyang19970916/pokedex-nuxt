@@ -12,7 +12,7 @@
         >關鍵字：</span
       >
       <div class="text-white text-sm font-medium tracking-wide">
-        <!-- {{ prevSearchForm.keywords }} -->
+        {{ searchForm.keywords }}
       </div>
     </div>
 
@@ -23,7 +23,7 @@
       >
       <div class="w-full flex flex-wrap gap-2">
         <Tag
-          v-for="(type, index) in POKEMON_TYPES"
+          v-for="(type, index) in typesOptions"
           :key="index"
           :mode="'outline'"
           :type="'type'"
@@ -39,7 +39,7 @@
       >
       <div class="w-full flex flex-wrap gap-2">
         <Tag
-          v-for="(region, index) in POKEMON_REGIONS"
+          v-for="(region, index) in regionsOptions"
           :key="index"
           type="region"
           :option="region"
@@ -63,6 +63,24 @@
 <script setup lang="ts">
 import { POKEMON_TYPES, POKEMON_REGIONS } from "~/constants";
 import Tag from "~/components/Tags/index.vue";
+
+import { SearchContextKey } from "~/types/pokemon";
+
+const { searchForm, tempForm, clear, revert } = inject(SearchContextKey)!;
+
+const typesOptions = computed(() => {
+  // 遍歷所有屬性，只保留「存在於 searchForm.types 陣列中」的物件
+  return POKEMON_TYPES.filter((type) =>
+    searchForm.value.types.includes(type.value),
+  );
+});
+
+const regionsOptions = computed(() => {
+  // 遍歷所有屬性，只保留「存在於 searchForm.types 陣列中」的物件
+  return POKEMON_REGIONS.filter((region) =>
+    searchForm.value.regions.includes(region.value),
+  );
+});
 </script>
 
 <style scoped>

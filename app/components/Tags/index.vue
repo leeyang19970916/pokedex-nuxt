@@ -8,17 +8,16 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { POKEMON_REGIONS, POKEMON_TYPES } from "~/constants";
 import type { ButtonMode } from "~/types/button";
-type Option = (typeof POKEMON_TYPES)[number] | (typeof POKEMON_REGIONS)[number];
+import type { TagPayload } from "~/types/pokemon";
 
 const props = defineProps<{
-  type: "region" | "type";
-  option: Option;
+  type: TagPayload["type"];
+  option: TagPayload["option"];
   mode: ButtonMode;
 }>();
 const emit = defineEmits<{
-  (e: "click", option: Option): void;
+  (e: "click", { type, option }: TagPayload): void;
 }>();
 
 const tagClass = computed(() => {
@@ -43,6 +42,7 @@ const tagClass = computed(() => {
   }
 });
 const onClick = () => {
-  emit("click", props.option);
+  const { type, option } = props;
+  emit("click", { type, option });
 };
 </script>

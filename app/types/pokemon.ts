@@ -3,6 +3,8 @@ import {
   POKEMON_TYPES,
   POKEMON_REGIONS,
   POKEMON_SORT_OPTIONS,
+  REGION,
+  TYPE,
 } from "~/constants";
 export type Id = number;
 export type Url = string;
@@ -46,3 +48,8 @@ export const SearchContextKey: InjectionKey<{
   revert: () => void;
   clear: () => void;
 }> = Symbol("SearchContext");
+
+export type TagPayload = {
+  option: (typeof POKEMON_TYPES)[number] | (typeof POKEMON_REGIONS)[number];
+  type: typeof TYPE | typeof REGION;
+};

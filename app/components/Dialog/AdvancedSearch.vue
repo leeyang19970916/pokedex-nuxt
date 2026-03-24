@@ -51,10 +51,11 @@
         <div class="flex flex-wrap gap-2">
           <Tag
             v-for="(type, index) in POKEMON_TYPES"
-            :key="index"
-            :mode="'outline'"
-            :type="'type'"
+            :key="`${type.value}-${index}`"
+            :type="TYPE"
+            :mode="tempForm.types.includes(type.value) ? 'solid' : 'outline'"
             :option="type"
+            @click="toggleSelect"
           />
         </div>
       </div>
@@ -66,10 +67,13 @@
         <div class="flex flex-wrap gap-2">
           <Tag
             v-for="(region, index) in POKEMON_REGIONS"
-            :key="index"
-            type="region"
+            :key="`${region.value}-${index}`"
+            :type="REGION"
+            :mode="
+              tempForm.regions.includes(region.value) ? 'solid' : 'outline'
+            "
             :option="region"
-            :mode="'outline'"
+            @click="toggleSelect"
           ></Tag>
         </div>
       </div>
@@ -135,20 +139,41 @@
 </template>
 
 <script setup lang="ts">
-import { POKEMON_TYPES, POKEMON_REGIONS } from "~/constants";
+import { POKEMON_TYPES, POKEMON_REGIONS, REGION, TYPE } from "~/constants";
 import PokeInput from "../PokeInput/index.vue";
 import PokeSelect from "../PokeSelect/index.vue";
 import Tag from "~/components/Tags/index.vue";
 import { usePokeStore } from "~/store/pokeStore";
 import { SearchContextKey } from "~/types/pokemon";
+import type { TagPayload } from "~/types/pokemon";
 
 const model = defineModel<boolean>();
 const pokeStore = usePokeStore();
 
-// 記得綁定一個變數來接選到的值
-const selectedAbility = ref(undefined);
-const input = ref("");
 const { search, tempForm, clear, revert } = inject(SearchContextKey)!;
+
+const toggleSelect = (payload: TagPayload) => {
+  const { option, type } = payload;
+
+  // 假設你的常數 TYPE 是字串 'type'
+  const fieldKey = type === "type" ? "types" : "regions";
+
+  // 加上 `as string[]` 斷言。
+  // 這是告訴 TS：「閉嘴，我知道我拿出來的是一個字串陣列，我會為我的行為負責」
+  const targetArray = tempForm.value[fieldKey] as string[];
+
+  // 使用 indexOf 尋找是否已存在 (效能比 some 好，且能順便拿到索引位置)
+  const index = targetArray.indexOf(option.value);
+
+  if (index !== -1) {
+    // index 不等於 -1，代表陣列裡有這個值 -> 把它移除
+    // splice 會直接修改 targetArray，不需要重新賦值
+    targetArray.splice(index, 1);
+  } else {
+    // 陣列裡沒有這個值 -> 把它加入
+    targetArray.push(option.value);
+  }
+};
 </script>
 
 <style>
