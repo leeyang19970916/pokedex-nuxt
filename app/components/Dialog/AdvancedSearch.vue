@@ -39,7 +39,10 @@
     </template>
 
     <div class="py-4 space-y-6 text-white">
-      <PokeInput v-model="input" placeholder="請輸入名稱或圖鑑編號搜索..." />
+      <PokeInput
+        v-model="tempForm.keywords"
+        placeholder="請輸入名稱或圖鑑編號搜索..."
+      />
 
       <div class="space-y-2">
         <label class="block text-primary/80 text-sm font-medium tracking-wide"
@@ -73,7 +76,7 @@
 
       <div class="grid grid-cols-2 gap-6">
         <PokeSelect
-          v-model="selectedAbility"
+          v-model="tempForm.abilities"
           label="特性"
           :options="pokeStore.abilities"
         ></PokeSelect>
@@ -104,17 +107,24 @@
         class="flex justify-end items-center gap-4 pt-4 border-t border-primary/30"
       >
         <button
+          @click="revert"
           class="text-sm text-gray-400 hover:text-white transition-colors"
         >
           還原
         </button>
         <button
+          @click="clear"
           class="px-5 py-1.5 rounded-md border border-gray-600 text-gray-300 hover:border-gray-400 hover:text-white transition-all text-sm"
         >
           重置
         </button>
         <button
-          @click="model = false"
+          @click="
+            () => {
+              search();
+              model = false;
+            }
+          "
           class="px-8 py-1.5 rounded-md bg-primary/20 border border-primary text-primary font-bold hover:bg-primary hover:text-black transition-all shadow-[0_0_15px_rgba(179,234,254,0.4)] hover:shadow-[0_0_20px_rgba(179,234,254,0.8)] tracking-wide"
         >
           搜尋
@@ -130,6 +140,7 @@ import PokeInput from "../PokeInput/index.vue";
 import PokeSelect from "../PokeSelect/index.vue";
 import Tag from "~/components/Tags/index.vue";
 import { usePokeStore } from "~/store/pokeStore";
+import { SearchContextKey } from "~/types/pokemon";
 
 const model = defineModel<boolean>();
 const pokeStore = usePokeStore();
@@ -137,6 +148,7 @@ const pokeStore = usePokeStore();
 // 記得綁定一個變數來接選到的值
 const selectedAbility = ref(undefined);
 const input = ref("");
+const { search, tempForm, clear, revert } = inject(SearchContextKey)!;
 </script>
 
 <style>

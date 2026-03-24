@@ -5,14 +5,14 @@
     <div class="flex items-center gap-4">
       <div class="flex-grow">
         <PokeInput
-          v-model="searchForm.keywords"
+          v-model="tempForm.keywords"
           placeholder="請輸入名稱或圖鑑編號搜索..."
-          @keyup.enter="executeSearch"
+          @keyup.enter="search"
         />
       </div>
 
       <button
-        @click="executeSearch"
+        @click="search"
         class="whitespace-nowrap flex items-center gap-2 px-6 py-2 rounded-md bg-primary/20 border border-primary text-primary font-bold tracking-widest hover:bg-primary hover:text-black transition-all shadow-[0_0_15px_rgba(179,234,254,0.4)] hover:shadow-[0_0_20px_rgba(179,234,254,0.8)]"
       >
         <svg
@@ -55,38 +55,49 @@
       </button>
     </div>
 
-    <SearchResultWrapper :prevSearchForm />
+    <SearchResultWrapper />
 
-    <AdvancedSearchDialog
-      v-model:visible="visible"
-      v-model:prevSearchForm="prevSearchForm"
-    />
+    <AdvancedSearchDialog v-model="visible" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, provide } from "vue";
 import SearchResultWrapper from "./SearchResultWrapper.vue";
 import AdvancedSearchDialog from "~/components/Dialog/AdvancedSearch.vue";
 import PokeInput from "~/components/PokeInput/index.vue";
 import type { PokeSearchForm } from "~/types/pokemon";
+import { SearchContextKey } from "~/types/pokemon";
 
-const INIT_SEARCH_FORM: PokeSearchForm = {
+const visible = ref(false);
+
+const DEFAULT_SEARCH_FORM: PokeSearchForm = {
   keywords: "",
   ids: [1, 1025],
   types: [],
   regions: [],
-  abilities: "",
+  abilities: undefined,
 };
-const prevSearchForm = ref<PokeSearchForm>(structuredClone(INIT_SEARCH_FORM));
-const searchForm = ref<PokeSearchForm>(structuredClone(INIT_SEARCH_FORM));
-const visible = ref(false);
+const tempForm = ref<PokeSearchForm>(structuredClone(DEFAULT_SEARCH_FORM));
+const searchForm = ref<PokeSearchForm>(structuredClone(toRaw(tempForm.value)));
 
-// 執行一般搜尋的邏輯
-const executeSearch = () => {
-  if (!searchForm.value.keywords.trim()) return; // 防呆：如果沒輸入東西就不動作
-
-  console.log("執行一般搜尋，關鍵字：", searchForm.value.keywords);
-  // TODO: 這裡接你的 API 呼叫，或是更新 Pinia 裡的搜尋狀態
+const search = () => {
+  console.log(tempForm.value, "tempForm.value");
+  // if (!tempForm.value.keywords.trim()) return;
+  searchForm.value = structuredClone(toRaw(tempForm.value));
 };
+const revert = () => {
+  tempForm.value = structuredClone(toRaw(searchForm.value));
+};
+const clear = () => {
+  tempForm.value = structuredClone(toRaw(DEFAULT_SEARCH_FORM));
+};
+
+provide(SearchContextKey, {
+  tempForm,
+  searchForm,
+  search,
+  revert,
+  clear,
+});
 </script>

@@ -1,3 +1,4 @@
+import type { InjectionKey } from "vue";
 import {
   POKEMON_TYPES,
   POKEMON_REGIONS,
@@ -37,3 +38,11 @@ export type PokeSearchForm = {
   regions: PokeRegion[];
   abilities: PokeAbility["value"];
 };
+
+export const SearchContextKey: InjectionKey<{
+  tempForm: Ref<PokeSearchForm>;
+  searchForm: Ref<PokeSearchForm>;
+  search: () => void;
+  revert: () => void;
+  clear: () => void;
+}> = Symbol("SearchContext");
