@@ -30,3 +30,10 @@ export type PokeAbility = {
   value: string | undefined;
   id: Id;
 };
+export type PokeSearchForm = {
+  keywords: string;
+  ids: [Id, Id];
+  types: PokeType[];
+  regions: PokeRegion[];
+  abilities: PokeAbility["value"];
+};

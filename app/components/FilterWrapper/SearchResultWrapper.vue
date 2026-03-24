@@ -12,7 +12,7 @@
         >關鍵字：</span
       >
       <div class="text-white text-sm font-medium tracking-wide">
-        寫字寫字寫字需要限字數嗎？
+        {{ prevSearchForm.keywords }}
       </div>
     </div>
 
@@ -63,6 +63,11 @@
 <script setup lang="ts">
 import { POKEMON_TYPES, POKEMON_REGIONS } from "~/constants";
 import Tag from "~/components/Tags/index.vue";
+import type { PokeSearchForm } from "~/types/pokemon";
+
+const props = defineProps<{
+  prevSearchForm: PokeSearchForm;
+}>();
 </script>
 
 <style scoped>

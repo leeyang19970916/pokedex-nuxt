@@ -5,7 +5,7 @@
     <div class="flex items-center gap-4">
       <div class="flex-grow">
         <PokeInput
-          v-model="input"
+          v-model="searchForm.keywords"
           placeholder="請輸入名稱或圖鑑編號搜索..."
           @keyup.enter="executeSearch"
         />
@@ -55,9 +55,12 @@
       </button>
     </div>
 
-    <SearchResultWrapper />
+    <SearchResultWrapper :prevSearchForm />
 
-    <AdvancedSearchDialog v-model="visible" />
+    <AdvancedSearchDialog
+      v-model:visible="visible"
+      v-model:prevSearchForm="prevSearchForm"
+    />
   </div>
 </template>
 
@@ -66,24 +69,24 @@ import { ref } from "vue";
 import SearchResultWrapper from "./SearchResultWrapper.vue";
 import AdvancedSearchDialog from "~/components/Dialog/AdvancedSearch.vue";
 import PokeInput from "~/components/PokeInput/index.vue";
+import type { PokeSearchForm } from "~/types/pokemon";
 
-// 14 16 24
-
-const searchForm = ref({
+const INIT_SEARCH_FORM: PokeSearchForm = {
   keywords: "",
-  type: [""],
-  region: [""],
-  attr: "", //特性
-  ids: [""], //編號
-});
-const input = ref("");
+  ids: [1, 1025],
+  types: [],
+  regions: [],
+  abilities: "",
+};
+const prevSearchForm = ref<PokeSearchForm>(structuredClone(INIT_SEARCH_FORM));
+const searchForm = ref<PokeSearchForm>(structuredClone(INIT_SEARCH_FORM));
 const visible = ref(false);
 
 // 執行一般搜尋的邏輯
 const executeSearch = () => {
-  if (!input.value.trim()) return; // 防呆：如果沒輸入東西就不動作
+  if (!searchForm.value.keywords.trim()) return; // 防呆：如果沒輸入東西就不動作
 
-  console.log("執行一般搜尋，關鍵字：", input.value);
+  console.log("執行一般搜尋，關鍵字：", searchForm.value.keywords);
   // TODO: 這裡接你的 API 呼叫，或是更新 Pinia 裡的搜尋狀態
 };
 </script>

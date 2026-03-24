@@ -124,7 +124,7 @@ const handleSort = () => {
 };
 const fetchUpdateist = async (
   query: PokeListQuery,
-  isAppend: boolean = false,
+  isAppend: boolean = false
 ) => {
   console.log(query, "query: fetchUpdateist");
   state.value.isLoading = true;
@@ -139,10 +139,10 @@ const fetchUpdateist = async (
       state.value.list = list;
     }
     state.value.total = total;
-    state.value.isLoading = false;
   } catch (e) {
-    state.value.isLoading = false;
     console.log(e);
+  } finally {
+    state.value.isLoading = false;
   }
 };
 </script>
