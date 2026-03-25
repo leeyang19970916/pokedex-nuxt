@@ -86,20 +86,17 @@
         ></PokeSelect>
 
         <div class="space-y-2">
-          <label class="block text-primary/80 text-sm font-medium tracking-wide"
-            >圖鑑編號 (1 ~ 1025)</label
+          <span class="block text-primary/80 text-sm font-medium tracking-wide"
+            >圖鑑編號 (1 ~ 1025)</span
           >
-          <div class="flex items-center gap-3">
-            <input
-              type="number"
-              placeholder="Min"
-              class="w-full bg-black/40 border border-primary/40 rounded-md px-4 py-2 text-center text-white focus:outline-none focus:border-primary focus:shadow-[0_0_10px_rgba(179,234,254,0.3)] transition-all"
-            />
-            <span class="text-primary/60">~</span>
-            <input
-              type="number"
-              placeholder="Max"
-              class="w-full bg-black/40 border border-primary/40 rounded-md px-4 py-2 text-center text-white focus:outline-none focus:border-primary focus:shadow-[0_0_10px_rgba(179,234,254,0.3)] transition-all"
+          <div class="px-[4%]">
+            <el-slider
+              v-model="tempForm.ids"
+              :marks
+              range
+              :size="'large'"
+              :min="SLIDER_RANGE.min"
+              :max="SLIDER_RANGE.max"
             />
           </div>
         </div>
@@ -111,16 +108,16 @@
         class="flex justify-end items-center gap-4 pt-4 border-t border-primary/30"
       >
         <button
-          @click="revert"
+          @click="clear"
           class="text-sm text-gray-400 hover:text-white transition-colors"
         >
-          還原
+          清除資料
         </button>
         <button
-          @click="clear"
+          @click="revert"
           class="px-5 py-1.5 rounded-md border border-gray-600 text-gray-300 hover:border-gray-400 hover:text-white transition-all text-sm"
         >
-          重置
+          取消變更
         </button>
         <button
           @click="
@@ -139,13 +136,27 @@
 </template>
 
 <script setup lang="ts">
-import { POKEMON_TYPES, POKEMON_REGIONS, REGION, TYPE } from "~/constants";
+import type { CSSProperties } from "vue";
+import {
+  POKEMON_TYPES,
+  POKEMON_REGIONS,
+  REGION,
+  TYPE,
+  SLIDER_RANGE,
+} from "~/constants";
 import PokeInput from "../PokeInput/index.vue";
 import PokeSelect from "../PokeSelect/index.vue";
 import Tag from "~/components/Tags/index.vue";
 import { usePokeStore } from "~/store/pokeStore";
 import { SearchContextKey } from "~/types/pokemon";
 import type { TagPayload } from "~/types/pokemon";
+
+interface Mark {
+  style: CSSProperties;
+  label: string;
+}
+
+type Marks = Record<number, Mark | string>;
 
 const model = defineModel<boolean>();
 const pokeStore = usePokeStore();
@@ -174,6 +185,11 @@ const toggleSelect = (payload: TagPayload) => {
     targetArray.push(option.value);
   }
 };
+
+const marks = shallowRef<Marks>({
+  1: String(SLIDER_RANGE.min),
+  1025: String(SLIDER_RANGE.max),
+});
 </script>
 
 <style>
@@ -187,10 +203,19 @@ const toggleSelect = (payload: TagPayload) => {
   backdrop-filter: blur(12px) !important;
   /* 加上你專屬的 primary border 跟發光效果 */
   border: 1px solid rgba(179, 234, 254, 0.4) !important;
-  box-shadow:
-    0 0 30px rgba(0, 0, 0, 0.8),
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8),
     inset 0 0 20px rgba(179, 234, 254, 0.05) !important;
   border-radius: 12px !important;
+  /* 魔法在這裡：直接覆蓋 Element Plus 的預設變數 */
+  --el-color-primary: rgb(179, 234, 254); /* 把組件的主色替換成你的水藍色 */
+  --el-slider-main-bg-color: var(--el-color-primary); /* 線條跟圓圈的顏色 */
+  --el-slider-runway-bg-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* 底層未選取的軌道顏色 */
+  --el-slider-stop-bg-color: rgba(255, 255, 255, 0.2); /* 刻度點的顏色 */
 }
 
 /* 隱藏 Element 預設的 padding 跟 header 背景，讓我們自己控制 */

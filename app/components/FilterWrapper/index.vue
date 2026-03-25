@@ -69,12 +69,13 @@ import PokeInput from "~/components/PokeInput/index.vue";
 import type { PokeSearchForm } from "~/types/pokemon";
 import { SearchContextKey } from "~/types/pokemon";
 import { deepClone } from "~~/utils/deepClone";
+import { SLIDER_RANGE } from "~/constants";
 
 const visible = ref(false);
 
 const DEFAULT_SEARCH_FORM: PokeSearchForm = {
   keywords: "",
-  ids: [1, 1025],
+  ids: [SLIDER_RANGE.min, SLIDER_RANGE.max],
   types: [],
   regions: [],
   abilities: undefined,
@@ -83,8 +84,7 @@ const tempForm = ref<PokeSearchForm>(structuredClone(DEFAULT_SEARCH_FORM));
 const searchForm = ref<PokeSearchForm>(deepClone(tempForm.value));
 
 const search = () => {
-  console.log(tempForm.value, "tempForm.value");
-  // if (!tempForm.value.keywords.trim()) return;
+  console.log("準備更新的資料tempform:", tempForm.value);
   searchForm.value = deepClone(tempForm.value);
 };
 const revert = () => {

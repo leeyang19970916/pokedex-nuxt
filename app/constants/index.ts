@@ -47,3 +47,8 @@ export const POKEMON_SORT_OPTIONS = [
   { label: "身高由低至高", value: "height_asc" },
   { label: "身高由高至低", value: "height_desc" },
 ] as const;
+
+export const SLIDER_RANGE = {
+  min: 1,
+  max: 1025,
+};
