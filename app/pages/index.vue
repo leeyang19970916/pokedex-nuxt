@@ -8,7 +8,7 @@
       class="px-[3%] pb-[10%] flex flex-col gap-6"
       :style="{ 'background-image': `url(${BottomBackground})` }"
     >
-      <FilterWrapper @search="(val: any) => handleFilter(val)" />
+      <FilterWrapper @search="handleFilter" />
       <SortWrapper
         v-model="state.sort"
         class="m-[0_0_0_auto]"
@@ -31,7 +31,7 @@ import PokemonIndexHeader from "~/components/PokemonIndex/Header.vue";
 import PokemonCard from "~/components/PokemonCard.vue";
 import BottomBackground from "~/assets/image/header/list_bottom_bg.jpg";
 import FilterWrapper from "~/components/FilterWrapper/index.vue";
-import type { PokeListQuery, PokeCard } from "~/types/pokemon";
+import type { PokeListQuery, PokeCard, PokeSearchForm } from "~/types/pokemon";
 import { POKEMON_SORT_OPTIONS } from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
 
@@ -103,12 +103,12 @@ const next = () => {
   };
   fetchUpdateist(query, true);
 };
-const handleFilter = (val: any) => {
+const handleFilter = (searchForm: PokeSearchForm) => {
   const query: PokeListQuery = {
     limit: INIT_LIST_QUERY.limit,
     offset: INIT_LIST_QUERY.offset,
     sort: state.value.sort,
-    searchForm: val,
+    searchForm: searchForm,
   };
   fetchUpdateist(query);
 };
@@ -124,7 +124,7 @@ const handleSort = () => {
 };
 const fetchUpdateist = async (
   query: PokeListQuery,
-  isAppend: boolean = false
+  isAppend: boolean = false,
 ) => {
   console.log(query, "query: fetchUpdateist");
   state.value.isLoading = true;

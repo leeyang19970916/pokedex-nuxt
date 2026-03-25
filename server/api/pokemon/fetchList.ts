@@ -1,5 +1,10 @@
 import PokeData from "../data/pokeData.json";
-import type { PokeListQuery, PokeCard, PokeSort } from "~/types/pokemon";
+import type {
+  PokeListQuery,
+  PokeCard,
+  PokeSort,
+  PokeSearchForm,
+} from "~/types/pokemon";
 
 export default defineEventHandler(async (event) => {
   try {
@@ -11,13 +16,16 @@ export default defineEventHandler(async (event) => {
     const offset = Number(query.offset) || 0;
     const searchForm = query.searchForm || undefined;
     const sort = query.sort;
-    let filteredList: PokeCard[] = list; //篩選後的陣列
+    // let filteredList: PokeCard[] = list; //篩選後的陣列
+    // if (searchForm) {
+    //   list = filterBy(list, searchForm);
+    // }
 
-    filteredList = sortBy(filteredList, sort);
+    list = sortBy(list, sort);
 
-    const paginatedlist = filteredList.slice(offset, offset + limit); //切割後頁數的陣列
+    const paginatedlist = list.slice(offset, offset + limit); //切割後頁數的陣列
     return {
-      total: filteredList.length,
+      total: list.length,
       list: paginatedlist,
     };
   } catch (e) {
@@ -27,6 +35,18 @@ export default defineEventHandler(async (event) => {
     });
   }
 });
+const filterBy = (list: PokeCard[], searchForm: PokeSearchForm) => {
+  const { keywords, abilities, ids, regions, types } = searchForm;
+  if (keywords.trim()) {
+    list = list.filter((poke) => {
+      const { id, name } = poke;
+      return String(id).includes(keywords) || name.includes(keywords);
+    });
+  }
+
+  return list;
+};
+
 const sortBy = (list: PokeCard[], sort: PokeSort) => {
   if (sort === "height_asc") {
     list = list.sort((a, b) => a.height - b.height);
