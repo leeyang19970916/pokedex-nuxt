@@ -68,6 +68,7 @@ import AdvancedSearchDialog from "~/components/Dialog/AdvancedSearch.vue";
 import PokeInput from "~/components/PokeInput/index.vue";
 import type { PokeSearchForm } from "~/types/pokemon";
 import { SearchContextKey } from "~/types/pokemon";
+import { deepClone } from "~~/utils/deepClone";
 
 const visible = ref(false);
 
@@ -79,18 +80,18 @@ const DEFAULT_SEARCH_FORM: PokeSearchForm = {
   abilities: undefined,
 };
 const tempForm = ref<PokeSearchForm>(structuredClone(DEFAULT_SEARCH_FORM));
-const searchForm = ref<PokeSearchForm>(structuredClone(toRaw(tempForm.value)));
+const searchForm = ref<PokeSearchForm>(deepClone(tempForm.value));
 
 const search = () => {
   console.log(tempForm.value, "tempForm.value");
   // if (!tempForm.value.keywords.trim()) return;
-  searchForm.value = structuredClone(toRaw(tempForm.value));
+  searchForm.value = deepClone(tempForm.value);
 };
 const revert = () => {
-  tempForm.value = structuredClone(toRaw(searchForm.value));
+  tempForm.value = deepClone(searchForm.value);
 };
 const clear = () => {
-  tempForm.value = structuredClone(toRaw(DEFAULT_SEARCH_FORM));
+  tempForm.value = structuredClone(DEFAULT_SEARCH_FORM);
 };
 
 provide(SearchContextKey, {
