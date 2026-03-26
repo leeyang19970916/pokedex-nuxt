@@ -47,11 +47,11 @@ const mainPoke = computed(() => props.list[6]);
     left: 5%;
   } // 最外側
   .start-1 {
-    top: 30%;
+    top: 25%;
     left: 13.5%;
   } // 上排外
   .start-2 {
-    top: 51%;
+    top: 60%;
     left: 13.5%;
   } // 下排外
   .start-3 {
@@ -59,11 +59,11 @@ const mainPoke = computed(() => props.list[6]);
     left: 22%;
   } // 上排內
   .start-4 {
-    top: 30%;
+    top: 25%;
     left: 30.5%;
   } // 下排內
   .start-5 {
-    top: 51%;
+    top: 60%;
     left: 30.5%;
   } // 最靠近中間
 }
@@ -74,11 +74,11 @@ const mainPoke = computed(() => props.list[6]);
     right: 5%;
   } // 最外側
   .end-1 {
-    top: 30%;
+    top: 25%;
     right: 13.5%;
   } // 上排外
   .end-2 {
-    top: 51%;
+    top: 60%;
     right: 13.5%;
   } // 下排外
   .end-3 {
@@ -86,11 +86,11 @@ const mainPoke = computed(() => props.list[6]);
     right: 22%;
   } // 上排內
   .end-4 {
-    top: 30%;
+    top: 25%;
     right: 30.5%;
   } // 下排內
   .end-5 {
-    top: 51%;
+    top: 60%;
     right: 30.5%;
   } // 最靠近中間
 }

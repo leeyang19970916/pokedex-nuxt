@@ -7,16 +7,20 @@ export default defineEventHandler(async (event) => {
     let list = [...PokeData] as PokeCard[];
 
     const query = getQuery<QueryFormat>(event);
-
+    console.log("query", query);
     const limit = Number(query.limit) || 20;
     const offset = Number(query.offset) || 0;
     const sort = query.sort || POKEMON_SORT_OPTIONS[0].value;
+    let q: QueryFormat = {
+      ...query,
+      regions: formatArray(query.regions),
+      types: formatArray(query.types),
+    };
 
-    list = filterBy(list, query);
-
+    list = filterBy(list, q);
     list = sortBy(list, sort);
 
-    const paginatedlist = list.slice(offset, offset + limit); //切割後頁數的陣列
+    const paginatedlist = list.slice(offset, offset + limit);
     return {
       total: list.length,
       list: paginatedlist,
@@ -30,7 +34,6 @@ export default defineEventHandler(async (event) => {
 });
 const filterBy = (list: PokeCard[], query: QueryFormat) => {
   const { keywords, ability, maxId, minId, regions, types } = query;
-  console.log(regions, "regions", types, "types");
   if (keywords) {
     list = list.filter((poke) => {
       const { id, name } = poke;
@@ -44,7 +47,7 @@ const filterBy = (list: PokeCard[], query: QueryFormat) => {
   }
   if (maxId && minId) {
     list = list.filter((poke) => {
-      return maxId <= poke.id && minId >= poke.id;
+      return poke.id >= minId && poke.id <= maxId;
     });
   }
   if (regions) {
@@ -54,7 +57,7 @@ const filterBy = (list: PokeCard[], query: QueryFormat) => {
   }
   if (types) {
     list = list.filter((poke) => {
-      return types.some((t) => poke.types.includes(t));
+      return types.every((t) => poke.types.includes(t));
     });
   }
 
@@ -77,4 +80,13 @@ const sortBy = (list: PokeCard[], sort: PokeSort) => {
   }
 
   return list;
+};
+
+const formatArray = <T>(val: T | T[] | undefined): T[] | undefined => {
+  if (!val) return undefined;
+  if (Array.isArray(val)) {
+    return val;
+  } else {
+    return [val];
+  }
 };

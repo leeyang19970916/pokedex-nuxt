@@ -4,13 +4,10 @@ import type { PokeCard } from "~/types/pokemon";
 function getRandomNums(params: { limit: number; min: number; max: number }) {
   const selected = new Set();
   const { limit, min, max } = params;
-  // 當數量還沒抽滿時，持續抽取
   while (selected.size < limit) {
     const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
     selected.add(randomNum);
   }
-
-  // 將 Set 轉換回陣列回傳
   return Array.from(selected);
 }
 

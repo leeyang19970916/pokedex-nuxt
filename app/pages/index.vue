@@ -100,36 +100,32 @@ state.value.isLoading = false;
 
 const next = () => {
   state.value.offset += state.value.limit;
-  const query: PokeListQuery = {
-    limit: state.value.limit,
-    offset: state.value.offset,
-    sort: state.value.sort,
-    searchForm: state.value.searchForm,
-  };
-  fetchUpdateist(query, true);
+  fetchUpdateist(state.value, true);
 };
 const handleFilter = (searchForm: PokeSearchForm) => {
+  state.value.offset = DEFAULT_LIST_QUERY.offset;
   const query: PokeListQuery = {
     limit: DEFAULT_LIST_QUERY.limit,
-    offset: DEFAULT_LIST_QUERY.offset,
+    offset: state.value.offset,
     sort: state.value.sort,
-    searchForm: searchForm,
+    searchForm,
   };
+  state.value.searchForm = searchForm;
   fetchUpdateist(query);
 };
 const handleSort = () => {
-  const { sort } = state.value;
+  const { sort, offset, searchForm } = state.value;
   const query: PokeListQuery = {
     limit: DEFAULT_LIST_QUERY.limit,
-    offset: DEFAULT_LIST_QUERY.offset,
+    offset,
     sort,
-    searchForm: state.value.searchForm,
+    searchForm,
   };
   fetchUpdateist(query);
 };
 const fetchUpdateist = async (
   query: PokeListQuery,
-  isAppend: boolean = false
+  isAppend: boolean = false,
 ) => {
   state.value.isLoading = true;
   const { limit, offset, searchForm, sort } = query;

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative delay-150 cursor-pointer"
+    class="relative delay-150 cursor-pointer z-50"
     :class="{ 'ball-glow-wrapper': isMain }"
     @click="redirect"
   >
