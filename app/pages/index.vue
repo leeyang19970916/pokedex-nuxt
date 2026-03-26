@@ -9,10 +9,11 @@
       :style="{ 'background-image': `url(${BottomBackground})` }"
     >
       <FilterWrapper @search="handleFilter" />
+
       <SortWrapper
         v-model="state.sort"
         class="m-[0_0_0_auto]"
-        @search="handleSort()"
+        @search="handleSort"
       />
       <div class="grid grid-cols-4 gap-4">
         <PokemonCard
@@ -21,7 +22,9 @@
           :poke
         />
       </div>
-      <button ref="loadMoreTrigger" @click="next">view more</button>
+      <!-- <button ref="loadMoreTrigger">view more</button> -->
+      <!-- <LoadingBall></LoadingBall> -->
+      <Ball></Ball>
     </div>
   </div>
 </template>
@@ -43,9 +46,10 @@ import {
   SLIDER_RANGE,
 } from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
+import Ball from "~/components/Loading/Ball.vue";
 import { useIntersectionObserver } from "@vueuse/core";
 
-const loadMoreTrigger = ref(null);
+const loadMoreTrigger = shallowRef(null);
 // 核心邏輯
 useIntersectionObserver(loadMoreTrigger, () => {
   // 如果「看到」了哨兵，且目前沒有在載入中，且還有資料可以抓
