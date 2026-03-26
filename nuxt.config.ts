@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@element-plus/nuxt",
     "@nuxt/eslint",
+    "@vueuse/nuxt",
   ],
   // vite: {
   //   css: {

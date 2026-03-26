@@ -21,7 +21,7 @@
           :poke
         />
       </div>
-      <button @click="next">view more</button>
+      <button ref="loadMoreTrigger" @click="next">view more</button>
     </div>
   </div>
 </template>
@@ -43,6 +43,17 @@ import {
   SLIDER_RANGE,
 } from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
+import { useIntersectionObserver } from "@vueuse/core";
+
+const loadMoreTrigger = ref(null);
+// 核心邏輯
+useIntersectionObserver(loadMoreTrigger, () => {
+  // 如果「看到」了哨兵，且目前沒有在載入中，且還有資料可以抓
+  next();
+  // if (isIntersecting && !isLoading.value && hasMore.value) {
+  //   next(); // 這裡去呼叫你之前寫的 fetchUpdateList(..., true)
+  // }
+});
 
 const pokeStore = usePokeStore();
 const DEFAULT_LIST_QUERY: PokeListQuery = {
