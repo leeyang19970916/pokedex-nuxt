@@ -131,14 +131,13 @@ const fetchUpdateist = async (
   query: PokeListQuery,
   isAppend: boolean = false
 ) => {
-  console.log(query, "query: fetchUpdateist");
   state.value.isLoading = true;
   const { limit, offset, searchForm, sort } = query;
   let queryFormat: QueryFormat = {
     limit,
     offset,
     sort,
-    keywords: searchForm.keywords || undefined,
+    keywords: searchForm.keywords.trim() || undefined,
     types: searchForm.types || undefined,
     regions: searchForm.regions || undefined,
     ability: searchForm.ability || undefined,
@@ -164,9 +163,9 @@ const fetchUpdateist = async (
 
 const getRange = (ids: PokeSearchForm["ids"]) => {
   const [minId, maxId] = ids;
-  if (minId === SLIDER_RANGE.min && maxId === SLIDER_RANGE.max)
+  if (minId === SLIDER_RANGE.min && maxId === SLIDER_RANGE.max) {
     return undefined;
-
+  }
   return {
     minId,
     maxId,

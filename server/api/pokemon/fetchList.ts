@@ -1,25 +1,18 @@
 import { POKEMON_SORT_OPTIONS } from "~/constants";
 import PokeData from "../data/pokeData.json";
-import type {
-  PokeListQuery,
-  PokeCard,
-  PokeSort,
-  PokeSearchForm,
-} from "~/types/pokemon";
+import type { QueryFormat, PokeCard, PokeSort } from "~/types/pokemon";
 
 export default defineEventHandler(async (event) => {
   try {
     let list = [...PokeData] as PokeCard[];
 
-    const query = getQuery<PokeListQuery>(event);
+    const query = getQuery<QueryFormat>(event);
 
     const limit = Number(query.limit) || 20;
     const offset = Number(query.offset) || 0;
     const sort = query.sort || POKEMON_SORT_OPTIONS[0].value;
-    // let filteredList: PokeCard[] = list; //篩選後的陣列
-    // if (searchForm) {
-    //   list = filterBy(list, searchForm);
-    // }
+
+    list = filterBy(list, query);
 
     list = sortBy(list, sort);
 
@@ -35,12 +28,33 @@ export default defineEventHandler(async (event) => {
     });
   }
 });
-const filterBy = (list: PokeCard[], searchForm: PokeSearchForm) => {
-  const { keywords, ability, ids, regions, types } = searchForm;
-  if (keywords.trim()) {
+const filterBy = (list: PokeCard[], query: QueryFormat) => {
+  const { keywords, ability, maxId, minId, regions, types } = query;
+  console.log(regions, "regions", types, "types");
+  if (keywords) {
     list = list.filter((poke) => {
       const { id, name } = poke;
       return String(id).includes(keywords) || name.includes(keywords);
+    });
+  }
+  if (ability) {
+    list = list.filter((poke) => {
+      return poke.abilities.includes(ability);
+    });
+  }
+  if (maxId && minId) {
+    list = list.filter((poke) => {
+      return maxId <= poke.id && minId >= poke.id;
+    });
+  }
+  if (regions) {
+    list = list.filter((poke) => {
+      return regions.some((r) => poke.region === r);
+    });
+  }
+  if (types) {
+    list = list.filter((poke) => {
+      return types.some((t) => poke.types.includes(t));
     });
   }
 
