@@ -8,20 +8,14 @@
     ></div>
 
     <div v-if="searchForm.keywords" class="flex items-start gap-4 z-10">
-      <span
-        class="text-primary/70 text-sm font-bold tracking-widest min-w-[70px] pt-0.5"
-        >關鍵字：</span
-      >
-      <div class="text-white text-sm font-medium tracking-wide">
+      <span class="search-key">關鍵字：</span>
+      <div class="text-primary/90 text-sm font-medium tracking-wide">
         {{ searchForm.keywords }}
       </div>
     </div>
 
     <div v-if="searchForm.types.length" class="flex items-start gap-4 z-10">
-      <span
-        class="text-primary/70 text-sm font-bold tracking-widest min-w-[70px] pt-1"
-        >屬性：</span
-      >
+      <span class="search-key pt-1">屬性：</span>
       <div class="w-full flex flex-wrap gap-2">
         <Tag
           v-for="(type, index) in typesOptions"
@@ -34,10 +28,7 @@
     </div>
 
     <div v-if="searchForm.regions.length" class="flex items-start gap-4 z-10">
-      <span
-        class="text-primary/70 text-sm font-bold tracking-widest min-w-[70px] pt-0.5"
-        >地區：</span
-      >
+      <span class="search-key pt-1">地區：</span>
       <div class="w-full flex flex-wrap gap-2">
         <Tag
           v-for="(region, index) in regionsOptions"
@@ -48,21 +39,15 @@
         />
       </div>
     </div>
-    <div v-if="searchForm.abilities" class="flex items-start gap-4 z-10">
-      <span
-        class="text-primary/70 text-sm font-bold tracking-widest min-w-[70px] pt-0.5"
-        >特性：</span
-      >
+    <div v-if="searchForm.ability" class="flex items-start gap-4 z-10">
+      <span class="search-key">特性：</span>
       <div class="text-primary/90 text-sm font-medium tracking-wide font-mono">
-        {{ searchForm.abilities }}
+        {{ searchForm.ability }}
       </div>
     </div>
 
     <div v-if="isShowIdsRange" class="flex items-start gap-4 z-10">
-      <span
-        class="text-primary/70 text-sm font-bold tracking-widest min-w-[70px] pt-0.5"
-        >圖鑑編號：</span
-      >
+      <span class="search-key">圖鑑編號：</span>
       <div class="text-primary/90 text-sm font-medium tracking-wide font-mono">
         No.{{ searchForm.ids[0] }}
         <span class="text-primary/40 mx-2">~</span> No.{{ searchForm.ids[1] }}
@@ -101,17 +86,19 @@ const isShowIdsRange = computed(() => {
 });
 
 const isShowWrapper = computed(() => {
-  const { keywords, types, regions, abilities } = searchForm.value;
+  const { keywords, types, regions, ability } = searchForm.value;
   return (
     keywords ||
     types.length ||
     regions.length ||
-    abilities ||
+    ability ||
     isShowIdsRange.value
   );
 });
 </script>
 
 <style scoped>
-/* 原本的 .label 樣式我直接寫進 HTML 的 class 裡了，所以 style 區塊可以直接清空或保留備用 */
+.search-key {
+  @apply text-primary/70 text-sm font-bold tracking-widest min-w-[80px];
+}
 </style>

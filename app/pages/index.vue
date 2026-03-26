@@ -31,15 +31,24 @@ import PokemonIndexHeader from "~/components/PokemonIndex/Header.vue";
 import PokemonCard from "~/components/PokemonCard.vue";
 import BottomBackground from "~/assets/image/header/list_bottom_bg.jpg";
 import FilterWrapper from "~/components/FilterWrapper/index.vue";
-import type { PokeListQuery, PokeCard, PokeSearchForm } from "~/types/pokemon";
-import { POKEMON_SORT_OPTIONS } from "~/constants";
+import type {
+  PokeListQuery,
+  PokeCard,
+  PokeSearchForm,
+  QueryFormat,
+} from "~/types/pokemon";
+import {
+  POKEMON_SORT_OPTIONS,
+  DEFAULT_SEARCH_FORM,
+  SLIDER_RANGE,
+} from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
 
 const pokeStore = usePokeStore();
-const INIT_LIST_QUERY: PokeListQuery = {
+const DEFAULT_LIST_QUERY: PokeListQuery = {
   limit: 20,
   offset: 0,
-  searchForm: "",
+  searchForm: DEFAULT_SEARCH_FORM,
   sort: POKEMON_SORT_OPTIONS[0].value,
 };
 
@@ -55,11 +64,11 @@ interface State {
 const state = ref<State>({
   total: 0,
   list: [],
-  limit: INIT_LIST_QUERY.limit,
-  offset: INIT_LIST_QUERY.offset,
+  limit: DEFAULT_LIST_QUERY.limit,
+  offset: DEFAULT_LIST_QUERY.offset,
   isLoading: true,
-  searchForm: INIT_LIST_QUERY.searchForm,
-  sort: INIT_LIST_QUERY.sort,
+  searchForm: DEFAULT_LIST_QUERY.searchForm,
+  sort: DEFAULT_LIST_QUERY.sort,
 });
 
 const randomList = useFetch("/api/pokemon/random", {
@@ -68,11 +77,7 @@ const randomList = useFetch("/api/pokemon/random", {
     limit: 13,
   },
 });
-const { data, error, status } = await useFetch("/api/pokemon/fetchList", {
-  query: {
-    ...INIT_LIST_QUERY,
-  },
-});
+const { data, error, status } = await useFetch("/api/pokemon/fetchList");
 
 const abilities = useFetch("/api/pokemon/fetchAbilities", {
   lazy: true,
@@ -105,8 +110,8 @@ const next = () => {
 };
 const handleFilter = (searchForm: PokeSearchForm) => {
   const query: PokeListQuery = {
-    limit: INIT_LIST_QUERY.limit,
-    offset: INIT_LIST_QUERY.offset,
+    limit: DEFAULT_LIST_QUERY.limit,
+    offset: DEFAULT_LIST_QUERY.offset,
     sort: state.value.sort,
     searchForm: searchForm,
   };
@@ -115,8 +120,8 @@ const handleFilter = (searchForm: PokeSearchForm) => {
 const handleSort = () => {
   const { sort } = state.value;
   const query: PokeListQuery = {
-    limit: INIT_LIST_QUERY.limit,
-    offset: INIT_LIST_QUERY.offset,
+    limit: DEFAULT_LIST_QUERY.limit,
+    offset: DEFAULT_LIST_QUERY.offset,
     sort,
     searchForm: state.value.searchForm,
   };
@@ -124,13 +129,24 @@ const handleSort = () => {
 };
 const fetchUpdateist = async (
   query: PokeListQuery,
-  isAppend: boolean = false,
+  isAppend: boolean = false
 ) => {
   console.log(query, "query: fetchUpdateist");
   state.value.isLoading = true;
+  const { limit, offset, searchForm, sort } = query;
+  let queryFormat: QueryFormat = {
+    limit,
+    offset,
+    sort,
+    keywords: searchForm.keywords || undefined,
+    types: searchForm.types || undefined,
+    regions: searchForm.regions || undefined,
+    ability: searchForm.ability || undefined,
+    ...getRange(searchForm.ids),
+  };
   try {
     const { list, total } = await $fetch("/api/pokemon/fetchList", {
-      query,
+      query: queryFormat,
     });
 
     if (isAppend) {
@@ -144,5 +160,16 @@ const fetchUpdateist = async (
   } finally {
     state.value.isLoading = false;
   }
+};
+
+const getRange = (ids: PokeSearchForm["ids"]) => {
+  const [minId, maxId] = ids;
+  if (minId === SLIDER_RANGE.min && maxId === SLIDER_RANGE.max)
+    return undefined;
+
+  return {
+    minId,
+    maxId,
+  };
 };
 </script>

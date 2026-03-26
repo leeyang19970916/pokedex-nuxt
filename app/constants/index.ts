@@ -1,5 +1,5 @@
+import type { PokeSearchForm } from "~/types/pokemon";
 export const POKEMON_API_URL = "https://pokeapi.co/api/v2";
-export const MAX_COUNT = 1025;
 export const INDEX = "寶可夢圖鑑";
 export const REGION = "region";
 export const TYPE = "type";
@@ -51,4 +51,12 @@ export const POKEMON_SORT_OPTIONS = [
 export const SLIDER_RANGE = {
   min: 1,
   max: 1025,
+};
+
+export const DEFAULT_SEARCH_FORM: PokeSearchForm = {
+  keywords: "",
+  ids: [SLIDER_RANGE.min, SLIDER_RANGE.max],
+  types: [],
+  regions: [],
+  ability: undefined,
 };

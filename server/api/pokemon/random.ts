@@ -1,4 +1,4 @@
-import { POKEMON_API_URL, MAX_COUNT } from "~/constants";
+import { POKEMON_API_URL, SLIDER_RANGE } from "~/constants";
 import type { PokeCard } from "~/types/pokemon";
 
 function getRandomNums(params: { limit: number; min: number; max: number }) {
@@ -23,8 +23,8 @@ export default defineEventHandler(async (event) => {
 
     const params = {
       limit: query.limit,
-      min: 1,
-      max: MAX_COUNT,
+      min: SLIDER_RANGE.min,
+      max: SLIDER_RANGE.max,
     };
     const randomNums = getRandomNums(params);
     const promises = randomNums.map((id) => $fetch(`${url}/${id}`));

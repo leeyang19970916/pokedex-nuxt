@@ -80,7 +80,7 @@
 
       <div class="grid grid-cols-2 gap-6">
         <PokeSelect
-          v-model="tempForm.abilities"
+          v-model="tempForm.ability"
           label="特性"
           :options="pokeStore.abilities"
         ></PokeSelect>

@@ -69,7 +69,7 @@ import PokeInput from "~/components/PokeInput/index.vue";
 import type { PokeSearchForm } from "~/types/pokemon";
 import { SearchContextKey } from "~/types/pokemon";
 import { deepClone } from "~~/utils/deepClone";
-import { SLIDER_RANGE } from "~/constants";
+import { DEFAULT_SEARCH_FORM } from "~/constants";
 
 const emit = defineEmits<{
   (e: "search", searchForm: PokeSearchForm): void;
@@ -77,13 +77,6 @@ const emit = defineEmits<{
 
 const visible = ref(false);
 
-const DEFAULT_SEARCH_FORM: PokeSearchForm = {
-  keywords: "",
-  ids: [SLIDER_RANGE.min, SLIDER_RANGE.max],
-  types: [],
-  regions: [],
-  abilities: undefined,
-};
 const tempForm = ref<PokeSearchForm>(structuredClone(DEFAULT_SEARCH_FORM));
 const searchForm = ref<PokeSearchForm>(deepClone(tempForm.value));
 

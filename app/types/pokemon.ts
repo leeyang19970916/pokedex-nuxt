@@ -25,7 +25,7 @@ export type PokeCard = {
 export type PokeListQuery = {
   limit: number;
   offset: number;
-  searchForm: any;
+  searchForm: PokeSearchForm;
   sort: PokeSort;
 };
 export type PokeAbility = {
@@ -38,7 +38,7 @@ export type PokeSearchForm = {
   ids: [Id, Id];
   types: PokeType[];
   regions: PokeRegion[];
-  abilities: PokeAbility["value"];
+  ability: PokeAbility["value"];
 };
 
 export const SearchContextKey: InjectionKey<{
@@ -52,4 +52,16 @@ export const SearchContextKey: InjectionKey<{
 export type TagPayload = {
   option: (typeof POKEMON_TYPES)[number] | (typeof POKEMON_REGIONS)[number];
   type: typeof TYPE | typeof REGION;
+};
+
+export type QueryFormat = {
+  limit: PokeListQuery["limit"];
+  offset: PokeListQuery["offset"];
+  sort: PokeListQuery["sort"];
+  keywords?: PokeSearchForm["keywords"];
+  types?: PokeSearchForm["types"];
+  regions?: PokeSearchForm["regions"];
+  ability?: PokeSearchForm["ability"];
+  maxId?: PokeSearchForm["ids"][1];
+  minId?: PokeSearchForm["ids"][0];
 };
