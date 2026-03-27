@@ -98,17 +98,6 @@ const abilities = await useFetch("/api/pokemon/fetchAbilities", {
   },
 });
 
-async function getRandom() {
-  try {
-    const res = await $fetch("/api/pokemon/random", {
-      query: { limit: 13 },
-    });
-    console.log(res);
-  } catch (error) {
-    console.log(error);
-  }
-}
-
 if (abilities.status.value === "success" && abilities.data.value) {
   pokeStore.setAbilities(abilities.data.value);
 }
@@ -148,7 +137,7 @@ const handleSort = () => {
 };
 const fetchUpdatedList = async (
   query: PokeListQuery,
-  isAppend: boolean = false
+  isAppend: boolean = false,
 ) => {
   state.value.isLoading = true;
   const { limit, offset, searchForm, sort } = query;
@@ -190,9 +179,4 @@ const getRange = (ids: PokeSearchForm["ids"]) => {
     maxId,
   };
 };
-
-onMounted(() => {
-  // randomList.execute();
-  // getRandom();
-});
 </script>
