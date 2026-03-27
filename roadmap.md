@@ -29,3 +29,6 @@
 [] 研究useFetch&await&lazy的機制，各種key
 [] detailPage,ui切版，分工明細
 [] 研究asyncData
+[] lazy 圖片的時機和用處
+[] 找語言包，復活有中文可以看
+[] 串接detail API

@@ -1,6 +1,7 @@
 <template>
   <div class="pokedex-detail-terminal cosms-theme min-h-screen">
     <header
+      @click="() => execute()"
       class="terminal-banner cosms-border flex justify-center items-center h-20 relative overflow-hidden"
     >
       <div
@@ -240,7 +241,15 @@
 
 <script setup lang="ts">
 import type { PokeCard } from "~/types/pokemon";
-
+const route = useRoute();
+const { data, status, pending, execute } = await useFetch(
+  "/api/pokemon/fetchPokeInfo",
+  {
+    query: {
+      id: route.params.id,
+    },
+  },
+);
 // ...之前的資料定義與 Riolu, Lucario 假資料保持不變...
 // 我這裡省略假資料的定義程式碼，你可以沿用原本的，或者直接覆蓋新的。
 
