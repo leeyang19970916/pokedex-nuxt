@@ -9,12 +9,12 @@
 但就是加油摟！盡力局
 
 2026/3/23
-[] 把ability串接串完
-[] 規劃一下flow,作法，emits | provide/injects | pinia
+[X] 把ability串接串完
+[X] 規劃一下flow,作法，emits | provide/injects | pinia
 [] detail-page切版 純UI
 [] 找中文語言包,做雙語
-[] searhForm(Hard)
-[] list串接到底該怎麼辦？
+[X] searhForm(Hard)
+[X] list串接到底該怎麼辦？
 [] 學graphQL,理解他用法
 [] supabase串接後端，做User系統，喜愛功能
 
@@ -24,3 +24,8 @@
 - 打ＡＰＩ前先去訪問cookies?沒有的話再去打ＡＰＩ,不然把它存在瀏覽器
 - 寫supabase 寫ＮＯＤＥＪＳ去撈取資料（非常麻煩，應該不要做）
 - 把資料mock起來放supabase(跟mock在前端的意思是差不多的)
+
+2026/3/27 (得到新消息，全新挑戰，但完成了很多，你很棒的)
+[] 研究useFetch&await&lazy的機制，各種key
+[] detailPage,ui切版，分工明細
+[] 研究asyncData

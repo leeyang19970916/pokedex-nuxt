@@ -3,13 +3,21 @@
     class="m-[0_auto] top-background h-[450px] relative overflow-hidden"
     :style="{ 'background-image': `url(${TopBackground})` }"
   >
-    <div class="abs-center animation-background">
-      <img class="w-full" :src="AnimationBackground" alt="" />
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] max-w-none pointer-events-none z-[1]"
+    >
+      <img
+        class="w-full h-auto animation-spin"
+        :src="AnimationBackground"
+        alt=""
+      />
     </div>
+
     <IndexWrapper class="absolute top-0 z-50"></IndexWrapper>
     <PokeImgRandomWrapper :list="props.list" />
   </div>
 </template>
+
 <script setup lang="ts">
 import TopBackground from "~/assets/image/header/list_top_bg.png";
 import AnimationBackground from "~/assets/image/header/animation_bg.png";
@@ -23,34 +31,44 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
+/* 給整個 Header 一個淡入保護罩，遮蔽載入初期的破圖 */
 .top-background {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: #0a141e;
   z-index: 10;
-  .animation-background {
-    z-index: 1; /* 確保在最底層 */
 
-    /* 這裡的大小建議設大一點，旋轉時才不會露出邊角 */
-    width: 85%;
-    max-width: none; // 防止被 Tailwind 或全域設定限制寬度
+  /* 加上淡入動畫，0.5秒內從透明到出現 */
+  animation: fade-in 0.5s ease-out forwards;
+}
 
-    /* 2. 動態定義：執行 rotate-anime，每 10 秒轉一圈 */
-    animation: rotate-anime 10s linear infinite;
+/* 只負責旋轉的 class */
+.animation-spin {
+  animation: spin 10s linear infinite;
 
-    /* 3. 初始位置：置中對齊 */
-    pointer-events: none; // 讓滑鼠點擊可以穿過這張圖，點到下面的卡片
+  /* 效能優化：開啟硬體加速，防止旋轉時邊緣出現鋸齒或閃爍 */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* 乾淨的旋轉 Keyframes (沒有 translate 來搗亂) */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
-/* 4. 定義旋轉動畫 */
-@keyframes rotate-anime {
+/* 淡入 Keyframes */
+@keyframes fade-in {
   from {
-    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 1;
   }
 }
 </style>
