@@ -81,7 +81,6 @@ const tempForm = ref<PokeSearchForm>(structuredClone(DEFAULT_SEARCH_FORM));
 const searchForm = ref<PokeSearchForm>(deepClone(tempForm.value));
 
 const search = () => {
-  console.log("準備更新的資料tempform:", tempForm.value);
   searchForm.value = deepClone(tempForm.value);
   emit("search", searchForm.value);
 };

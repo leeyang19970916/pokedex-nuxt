@@ -10,21 +10,21 @@
     >
       <FilterWrapper @search="handleFilter" />
 
-      <SortWrapper
-        v-model="state.sort"
-        class="m-[0_0_0_auto]"
-        @search="handleSort"
-      />
-      <div class="grid grid-cols-4 gap-4">
+      <SortWrapper v-model="state.sort" @search="handleSort" />
+      <div v-if="state.list.length" class="grid grid-cols-4 gap-4">
         <PokemonCard
           v-for="poke in state.list"
           :key="`${poke.id}-${poke.name}`"
           :poke
         />
       </div>
-      <!-- <button ref="loadMoreTrigger">view more</button> -->
-      <!-- <LoadingBall></LoadingBall> -->
-      <Ball></Ball>
+      <div v-else class="m-[0_auto]">查無資料</div>
+      <div
+        ref="loadMoreRef"
+        class="w-full h-20 flex justify-center items-center mt-4"
+      >
+        <LoadingBallIcon v-show="state.isLoading" class="rotate-ball" />
+      </div>
     </div>
   </div>
 </template>
@@ -46,26 +46,7 @@ import {
   SLIDER_RANGE,
 } from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
-import Ball from "~/components/Loading/Ball.vue";
-import { useIntersectionObserver } from "@vueuse/core";
-
-const loadMoreTrigger = shallowRef(null);
-// 核心邏輯
-useIntersectionObserver(loadMoreTrigger, () => {
-  // 如果「看到」了哨兵，且目前沒有在載入中，且還有資料可以抓
-  next();
-  // if (isIntersecting && !isLoading.value && hasMore.value) {
-  //   next(); // 這裡去呼叫你之前寫的 fetchUpdateList(..., true)
-  // }
-});
-
-const pokeStore = usePokeStore();
-const DEFAULT_LIST_QUERY: PokeListQuery = {
-  limit: 20,
-  offset: 0,
-  searchForm: DEFAULT_SEARCH_FORM,
-  sort: POKEMON_SORT_OPTIONS[0].value,
-};
+import { useIntersectionObserver, useDebounceFn } from "@vueuse/core";
 
 interface State {
   total: number;
@@ -76,6 +57,23 @@ interface State {
   searchForm: PokeListQuery["searchForm"];
   sort: PokeListQuery["sort"];
 }
+const pokeStore = usePokeStore();
+const loadMoreRef = shallowRef<HTMLElement | null>(null);
+useIntersectionObserver(loadMoreRef, (entries) => {
+  const isIntersecting = entries[0]?.isIntersecting;
+  const hasMore = state.value.list.length < state.value.total;
+  if (isIntersecting && hasMore && !state.value.isLoading) {
+    next();
+  }
+});
+
+const DEFAULT_LIST_QUERY: PokeListQuery = {
+  limit: 20,
+  offset: 0,
+  searchForm: DEFAULT_SEARCH_FORM,
+  sort: POKEMON_SORT_OPTIONS[0].value,
+};
+
 const state = ref<State>({
   total: 0,
   list: [],
@@ -109,15 +107,14 @@ if (data.value && status.value === "success") {
   state.value.list = data.value.list;
   state.value.total = data.value.total;
 } else if (error.value) {
-  console.error("初始化 API 壞了：", error.value?.message);
+  console.error("fetchList API 壞了：", error.value?.message);
 }
-state.value.isLoading = false;
 
 const next = () => {
   state.value.offset += state.value.limit;
-  fetchUpdateist(state.value, true);
+  fetchUpdatedList(state.value, true);
 };
-const handleFilter = (searchForm: PokeSearchForm) => {
+const handleFilter = useDebounceFn((searchForm: PokeSearchForm) => {
   state.value.offset = DEFAULT_LIST_QUERY.offset;
   const query: PokeListQuery = {
     limit: DEFAULT_LIST_QUERY.limit,
@@ -126,8 +123,8 @@ const handleFilter = (searchForm: PokeSearchForm) => {
     searchForm,
   };
   state.value.searchForm = searchForm;
-  fetchUpdateist(query);
-};
+  fetchUpdatedList(query);
+}, 300);
 const handleSort = () => {
   const { sort, offset, searchForm } = state.value;
   const query: PokeListQuery = {
@@ -136,11 +133,11 @@ const handleSort = () => {
     sort,
     searchForm,
   };
-  fetchUpdateist(query);
+  fetchUpdatedList(query);
 };
-const fetchUpdateist = async (
+const fetchUpdatedList = async (
   query: PokeListQuery,
-  isAppend: boolean = false,
+  isAppend: boolean = false
 ) => {
   state.value.isLoading = true;
   const { limit, offset, searchForm, sort } = query;
@@ -165,8 +162,8 @@ const fetchUpdateist = async (
       state.value.list = list;
     }
     state.value.total = total;
-  } catch (e) {
-    console.log(e);
+  } catch (error) {
+    console.error(error, "fetchUpdatedList() is error");
   } finally {
     state.value.isLoading = false;
   }

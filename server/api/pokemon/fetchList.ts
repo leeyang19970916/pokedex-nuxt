@@ -7,7 +7,6 @@ export default defineEventHandler(async (event) => {
     let list = [...PokeData] as PokeCard[];
 
     const query = getQuery<QueryFormat>(event);
-    console.log("query", query);
     const limit = Number(query.limit) || 20;
     const offset = Number(query.offset) || 0;
     const sort = query.sort || POKEMON_SORT_OPTIONS[0].value;

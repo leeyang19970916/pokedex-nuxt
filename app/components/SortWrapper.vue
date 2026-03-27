@@ -1,8 +1,8 @@
 <template>
-  <div class="relative inline-block text-left w-1/4" ref="dropdownRef">
+  <div class="relative inline-block text-left" ref="dropdownRef">
     <button
       @click="isOpen = !isOpen"
-      class="w-full flex items-center justify-between gap-2 px-4 py-2 rounded-lg bg-black/40 border border-primary/40 text-primary/90 hover:text-primary hover:border-primary hover:shadow-[0_0_10px_rgba(179,234,254,0.3)] transition-all font-medium text-sm tracking-wide"
+      class="w-1/4 m-[0_0_0_auto] flex items-center justify-between gap-2 px-4 py-2 rounded-lg bg-black/40 border border-primary/40 text-primary/90 hover:text-primary hover:border-primary hover:shadow-[0_0_10px_rgba(179,234,254,0.3)] transition-all font-medium text-sm tracking-wide"
     >
       <span>排序：{{ currentLabel }}</span>
 
@@ -83,7 +83,7 @@ const emit = defineEmits<{
 const model = defineModel<PokeSort>({ default: POKEMON_SORT_OPTIONS[0].value });
 
 const isOpen = ref(false);
-const dropdownRef = ref<HTMLElement | null>(null);
+const dropdownRef = shallowRef<HTMLElement | null>(null);
 
 // 找出當前選中的 Label 顯示在按鈕上
 const currentLabel = computed(() => {
