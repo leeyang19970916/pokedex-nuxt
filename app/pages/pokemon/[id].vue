@@ -130,8 +130,8 @@
                   statName === "spa"
                     ? "SpA"
                     : statName === "spd"
-                      ? "SpD"
-                      : statName
+                    ? "SpD"
+                    : statName
                 }}
               </div>
 
@@ -242,13 +242,9 @@
 <script setup lang="ts">
 import type { PokeCard } from "~/types/pokemon";
 const route = useRoute();
+
 const { data, status, pending, execute } = await useFetch(
-  "/api/pokemon/fetchPokeInfo",
-  {
-    query: {
-      id: route.params.id,
-    },
-  },
+  () => `/api/pokemon/${route.params.id}`
 );
 // ...之前的資料定義與 Riolu, Lucario 假資料保持不變...
 // 我這裡省略假資料的定義程式碼，你可以沿用原本的，或者直接覆蓋新的。
