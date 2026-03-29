@@ -1,7 +1,29 @@
-import type { TypeResult } from "./nameType";
-import type { Id, PokeAbility, PokeCard } from "./pokemon";
+import type { Id, PokeAbility, PokeCard, PokeType } from "./pokemon";
 
+export type Opt = {
+  name: string;
+  url: string;
+};
 export interface PokeDetailRes {
+  id: PokeCard["id"];
+  name: PokeCard["name"];
+  weight: PokeCard["weight"];
+  height: PokeCard["height"];
+  types: PokeCard["types"];
+  image: PokeCard["image"];
+  abilities: PokeCard["abilities"];
+  moves: Move[];
+  stats: {
+    hp: number;
+    atk: number;
+    def: number;
+    spa: number;
+    spd: number;
+    spe: number;
+  };
+}
+
+export interface PokemonDetailAPIRes {
   id: Id;
   name: PokeCard["name"];
   abilities: Abilitiy[]; //能力
@@ -10,8 +32,9 @@ export interface PokeDetailRes {
     latest: string;
     legacy: string;
   }; //叫聲，不確定可以怎麼用
-  forms: TypeResult[]; //不曉得幹嘛的，好像是本人
+  forms: Opt[]; //不曉得幹嘛的，好像是本人
   game_indices: GameIndex[]; //???遊戲？
+  species: Opt; //極其重要 語系 描述
   height: PokeCard["height"];
   held_items: any[];
   is_default: boolean;
@@ -20,42 +43,41 @@ export interface PokeDetailRes {
   order: number;
   past_abilities: {
     abilities: Abilitiy[];
-    generation: TypeResult;
+    generation: Opt;
   }[];
   past_stats: {
-    generation: TypeResult;
+    generation: Opt;
     stats: Stat[];
   }[];
   past_types: any[];
-  species: TypeResult;
-  sprites: Sprite[];
+  sprites: Sprite;
   stats: Stat[];
   types: Type[];
   weight: PokeCard["weight"];
 }
 
 type Abilitiy = {
-  ability: TypeResult;
+  ability: Opt;
   is_hidden: boolean;
   slot: number;
 };
 type GameIndex = {
   game_index: number;
-  version: TypeResult;
+  version: Opt;
 };
 type Move = {
-  move: TypeResult;
+  move: Opt;
   version_group_details: {
     level_learned_at: number;
-    move_learn_method: TypeResult;
+    move_learn_method: Opt;
     order: null;
-    version_group: TypeResult;
+    version_group: Opt;
   };
 };
 type Stat = {
   base_stat: number;
   effort: number;
-  stat: TypeResult;
+  stat: Opt;
 };
 type Sprite = {
   back_default: string;
@@ -95,5 +117,5 @@ type Other = {
 };
 type Type = {
   slot: number;
-  type: TypeResult;
+  type: Opt;
 };

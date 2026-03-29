@@ -1,5 +1,8 @@
 <template>
-  <div class="pokedex-detail-terminal cosms-theme min-h-screen">
+  <div
+    v-if="data && status === 'success'"
+    class="pokedex-detail-terminal cosms-theme min-h-screen"
+  >
     <header
       @click="() => execute()"
       class="terminal-banner cosms-border flex justify-center items-center h-20 relative overflow-hidden"
@@ -15,319 +18,129 @@
     <main
       class="main-display grid grid-cols-[1fr_2fr_1fr] gap-6 p-[3%] z-10 relative"
     >
-      <aside class="left-panel flex flex-col gap-6">
-        <div class="hud-panel cosms-hud identity-panel p-6">
-          <div class="label cosms-label">ID</div>
-          <div class="value font-bold text-5xl primary-neon-text mb-4">
-            #{{ mockPokemon.id }}
-          </div>
+      <InfoWrapper
+        class="left-panel flex flex-col gap-6"
+        :name="data.name"
+        :id="data.id"
+        :height="data.height"
+        :weight="data.weight"
+        :types="data.types"
+      />
 
-          <div class="label cosms-label">NAME</div>
-          <div
-            class="value font-extrabold text-4xl text-white mb-6 tracking-tighter"
-          >
-            {{ mockPokemon.name.toUpperCase() }}
-          </div>
-
-          <div class="label cosms-label mb-2">TYPE</div>
-          <div class="flex gap-2 mb-6">
-            <span
-              v-for="type in mockPokemon.types"
-              :key="type"
-              :class="['cosms-type-tag', type]"
-            >
-              {{ type.toUpperCase() }}
-            </span>
-          </div>
-
-          <div class="label cosms-label">SPECIES</div>
-          <div class="value text-white font-semibold mb-4">
-            {{ mockPokemon.species }}
-          </div>
-        </div>
-
-        <div
-          class="hud-panel cosms-hud basic-stats-panel p-6 grid grid-cols-2 gap-4 text-center"
-        >
-          <div>
-            <div class="label cosms-label">HT</div>
-            <div class="value text-white text-3xl font-extrabold">
-              {{ mockPokemon.height }} m
-            </div>
-          </div>
-          <div>
-            <div class="label cosms-label">WT</div>
-            <div class="value text-white text-3xl font-extrabold">
-              {{ mockPokemon.weight }} kg
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      <section
+      <ImageWrapper
         class="center-feature cosms-feature relative flex justify-center items-center"
-      >
-        <div class="reactor-core-wrapper">
-          <div
-            v-for="i in 5"
-            :key="i"
-            :class="['core-ring', `ring-${i}`, 'primary-border']"
-          ></div>
-        </div>
-
-        <img
-          :src="mockPokemon.image"
-          :alt="mockPokemon.name"
-          class="pokemon-feature-img z-10"
-        />
-      </section>
-
-      <aside class="right-panel flex flex-col gap-6">
-        <div
-          class="hud-panel cosms-hud stats-radar-panel p-6 flex flex-col items-center"
-        >
-          <div class="label cosms-label self-start mb-4">
-            AURA PROFILE (RADAR)
-          </div>
-          <div
-            class="radar-placeholder flex justify-center items-center w-60 h-60 relative border border-gray-700 rounded-full"
-          >
-            <div class="radar-web z-0"></div>
-            <div
-              class="radar-data z-10 flex justify-center items-center font-bold text-xl primary-neon-text"
-            >
-              AURA CHART
-            </div>
-            <div class="stat-label stat-hp cosms-stat-label">
-              HP:{{ mockPokemon.stats.hp }}
-            </div>
-            <div class="stat-label stat-atk cosms-stat-label">
-              Atk:{{ mockPokemon.stats.atk }}
-            </div>
-            <div class="stat-label stat-def cosms-stat-label">
-              Def:{{ mockPokemon.stats.def }}
-            </div>
-            <div class="stat-label stat-spe cosms-stat-label">
-              Spe:{{ mockPokemon.stats.spe }}
-            </div>
-          </div>
-        </div>
-        <div
-          class="hud-panel cosms-hud stats-bar-panel p-6 flex flex-col gap-4"
-        >
-          <div class="label cosms-label">AURA ENERGY CELLS</div>
-
-          <div class="flex flex-col gap-3 mt-2">
-            <div
-              v-for="(val, statName) in mockPokemon.stats"
-              :key="statName"
-              class="flex items-center"
-            >
-              <div
-                class="w-10 font-mono text-xs text-gray-400 uppercase tracking-wider"
-              >
-                {{
-                  statName === "spa"
-                    ? "SpA"
-                    : statName === "spd"
-                    ? "SpD"
-                    : statName
-                }}
-              </div>
-
-              <div class="flex gap-1 flex-1 mx-3">
-                <div
-                  v-for="n in 15"
-                  :key="n"
-                  class="h-3 w-full rounded-[2px] transition-all duration-300"
-                  :class="
-                    n <= Math.min(15, Math.ceil(val / 10))
-                      ? 'bg-[#b3eafe] shadow-[0_0_8px_rgba(179,234,254,0.6)]'
-                      : 'bg-[#1a2c3f] border border-[#2a3f54]'
-                  "
-                ></div>
-              </div>
-
-              <div
-                class="w-8 text-right font-mono text-sm font-bold primary-neon-text"
-              >
-                {{ val }}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hud-panel cosms-hud entry-panel p-6">
-          <div class="label cosms-label mb-2">POKEDEX ENTRY</div>
-          <p class="value text-gray-200 font-mono text-sm leading-relaxed">
-            {{ mockPokemon.entry }}
-          </p>
-        </div>
-
-        <div class="hud-panel cosms-hud ability-panel p-6">
-          <div class="label cosms-label mb-2">ABILITIES</div>
-          <div class="flex gap-2">
-            <span
-              v-for="ability in mockPokemon.abilities"
-              :key="ability"
-              class="ability-tag font-mono text-xs p-2 border border-gray-700"
-            >
-              {{ ability.toUpperCase() }}
-            </span>
-          </div>
-        </div>
-      </aside>
+        :image="data.image"
+        :name="data.name"
+      />
+      <StatsWrapper
+        class="right-panel flex flex-col gap-6"
+        :stats="data.stats"
+        :abilities="data.abilities"
+      />
     </main>
 
     <footer
       class="bottom-display p-[3%] pt-0 z-10 relative grid grid-cols-[1fr_2fr] gap-6"
     >
-      <div class="hud-panel cosms-hud evolution-panel p-6 flex flex-col gap-4">
-        <div class="label cosms-label">EVOLUTION PATH</div>
-        <div class="evolution-chain-flow flex items-center justify-around">
-          <div
-            v-for="(evo, index) in mockPokemon.evolution"
-            :key="evo.id"
-            class="evolution-stage flex items-center gap-4"
-          >
-            <div
-              class="evo-ball relative w-20 h-20 flex justify-center items-center rounded-full primary-border"
-            >
-              <img :src="evo.image" :alt="evo.name" class="w-16 h-16 z-10" />
-              <div class="evo-ring-inner"></div>
-            </div>
-            <div
-              v-if="index < mockPokemon.evolution.length - 1"
-              class="evo-arrow primary-neon-text text-3xl font-black"
-            >
-              ➔
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hud-panel cosms-hud moveset-panel p-6 flex flex-col gap-4">
-        <div class="label cosms-label">MOVESET</div>
-        <div class="moveset-table-container">
-          <table class="moveset-table w-full text-left font-mono text-sm">
-            <thead class="text-gray-500">
-              <tr>
-                <th>TYPE</th>
-                <th>NAME</th>
-                <th>CAT.</th>
-                <th>POWER</th>
-                <th>ACC.</th>
-              </tr>
-            </thead>
-            <tbody class="text-white">
-              <tr v-for="move in mockPokemon.moves" :key="move.name">
-                <td>
-                  <span :class="['cosms-type-tag-small', move.type]">{{
-                    move.type.toUpperCase()
-                  }}</span>
-                </td>
-                <td>{{ move.name }}</td>
-                <td>{{ move.cat }}</td>
-                <td>{{ move.power }}</td>
-                <td>{{ move.acc }}%</td>
-                }
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <EvolutionWrapper />
+      <MoveWrapper :moves="data.moves" />
     </footer>
   </div>
 </template>
 
 <script setup lang="ts">
 import type { PokeCard } from "~/types/pokemon";
+import InfoWrapper from "~/components/PokemonDetail/InfoWrapper.vue";
+import ImageWrapper from "~/components/PokemonDetail/ImageWrapper.vue";
+import StatsWrapper from "~/components/PokemonDetail/StatsWrapper.vue";
+import MoveWrapper from "~/components/PokemonDetail/MoveWrapper.vue";
+import EvolutionWrapper from "~/components/PokemonDetail/EvolutionWrapper.vue";
+import type { PokeDetailRes } from "~/types/pokeDetail";
 const route = useRoute();
 
-const { data, status, pending, execute } = await useFetch(
+const { data, status, execute } = await useFetch<PokeDetailRes>(
   () => `/api/pokemon/${route.params.id}`
 );
-// ...之前的資料定義與 Riolu, Lucario 假資料保持不變...
-// 我這裡省略假資料的定義程式碼，你可以沿用原本的，或者直接覆蓋新的。
 
-interface EvolutionStage extends Pick<PokeCard, "id" | "name" | "image"> {}
-interface PokemonDetail extends Omit<PokeCard, "abilities" | "region"> {
-  species: string;
-  stats: {
-    hp: number;
-    atk: number;
-    def: number;
-    spa: number;
-    spd: number;
-    spe: number;
-  };
-  entry: string;
-  abilities: string[];
-  moves: {
-    type: string;
-    name: string;
-    cat: string;
-    power: number;
-    acc: number;
-  }[];
-  evolution: EvolutionStage[];
-}
+// interface EvolutionStage extends Pick<PokeCard, "id" | "name" | "image"> {}
+// interface PokemonDetail extends Omit<PokeCard, "abilities" | "region"> {
+//   species: string;
+//   stats: {
+//     hp: number;
+//     atk: number;
+//     def: number;
+//     spa: number;
+//     spd: number;
+//     spe: number;
+//   };
+//   entry: string;
+//   abilities: string[];
+//   moves: {
+//     type: string;
+//     name: string;
+//     cat: string;
+//     power: number;
+//     acc: number;
+//   }[];
+//   evolution: EvolutionStage[];
+// }
 
-const mockPokemon = ref<PokemonDetail>({
-  id: 448,
-  name: "Lucario",
-  image:
-    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
-  types: ["fighting", "steel"],
-  species: "Aura Pokémon",
-  height: 1.2,
-  weight: 54.0,
-  stats: {
-    hp: 70,
-    atk: 110,
-    def: 70,
-    spa: 115,
-    spd: 70,
-    spe: 90,
-  },
-  entry:
-    "By catching the aura emanating from others, it can read their thoughts and movements.",
-  abilities: ["steadfast", "inner focus"],
-  moves: [
-    {
-      type: "fighting",
-      name: "Close Combat",
-      cat: "PHYS.",
-      power: 120,
-      acc: 100,
-    },
-    {
-      type: "fighting",
-      name: "Aura Sphere",
-      cat: "SPEC.",
-      power: 80,
-      acc: 100,
-    },
-    { type: "steel", name: "Meteor Mash", cat: "PHYS.", power: 90, acc: 90 },
-    { type: "dark", name: "Dark Pulse", cat: "SPEC.", power: 80, acc: 100 },
-  ],
-  evolution: [
-    {
-      id: 447,
-      name: "Riolu",
-      image:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png",
-    },
-    {
-      id: 448,
-      name: "Lucario",
-      image:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
-    },
-  ],
-});
+// const mockPokemon = ref<PokemonDetail>({
+//   id: 448,
+//   name: "Lucario",
+//   image:
+//     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+//   types: ["fighting", "steel"],
+//   species: "Aura Pokémon",
+//   height: 1.2,
+//   weight: 54.0,
+//   stats: {
+//     hp: 70,
+//     atk: 110,
+//     def: 70,
+//     spa: 115,
+//     spd: 70,
+//     spe: 90,
+//   },
+//   entry:
+//     "By catching the aura emanating from others, it can read their thoughts and movements.",
+//   abilities: ["steadfast", "inner focus"],
+//   moves: [
+//     {
+//       type: "fighting",
+//       name: "Close Combat",
+//       cat: "PHYS.",
+//       power: 120,
+//       acc: 100,
+//     },
+//     {
+//       type: "fighting",
+//       name: "Aura Sphere",
+//       cat: "SPEC.",
+//       power: 80,
+//       acc: 100,
+//     },
+//     { type: "steel", name: "Meteor Mash", cat: "PHYS.", power: 90, acc: 90 },
+//     { type: "dark", name: "Dark Pulse", cat: "SPEC.", power: 80, acc: 100 },
+//   ],
+//   evolution: [
+//     {
+//       id: 447,
+//       name: "Riolu",
+//       image:
+//         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png",
+//     },
+//     {
+//       id: 448,
+//       name: "Lucario",
+//       image:
+//         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+//     },
+//   ],
+// });
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 /* 詳情頁：能量分析終端 (微調版) */
 .pokedex-detail-terminal {
   background-color: #0a141e; /* 你的標準深藍底色 */
