@@ -1,4 +1,4 @@
-import type { Id, PokeAbility, PokeCard, PokeType } from "./pokemon";
+import type { Id, PokeCard } from "./pokemon";
 
 export type Opt = {
   name: string;
@@ -23,7 +23,7 @@ export interface PokeDetailRes {
   };
 }
 
-export interface PokemonDetailAPIRes {
+export interface PokemonOriginalAPIRes {
   id: Id;
   name: PokeCard["name"];
   abilities: Abilitiy[]; //能力

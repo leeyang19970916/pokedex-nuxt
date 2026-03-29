@@ -1,24 +1,30 @@
 import { POKEMON_API_URL } from "~/constants";
-import type { PokemonDetailAPIRes } from "~/types/pokeDetail";
+import type { PokemonOriginalAPIRes } from "~/types/pokeDetail";
+import type { SpeciesPokeOriginalAPIRes } from "~/types/speciesPoke";
 
 export default defineEventHandler(async (event) => {
   try {
     const id = getRouterParam(event, "id");
-    const url = `${POKEMON_API_URL}/pokemon/${id}`;
-    const res: PokemonDetailAPIRes = await $fetch(url);
-    const stats = formattedStat(res.stats);
+    const pokeUrl = `${POKEMON_API_URL}/pokemon/${id}`;
+    const speciesUrl = `${POKEMON_API_URL}/pokemon-species/${id}`;
+    const [pokeData, speciesData] = await Promise.all([
+      $fetch<PokemonOriginalAPIRes>(pokeUrl),
+      $fetch<SpeciesPokeOriginalAPIRes>(speciesUrl),
+    ]);
+    const stats = formattedStat(pokeData.stats);
     const result = {
-      id: res.id,
-      name: res.name,
-      height: res.height,
-      weight: res.weight,
-      types: res.types.map((t) => t.type.name),
-      image: res.sprites.other["official-artwork"].front_default,
-      abilities: res.abilities.map((a) => a.ability.name),
+      id: pokeData.id,
+      name: pokeData.name,
+      height: pokeData.height,
+      weight: pokeData.weight,
+      types: pokeData.types.map((t) => t.type.name),
+      image: pokeData.sprites.other["official-artwork"].front_default,
+      abilities: pokeData.abilities.map((a) => a.ability.name),
       stats,
-      moves: res.moves,
+      moves: pokeData.moves,
+      // speciesData: speciesData,
     };
-
+    console.log(speciesData, "speciesData");
     return result;
   } catch (e) {
     throw createError({
@@ -27,9 +33,9 @@ export default defineEventHandler(async (event) => {
     });
   }
 });
-const formattedStat = (stats: PokemonDetailAPIRes["stats"]) => {
+const formattedStat = (stats: PokemonOriginalAPIRes["stats"]) => {
   const statsMap = { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
-  stats.forEach((s: PokemonDetailAPIRes["stats"][number]) => {
+  stats.forEach((s: PokemonOriginalAPIRes["stats"][number]) => {
     if (s.stat.name === "hp") statsMap.hp = s.base_stat;
     if (s.stat.name === "attack") statsMap.atk = s.base_stat;
     if (s.stat.name === "defense") statsMap.def = s.base_stat;
