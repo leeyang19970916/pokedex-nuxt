@@ -12,7 +12,7 @@ export interface SpeciesPokeOriginalAPIRes {
     flavor_text: string;
     language: Opt;
     version: Opt;
-  };
+  }[];
   form_descriptions: any[];
   forms_switchable: boolean;
   gender_rate: number;

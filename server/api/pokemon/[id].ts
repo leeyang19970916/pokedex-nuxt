@@ -1,6 +1,7 @@
 import { POKEMON_API_URL, ZH_HANT } from "~/constants";
 import type { PokemonOriginalAPIRes } from "~/types/pokeDetail";
 import type { SpeciesPokeOriginalAPIRes } from "~/types/speciesPoke";
+import { translateVariantName } from "~~/utils/translateVariantName";
 
 export default defineEventHandler(async (event) => {
   try {
@@ -12,6 +13,25 @@ export default defineEventHandler(async (event) => {
       $fetch<SpeciesPokeOriginalAPIRes>(speciesUrl),
     ]);
     const stats = formattedStat(pokeData.stats);
+    const entryText =
+      speciesData.flavor_text_entries
+        .find((entry) => entry.language.name === ZH_HANT)
+        ?.flavor_text.replace(/[\n\f\r]/g, "") || "這隻寶可夢目前沒有描述";
+    const varieties = speciesData.varieties.map((itm) => {
+      const urlParts = itm.pokemon.url.split("/").filter(Boolean);
+      const variantId = urlParts[urlParts.length - 1];
+      return {
+        name: translateVariantName(itm.pokemon.name, Number(id)),
+        id: variantId,
+        image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${variantId}.png`,
+      };
+    });
+    const evolutionChainIds =
+      (await $fetch("/api/pokemon/fetchEvolutionIds", {
+        query: {
+          url: speciesData.evolution_chain.url,
+        },
+      })) || [];
     const result = {
       id: pokeData.id,
       name:
@@ -23,9 +43,11 @@ export default defineEventHandler(async (event) => {
       abilities: pokeData.abilities.map((a) => a.ability.name),
       stats,
       moves: pokeData.moves,
+      entryText,
+      varieties,
+      evolutionChainIds,
       // speciesData: speciesData,
     };
-    console.log(speciesData, "speciesData");
     return result;
   } catch (e) {
     throw createError({

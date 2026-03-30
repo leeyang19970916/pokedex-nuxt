@@ -1,6 +1,5 @@
 import fs from 'fs/promises';
 
-// 如果你從根目錄執行腳本，路徑要指向檔案真實的位置
 const rawData = await fs.readFile('./server/api/data/pokedex.json', 'utf-8');
 const pokemonList = JSON.parse(rawData);
 
