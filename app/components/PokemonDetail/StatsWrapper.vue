@@ -66,8 +66,7 @@
     <div class="hud-panel cosms-hud entry-panel p-6">
       <div class="label cosms-label mb-2">POKEDEX ENTRY</div>
       <p class="value text-gray-200 font-mono text-sm leading-relaxed">
-        <!-- {{ mockPokemon.entry }} -->
-        {{ "????" }}
+        {{ entryText }}
       </p>
     </div>
 
@@ -92,5 +91,6 @@ import type { PokeDetailRes } from "~/types/pokeDetail";
 defineProps<{
   stats: PokeDetailRes["stats"];
   abilities: PokeDetailRes["abilities"];
+  entryText: PokeDetailRes["entryText"];
 }>();
 </script>

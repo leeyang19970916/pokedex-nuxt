@@ -22,7 +22,7 @@ export default defineEventHandler(async (event) => {
       const variantId = urlParts[urlParts.length - 1];
       return {
         name: translateVariantName(itm.pokemon.name, Number(id)),
-        id: variantId,
+        id: Number(variantId),
         image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${variantId}.png`,
       };
     });
@@ -46,7 +46,6 @@ export default defineEventHandler(async (event) => {
       entryText,
       varieties,
       evolutionChainIds,
-      // speciesData: speciesData,
     };
     return result;
   } catch (e) {

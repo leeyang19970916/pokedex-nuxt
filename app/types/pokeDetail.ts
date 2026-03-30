@@ -21,6 +21,13 @@ export interface PokeDetailRes {
     spd: number;
     spe: number;
   };
+  entryText: string;
+  varieties: {
+    id: PokeCard["id"];
+    image: PokeCard["image"];
+    name: PokeCard["name"];
+  }[];
+  evolutionChainIds: Id[];
 }
 
 export interface PokemonOriginalAPIRes {

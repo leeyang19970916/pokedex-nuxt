@@ -36,13 +36,14 @@
         class="right-panel flex flex-col gap-6"
         :stats="data.stats"
         :abilities="data.abilities"
+        :entryText="data.entryText"
       />
     </main>
 
     <footer
       class="bottom-display p-[3%] pt-0 z-10 relative grid grid-cols-[1fr_2fr] gap-6"
     >
-      <EvolutionWrapper />
+      <EvolutionChainWrapper :evolutionChainIds="data.evolutionChainIds" />
       <MoveWrapper :moves="data.moves" />
     </footer>
   </div>
@@ -54,12 +55,12 @@ import InfoWrapper from "~/components/PokemonDetail/InfoWrapper.vue";
 import ImageWrapper from "~/components/PokemonDetail/ImageWrapper.vue";
 import StatsWrapper from "~/components/PokemonDetail/StatsWrapper.vue";
 import MoveWrapper from "~/components/PokemonDetail/MoveWrapper.vue";
-import EvolutionWrapper from "~/components/PokemonDetail/EvolutionWrapper.vue";
+import EvolutionChainWrapper from "~/components/PokemonDetail/EvolutionChainWrapper.vue";
 import type { PokeDetailRes } from "~/types/pokeDetail";
 const route = useRoute();
 
 const { data, status, execute } = await useFetch<PokeDetailRes>(
-  () => `/api/pokemon/${route.params.id}`
+  () => `/api/pokemon/${route.params.id}`,
 );
 </script>
 

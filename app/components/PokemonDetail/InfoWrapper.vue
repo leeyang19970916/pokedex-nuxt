@@ -1,19 +1,19 @@
 <template>
   <div>
     <div class="hud-panel cosms-hud identity-panel p-6">
-      <div class="label cosms-label">ID</div>
+      <div class="label cosms-label">圖鑑編號</div>
       <div class="value font-bold text-5xl primary-neon-text mb-4">
         #{{ id }}
       </div>
 
-      <div class="label cosms-label">NAME</div>
+      <div class="label cosms-label">名字</div>
       <div
         class="value font-extrabold text-4xl text-white mb-6 tracking-tighter"
       >
         {{ name.toUpperCase() }}
       </div>
 
-      <div class="label cosms-label mb-2">TYPE</div>
+      <div class="label cosms-label mb-2">屬性</div>
       <div class="flex gap-2 mb-6">
         <Tag
           v-for="options in typeOpts"
@@ -23,7 +23,7 @@
         />
       </div>
 
-      <div class="label cosms-label">SPECIES</div>
+      <div class="label cosms-label">分類</div>
       <div class="value text-white font-semibold mb-4">
         {{ "????" }}
       </div>
