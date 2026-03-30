@@ -1,4 +1,4 @@
-import { POKEMON_API_URL } from "~/constants";
+import { POKEMON_API_URL, ZH_HANT } from "~/constants";
 import type { PokemonOriginalAPIRes } from "~/types/pokeDetail";
 import type { SpeciesPokeOriginalAPIRes } from "~/types/speciesPoke";
 
@@ -14,7 +14,8 @@ export default defineEventHandler(async (event) => {
     const stats = formattedStat(pokeData.stats);
     const result = {
       id: pokeData.id,
-      name: pokeData.name,
+      name:
+        speciesData.names.find((i) => i.language.name === ZH_HANT)?.name || "",
       height: pokeData.height,
       weight: pokeData.weight,
       types: pokeData.types.map((t) => t.type.name),

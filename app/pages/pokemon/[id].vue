@@ -61,87 +61,11 @@ const route = useRoute();
 const { data, status, execute } = await useFetch<PokeDetailRes>(
   () => `/api/pokemon/${route.params.id}`
 );
-
-// interface EvolutionStage extends Pick<PokeCard, "id" | "name" | "image"> {}
-// interface PokemonDetail extends Omit<PokeCard, "abilities" | "region"> {
-//   species: string;
-//   stats: {
-//     hp: number;
-//     atk: number;
-//     def: number;
-//     spa: number;
-//     spd: number;
-//     spe: number;
-//   };
-//   entry: string;
-//   abilities: string[];
-//   moves: {
-//     type: string;
-//     name: string;
-//     cat: string;
-//     power: number;
-//     acc: number;
-//   }[];
-//   evolution: EvolutionStage[];
-// }
-
-// const mockPokemon = ref<PokemonDetail>({
-//   id: 448,
-//   name: "Lucario",
-//   image:
-//     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
-//   types: ["fighting", "steel"],
-//   species: "Aura Pokémon",
-//   height: 1.2,
-//   weight: 54.0,
-//   stats: {
-//     hp: 70,
-//     atk: 110,
-//     def: 70,
-//     spa: 115,
-//     spd: 70,
-//     spe: 90,
-//   },
-//   entry:
-//     "By catching the aura emanating from others, it can read their thoughts and movements.",
-//   abilities: ["steadfast", "inner focus"],
-//   moves: [
-//     {
-//       type: "fighting",
-//       name: "Close Combat",
-//       cat: "PHYS.",
-//       power: 120,
-//       acc: 100,
-//     },
-//     {
-//       type: "fighting",
-//       name: "Aura Sphere",
-//       cat: "SPEC.",
-//       power: 80,
-//       acc: 100,
-//     },
-//     { type: "steel", name: "Meteor Mash", cat: "PHYS.", power: 90, acc: 90 },
-//     { type: "dark", name: "Dark Pulse", cat: "SPEC.", power: 80, acc: 100 },
-//   ],
-//   evolution: [
-//     {
-//       id: 447,
-//       name: "Riolu",
-//       image:
-//         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png",
-//     },
-//     {
-//       id: 448,
-//       name: "Lucario",
-//       image:
-//         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
-//     },
-//   ],
-// });
 </script>
 
 <style lang="scss">
 /* 詳情頁：能量分析終端 (微調版) */
+
 .pokedex-detail-terminal {
   background-color: #0a141e; /* 你的標準深藍底色 */
   z-index: 10;

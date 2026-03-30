@@ -1,10 +1,10 @@
 import { POKEMON_SORT_OPTIONS } from "~/constants";
-import PokeData from "../data/pokeData.json";
+import PokedexData from "../data/pokedex.json";
 import type { QueryFormat, PokeCard, PokeSort } from "~/types/pokemon";
 
 export default defineEventHandler(async (event) => {
   try {
-    let list = [...PokeData] as PokeCard[];
+    let list = [...PokedexData] as PokeCard[];
 
     const query = getQuery<QueryFormat>(event);
     const limit = Number(query.limit) || 20;
