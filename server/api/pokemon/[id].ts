@@ -2,6 +2,7 @@ import { POKEMON_API_URL, ZH_HANT } from "~/constants";
 import type { PokemonOriginalAPIRes } from "~/types/pokeDetail";
 import type { SpeciesPokeOriginalAPIRes } from "~/types/speciesPoke";
 import { translateVariantName } from "~~/utils/translateVariantName";
+import { formattedStat } from "~~/utils/formattedStat";
 
 export default defineEventHandler(async (event) => {
   try {
@@ -21,7 +22,7 @@ export default defineEventHandler(async (event) => {
       const urlParts = itm.pokemon.url.split("/").filter(Boolean);
       const variantId = urlParts[urlParts.length - 1];
       return {
-        name: translateVariantName(itm.pokemon.name, Number(id)),
+        name: translateVariantName(itm.pokemon.name),
         id: Number(variantId),
         image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${variantId}.png`,
       };
@@ -34,8 +35,7 @@ export default defineEventHandler(async (event) => {
       })) || [];
     const result = {
       id: pokeData.id,
-      name:
-        speciesData.names.find((i) => i.language.name === ZH_HANT)?.name || "",
+      name: translateVariantName(pokeData.name),
       height: pokeData.height,
       weight: pokeData.weight,
       types: pokeData.types.map((t) => t.type.name),
@@ -55,16 +55,3 @@ export default defineEventHandler(async (event) => {
     });
   }
 });
-const formattedStat = (stats: PokemonOriginalAPIRes["stats"]) => {
-  const statsMap = { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
-  stats.forEach((s: PokemonOriginalAPIRes["stats"][number]) => {
-    if (s.stat.name === "hp") statsMap.hp = s.base_stat;
-    if (s.stat.name === "attack") statsMap.atk = s.base_stat;
-    if (s.stat.name === "defense") statsMap.def = s.base_stat;
-    if (s.stat.name === "special-attack") statsMap.spa = s.base_stat;
-    if (s.stat.name === "special-defense") statsMap.spd = s.base_stat;
-    if (s.stat.name === "speed") statsMap.spe = s.base_stat;
-  });
-
-  return statsMap;
-};

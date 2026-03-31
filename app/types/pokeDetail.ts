@@ -7,6 +7,7 @@ export type Opt = {
 export interface PokeDetailRes {
   id: PokeCard["id"];
   name: PokeCard["name"];
+  enName: PokeCard["enName"];
   weight: PokeCard["weight"];
   height: PokeCard["height"];
   types: PokeCard["types"];

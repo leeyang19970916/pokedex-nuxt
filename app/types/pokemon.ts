@@ -14,6 +14,7 @@ export type PokeSort = (typeof POKEMON_SORT_OPTIONS)[number]["value"];
 export type PokeCard = {
   id: Id;
   name: string;
+  enName: string;
   image: string;
   height: number;
   weight: number;

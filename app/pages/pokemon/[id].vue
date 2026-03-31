@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="data && status === 'success'"
+    v-if="poke && data && status === 'success'"
     class="pokedex-detail-terminal cosms-theme min-h-screen"
   >
     <header
@@ -20,47 +20,82 @@
     >
       <InfoWrapper
         class="left-panel flex flex-col gap-6"
-        :name="data.name"
-        :id="data.id"
-        :height="data.height"
-        :weight="data.weight"
-        :types="data.types"
+        :name="poke.name"
+        :id="poke.id"
+        :height="poke.height"
+        :weight="poke.weight"
+        :types="poke.types"
       />
-
-      <ImageWrapper
-        class="center-feature cosms-feature relative flex justify-center items-center"
-        :image="data.image"
-        :name="data.name"
-      />
+      <section class="flex flex-col gap-4 justify-center">
+        <ImageWrapper
+          class="center-feature cosms-feature relative flex justify-center items-center"
+          :image="poke.image"
+          :name="poke.name"
+        />
+        <VariantWrapper
+          v-if="activeVariantId"
+          :activeVariantId="activeVariantId"
+          :varieties="poke.varieties"
+          @change="change"
+        />
+      </section>
       <StatsWrapper
         class="right-panel flex flex-col gap-6"
-        :stats="data.stats"
-        :abilities="data.abilities"
-        :entryText="data.entryText"
+        :stats="poke.stats"
+        :abilities="poke.abilities"
+        :entryText="poke.entryText"
       />
     </main>
 
     <footer
       class="bottom-display p-[3%] pt-0 z-10 relative grid grid-cols-[1fr_2fr] gap-6"
     >
-      <EvolutionChainWrapper :evolutionChainIds="data.evolutionChainIds" />
-      <MoveWrapper :moves="data.moves" />
+      <EvolutionChainWrapper :evolutionChainIds="poke.evolutionChainIds" />
+      <MoveWrapper :moves="poke.moves" />
     </footer>
   </div>
 </template>
 
 <script setup lang="ts">
-import type { PokeCard } from "~/types/pokemon";
 import InfoWrapper from "~/components/PokemonDetail/InfoWrapper.vue";
 import ImageWrapper from "~/components/PokemonDetail/ImageWrapper.vue";
 import StatsWrapper from "~/components/PokemonDetail/StatsWrapper.vue";
 import MoveWrapper from "~/components/PokemonDetail/MoveWrapper.vue";
 import EvolutionChainWrapper from "~/components/PokemonDetail/EvolutionChainWrapper.vue";
 import type { PokeDetailRes } from "~/types/pokeDetail";
+import VariantWrapper from "~/components/PokemonDetail/VariantWrapper.vue";
 const route = useRoute();
 
 const { data, status, execute } = await useFetch<PokeDetailRes>(
-  () => `/api/pokemon/${route.params.id}`,
+  () => `/api/pokemon/${route.params.id}`
+);
+const activeVariantId = ref<PokeDetailRes["id"] | null>(null);
+
+const poke = ref<PokeDetailRes | null>(null);
+
+const change = async (id: PokeDetailRes["id"]) => {
+  const res = await $fetch<PokeDetailRes>(`/api/pokemon/variant/${id}`);
+  if (poke.value && res) {
+    poke.value.name = res.name;
+    poke.value.height = res.height;
+    poke.value.weight = res.weight;
+    poke.value.abilities = res.abilities;
+    poke.value.image = res.image;
+    poke.value.stats = res.stats;
+    poke.value.types = res.types;
+    activeVariantId.value = res.id;
+  }
+};
+
+watch(
+  () => data,
+  (newData) => {
+    if (newData.value) {
+      poke.value = structuredClone(toRaw(newData.value));
+      activeVariantId.value = poke.value.id;
+    }
+  },
+  { immediate: true }
 );
 </script>
 
