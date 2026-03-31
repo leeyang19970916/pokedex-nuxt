@@ -18,9 +18,12 @@
             <th class="pb-2 text-right pr-2">Method</th>
           </tr>
         </thead>
-        <tbody class="text-white">
+        {{
+          move
+        }}
+        <!-- <tbody class="text-white">
           <tr
-            v-for="move in moves"
+            v-for="move in 5"
             :key="move.name"
             class="bg-slate-900/30 hover:bg-cyan-900/20 transition-colors group"
           >
@@ -39,8 +42,16 @@
               {{ move.method }}
             </td>
           </tr>
-        </tbody>
+        </tbody> -->
       </table>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import type { PokeDetailRes } from "~/types/pokeDetail";
+
+defineProps<{
+  move: PokeDetailRes["moves"];
+}>();
+</script>

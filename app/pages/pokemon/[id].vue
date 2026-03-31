@@ -66,8 +66,8 @@ import VariantWrapper from "~/components/PokemonDetail/VariantWrapper.vue";
 import { POKEDEX } from "~/constants";
 const route = useRoute();
 
-const { data, status, execute } = await useFetch<PokeDetailRes>(
-  () => `/api/pokemon/${route.params.id}`,
+const { data, status } = await useFetch<PokeDetailRes>(
+  () => `/api/pokemon/${route.params.id}`
 );
 const activeVariantId = ref<PokeDetailRes["id"] | null>(null);
 
@@ -95,7 +95,7 @@ watch(
       activeVariantId.value = poke.value.id;
     }
   },
-  { immediate: true },
+  { immediate: true }
 );
 </script>
 
@@ -390,8 +390,7 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 
   );
 
   /* 1. 外發光效果：像霓虹燈一樣亮起來 */
-  box-shadow:
-    0 0 20px rgba(34, 211, 238, 0.6),
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.6),
     inset 0 0 15px rgba(34, 211, 238, 0.4);
 }
 
