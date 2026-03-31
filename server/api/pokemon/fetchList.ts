@@ -1,5 +1,5 @@
 import { POKEMON_SORT_OPTIONS } from "~/constants";
-import PokedexData from "../data/pokedex.json";
+import PokedexData from "../rawData/pokedex.json";
 import type { QueryFormat, PokeCard, PokeSort } from "~/types/pokemon";
 
 export default defineEventHandler(async (event) => {

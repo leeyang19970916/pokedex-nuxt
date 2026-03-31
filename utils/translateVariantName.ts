@@ -1,7 +1,7 @@
-import Pokedex from "~~/server/api/data/pokedex.json";
+import Pokedex from "~~/server/api/rawData/pokedex.json";
 export const translateVariantName = (enName: string) => {
   const name = Pokedex.find((item) =>
-    enName.toLocaleLowerCase().includes(item.enName.toLocaleLowerCase())
+    enName.toLocaleLowerCase().includes(item.enName.toLocaleLowerCase()),
   )?.name;
   if (!name) {
     return enName;

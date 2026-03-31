@@ -1,0 +1,37 @@
+{
+    "close-combat": {
+        "name": "近身戰",
+        "type": "fighting",
+        "category": "physical",
+        "power": 120,
+        "accuracy": 100
+    },
+    "aura-sphere": {
+        "name": "波導彈",
+        "type": "fighting",
+        "category": "special",
+        "power": 80,
+        "accuracy": null
+    },
+    "meteor-mash": {
+        "name": "彗星拳",
+        "type": "steel",
+        "category": "physical",
+        "power": 90,
+        "accuracy": 90
+    },
+    "dark-pulse": {
+        "name": "惡之波動",
+        "type": "dark",
+        "category": "special",
+        "power": 80,
+        "accuracy": 100
+    },
+    "tackle": {
+        "name": "撞擊",
+        "type": "normal",
+        "category": "physical",
+        "power": 40,
+        "accuracy": 100
+    }
+}

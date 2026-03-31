@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 
-const rawData = await fs.readFile("./server/api/data/pokedex.json", "utf-8");
+const rawData = await fs.readFile("./server/api/rawData/pokedex.json", "utf-8");
 const pokemonList = JSON.parse(rawData);
 
 // 2. 跑迴圈幫每隻寶可夢拿中文名
@@ -9,7 +9,7 @@ for (let i = 0; i < pokemonList.length; i++) {
   try {
     // 打 species API 拿多國語言資料
     const res = await fetch(
-      `https://pokeapi.co/api/v2/pokemon-species/${p.id}`
+      `https://pokeapi.co/api/v2/pokemon-species/${p.id}`,
     );
     const speciesData = await res.json();
 
@@ -37,8 +37,8 @@ for (let i = 0; i < pokemonList.length; i++) {
 
 // 3. 把升級後的陣列，重新存回 JSON 檔案
 await fs.writeFile(
-  "./server/api/data/pokedex.json",
+  "./server/api/rawData/pokedex.json",
   JSON.stringify(pokemonList, null, 2),
-  "utf-8"
+  "utf-8",
 );
 console.log("🎉 升級完成！請查看 pokedex-zh.json");

@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 import type { PokeDetailRes } from "~/types/pokeDetail";
-import PokedexData from "~~/server/api/data/pokedex.json";
+import PokedexData from "~~/server/api/rawData/pokedex.json";
 
 const props = defineProps<{
   currentPokeId: PokeDetailRes["id"];
