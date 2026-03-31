@@ -47,10 +47,10 @@ moveDetail.forEach(move => {
         name: finalZhName,
         enName: finalEnName,
         type: move.type.name,
-        // 防呆：有些招式沒有 damage_class
         category: move.damage_class ? move.damage_class.name : "status",
-        power: move.power,
-        accuracy: move.accuracy
+        power: move.power !== null ? move.power : "--",
+        accuracy: move.accuracy !== null ? `${move.accuracy}%` : "--",
+        pp: move.pp || "--"
     };
 });
 

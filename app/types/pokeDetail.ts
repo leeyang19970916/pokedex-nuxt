@@ -1,4 +1,4 @@
-import type { Id, PokeCard } from "./pokemon";
+import type { Id, PokeCard, PokeType, PokeMoveCats } from "./pokemon";
 
 export type Opt = {
   name: string;
@@ -13,7 +13,15 @@ export interface PokeDetailRes {
   types: PokeCard["types"];
   image: PokeCard["image"];
   abilities: PokeCard["abilities"];
-  moves: Move[];
+  moves: {
+    name: PokeCard["name"];
+    enName: PokeCard["name"];
+    type: PokeType;
+    category: PokeMoveCats;
+    power: string;
+    accuracy: string;
+    pp: string;
+  }[];
   stats: {
     hp: number;
     atk: number;

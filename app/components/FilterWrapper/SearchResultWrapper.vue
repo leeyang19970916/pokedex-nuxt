@@ -23,6 +23,7 @@
           :mode="'outline'"
           :type="'type'"
           :option="type"
+          :readOnly="true"
         />
       </div>
     </div>
@@ -36,6 +37,7 @@
           type="region"
           :option="region"
           :mode="'outline'"
+          :readOnly="true"
         />
       </div>
     </div>

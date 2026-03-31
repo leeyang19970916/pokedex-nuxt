@@ -2,6 +2,7 @@ import type { PokeSearchForm } from "~/types/pokemon";
 export const POKEMON_API_URL = "https://pokeapi.co/api/v2";
 export const POKEDEX = "Pokédex";
 export const REGION = "region";
+export const CATGEORY = "category";
 export const TYPE = "type";
 export const ZH_HANT = "zh-hant";
 
@@ -61,3 +62,9 @@ export const DEFAULT_SEARCH_FORM: PokeSearchForm = {
   regions: [],
   ability: undefined,
 };
+
+export const POKE_MOVE_CATS = [
+  { label: "物理攻擊", value: "physical" },
+  { label: "特殊攻擊", value: "special" },
+  { label: "變化招式", value: "status" },
+] as const;

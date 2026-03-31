@@ -20,6 +20,7 @@
           type="type"
           mode="solid"
           :option="options"
+          :readOnly="false"
         />
       </div>
 

@@ -56,6 +56,7 @@
             :mode="tempForm.types.includes(type.value) ? 'solid' : 'outline'"
             :option="type"
             @click="toggleSelect"
+            :readOnly="false"
           />
         </div>
       </div>
@@ -74,6 +75,7 @@
             "
             :option="region"
             @click="toggleSelect"
+            :readOnly="false"
           ></Tag>
         </div>
       </div>

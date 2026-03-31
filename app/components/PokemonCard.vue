@@ -16,6 +16,7 @@
         :mode="'solid'"
         :type="'type'"
         :option="option"
+        :readOnly="true"
       ></Tag>
     </div>
   </div>

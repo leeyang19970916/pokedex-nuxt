@@ -8,7 +8,7 @@
     >
       <div
         class="banner-content abs-center z-10 text-white font-mono tracking-widest text-2xl cursor-pointer w-1/2 text-center"
-        @click="() => navigateTo({ path: '' })"
+        @click="() => navigateTo({ path: '/' })"
       >
         {{ POKEDEX }}
       </div>

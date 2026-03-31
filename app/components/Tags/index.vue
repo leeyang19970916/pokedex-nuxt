@@ -1,21 +1,33 @@
 <template>
   <div
-    class="w-[90px] py-1 text-center font-bold text-sm border-[2px] rounded-2xl transition-all cursor-pointer"
-    :class="[tagClass, { ' px-4 rounded-md': props.type === 'region' }]"
+    class="w-[90px] py-1 text-center font-bold text-sm border-[2px] rounded-2xl transition-all"
+    :class="[
+      tagClass,
+      { ' px-4 rounded-md': type === REGION || type === CATGEORY },
+      { 'cursor-pointer': !readOnly },
+    ]"
     @click="onClick"
   >
     {{ option.label }}
   </div>
 </template>
 <script lang="ts" setup>
+import { CATGEORY, REGION } from "~/constants";
 import type { ButtonMode } from "~/types/button";
 import type { TagPayload } from "~/types/pokemon";
 
-const props = defineProps<{
-  type: TagPayload["type"];
-  option: TagPayload["option"];
-  mode: ButtonMode;
-}>();
+const props = withDefaults(
+  defineProps<{
+    readOnly: boolean;
+    type: TagPayload["type"];
+    option: TagPayload["option"];
+    mode: ButtonMode;
+  }>(),
+  {
+    readOnly: true,
+  }
+);
+
 const emit = defineEmits<{
   (e: "click", { type, option }: TagPayload): void;
 }>();
@@ -25,7 +37,7 @@ const tagClass = computed(() => {
   const lightColor = `poke-${option.value}-400`;
   const darkColor = `poke-${option.value}-500`;
 
-  if (type === "region") {
+  if (type === REGION || type === CATGEORY) {
     if (mode === "solid") {
       return `border-gray-600 bg-gray-400 text-white `;
     }

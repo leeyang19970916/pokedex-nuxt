@@ -1,8 +1,9 @@
 import { POKEMON_API_URL, ZH_HANT } from "~/constants";
-import type { PokemonOriginalAPIRes } from "~/types/pokeDetail";
+import type { PokeDetailRes, PokemonOriginalAPIRes } from "~/types/pokeDetail";
 import type { SpeciesPokeOriginalAPIRes } from "~/types/speciesPoke";
 import { translateVariantName } from "~~/utils/translateVariantName";
 import { formattedStat } from "~~/utils/formattedStat";
+import MovesRawData from "~~/server/api/rawData/moves.json";
 
 export default defineEventHandler(async (event) => {
   try {
@@ -33,6 +34,12 @@ export default defineEventHandler(async (event) => {
           url: speciesData.evolution_chain.url,
         },
       })) || [];
+
+    const moves = pokeData.moves.map((i) => {
+      const { name } = i.move;
+      return (MovesRawData as any)[name];
+    });
+
     const result = {
       id: pokeData.id,
       name: translateVariantName(pokeData.name),
@@ -42,7 +49,7 @@ export default defineEventHandler(async (event) => {
       image: pokeData.sprites.other["official-artwork"].front_default,
       abilities: pokeData.abilities.map((a) => a.ability.name),
       stats,
-      moves: pokeData.moves,
+      moves,
       entryText,
       varieties,
       evolutionChainIds,
