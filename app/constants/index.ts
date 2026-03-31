@@ -1,6 +1,6 @@
 import type { PokeSearchForm } from "~/types/pokemon";
 export const POKEMON_API_URL = "https://pokeapi.co/api/v2";
-export const INDEX = "寶可夢圖鑑";
+export const POKEDEX = "Pokédex";
 export const REGION = "region";
 export const TYPE = "type";
 export const ZH_HANT = "zh-hant";

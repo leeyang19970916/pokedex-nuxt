@@ -5,7 +5,8 @@
       <div
         v-for="(poke, index) in pokes"
         :key="poke?.id"
-        class="evolution-stage flex items-center gap-4"
+        class="evolution-stage flex items-center gap-4 cursor-pointer"
+        @click="() => redirect(poke?.id)"
       >
         <div
           class="evo-ball relative w-20 h-20 flex justify-center items-center rounded-full primary-border"
@@ -29,12 +30,20 @@ import type { PokeDetailRes } from "~/types/pokeDetail";
 import PokedexData from "~~/server/api/data/pokedex.json";
 
 const props = defineProps<{
+  currentPokeId: PokeDetailRes["id"];
   evolutionChainIds: PokeDetailRes["evolutionChainIds"];
 }>();
-
+const route = useRoute();
 const pokes = computed(() => {
   return props.evolutionChainIds.map((id) =>
     PokedexData.find((data) => data.id === id),
   );
 });
+
+const redirect = (id?: PokeDetailRes["id"]) => {
+  if (!id || props.currentPokeId === id) return;
+  navigateTo({
+    path: `/pokemon/${id}`,
+  });
+};
 </script>

@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-    <div class="hud-panel cosms-hud entry-panel p-6">
+    <div class="hud-panel cosms-hud entry-panel p-6 min-h-[200px]">
       <div class="label cosms-label mb-2">POKEDEX ENTRY</div>
       <p class="value text-gray-200 font-mono text-sm leading-relaxed">
         {{ entryText }}

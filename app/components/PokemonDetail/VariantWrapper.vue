@@ -1,13 +1,18 @@
 <template>
-  <div class="flex gap-4">
+  <div class="flex gap-4 evolution-stage flex items-center">
     <div
       v-for="varity in varieties"
       :key="varity.id"
-      class="w-[50px] h-[50px] flex items-center justify-center border border-cyan-500 cursor-pointer"
+      class="evo-ball relative w-20 h-20 flex items-center justify-center border border-cyan-500 cursor-pointer rounded-full primary-border"
       :class="{ isActive: activeVariantId === varity.id }"
       @click="() => changeId(varity.id)"
     >
-      <img :src="varity.image" :alt="varity.name" />
+      <img
+        class="w-[80%] h-[80%] z-10"
+        :src="varity.image"
+        :alt="varity.name"
+      />
+      <div class="evo-ring-inner"></div>
     </div>
   </div>
 </template>

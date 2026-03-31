@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-100" @click="redirect">
+  <div class="relative z-100 cursor-pointer" @click="redirect">
     <img :src="PokemonCard" alt="" class="w-full" />
     <img
       class="absolute w-[60%] left-[20%] top-[8%]"

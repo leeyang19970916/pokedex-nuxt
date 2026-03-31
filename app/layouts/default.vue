@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center bg-[#1b252f]">
-    <div class="max-w-[1400px]">
+    <div class="w-[1400px]">
       <slot />
     </div>
   </div>

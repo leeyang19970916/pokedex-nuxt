@@ -4,20 +4,17 @@
     class="pokedex-detail-terminal cosms-theme min-h-screen"
   >
     <header
-      @click="() => execute()"
       class="terminal-banner cosms-border flex justify-center items-center h-20 relative overflow-hidden"
     >
       <div
-        class="banner-content abs-center z-10 text-white font-mono tracking-widest text-2xl"
+        class="banner-content abs-center z-10 text-white font-mono tracking-widest text-2xl cursor-pointer w-1/2 text-center"
+        @click="() => navigateTo({ path: '' })"
       >
-        AURA ANALYZER - DETAIL VIEW
+        {{ POKEDEX }}
       </div>
       <div class="hologram-line z-0"></div>
     </header>
-
-    <main
-      class="main-display grid grid-cols-[1fr_2fr_1fr] gap-6 p-[3%] z-10 relative"
-    >
+    <main class="relative grid grid-cols-[1fr_2fr_1fr] gap-6 z-10 p-[3%]">
       <InfoWrapper
         class="left-panel flex flex-col gap-6"
         :name="poke.name"
@@ -26,14 +23,15 @@
         :weight="poke.weight"
         :types="poke.types"
       />
-      <section class="flex flex-col gap-4 justify-center">
+      <section class="flex justify-center items-center">
         <ImageWrapper
           class="center-feature cosms-feature relative flex justify-center items-center"
           :image="poke.image"
           :name="poke.name"
         />
         <VariantWrapper
-          v-if="activeVariantId"
+          class="absolute bottom-0 left-1/2 -translate-x-1/2 z-10"
+          v-if="activeVariantId && poke.varieties.length > 1"
           :activeVariantId="activeVariantId"
           :varieties="poke.varieties"
           @change="change"
@@ -47,10 +45,11 @@
       />
     </main>
 
-    <footer
-      class="bottom-display p-[3%] pt-0 z-10 relative grid grid-cols-[1fr_2fr] gap-6"
-    >
-      <EvolutionChainWrapper :evolutionChainIds="poke.evolutionChainIds" />
+    <footer class="z-10 relative grid grid-cols-[1fr_2fr] gap-6 p-[3%]">
+      <EvolutionChainWrapper
+        :currentPokeId="poke.id"
+        :evolutionChainIds="poke.evolutionChainIds"
+      />
       <MoveWrapper :moves="poke.moves" />
     </footer>
   </div>
@@ -64,10 +63,11 @@ import MoveWrapper from "~/components/PokemonDetail/MoveWrapper.vue";
 import EvolutionChainWrapper from "~/components/PokemonDetail/EvolutionChainWrapper.vue";
 import type { PokeDetailRes } from "~/types/pokeDetail";
 import VariantWrapper from "~/components/PokemonDetail/VariantWrapper.vue";
+import { POKEDEX } from "~/constants";
 const route = useRoute();
 
 const { data, status, execute } = await useFetch<PokeDetailRes>(
-  () => `/api/pokemon/${route.params.id}`
+  () => `/api/pokemon/${route.params.id}`,
 );
 const activeVariantId = ref<PokeDetailRes["id"] | null>(null);
 
@@ -95,7 +95,7 @@ watch(
       activeVariantId.value = poke.value.id;
     }
   },
-  { immediate: true }
+  { immediate: true },
 );
 </script>
 
@@ -281,7 +281,6 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 
 /* 寶可夢主圖 (柔和光暈) */
 .pokemon-feature-img {
   width: 80%;
-  max-width: 400px;
   height: auto;
   filter: drop-shadow(
     0 0 20px rgba(179, 234, 254, 0.5)
@@ -366,5 +365,55 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 
   td {
     padding: 12px;
   }
+}
+</style>
+
+<style lang="scss">
+/* 基礎樣式微調：讓原本的球體更有層次感 */
+.evo-ball {
+  @apply transition-all duration-300 ease-in-out bg-slate-900/40;
+  border-color: rgba(6, 182, 212, 0.3); /* 沒選中時，邊框暗一點 */
+}
+
+.evo-ball:hover {
+  @apply scale-105 border-cyan-400;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+}
+
+/* 核心：isActive 樣式 */
+.isActive {
+  @apply border-cyan-400 scale-110 z-20;
+  background: radial-gradient(
+    circle,
+    rgba(34, 211, 238, 0.2) 0%,
+    rgba(15, 23, 42, 0.8) 100%
+  );
+
+  /* 1. 外發光效果：像霓虹燈一樣亮起來 */
+  box-shadow:
+    0 0 20px rgba(34, 211, 238, 0.6),
+    inset 0 0 15px rgba(34, 211, 238, 0.4);
+}
+
+/* 2. 進階技巧：加上一個微小的旋轉掃描光環 */
+.isActive::before {
+  content: "";
+  @apply absolute inset-[-4px] rounded-full border-2 border-t-cyan-400 border-r-transparent border-b-transparent border-l-transparent;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 讓圖片在選中時更鮮艷 */
+.isActive img {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+  @apply scale-110;
 }
 </style>
