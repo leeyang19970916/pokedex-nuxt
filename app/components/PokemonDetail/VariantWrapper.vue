@@ -3,7 +3,7 @@
     <div
       v-for="varity in varieties"
       :key="varity.id"
-      class="w-[50px] h-[50px] flex items-center justify-center border border-cyan-500"
+      class="w-[50px] h-[50px] flex items-center justify-center border border-cyan-500 cursor-pointer"
       :class="{ isActive: activeVariantId === varity.id }"
       @click="() => changeId(varity.id)"
     >

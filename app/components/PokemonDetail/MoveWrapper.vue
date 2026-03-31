@@ -1,6 +1,6 @@
 <template>
   <div class="hud-panel cosms-hud moveset-panel p-6 flex flex-col gap-4">
-    <div class="label cosms-label">MOVESET</div>
+    <div class="label cosms-label">招式組合</div>
     <div class="moveset-table-container">
       <table class="moveset-table w-full text-left font-mono text-sm">
         <thead class="text-gray-500">

@@ -1,30 +1,5 @@
 <template>
   <div>
-    <div
-      class="hud-panel cosms-hud stats-radar-panel p-6 flex flex-col items-center"
-    >
-      <div class="label cosms-label self-start mb-4">AURA PROFILE (RADAR)</div>
-      <div
-        class="radar-placeholder flex justify-center items-center w-60 h-60 relative border border-gray-700 rounded-full"
-      >
-        <div class="radar-web z-0"></div>
-        <div
-          class="radar-data z-10 flex justify-center items-center font-bold text-xl primary-neon-text"
-        >
-          AURA CHART
-        </div>
-        <div class="stat-label stat-hp cosms-stat-label">HP:{{ stats.hp }}</div>
-        <div class="stat-label stat-atk cosms-stat-label">
-          Atk:{{ stats.atk }}
-        </div>
-        <div class="stat-label stat-def cosms-stat-label">
-          Def:{{ stats.def }}
-        </div>
-        <div class="stat-label stat-spe cosms-stat-label">
-          Spe:{{ stats.spe }}
-        </div>
-      </div>
-    </div>
     <div class="hud-panel cosms-hud stats-bar-panel p-6 flex flex-col gap-4">
       <div class="label cosms-label">AURA ENERGY CELLS</div>
 
