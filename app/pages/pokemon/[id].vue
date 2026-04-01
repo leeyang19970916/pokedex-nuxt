@@ -46,7 +46,7 @@
       />
     </main>
 
-    <footer class="z-10 relative grid grid-cols-[1fr_2fr] gap-6 p-[3%]">
+    <footer class="z-10 relative grid grid-cols-[1fr_1.5fr] gap-6 p-[3%]">
       <EvolutionChainWrapper
         :currentPokeId="poke.id"
         :evolutionChains="poke.evolutionChains"

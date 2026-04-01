@@ -3,7 +3,7 @@
     <div class="hud-panel cosms-hud identity-panel p-6">
       <div class="label cosms-label">圖鑑編號</div>
       <div class="value font-bold text-5xl primary-neon-text mb-4">
-        #{{ id }}
+        # {{ id }}
       </div>
 
       <div class="label cosms-label">名字</div>
