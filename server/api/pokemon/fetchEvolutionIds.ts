@@ -12,6 +12,7 @@ export default defineEventHandler(async (event) => {
   const query = getQuery(event);
   try {
     const url = query.url as string;
+    console.log(url);
     const res = await $fetch<PokeEvolutionChainRes>(url);
     const result: PokeDetailRes["evolutionChains"] = [];
     const traverse = (
@@ -27,8 +28,7 @@ export default defineEventHandler(async (event) => {
         // 因為 evolves_to 是「陣列」，所以我們要用 forEach 分別處理每一隻
         chain.evolves_to.forEach((nextForm) => {
           // 對於陣列裡的「每一隻」，再次啟動遞迴，並把階級 + 1
-          stage = (stage + 1) as ChainObj["stage"];
-          traverse(nextForm, stage);
+          traverse(nextForm, (stage + 1) as ChainObj["stage"]);
         });
       }
     };

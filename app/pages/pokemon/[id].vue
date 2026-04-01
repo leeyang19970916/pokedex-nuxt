@@ -2,6 +2,7 @@
   <div
     v-if="poke && data && status === 'success'"
     class="pokedex-detail-terminal cosms-theme min-h-screen"
+    :style="{ 'background-image': `url(${BackgroundImage})` }"
   >
     <header
       class="terminal-banner cosms-border flex justify-center items-center h-20 relative overflow-hidden"
@@ -25,7 +26,7 @@
       />
       <section class="flex justify-center items-center">
         <ImageWrapper
-          class="center-feature cosms-feature relative flex justify-center items-center"
+          class="relative flex justify-center items-center"
           :image="poke.image"
           :name="poke.name"
         />
@@ -56,6 +57,7 @@
 </template>
 
 <script setup lang="ts">
+import BackgroundImage from "~/assets/image/header/list_bottom_bg.jpg";
 import InfoWrapper from "~/components/PokemonDetail/InfoWrapper.vue";
 import ImageWrapper from "~/components/PokemonDetail/ImageWrapper.vue";
 import StatsWrapper from "~/components/PokemonDetail/StatsWrapper.vue";
@@ -103,7 +105,7 @@ watch(
 /* 詳情頁：能量分析終端 (微調版) */
 
 .pokedex-detail-terminal {
-  background-color: #0a141e; /* 你的標準深藍底色 */
+  background-image: url("../../assets/image/header/list_bottom_bg.jpg");
   z-index: 10;
 }
 
@@ -223,78 +225,6 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 
   @extend .cosms-type-tag;
   padding: 2px 8px;
   font-size: 10px;
-}
-
-/* --- 中央反應爐 (同心圓環反應爐 - 主色調脈衝) --- */
-.reactor-core-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .core-ring {
-    position: absolute;
-    border: 2px solid rgba(179, 234, 254, 0.4);
-    border-radius: 50%;
-    z-index: 0;
-  }
-
-  /* 你的軌道設計：放大版 */
-  .ring-1 {
-    width: 300px;
-    height: 300px;
-  }
-  .ring-2 {
-    width: 350px;
-    height: 350px;
-    border-style: dashed;
-  }
-  .ring-3 {
-    width: 400px;
-    height: 400px;
-    border-width: 1px;
-  }
-  .ring-4 {
-    width: 450px;
-    height: 450px;
-    border-style: dotted;
-  }
-  .ring-5 {
-    width: 500px;
-    height: 500px;
-    animation: reactor-pulse 10s linear infinite;
-  }
-}
-
-@keyframes reactor-pulse {
-  0%,
-  100% {
-    border-color: rgba(179, 234, 254, 0.2);
-  }
-  50% {
-    border-color: rgba(179, 234, 254, 0.6);
-  }
-}
-
-/* 寶可夢主圖 (柔和光暈) */
-.pokemon-feature-img {
-  width: 80%;
-  height: auto;
-  filter: drop-shadow(
-    0 0 20px rgba(179, 234, 254, 0.5)
-  ); /* 使用 primary 霓虹光暈 */
-  animation: hologram-scanlines 5s ease-out forwards;
-}
-
-@keyframes hologram-scanlines {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* --- 雷達圖雛形 (色調與網格 gray-700) --- */
