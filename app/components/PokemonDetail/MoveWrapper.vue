@@ -2,53 +2,72 @@
   <div class="hud-panel cosms-hud moveset-panel p-6 flex flex-col gap-4">
     <div class="label cosms-label text-cyan-400">招式數據庫 [MOVESET_DATA]</div>
 
-    <div class="moveset-table-container overflow-x-auto">
-      <table
-        class="moveset-table w-full text-left font-mono text-xs border-separate border-spacing-y-2"
+    <div class="moveset-table-wrapper">
+      <el-table
+        :data="moves"
+        height="300"
+        class="cosms-el-table w-full"
+        :lazy="true"
       >
-        <thead
-          class="text-gray-500 uppercase tracking-widest border-b border-gray-800"
+        <el-table-column
+          fixed
+          label="招式屬性(TYPE)"
+          min-width="120"
+          align="center"
         >
-          <tr>
-            <th class="pb-2 pl-2">屬性(TYPE)</th>
-            <th class="pb-2">招式名稱(Name)</th>
-            <th class="pb-2 text-center">招式分類(Cat.)</th>
-            <th class="pb-2 text-center">攻擊力(Power)</th>
-            <th class="pb-2 text-center">命中率(Acc.)</th>
-          </tr>
-        </thead>
+          <template #default="{ row }">
+            <Tag
+              class="custom-tag"
+              :readOnly="true"
+              :type="TYPE"
+              :option="getTypeOpt(row.type)"
+              mode="solid"
+            />
+          </template>
+        </el-table-column>
 
-        <tbody class="text-white h-80px overflow-hidden scroll-m-0">
-          <tr
-            v-for="(move, index) in moves"
-            :key="`${move.name}-${index}`"
-            class="bg-slate-900/30 hover:bg-cyan-900/20 transition-colors group"
-          >
-            <td class="py-3 pl-2">
-              <Tag
-                :readOnly="true"
-                :type="TYPE"
-                :option="getTypeOpt(move.type)"
-                :mode="'solid'"
-              >
-              </Tag>
-            </td>
-            <td class="font-bold text-gray-200">{{ move.name }}</td>
-            <td class="text-center">
-              <Tag
-                :readOnly="true"
-                class="!w-[80%] py-2 m-[0_auto]"
-                :type="CATGEORY"
-                :option="getStatusOpt(move.category)"
-                :mode="'outline'"
-              >
-              </Tag>
-            </td>
-            <td class="text-center text-orange-400">{{ move.power }}</td>
-            <td class="text-center text-cyan-400">{{ move.accuracy }}</td>
-          </tr>
-        </tbody>
-      </table>
+        <el-table-column prop="name" label="招式名稱(NAME)" min-width="120">
+          <template #default="{ row }">
+            <span class="font-bold text-gray-200 uppercase tracking-wide">{{
+              row.name
+            }}</span>
+          </template>
+        </el-table-column>
+
+        <el-table-column label="招式類型(CAT.)" min-width="120" align="center">
+          <template #default="{ row }">
+            <Tag
+              class="custom-tag"
+              :readOnly="true"
+              :type="CATGEORY"
+              :option="getStatusOpt(row.category)"
+              mode="outline"
+            />
+          </template>
+        </el-table-column>
+
+        <el-table-column
+          prop="power"
+          label="攻擊力(PWR)"
+          min-width="120"
+          align="center"
+        >
+          <template #default="{ row }">
+            <span class="text-orange-400 font-mono">{{ row.power }}</span>
+          </template>
+        </el-table-column>
+
+        <el-table-column
+          prop="accuracy"
+          label="命中率(ACC.)"
+          min-width="120"
+          align="center"
+        >
+          <template #default="{ row }">
+            <span class="text-cyan-400 font-mono">{{ row.accuracy }}</span>
+          </template>
+        </el-table-column>
+      </el-table>
     </div>
   </div>
 </template>
@@ -69,3 +88,55 @@ const getStatusOpt = (status: PokeDetailRes["moves"][number]["category"]) => {
   return POKE_MOVE_CATS.find((m) => m.value === status) || POKE_MOVE_CATS[0];
 };
 </script>
+<style scoped lang="scss">
+.custom-tag {
+  @apply w-3/4 m-[0_auto];
+}
+.moveset-table-wrapper {
+  /* 讓 Element Plus 的背景完全透明，露出你的底層背景 */
+  :deep(.cosms-el-table) {
+    --el-table-bg-color: transparent;
+    --el-table-tr-bg-color: transparent;
+    --el-table-header-bg-color: transparent;
+    --el-table-border-color: rgba(255, 255, 255, 0.05); /* 極淡的線條 */
+    --el-table-row-hover-bg-color: rgba(34, 211, 238, 0.1); /* 你的 Cyan 藍 */
+
+    background-color: transparent;
+    border: none;
+
+    /* 標題欄樣式 */
+    th.el-table__cell {
+      @apply text-gray-500 font-mono tracking-widest text-xs border-b border-gray-800;
+      background-color: transparent !important;
+    }
+
+    /* 內容單元格樣式 */
+    td.el-table__cell {
+      @apply py-2 border-none;
+    }
+
+    /* 移除 Element Plus 預設的偽元素邊框線 */
+    &::before,
+    &::after {
+      display: none !important;
+    }
+
+    .el-table__inner-wrapper::before {
+      display: none !important;
+    }
+
+    /* 自定義捲軸樣式 (讓它符合科幻風) */
+    .el-scrollbar__bar {
+      @apply opacity-50;
+    }
+  }
+
+  /* 斑馬紋或間隔感（可選） */
+  :deep(.el-table__row) {
+    @apply transition-all duration-300;
+    &:nth-child(even) {
+      background-color: rgba(15, 23, 42, 0.2); /* 稍微深一點的背景色 */
+    }
+  }
+}
+</style>
