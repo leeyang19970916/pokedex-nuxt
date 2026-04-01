@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-4 evolution-stage flex items-center">
+  <div class="flex gap-4 evolution-stage items-center">
     <div
       v-for="varity in varieties"
       :key="varity.id"
@@ -19,6 +19,7 @@
 
 <script setup lang="ts">
 import type { PokeDetailRes } from "~/types/pokeDetail";
+import EvoBall from "./EvoBall.vue";
 
 const props = defineProps<{
   varieties: PokeDetailRes["varieties"];

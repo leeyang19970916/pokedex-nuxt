@@ -36,7 +36,10 @@ export interface PokeDetailRes {
     image: PokeCard["image"];
     name: PokeCard["name"];
   }[];
-  evolutionChainIds: Id[];
+  evolutionChains: {
+    id: Id;
+    stage: 1 | 2 | 3;
+  }[];
 }
 
 export interface PokemonOriginalAPIRes {

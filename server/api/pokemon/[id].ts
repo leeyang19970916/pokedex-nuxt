@@ -28,7 +28,7 @@ export default defineEventHandler(async (event) => {
         image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${variantId}.png`,
       };
     });
-    const evolutionChainIds =
+    const evolutionChains =
       (await $fetch("/api/pokemon/fetchEvolutionIds", {
         query: {
           url: speciesData.evolution_chain.url,
@@ -52,7 +52,7 @@ export default defineEventHandler(async (event) => {
       moves,
       entryText,
       varieties,
-      evolutionChainIds,
+      evolutionChains,
     };
     return result;
   } catch (e) {
