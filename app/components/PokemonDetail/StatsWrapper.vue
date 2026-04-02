@@ -77,7 +77,6 @@ const store = usePokeStore();
 const abilityList = computed(() => {
   return props.abilities.flatMap((enName) => {
     const data = store.abilities.find((item) => item.value === enName);
-    console.log(data, "data");
     if (data && data.value !== undefined && data.id !== 0) {
       return [
         {

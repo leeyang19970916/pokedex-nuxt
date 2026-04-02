@@ -41,10 +41,13 @@
         />
       </div>
     </div>
-    <div v-if="searchForm.ability" class="flex items-start gap-4 z-10">
+    <div
+      v-if="searchForm.ability && getAbility"
+      class="flex items-start gap-4 z-10"
+    >
       <span class="search-key">特性：</span>
       <div class="text-primary/90 text-sm font-medium tracking-wide font-mono">
-        {{ searchForm.ability }}
+        {{ getAbility.label }}
       </div>
     </div>
 
@@ -63,20 +66,28 @@ import { POKEMON_TYPES, POKEMON_REGIONS, SLIDER_RANGE } from "~/constants";
 import Tag from "~/components/Tags/index.vue";
 
 import { SearchContextKey } from "~/types/pokemon";
+import { usePokeStore } from "~/store/pokeStore";
 
 const { searchForm } = inject(SearchContextKey)!;
+
+const pokeStore = usePokeStore();
+const getAbility = computed(() => {
+  return pokeStore.abilities.find((i) =>
+    i.value?.includes(String(searchForm.value.ability)),
+  );
+});
 
 const typesOptions = computed(() => {
   // 遍歷所有屬性，只保留「存在於 searchForm.types 陣列中」的物件
   return POKEMON_TYPES.filter((type) =>
-    searchForm.value.types.includes(type.value)
+    searchForm.value.types.includes(type.value),
   );
 });
 
 const regionsOptions = computed(() => {
   // 遍歷所有屬性，只保留「存在於 searchForm.types 陣列中」的物件
   return POKEMON_REGIONS.filter((region) =>
-    searchForm.value.regions.includes(region.value)
+    searchForm.value.regions.includes(region.value),
   );
 });
 const isShowIdsRange = computed(() => {
