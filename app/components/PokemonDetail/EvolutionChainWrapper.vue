@@ -3,32 +3,24 @@
     <div class="label cosms-label text-cyan-400 font-mono tracking-widest">
       進化鏈數據 [EVOLUTION_FLOW]
     </div>
-
-    <div class="flex w-full flex-col gap-4">
-      <div class="stage" v-if="pokeState.stage1.length">
-        <EvoBall
-          v-for="poke in pokeState.stage1"
-          :key="poke.id"
-          :name="poke.name"
-          :image="poke.image"
-        ></EvoBall>
-      </div>
-      <div class="stage" v-if="pokeState.stage2.length">
-        <EvoBall
-          v-for="poke in pokeState.stage2"
-          :key="poke.id"
-          :name="poke.name"
-          :image="poke.image"
-        ></EvoBall>
-      </div>
-      <div class="stage" v-if="pokeState.stage3.length">
-        <EvoBall
-          v-for="poke in pokeState.stage3"
-          :key="poke.id"
-          :name="poke.name"
-          :image="poke.image"
-        ></EvoBall>
-      </div>
+    <div class="h-full gap-4 grid" :class="[customClass.gridCol]">
+      <template v-for="(pokeState, index) in pokeStates" :key="index">
+        <div
+          class="stage"
+          :class="{ '!justify-center': pokeState.length === 1 }"
+          v-if="pokeState.length"
+        >
+          <EvoBall
+            class="max-w-[200px] max-h-[200px]"
+            :class="customClass.ballSize"
+            v-for="poke in pokeState"
+            :key="poke.id"
+            :name="poke.name"
+            :image="poke.image"
+            @click="() => redirect(poke.id)"
+          ></EvoBall>
+        </div>
+      </template>
     </div>
   </div>
 </template>
@@ -49,31 +41,51 @@ const getPokeDataList = (
   stage: PokeDetailRes["evolutionChains"][number]["stage"]
 ): PokeBaseInfo[] => {
   const stageChains = props.evolutionChains.filter((i) => i.stage === stage);
-  const result = stageChains.map(({ id }) => {
+  const result = stageChains.flatMap(({ id }) => {
     const data = PokedexData.find((poke) => poke.id === id);
-
     return data
       ? {
           id: data.id,
           name: data.name,
           image: data.image,
         }
-      : undefined;
+      : [];
   });
 
-  return result as PokeBaseInfo[];
+  return result;
 };
 
-const pokeState = computed(() => {
+const pokeStates = computed(() => {
   let stage1 = getPokeDataList(1);
   let stage2 = getPokeDataList(2);
   let stage3 = getPokeDataList(3);
 
-  return {
-    stage1,
-    stage2,
-    stage3,
+  return [stage1, stage2, stage3].filter((i) => i.length);
+});
+
+const customClass = computed(() => {
+  const length = pokeStates.value.length;
+  let result = {
+    gridCol: "",
+    ballSize: "",
   };
+  if (length === 1) {
+    result.gridCol = `grid-cols-1`;
+    result.ballSize = "!w-full !h-full";
+  } else if (length === 2) {
+    const stage2Length = pokeStates.value[1]?.length;
+    console.log(stage2Length, "stage2Length");
+    if (stage2Length && stage2Length > 1) {
+      result.gridCol = `grid-cols-[2fr_8fr]`;
+    } else {
+      result.ballSize = "!w-full !h-full !max-w-[125px] !max-h-[125px]";
+      result.gridCol = `grid-cols-[1fr_1fr]`;
+    }
+  } else {
+    result.gridCol = `grid-cols-[1fr_1fr_1fr]`;
+  }
+
+  return result;
 });
 
 const redirect = (id?: number) => {
@@ -84,6 +96,18 @@ const redirect = (id?: number) => {
 
 <style lang="scss" scoped>
 .stage {
-  @apply flex flex-wrap gap-4 items-center justify-center;
+  @apply relative flex flex-wrap gap-4 items-center justify-start h-full px-4;
+
+  &:not(:last-child)::after {
+    content: "≫"; // 你的箭頭符號，也可以用 SVG 背景
+    position: absolute;
+    right: -1.25rem; // 剛好位在 grid gap 的中央 (gap-4 是 1rem)
+    top: 50%;
+    transform: translateY(-50%);
+
+    @apply text-cyan-500 font-bold text-xl animate-pulse; // 套用你的霓虹風格
+    z-index: 20;
+    pointer-events: none; // 確保箭頭不會擋到點擊
+  }
 }
 </style>

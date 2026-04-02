@@ -1,8 +1,8 @@
 <template>
   <div
-    class="evo-ball relative w-20 h-20 flex justify-center items-center rounded-full primary-border"
+    class="evo-ball relative w-20 h-20 flex justify-center items-center rounded-full primary-border cursor-pointer"
   >
-    <img :src="image" :alt="name" class="w-16 h-16 z-10" />
+    <img :src="image" :alt="name" class="w-[80%] h-[80%] z-10" />
     <div class="evo-ring-inner"></div>
   </div>
 </template>
