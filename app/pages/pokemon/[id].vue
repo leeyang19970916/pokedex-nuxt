@@ -5,15 +5,49 @@
     :style="{ 'background-image': `url(${BackgroundImage})` }"
   >
     <header
-      class="terminal-banner cosms-border flex justify-center items-center h-20 relative overflow-hidden"
+      class="terminal-banner cosms-border flex justify-between items-center h-20 relative overflow-hidden px-[3%]"
     >
+      <div class="hologram-line z-0 absolute inset-0 pointer-events-none"></div>
+
       <div
-        class="banner-content abs-center z-10 text-white font-mono tracking-widest text-2xl cursor-pointer w-1/2 text-center"
+        v-if="prevPoke"
+        class="nav-btn prev-btn z-10 flex items-center gap-3 cursor-pointer transition-all duration-300 hover:scale-105"
+        @click="() => navigateTo(`/pokemon/${prevPoke?.id}`)"
+      >
+        <div class="nav-arrow text-cyan-500 font-bold text-xl">≪</div>
+        <div class="nav-info hidden md:flex flex-col items-start">
+          <span class="text-[10px] text-cyan-600 font-mono leading-none"
+            >NO.{{ String(prevPoke.id).padStart(4, "0") }}</span
+          >
+          <span class="text-sm text-cyan-100 font-bold tracking-wider">{{
+            prevPoke.name
+          }}</span>
+        </div>
+      </div>
+      <div v-else class="w-[120px]"></div>
+      <div
+        class="banner-content z-10 text-white font-mono tracking-widest text-2xl cursor-pointer text-center absolute left-1/2 -translate-x-1/2"
         @click="() => navigateTo({ path: '/' })"
       >
         {{ POKEDEX }}
       </div>
-      <div class="hologram-line z-0"></div>
+
+      <div
+        v-if="nextPoke"
+        class="nav-btn next-btn z-10 flex items-center gap-3 cursor-pointer transition-all duration-300 hover:scale-105"
+        @click="() => navigateTo(`/pokemon/${nextPoke?.id}`)"
+      >
+        <div class="nav-info hidden md:flex flex-col items-end">
+          <span class="text-[10px] text-cyan-600 font-mono leading-none"
+            >NO.{{ String(nextPoke.id).padStart(4, "0") }}</span
+          >
+          <span class="text-sm text-cyan-100 font-bold tracking-wider">{{
+            nextPoke.name
+          }}</span>
+        </div>
+        <div class="nav-arrow text-cyan-500 font-bold text-xl">≫</div>
+      </div>
+      <div v-else class="w-[120px]"></div>
     </header>
     <main class="relative grid grid-cols-[1fr_2fr_1fr] gap-6 z-10 p-[3%]">
       <InfoWrapper
@@ -65,7 +99,9 @@ import MoveWrapper from "~/components/PokemonDetail/MoveWrapper.vue";
 import EvolutionChainWrapper from "~/components/PokemonDetail/EvolutionChainWrapper.vue";
 import type { PokeDetailRes } from "~/types/pokeDetail";
 import VariantWrapper from "~/components/PokemonDetail/VariantWrapper.vue";
-import { POKEDEX } from "~/constants";
+import { POKEDEX, SLIDER_RANGE } from "~/constants";
+import PokedexData from "~~/server/api/rawData/pokedex.json";
+
 const route = useRoute();
 
 const { data, status } = await useFetch<PokeDetailRes>(
@@ -88,7 +124,24 @@ const change = async (id: PokeDetailRes["id"]) => {
     activeVariantId.value = res.id;
   }
 };
+const prevPoke = computed(() => {
+  const index = Number(poke.value?.id) - 1;
+  if (index === 0) {
+    return null;
+  } else {
+    return { id: index, name: PokedexData.find((i) => i.id === index)?.name };
+  }
+});
 
+// 取得下一隻 (如果是最後一隻，回傳 undefined)
+const nextPoke = computed(() => {
+  const index = Number(poke.value?.id) + 1;
+  if (index <= SLIDER_RANGE.max) {
+    return { id: index, name: PokedexData.find((i) => i.id === index)?.name };
+  } else {
+    return null;
+  }
+});
 watch(
   () => data,
   (newData) => {
@@ -270,5 +323,51 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 
   height: 90%;
   border: 1px dashed rgba(179, 234, 254, 0.4);
   border-radius: 50%;
+}
+/* --- 導航列兩翼按鈕樣式 --- */
+.nav-btn {
+  background: rgba(10, 20, 30, 0.5); /* 微微的底色 */
+  border: 1px solid transparent;
+  padding: 4px 12px;
+  border-radius: 8px;
+
+  .nav-icon {
+    /* 給小圖標一點立體投影 */
+    filter: drop-shadow(0 0 5px rgba(179, 234, 254, 0.2));
+    transition: filter 0.3s;
+  }
+
+  .nav-arrow {
+    text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
+  }
+
+  /* Hover 時的 HUD 啟動效果 */
+  &:hover {
+    border-color: rgba(179, 234, 254, 0.4);
+    background: linear-gradient(
+      90deg,
+      rgba(179, 234, 254, 0.1) 0%,
+      transparent 100%
+    );
+    box-shadow: inset 0 0 10px rgba(179, 234, 254, 0.1);
+
+    .nav-icon {
+      filter: drop-shadow(0 0 10px rgba(179, 234, 254, 0.6)) brightness(1.1);
+    }
+
+    .nav-arrow {
+      text-shadow: 0 0 15px rgba(0, 243, 255, 0.9);
+      transform: scale(1.2);
+    }
+  }
+
+  /* 讓右邊按鈕的漸層反過來 */
+  &.next-btn:hover {
+    background: linear-gradient(
+      270deg,
+      rgba(179, 234, 254, 0.1) 0%,
+      transparent 100%
+    );
+  }
 }
 </style>
