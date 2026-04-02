@@ -33,3 +33,19 @@
 [] 找語言包，復活有中文可以看
 [] 串接 detail API
 [] fetchAbilities 型別錯誤修正
+
+2026/4/2 (sb哭哭，不用頭腦戰了，專心搞他們，希望連假可以畢業)
+[] SearchForm存快取 ，存store
+[] 上一頁、下一頁
+[] 分類寶可夢、弱化屬性
+[] 哪裡需要轉轉轉，提升ＵＸ
+[] RWD
+[] useHead
+[] useSEO
+[] middleware
+[X] ability特性要怎麼歸納，怎麼秀
+[] createError的機制真的就那樣寫？每一個defineEventHandler都重複丟？
+[] 導頁的loading取捨，init 要用 skeloten?
+[] 解決tailwind讀兩次的問題
+[] 招式表的合理性,sort功能
+

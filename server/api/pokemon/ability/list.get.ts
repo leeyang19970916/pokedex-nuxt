@@ -23,11 +23,19 @@ export default defineEventHandler(async (event) => {
       },
     });
 
-    const results: PokeAbility[] = response.results.map((i) => ({
-      label: i.name,
-      value: i.name,
-      id: Number(i.url.split("/").filter(Boolean).pop()) || 0,
-    }));
+    const promises = response.results.map(async (i) => {
+      const id = Number(i.url.split("/").filter(Boolean).pop()) || 0;
+
+      const res = await $fetch(`/api/pokemon/ability/${id}`);
+
+      return {
+        label: res.zhName,
+        value: i.name,
+        id,
+      };
+    });
+    const results: PokeAbility[] = await Promise.all(promises);
+
     return results;
   } catch (error) {
     console.error("抓取特性 API 失敗：", error);

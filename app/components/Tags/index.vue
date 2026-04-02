@@ -1,9 +1,9 @@
 <template>
   <div
-    class="w-[90px] py-1 text-center font-bold text-sm border-[2px] rounded-2xl transition-all"
+    class="w-[90px] py-1 px-[6px] text-center font-bold text-sm border-[2px] rounded-2xl transition-all"
     :class="[
       tagClass,
-      { ' px-4 rounded-md': type === REGION || type === CATGEORY },
+      { ' px-4 rounded-md': type !== TYPE },
       { 'cursor-pointer': !readOnly },
     ]"
     @click="onClick"
@@ -12,7 +12,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { CATGEORY, REGION } from "~/constants";
+import { TYPE } from "~/constants";
 import type { ButtonMode } from "~/types/button";
 import type { TagPayload } from "~/types/pokemon";
 
@@ -37,19 +37,19 @@ const tagClass = computed(() => {
   const lightColor = `poke-${option.value}-400`;
   const darkColor = `poke-${option.value}-500`;
 
-  if (type === REGION || type === CATGEORY) {
-    if (mode === "solid") {
-      return `border-gray-600 bg-gray-400 text-white `;
-    }
-    if (mode === "outline") {
-      return `border-gray-600 text-gray-400 hover:border-primary/60 hover:text-primary/80`;
-    }
-  } else {
+  if (type === TYPE) {
     if (mode === "solid") {
       return `border-${lightColor} bg-${darkColor} text-white shadow-[0_0_.25em_.03em] shadow-${darkColor}`;
     }
     if (mode === "outline") {
       return `text-${lightColor} border-${lightColor} hover:border-${darkColor}  hover:bg-${darkColor} hover:text-white`;
+    }
+  } else {
+    if (mode === "solid") {
+      return `border-gray-600 bg-gray-400 text-white `;
+    }
+    if (mode === "outline") {
+      return `border-gray-600 text-gray-400 hover:border-primary/60 hover:text-primary/80`;
     }
   }
 });

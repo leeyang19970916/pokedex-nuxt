@@ -8,10 +8,16 @@ export const usePokeStore = defineStore("pokeStore", () => {
   const setList = async (newData: PokeCard[]) => {
     pokeList.value = newData;
   };
-  const setAbilities = async (newData: PokeAbility[]) => {
+  const fetchAbilities = async () => {
+    if (abilities.value.length) return;
+    const res = await $fetch("/api/pokemon/ability/list", {
+      query: {
+        limit: 400,
+      },
+      immediate: true,
+    });
     const all = { label: "All", value: undefined, id: 0 };
-
-    abilities.value = [all, ...newData];
+    abilities.value = [all, ...res];
   };
-  return { pokeList, setList, abilities, setAbilities };
+  return { pokeList, setList, abilities, fetchAbilities };
 });

@@ -7,6 +7,7 @@ import {
   TYPE,
   POKE_MOVE_CATS,
   CATGEORY,
+  ABILITY,
 } from "~/constants";
 export type Id = number;
 export type Url = string;
@@ -14,6 +15,10 @@ export type PokeType = (typeof POKEMON_TYPES)[number]["value"];
 export type PokeRegion = (typeof POKEMON_REGIONS)[number]["value"];
 export type PokeSort = (typeof POKEMON_SORT_OPTIONS)[number]["value"];
 export type PokeMoveCats = (typeof POKE_MOVE_CATS)[number]["value"];
+export type Opt = {
+  label: string;
+  value: string;
+};
 
 export type PokeCard = {
   id: Id;
@@ -58,8 +63,9 @@ export type TagPayload = {
   option:
     | (typeof POKEMON_TYPES)[number]
     | (typeof POKEMON_REGIONS)[number]
-    | (typeof POKE_MOVE_CATS)[number];
-  type: typeof TYPE | typeof REGION | typeof CATGEORY;
+    | (typeof POKE_MOVE_CATS)[number]
+    | Opt;
+  type: typeof TYPE | typeof REGION | typeof CATGEORY | typeof ABILITY;
 };
 
 export type QueryFormat = {

@@ -4,6 +4,7 @@ export const POKEDEX = "Pokédex";
 export const REGION = "region";
 export const CATGEORY = "category";
 export const TYPE = "type";
+export const ABILITY = "ability";
 export const ZH_HANT = "zh-hant";
 
 export const POKEMON_TYPES = [

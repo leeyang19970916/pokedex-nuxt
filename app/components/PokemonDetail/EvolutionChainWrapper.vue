@@ -74,7 +74,6 @@ const customClass = computed(() => {
     result.ballSize = "!w-full !h-full";
   } else if (length === 2) {
     const stage2Length = pokeStates.value[1]?.length;
-    console.log(stage2Length, "stage2Length");
     if (stage2Length && stage2Length > 1) {
       result.gridCol = `grid-cols-[2fr_8fr]`;
     } else {

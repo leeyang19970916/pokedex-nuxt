@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="poke && data && status === 'success'"
-    class="pokedex-detail-terminal cosms-theme min-h-screen"
+    class="min-h-screen z-10"
     :style="{ 'background-image': `url(${BackgroundImage})` }"
   >
     <header
@@ -103,11 +103,6 @@ watch(
 
 <style lang="scss">
 /* 詳情頁：能量分析終端 (微調版) */
-
-.pokedex-detail-terminal {
-  background-image: url("../../assets/image/header/list_bottom_bg.jpg");
-  z-index: 10;
-}
 
 /* 霓虹藍光暈 (你的標準Box-Shadow - 使用 primary 色調) */
 $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 變體 */

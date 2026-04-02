@@ -39,22 +39,24 @@
       </div>
     </div>
     <div class="hud-panel cosms-hud entry-panel p-6 min-h-[200px]">
-      <div class="label cosms-label mb-2">POKEDEX ENTRY</div>
+      <div class="label cosms-label mb-2">描述</div>
       <p class="value text-gray-200 font-mono text-sm leading-relaxed">
         {{ entryText }}
       </p>
     </div>
 
     <div class="hud-panel cosms-hud ability-panel p-6">
-      <div class="label cosms-label mb-2">ABILITIES</div>
-      <div class="flex gap-2">
-        <span
-          v-for="ability in abilities"
-          :key="ability"
-          class="ability-tag font-mono text-xs p-2 border border-gray-700"
-        >
-          {{ ability.toUpperCase() }}
-        </span>
+      <div class="label cosms-label mb-2">特性</div>
+      <div class="flex flex-wrap gap-2">
+        <Tag
+          v-for="(ability, index) in abilityList"
+          class="w-auto"
+          :key="ability.label"
+          :read-only="true"
+          :mode="'outline'"
+          :type="ABILITY"
+          :option="ability"
+        ></Tag>
       </div>
     </div>
   </div>
@@ -62,10 +64,32 @@
 
 <script setup lang="ts">
 import type { PokeDetailRes } from "~/types/pokeDetail";
-
-defineProps<{
+import { usePokeStore } from "~/store/pokeStore";
+import Tag from "~/components/Tags/index.vue";
+import { ABILITY } from "~/constants";
+const props = defineProps<{
   stats: PokeDetailRes["stats"];
   abilities: PokeDetailRes["abilities"];
   entryText: PokeDetailRes["entryText"];
 }>();
+
+const store = usePokeStore();
+const abilityList = computed(() => {
+  return props.abilities.flatMap((enName) => {
+    const data = store.abilities.find((item) => item.value === enName);
+    console.log(data, "data");
+    if (data && data.value !== undefined && data.id !== 0) {
+      return [
+        {
+          value: data.value,
+          label: data.label,
+        },
+      ];
+    }
+    return [];
+  });
+});
+onMounted(() => {
+  store.fetchAbilities();
+});
 </script>
