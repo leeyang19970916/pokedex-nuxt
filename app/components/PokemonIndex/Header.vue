@@ -31,28 +31,21 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
-/* 給整個 Header 一個淡入保護罩，遮蔽載入初期的破圖 */
 .top-background {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: #0a141e;
   z-index: 10;
-
-  /* 加上淡入動畫，0.5秒內從透明到出現 */
   animation: fade-in 0.5s ease-out forwards;
 }
 
-/* 只負責旋轉的 class */
 .animation-spin {
   animation: spin 10s linear infinite;
-
-  /* 效能優化：開啟硬體加速，防止旋轉時邊緣出現鋸齒或閃爍 */
   backface-visibility: hidden;
   transform: translateZ(0);
 }
 
-/* 乾淨的旋轉 Keyframes (沒有 translate 來搗亂) */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -62,7 +55,6 @@ const props = defineProps<{
   }
 }
 
-/* 淡入 Keyframes */
 @keyframes fade-in {
   from {
     opacity: 0;

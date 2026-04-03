@@ -1,10 +1,11 @@
 <template>
   <div class="relative z-100 cursor-pointer" @click="redirect">
     <img :src="PokemonCard" alt="" class="w-full" />
-    <img
+    <NuxtImg
       class="absolute w-[60%] left-[20%] top-[8%]"
       :src="poke.image"
-      alt=""
+      :alt="poke.name"
+      loading="lazy"
     />
     <span class="poke-id">{{ poke.id }}</span>
     <span class="poke-name">{{ poke.name }}</span>

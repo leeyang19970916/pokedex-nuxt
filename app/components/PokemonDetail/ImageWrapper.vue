@@ -6,7 +6,13 @@
       <div v-for="i in 5" :key="i" :class="['core-ring', `ring-${i}`]"></div>
     </div>
 
-    <img :src="image" :alt="name" class="pokemon-feature-img z-10" />
+    <NuxtImg
+      fetchpriority="high"
+      loading="eager"
+      :src="image"
+      :alt="name"
+      class="pokemon-feature-img z-10"
+    />
   </div>
 </template>
 

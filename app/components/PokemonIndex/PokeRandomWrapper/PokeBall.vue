@@ -9,7 +9,12 @@
       :src="PokemonBallImg"
       alt=""
     />
-    <NuxtImg class="abs-center w-[80%] h-[80%]" :src="poke.image" alt="" />
+    <NuxtImg
+      :src="poke.image"
+      loading="eager"
+      fetchpriority="high"
+      class="abs-center w-[80%] h-[80%]"
+    />
   </div>
 </template>
 <script setup lang="ts">

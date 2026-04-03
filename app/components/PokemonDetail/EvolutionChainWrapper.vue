@@ -5,11 +5,7 @@
     </div>
     <div class="h-full gap-4 grid" :class="[customClass.gridCol]">
       <template v-for="(pokeState, index) in pokeStates" :key="index">
-        <div
-          class="stage"
-          :class="{ '!justify-center': pokeState.length === 1 }"
-          v-if="pokeState.length"
-        >
+        <div class="stage" v-if="pokeState.length">
           <EvoBall
             class="max-w-[200px] max-h-[200px]"
             :class="customClass.ballSize"
