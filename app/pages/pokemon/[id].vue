@@ -16,9 +16,9 @@
       >
         <div class="nav-arrow text-cyan-500 font-bold text-xl">≪</div>
         <div class="nav-info hidden md:flex flex-col items-start">
-          <span class="text-[10px] text-cyan-600 font-mono leading-none"
-            >NO.{{ String(prevPoke.id).padStart(4, "0") }}</span
-          >
+          <span class="text-[10px] text-cyan-600 font-mono leading-none">{{
+            getIdText(prevPoke.id, false)
+          }}</span>
           <span class="text-sm text-cyan-100 font-bold tracking-wider">{{
             prevPoke.name
           }}</span>
@@ -38,9 +38,9 @@
         @click="() => navigateTo(`/pokemon/${nextPoke?.id}`)"
       >
         <div class="nav-info hidden md:flex flex-col items-end">
-          <span class="text-[10px] text-cyan-600 font-mono leading-none"
-            >NO.{{ String(nextPoke.id).padStart(4, "0") }}</span
-          >
+          <span class="text-[10px] text-cyan-600 font-mono leading-none">{{
+            getIdText(nextPoke.id, false)
+          }}</span>
           <span class="text-sm text-cyan-100 font-bold tracking-wider">{{
             nextPoke.name
           }}</span>
@@ -104,6 +104,7 @@ import type { PokeDetailRes } from "~/types/pokeDetail";
 import VariantWrapper from "~/components/PokemonDetail/VariantWrapper.vue";
 import { POKEDEX, SLIDER_RANGE } from "~/constants";
 import PokedexData from "~~/server/api/rawData/pokedex.json";
+import { getIdText } from "~~/utils/getIdText";
 
 const route = useRoute();
 

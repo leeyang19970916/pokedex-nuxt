@@ -5,7 +5,9 @@
     >
       <section class="flex flex-col gap-2">
         <div class="label cosms-label">圖鑑編號 [INDEX_NO]</div>
-        <div class="value font-bold text-5xl primary-neon-text"># {{ id }}</div>
+        <div class="value font-bold text-5xl primary-neon-text">
+          {{ getIdText(id) }}
+        </div>
       </section>
       <section class="flex flex-col gap-2">
         <div class="label cosms-label">名字 [NAME]</div>
@@ -78,6 +80,7 @@
 import type { PokeDetailRes } from "~/types/pokeDetail";
 import Tag from "~/components/Tags/index.vue";
 import { POKEMON_TYPES, POKEMON_REGIONS } from "~/constants";
+import { getIdText } from "~~/utils/getIdText";
 
 const props = defineProps<{
   name: PokeDetailRes["name"];

@@ -77,6 +77,7 @@ import type { PokeDetailRes } from "~/types/pokeDetail";
 import { usePokeStore } from "~/store/pokeStore";
 import Tag from "~/components/Tags/index.vue";
 import { ABILITY } from "~/constants";
+
 const props = defineProps<{
   stats: PokeDetailRes["stats"];
   abilities: PokeDetailRes["abilities"];

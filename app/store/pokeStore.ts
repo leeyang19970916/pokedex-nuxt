@@ -5,6 +5,8 @@ import AbilitiesRawData from "~~/server/api/rawData/abilities.json";
 
 export const usePokeStore = defineStore("pokeStore", () => {
   const abilities = ref<PokeAbility[]>([]);
+
+  // const cache
   // const pokeList = ref<PokeCard[]>([]);
   // const setList = async (newData: PokeCard[]) => {
   //   pokeList.value = newData;

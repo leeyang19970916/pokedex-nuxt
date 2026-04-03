@@ -7,7 +7,7 @@
       :alt="poke.name"
       loading="lazy"
     />
-    <span class="poke-id">{{ poke.id }}</span>
+    <span class="poke-id">{{ getIdText(poke.id) }}</span>
     <span class="poke-name">{{ poke.name }}</span>
     <div class="poke_tags flex gap-2 justify-between items-center">
       <Tag
@@ -27,6 +27,7 @@ import PokemonCard from "~/assets/image/card_bg.png";
 import Tag from "~/components/Tags/index.vue";
 import { POKEMON_TYPES } from "~/constants";
 import type { PokeCard } from "~/types/pokemon";
+import { getIdText } from "~~/utils/getIdText";
 
 const props = defineProps<{
   poke: PokeCard;
