@@ -4,6 +4,14 @@ import type { SpeciesPokeOriginalAPIRes } from "~/types/speciesPoke";
 import { translateVariantName } from "~~/utils/translateVariantName";
 import { formattedStat } from "~~/utils/formattedStat";
 import MovesRawData from "~~/server/api/rawData/moves.json";
+import type { PokeType, Id, PokeRegion } from "~/types/pokemon";
+import type { PokeDemageRecord } from "~/types/pokeTypeDetail";
+
+const getId = (url: string): Id => {
+  const urlParts = url.split("/").filter(Boolean);
+  const id = urlParts[urlParts.length - 1];
+  return Number(id);
+};
 
 export default defineEventHandler(async (event) => {
   try {
@@ -20,8 +28,7 @@ export default defineEventHandler(async (event) => {
         .find((entry) => entry.language.name === ZH_HANT)
         ?.flavor_text.replace(/[\n\f\r]/g, "") || "這隻寶可夢目前沒有描述";
     const varieties = speciesData.varieties.map((itm) => {
-      const urlParts = itm.pokemon.url.split("/").filter(Boolean);
-      const variantId = urlParts[urlParts.length - 1];
+      const variantId = getId(itm.pokemon.url);
       return {
         name: translateVariantName(itm.pokemon.name),
         id: Number(variantId),
@@ -47,6 +54,10 @@ export default defineEventHandler(async (event) => {
           g.language.name === "en"
       )?.genus || "";
 
+    const damageType = await getDamageType(pokeData.types);
+
+    const region = getRegion(speciesData.generation.name);
+
     const result = {
       id: pokeData.id,
       name: translateVariantName(pokeData.name),
@@ -61,6 +72,8 @@ export default defineEventHandler(async (event) => {
       varieties,
       evolutionChains,
       genus,
+      damageType,
+      region,
     };
     return result;
   } catch (e) {
@@ -70,3 +83,38 @@ export default defineEventHandler(async (event) => {
     });
   }
 });
+
+async function getDamageType(types: PokemonOriginalAPIRes["types"]) {
+  const typeIds = types.map((t) => getId(t.type.url));
+  const promises = typeIds.map((i) =>
+    $fetch<PokeDemageRecord>(`/api/pokemon/type/${i}`)
+  );
+  const res = await Promise.all(promises);
+  let double_damages: PokeType[] = [];
+  let half_damages: PokeType[] = [];
+  let no_damages: PokeType[] = [];
+  res.forEach((i) => {
+    double_damages.push(...i.double_damages);
+    half_damages.push(...i.half_damages);
+    no_damages.push(...i.no_damages);
+  });
+  return { double_damages, half_damages, no_damages };
+}
+
+function getRegion(
+  generationName: SpeciesPokeOriginalAPIRes["generation"]["name"]
+): PokeRegion | undefined {
+  const regionMap: Record<string, PokeRegion> = {
+    "generation-i": "kanto",
+    "generation-ii": "johto",
+    "generation-iii": "hoenn",
+    "generation-iv": "sinnoh",
+    "generation-v": "unova",
+    "generation-vi": "kalos",
+    "generation-vii": "alola",
+    "generation-viii": "galar",
+    "generation-ix": "paldean",
+  };
+
+  return regionMap[generationName] || undefined;
+}

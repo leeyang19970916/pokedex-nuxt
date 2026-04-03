@@ -58,6 +58,8 @@
         :weight="poke.weight"
         :types="poke.types"
         :genus="poke.genus"
+        :damageType="poke.damageType"
+        :region="poke.region"
       />
       <section class="flex justify-center items-center">
         <ImageWrapper
@@ -114,7 +116,6 @@ const poke = ref<PokeDetailRes | null>(null);
 
 const change = async (id: PokeDetailRes["id"]) => {
   const res = await $fetch<PokeDetailRes>(`/api/pokemon/variant/${id}`);
-  console.log(res, "res");
   if (poke.value && res) {
     poke.value.name = res.name;
     poke.value.height = res.height;
@@ -128,21 +129,17 @@ const change = async (id: PokeDetailRes["id"]) => {
 };
 const prevPoke = computed(() => {
   const index = Number(poke.value?.id) - 1;
-  if (index === 0) {
-    return null;
-  } else {
-    return { id: index, name: PokedexData.find((i) => i.id === index)?.name };
-  }
+  if (index === 0) return null;
+
+  return PokedexData.find((i) => i.id === index);
 });
 
-// 取得下一隻 (如果是最後一隻，回傳 undefined)
 const nextPoke = computed(() => {
   const index = Number(poke.value?.id) + 1;
   if (index <= SLIDER_RANGE.max) {
-    return { id: index, name: PokedexData.find((i) => i.id === index)?.name };
-  } else {
-    return null;
+    return PokedexData.find((i) => i.id === index);
   }
+  return null;
 });
 watch(
   () => data,
@@ -157,12 +154,8 @@ watch(
 </script>
 
 <style lang="scss">
-/* 詳情頁：能量分析終端 (微調版) */
+$box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4);
 
-/* 霓虹藍光暈 (你的標準Box-Shadow - 使用 primary 色調) */
-$box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 變體 */
-
-/* --- 全域通用 Class (使用你提供的顏色) --- */
 .primary-border {
   border: 1px solid rgba(179, 234, 254, 0.6);
 }
@@ -171,13 +164,11 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 
   border-bottom: 2px solid rgba(179, 234, 254, 0.6);
 }
 
-/* 霓虹文字效果 (使用 primary 色調) */
 .primary-neon-text {
   color: #b3eafe; /* 你的主顏色 */
   text-shadow: 0 0 10px rgba(179, 234, 254, 0.8);
 }
 
-/* --- 頂部標題與柔和全息效果 --- */
 .terminal-banner {
   background-color: #0a141e;
   box-shadow: 0 5px 20px rgba(179, 234, 254, 0.2);
@@ -204,15 +195,13 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 
   }
 }
 
-/* --- 進階 HUD 面板 (稜角分明與霓虹邊框 - 主色調) --- */
 .cosms-hud {
-  background-color: #101c29; /* 比底色稍微淺一點的面板色 */
+  background-color: #101c29;
   border: 1px solid rgba(179, 234, 254, 0.6);
   box-shadow: $box-shadow-neon;
   position: relative;
   overflow: hidden;
 
-  /* HUD 面板切角效果 */
   &::before {
     content: "";
     position: absolute;
@@ -226,58 +215,12 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 
   }
 }
 
-/* 文字標籤與數值 (Monospace 字體模擬終端) */
 .cosms-label {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
-  color: #6a7c8d; /* 微調為更柔和的灰藍色，與底色更搭嘎 */
+  color: #6a7c8d;
 }
 
-/* 能力值標籤 (雷達圖用) */
-.cosms-stat-label {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-  color: #b3eafe; /* 使用 primary 冰藍色 */
-}
-
-/* --- 屬性標籤 (使用你提供的特定 Type Tag 顏色) --- */
-.cosms-type-tag {
-  display: inline-block;
-  padding: 4px 12px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff; /* 保持白色文字，確保清晰 */
-  text-transform: uppercase;
-  border-radius: 4px; /* 這裡你原本是有點橢圓，可以調整 */
-
-  /* 直接使用你提供的色卡數值 (Fighting = #dc6900, Steel = #aac8f0) */
-  &.fighting {
-    background-color: #dc6900;
-  }
-  &.steel {
-    background-color: #aac8f0;
-  }
-  &.grass {
-    background-color: #b4f000;
-    color: #0a141e;
-  } /* 草系顏色較亮，建議用深色字 */
-  &.poison {
-    background-color: #d28cd2;
-  }
-  &.dark {
-    background-color: #787878;
-  }
-  /* 其他屬性你可以以此類推... */
-}
-
-.cosms-type-tag-small {
-  @extend .cosms-type-tag;
-  padding: 2px 8px;
-  font-size: 10px;
-}
-
-/* --- 雷達圖雛形 (色調與網格 gray-700) --- */
 .radar-placeholder {
   .radar-web {
     position: absolute;
@@ -318,7 +261,6 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4); /* 使用 #b3eafe 的 RGBA 
   }
 }
 
-/* 進化鏈圓形圖示 inner ring */
 .evo-ring-inner {
   position: absolute;
   width: 90%;

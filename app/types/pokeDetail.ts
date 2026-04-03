@@ -1,4 +1,11 @@
-import type { Id, PokeCard, PokeType, PokeMoveCats } from "./pokemon";
+import type {
+  Id,
+  PokeCard,
+  PokeType,
+  PokeMoveCats,
+  PokeRegion,
+} from "./pokemon";
+import type { PokeDemageRecord } from "./pokeTypeDetail";
 
 export type Opt = {
   name: string;
@@ -41,6 +48,8 @@ export interface PokeDetailRes {
     stage: 1 | 2 | 3;
   }[];
   genus: string;
+  damageType: PokeDemageRecord;
+  region: PokeRegion;
 }
 
 export interface PokemonOriginalAPIRes {

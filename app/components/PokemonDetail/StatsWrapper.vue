@@ -40,7 +40,7 @@
     </div>
     <div class="hud-panel cosms-hud entry-panel p-6 min-h-[200px]">
       <div class="label cosms-label mb-2">描述</div>
-      <p class="value text-gray-200 font-mono text-sm leading-relaxed">
+      <p class="value text-gray-200 font-mono text-md leading-relaxed">
         {{ entryText }}
       </p>
     </div>
@@ -64,7 +64,7 @@
           </template>
         </template>
 
-        <p v-else class="value text-gray-200 font-mono text-sm leading-relaxed">
+        <p v-else class="value text-gray-200 font-mono text-md leading-relaxed">
           {{ "這隻寶可夢目前無特性" }}
         </p>
       </div>

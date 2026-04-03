@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
     traverse(res.chain, 1);
     return result;
   } catch (e) {
-    console.log(e, "error");
+    console.error(e, "error");
     return [];
   }
 });

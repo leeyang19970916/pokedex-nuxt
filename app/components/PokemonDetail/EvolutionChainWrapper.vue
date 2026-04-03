@@ -95,7 +95,7 @@ const redirect = (id?: number) => {
 
 <style lang="scss" scoped>
 .stage {
-  @apply relative flex flex-wrap gap-4 items-center justify-start h-full px-4;
+  @apply relative flex flex-wrap gap-4 items-center justify-center h-full px-4;
 
   &:not(:last-child)::after {
     content: "≫"; // 你的箭頭符號，也可以用 SVG 背景

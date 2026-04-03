@@ -37,7 +37,6 @@ export const POKEMON_REGIONS = [
   { label: "卡洛斯", value: "kalos" },
   { label: "阿羅拉", value: "alola" },
   { label: "伽勒爾", value: "galar" },
-  { label: "洗翠", value: "hisui" },
   { label: "帕底亞", value: "paldean" },
 ] as const;
 
