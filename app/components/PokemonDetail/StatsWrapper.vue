@@ -48,15 +48,25 @@
     <div class="hud-panel cosms-hud ability-panel p-6">
       <div class="label cosms-label mb-2">特性</div>
       <div class="flex flex-wrap gap-2">
-        <Tag
-          v-for="ability in abilityList"
-          class="w-auto"
-          :key="ability.label"
-          :read-only="true"
-          :mode="'outline'"
-          :type="ABILITY"
-          :option="ability"
-        ></Tag>
+        <template v-if="abilityList && abilityList.length">
+          <template
+            v-for="(ability, index) in abilityList"
+            :key="ability?.label || index"
+          >
+            <Tag
+              v-if="ability && ability.label"
+              class="w-auto"
+              :read-only="true"
+              :mode="'outline'"
+              :type="ABILITY"
+              :option="ability"
+            ></Tag>
+          </template>
+        </template>
+
+        <p v-else class="value text-gray-200 font-mono text-sm leading-relaxed">
+          {{ "這隻寶可夢目前無特性" }}
+        </p>
       </div>
     </div>
   </div>

@@ -24,6 +24,17 @@
         />
       </div>
 
+      <div class="label cosms-label mb-2">弱點</div>
+      <div class="flex gap-2 mb-6">
+        <Tag
+          v-for="options in typeOpts"
+          type="type"
+          mode="solid"
+          :option="options"
+          :readOnly="false"
+        />
+      </div>
+
       <div class="label cosms-label">分類</div>
       <div class="value text-white font-semibold mb-4">
         {{ "????" }}
