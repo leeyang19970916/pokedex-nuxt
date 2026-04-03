@@ -1,0 +1,1837 @@
+[
+  {
+    "id": 1,
+    "enName": "stench",
+    "chName": "惡臭"
+  },
+  {
+    "id": 2,
+    "enName": "drizzle",
+    "chName": "降雨"
+  },
+  {
+    "id": 3,
+    "enName": "speed-boost",
+    "chName": "加速"
+  },
+  {
+    "id": 4,
+    "enName": "battle-armor",
+    "chName": "戰鬥盔甲"
+  },
+  {
+    "id": 5,
+    "enName": "sturdy",
+    "chName": "結實"
+  },
+  {
+    "id": 6,
+    "enName": "damp",
+    "chName": "濕氣"
+  },
+  {
+    "id": 7,
+    "enName": "limber",
+    "chName": "柔軟"
+  },
+  {
+    "id": 8,
+    "enName": "sand-veil",
+    "chName": "沙隱"
+  },
+  {
+    "id": 9,
+    "enName": "static",
+    "chName": "靜電"
+  },
+  {
+    "id": 10,
+    "enName": "volt-absorb",
+    "chName": "蓄電"
+  },
+  {
+    "id": 11,
+    "enName": "water-absorb",
+    "chName": "儲水"
+  },
+  {
+    "id": 12,
+    "enName": "oblivious",
+    "chName": "遲鈍"
+  },
+  {
+    "id": 13,
+    "enName": "cloud-nine",
+    "chName": "無關天氣"
+  },
+  {
+    "id": 14,
+    "enName": "compound-eyes",
+    "chName": "複眼"
+  },
+  {
+    "id": 15,
+    "enName": "insomnia",
+    "chName": "不眠"
+  },
+  {
+    "id": 16,
+    "enName": "color-change",
+    "chName": "變色"
+  },
+  {
+    "id": 17,
+    "enName": "immunity",
+    "chName": "免疫"
+  },
+  {
+    "id": 18,
+    "enName": "flash-fire",
+    "chName": "引火"
+  },
+  {
+    "id": 19,
+    "enName": "shield-dust",
+    "chName": "鱗粉"
+  },
+  {
+    "id": 20,
+    "enName": "own-tempo",
+    "chName": "我行我素"
+  },
+  {
+    "id": 21,
+    "enName": "suction-cups",
+    "chName": "吸盤"
+  },
+  {
+    "id": 22,
+    "enName": "intimidate",
+    "chName": "威嚇"
+  },
+  {
+    "id": 23,
+    "enName": "shadow-tag",
+    "chName": "踩影"
+  },
+  {
+    "id": 24,
+    "enName": "rough-skin",
+    "chName": "粗糙皮膚"
+  },
+  {
+    "id": 25,
+    "enName": "wonder-guard",
+    "chName": "神奇守護"
+  },
+  {
+    "id": 26,
+    "enName": "levitate",
+    "chName": "飄浮"
+  },
+  {
+    "id": 27,
+    "enName": "effect-spore",
+    "chName": "孢子"
+  },
+  {
+    "id": 28,
+    "enName": "synchronize",
+    "chName": "同步"
+  },
+  {
+    "id": 29,
+    "enName": "clear-body",
+    "chName": "恆淨之軀"
+  },
+  {
+    "id": 30,
+    "enName": "natural-cure",
+    "chName": "自然回復"
+  },
+  {
+    "id": 31,
+    "enName": "lightning-rod",
+    "chName": "避雷針"
+  },
+  {
+    "id": 32,
+    "enName": "serene-grace",
+    "chName": "天恩"
+  },
+  {
+    "id": 33,
+    "enName": "swift-swim",
+    "chName": "悠游自如"
+  },
+  {
+    "id": 34,
+    "enName": "chlorophyll",
+    "chName": "葉綠素"
+  },
+  {
+    "id": 35,
+    "enName": "illuminate",
+    "chName": "發光"
+  },
+  {
+    "id": 36,
+    "enName": "trace",
+    "chName": "複製"
+  },
+  {
+    "id": 37,
+    "enName": "huge-power",
+    "chName": "大力士"
+  },
+  {
+    "id": 38,
+    "enName": "poison-point",
+    "chName": "毒刺"
+  },
+  {
+    "id": 39,
+    "enName": "inner-focus",
+    "chName": "精神力"
+  },
+  {
+    "id": 40,
+    "enName": "magma-armor",
+    "chName": "熔岩鎧甲"
+  },
+  {
+    "id": 41,
+    "enName": "water-veil",
+    "chName": "水幕"
+  },
+  {
+    "id": 42,
+    "enName": "magnet-pull",
+    "chName": "磁力"
+  },
+  {
+    "id": 43,
+    "enName": "soundproof",
+    "chName": "隔音"
+  },
+  {
+    "id": 44,
+    "enName": "rain-dish",
+    "chName": "雨盤"
+  },
+  {
+    "id": 45,
+    "enName": "sand-stream",
+    "chName": "揚沙"
+  },
+  {
+    "id": 46,
+    "enName": "pressure",
+    "chName": "壓迫感"
+  },
+  {
+    "id": 47,
+    "enName": "thick-fat",
+    "chName": "厚脂肪"
+  },
+  {
+    "id": 48,
+    "enName": "early-bird",
+    "chName": "早起"
+  },
+  {
+    "id": 49,
+    "enName": "flame-body",
+    "chName": "火焰之軀"
+  },
+  {
+    "id": 50,
+    "enName": "run-away",
+    "chName": "逃跑"
+  },
+  {
+    "id": 51,
+    "enName": "keen-eye",
+    "chName": "銳利目光"
+  },
+  {
+    "id": 52,
+    "enName": "hyper-cutter",
+    "chName": "怪力鉗"
+  },
+  {
+    "id": 53,
+    "enName": "pickup",
+    "chName": "撿拾"
+  },
+  {
+    "id": 54,
+    "enName": "truant",
+    "chName": "懶惰"
+  },
+  {
+    "id": 55,
+    "enName": "hustle",
+    "chName": "活力"
+  },
+  {
+    "id": 56,
+    "enName": "cute-charm",
+    "chName": "迷人之軀"
+  },
+  {
+    "id": 57,
+    "enName": "plus",
+    "chName": "正電"
+  },
+  {
+    "id": 58,
+    "enName": "minus",
+    "chName": "負電"
+  },
+  {
+    "id": 59,
+    "enName": "forecast",
+    "chName": "陰晴不定"
+  },
+  {
+    "id": 60,
+    "enName": "sticky-hold",
+    "chName": "黏著"
+  },
+  {
+    "id": 61,
+    "enName": "shed-skin",
+    "chName": "蛻皮"
+  },
+  {
+    "id": 62,
+    "enName": "guts",
+    "chName": "毅力"
+  },
+  {
+    "id": 63,
+    "enName": "marvel-scale",
+    "chName": "神奇鱗片"
+  },
+  {
+    "id": 64,
+    "enName": "liquid-ooze",
+    "chName": "污泥漿"
+  },
+  {
+    "id": 65,
+    "enName": "overgrow",
+    "chName": "茂盛"
+  },
+  {
+    "id": 66,
+    "enName": "blaze",
+    "chName": "猛火"
+  },
+  {
+    "id": 67,
+    "enName": "torrent",
+    "chName": "激流"
+  },
+  {
+    "id": 68,
+    "enName": "swarm",
+    "chName": "蟲之預感"
+  },
+  {
+    "id": 69,
+    "enName": "rock-head",
+    "chName": "堅硬腦袋"
+  },
+  {
+    "id": 70,
+    "enName": "drought",
+    "chName": "日照"
+  },
+  {
+    "id": 71,
+    "enName": "arena-trap",
+    "chName": "沙穴"
+  },
+  {
+    "id": 72,
+    "enName": "vital-spirit",
+    "chName": "幹勁"
+  },
+  {
+    "id": 73,
+    "enName": "white-smoke",
+    "chName": "白色煙霧"
+  },
+  {
+    "id": 74,
+    "enName": "pure-power",
+    "chName": "瑜伽之力"
+  },
+  {
+    "id": 75,
+    "enName": "shell-armor",
+    "chName": "硬殼盔甲"
+  },
+  {
+    "id": 76,
+    "enName": "air-lock",
+    "chName": "氣閘"
+  },
+  {
+    "id": 77,
+    "enName": "tangled-feet",
+    "chName": "蹣跚"
+  },
+  {
+    "id": 78,
+    "enName": "motor-drive",
+    "chName": "電氣引擎"
+  },
+  {
+    "id": 79,
+    "enName": "rivalry",
+    "chName": "鬥爭心"
+  },
+  {
+    "id": 80,
+    "enName": "steadfast",
+    "chName": "不屈之心"
+  },
+  {
+    "id": 81,
+    "enName": "snow-cloak",
+    "chName": "雪隱"
+  },
+  {
+    "id": 82,
+    "enName": "gluttony",
+    "chName": "貪吃鬼"
+  },
+  {
+    "id": 83,
+    "enName": "anger-point",
+    "chName": "憤怒穴位"
+  },
+  {
+    "id": 84,
+    "enName": "unburden",
+    "chName": "輕裝"
+  },
+  {
+    "id": 85,
+    "enName": "heatproof",
+    "chName": "耐熱"
+  },
+  {
+    "id": 86,
+    "enName": "simple",
+    "chName": "單純"
+  },
+  {
+    "id": 87,
+    "enName": "dry-skin",
+    "chName": "乾燥皮膚"
+  },
+  {
+    "id": 88,
+    "enName": "download",
+    "chName": "下載"
+  },
+  {
+    "id": 89,
+    "enName": "iron-fist",
+    "chName": "鐵拳"
+  },
+  {
+    "id": 90,
+    "enName": "poison-heal",
+    "chName": "毒療"
+  },
+  {
+    "id": 91,
+    "enName": "adaptability",
+    "chName": "適應力"
+  },
+  {
+    "id": 92,
+    "enName": "skill-link",
+    "chName": "連續攻擊"
+  },
+  {
+    "id": 93,
+    "enName": "hydration",
+    "chName": "濕潤之軀"
+  },
+  {
+    "id": 94,
+    "enName": "solar-power",
+    "chName": "太陽之力"
+  },
+  {
+    "id": 95,
+    "enName": "quick-feet",
+    "chName": "飛毛腿"
+  },
+  {
+    "id": 96,
+    "enName": "normalize",
+    "chName": "一般皮膚"
+  },
+  {
+    "id": 97,
+    "enName": "sniper",
+    "chName": "狙擊手"
+  },
+  {
+    "id": 98,
+    "enName": "magic-guard",
+    "chName": "魔法防守"
+  },
+  {
+    "id": 99,
+    "enName": "no-guard",
+    "chName": "無防守"
+  },
+  {
+    "id": 100,
+    "enName": "stall",
+    "chName": "慢出"
+  },
+  {
+    "id": 101,
+    "enName": "technician",
+    "chName": "技術高手"
+  },
+  {
+    "id": 102,
+    "enName": "leaf-guard",
+    "chName": "葉子防守"
+  },
+  {
+    "id": 103,
+    "enName": "klutz",
+    "chName": "笨拙"
+  },
+  {
+    "id": 104,
+    "enName": "mold-breaker",
+    "chName": "破格"
+  },
+  {
+    "id": 105,
+    "enName": "super-luck",
+    "chName": "超幸運"
+  },
+  {
+    "id": 106,
+    "enName": "aftermath",
+    "chName": "引爆"
+  },
+  {
+    "id": 107,
+    "enName": "anticipation",
+    "chName": "危險預知"
+  },
+  {
+    "id": 108,
+    "enName": "forewarn",
+    "chName": "預知夢"
+  },
+  {
+    "id": 109,
+    "enName": "unaware",
+    "chName": "純樸"
+  },
+  {
+    "id": 110,
+    "enName": "tinted-lens",
+    "chName": "有色眼鏡"
+  },
+  {
+    "id": 111,
+    "enName": "filter",
+    "chName": "過濾"
+  },
+  {
+    "id": 112,
+    "enName": "slow-start",
+    "chName": "慢啟動"
+  },
+  {
+    "id": 113,
+    "enName": "scrappy",
+    "chName": "膽量"
+  },
+  {
+    "id": 114,
+    "enName": "storm-drain",
+    "chName": "引水"
+  },
+  {
+    "id": 115,
+    "enName": "ice-body",
+    "chName": "冰凍之軀"
+  },
+  {
+    "id": 116,
+    "enName": "solid-rock",
+    "chName": "堅硬岩石"
+  },
+  {
+    "id": 117,
+    "enName": "snow-warning",
+    "chName": "降雪"
+  },
+  {
+    "id": 118,
+    "enName": "honey-gather",
+    "chName": "採蜜"
+  },
+  {
+    "id": 119,
+    "enName": "frisk",
+    "chName": "察覺"
+  },
+  {
+    "id": 120,
+    "enName": "reckless",
+    "chName": "捨身"
+  },
+  {
+    "id": 121,
+    "enName": "multitype",
+    "chName": "多屬性"
+  },
+  {
+    "id": 122,
+    "enName": "flower-gift",
+    "chName": "花之禮"
+  },
+  {
+    "id": 123,
+    "enName": "bad-dreams",
+    "chName": "夢魘"
+  },
+  {
+    "id": 124,
+    "enName": "pickpocket",
+    "chName": "順手牽羊"
+  },
+  {
+    "id": 125,
+    "enName": "sheer-force",
+    "chName": "強行"
+  },
+  {
+    "id": 126,
+    "enName": "contrary",
+    "chName": "唱反調"
+  },
+  {
+    "id": 127,
+    "enName": "unnerve",
+    "chName": "緊張感"
+  },
+  {
+    "id": 128,
+    "enName": "defiant",
+    "chName": "不服輸"
+  },
+  {
+    "id": 129,
+    "enName": "defeatist",
+    "chName": "軟弱"
+  },
+  {
+    "id": 130,
+    "enName": "cursed-body",
+    "chName": "詛咒之軀"
+  },
+  {
+    "id": 131,
+    "enName": "healer",
+    "chName": "治癒之心"
+  },
+  {
+    "id": 132,
+    "enName": "friend-guard",
+    "chName": "友情防守"
+  },
+  {
+    "id": 133,
+    "enName": "weak-armor",
+    "chName": "碎裂鎧甲"
+  },
+  {
+    "id": 134,
+    "enName": "heavy-metal",
+    "chName": "重金屬"
+  },
+  {
+    "id": 135,
+    "enName": "light-metal",
+    "chName": "輕金屬"
+  },
+  {
+    "id": 136,
+    "enName": "multiscale",
+    "chName": "多重鱗片"
+  },
+  {
+    "id": 137,
+    "enName": "toxic-boost",
+    "chName": "中毒激升"
+  },
+  {
+    "id": 138,
+    "enName": "flare-boost",
+    "chName": "受熱激升"
+  },
+  {
+    "id": 139,
+    "enName": "harvest",
+    "chName": "收穫"
+  },
+  {
+    "id": 140,
+    "enName": "telepathy",
+    "chName": "心靈感應"
+  },
+  {
+    "id": 141,
+    "enName": "moody",
+    "chName": "心情不定"
+  },
+  {
+    "id": 142,
+    "enName": "overcoat",
+    "chName": "防塵"
+  },
+  {
+    "id": 143,
+    "enName": "poison-touch",
+    "chName": "毒手"
+  },
+  {
+    "id": 144,
+    "enName": "regenerator",
+    "chName": "再生力"
+  },
+  {
+    "id": 145,
+    "enName": "big-pecks",
+    "chName": "健壯胸肌"
+  },
+  {
+    "id": 146,
+    "enName": "sand-rush",
+    "chName": "撥沙"
+  },
+  {
+    "id": 147,
+    "enName": "wonder-skin",
+    "chName": "奇跡皮膚"
+  },
+  {
+    "id": 148,
+    "enName": "analytic",
+    "chName": "分析"
+  },
+  {
+    "id": 149,
+    "enName": "illusion",
+    "chName": "幻覺"
+  },
+  {
+    "id": 150,
+    "enName": "imposter",
+    "chName": "變身者"
+  },
+  {
+    "id": 151,
+    "enName": "infiltrator",
+    "chName": "穿透"
+  },
+  {
+    "id": 152,
+    "enName": "mummy",
+    "chName": "木乃伊"
+  },
+  {
+    "id": 153,
+    "enName": "moxie",
+    "chName": "自信過度"
+  },
+  {
+    "id": 154,
+    "enName": "justified",
+    "chName": "正義之心"
+  },
+  {
+    "id": 155,
+    "enName": "rattled",
+    "chName": "膽怯"
+  },
+  {
+    "id": 156,
+    "enName": "magic-bounce",
+    "chName": "魔法鏡"
+  },
+  {
+    "id": 157,
+    "enName": "sap-sipper",
+    "chName": "食草"
+  },
+  {
+    "id": 158,
+    "enName": "prankster",
+    "chName": "惡作劇之心"
+  },
+  {
+    "id": 159,
+    "enName": "sand-force",
+    "chName": "沙之力"
+  },
+  {
+    "id": 160,
+    "enName": "iron-barbs",
+    "chName": "鐵刺"
+  },
+  {
+    "id": 161,
+    "enName": "zen-mode",
+    "chName": "達摩模式"
+  },
+  {
+    "id": 162,
+    "enName": "victory-star",
+    "chName": "勝利之星"
+  },
+  {
+    "id": 163,
+    "enName": "turboblaze",
+    "chName": "渦輪火焰"
+  },
+  {
+    "id": 164,
+    "enName": "teravolt",
+    "chName": "兆級電壓"
+  },
+  {
+    "id": 165,
+    "enName": "aroma-veil",
+    "chName": "芳香幕"
+  },
+  {
+    "id": 166,
+    "enName": "flower-veil",
+    "chName": "花幕"
+  },
+  {
+    "id": 167,
+    "enName": "cheek-pouch",
+    "chName": "頰囊"
+  },
+  {
+    "id": 168,
+    "enName": "protean",
+    "chName": "變幻自如"
+  },
+  {
+    "id": 169,
+    "enName": "fur-coat",
+    "chName": "毛皮大衣"
+  },
+  {
+    "id": 170,
+    "enName": "magician",
+    "chName": "魔術師"
+  },
+  {
+    "id": 171,
+    "enName": "bulletproof",
+    "chName": "防彈"
+  },
+  {
+    "id": 172,
+    "enName": "competitive",
+    "chName": "好勝"
+  },
+  {
+    "id": 173,
+    "enName": "strong-jaw",
+    "chName": "強壯之顎"
+  },
+  {
+    "id": 174,
+    "enName": "refrigerate",
+    "chName": "冰凍皮膚"
+  },
+  {
+    "id": 175,
+    "enName": "sweet-veil",
+    "chName": "甜幕"
+  },
+  {
+    "id": 176,
+    "enName": "stance-change",
+    "chName": "戰鬥切換"
+  },
+  {
+    "id": 177,
+    "enName": "gale-wings",
+    "chName": "疾風之翼"
+  },
+  {
+    "id": 178,
+    "enName": "mega-launcher",
+    "chName": "超級發射器"
+  },
+  {
+    "id": 179,
+    "enName": "grass-pelt",
+    "chName": "草之毛皮"
+  },
+  {
+    "id": 180,
+    "enName": "symbiosis",
+    "chName": "共生"
+  },
+  {
+    "id": 181,
+    "enName": "tough-claws",
+    "chName": "硬爪"
+  },
+  {
+    "id": 182,
+    "enName": "pixilate",
+    "chName": "妖精皮膚"
+  },
+  {
+    "id": 183,
+    "enName": "gooey",
+    "chName": "黏滑"
+  },
+  {
+    "id": 184,
+    "enName": "aerilate",
+    "chName": "飛行皮膚"
+  },
+  {
+    "id": 185,
+    "enName": "parental-bond",
+    "chName": "親子愛"
+  },
+  {
+    "id": 186,
+    "enName": "dark-aura",
+    "chName": "暗黑氣場"
+  },
+  {
+    "id": 187,
+    "enName": "fairy-aura",
+    "chName": "妖精氣場"
+  },
+  {
+    "id": 188,
+    "enName": "aura-break",
+    "chName": "氣場破壞"
+  },
+  {
+    "id": 189,
+    "enName": "primordial-sea",
+    "chName": "始源之海"
+  },
+  {
+    "id": 190,
+    "enName": "desolate-land",
+    "chName": "終結之地"
+  },
+  {
+    "id": 191,
+    "enName": "delta-stream",
+    "chName": "德爾塔氣流"
+  },
+  {
+    "id": 192,
+    "enName": "stamina",
+    "chName": "持久力"
+  },
+  {
+    "id": 193,
+    "enName": "wimp-out",
+    "chName": "躍躍欲逃"
+  },
+  {
+    "id": 194,
+    "enName": "emergency-exit",
+    "chName": "危險迴避"
+  },
+  {
+    "id": 195,
+    "enName": "water-compaction",
+    "chName": "遇水凝固"
+  },
+  {
+    "id": 196,
+    "enName": "merciless",
+    "chName": "不仁不義"
+  },
+  {
+    "id": 197,
+    "enName": "shields-down",
+    "chName": "界限盾殼"
+  },
+  {
+    "id": 198,
+    "enName": "stakeout",
+    "chName": "監視"
+  },
+  {
+    "id": 199,
+    "enName": "water-bubble",
+    "chName": "水泡"
+  },
+  {
+    "id": 200,
+    "enName": "steelworker",
+    "chName": "鋼能力者"
+  },
+  {
+    "id": 201,
+    "enName": "berserk",
+    "chName": "怒火沖天"
+  },
+  {
+    "id": 202,
+    "enName": "slush-rush",
+    "chName": "撥雪"
+  },
+  {
+    "id": 203,
+    "enName": "long-reach",
+    "chName": "遠隔"
+  },
+  {
+    "id": 204,
+    "enName": "liquid-voice",
+    "chName": "濕潤之聲"
+  },
+  {
+    "id": 205,
+    "enName": "triage",
+    "chName": "先行治療"
+  },
+  {
+    "id": 206,
+    "enName": "galvanize",
+    "chName": "電氣皮膚"
+  },
+  {
+    "id": 207,
+    "enName": "surge-surfer",
+    "chName": "衝浪之尾"
+  },
+  {
+    "id": 208,
+    "enName": "schooling",
+    "chName": "魚群"
+  },
+  {
+    "id": 209,
+    "enName": "disguise",
+    "chName": "畫皮"
+  },
+  {
+    "id": 210,
+    "enName": "battle-bond",
+    "chName": "牽絆變身"
+  },
+  {
+    "id": 211,
+    "enName": "power-construct",
+    "chName": "群聚變形"
+  },
+  {
+    "id": 212,
+    "enName": "corrosion",
+    "chName": "腐蝕"
+  },
+  {
+    "id": 213,
+    "enName": "comatose",
+    "chName": "絕對睡眠"
+  },
+  {
+    "id": 214,
+    "enName": "queenly-majesty",
+    "chName": "女王的威嚴"
+  },
+  {
+    "id": 215,
+    "enName": "innards-out",
+    "chName": "飛出的內在物"
+  },
+  {
+    "id": 216,
+    "enName": "dancer",
+    "chName": "舞者"
+  },
+  {
+    "id": 217,
+    "enName": "battery",
+    "chName": "蓄電池"
+  },
+  {
+    "id": 218,
+    "enName": "fluffy",
+    "chName": "毛茸茸"
+  },
+  {
+    "id": 219,
+    "enName": "dazzling",
+    "chName": "鮮艷之軀"
+  },
+  {
+    "id": 220,
+    "enName": "soul-heart",
+    "chName": "魂心"
+  },
+  {
+    "id": 221,
+    "enName": "tangling-hair",
+    "chName": "捲髮"
+  },
+  {
+    "id": 222,
+    "enName": "receiver",
+    "chName": "接球手"
+  },
+  {
+    "id": 223,
+    "enName": "power-of-alchemy",
+    "chName": "化學之力"
+  },
+  {
+    "id": 224,
+    "enName": "beast-boost",
+    "chName": "異獸提升"
+  },
+  {
+    "id": 225,
+    "enName": "rks-system",
+    "chName": "ＡＲ系統"
+  },
+  {
+    "id": 226,
+    "enName": "electric-surge",
+    "chName": "電氣製造者"
+  },
+  {
+    "id": 227,
+    "enName": "psychic-surge",
+    "chName": "精神製造者"
+  },
+  {
+    "id": 228,
+    "enName": "misty-surge",
+    "chName": "薄霧製造者"
+  },
+  {
+    "id": 229,
+    "enName": "grassy-surge",
+    "chName": "青草製造者"
+  },
+  {
+    "id": 230,
+    "enName": "full-metal-body",
+    "chName": "金屬防護"
+  },
+  {
+    "id": 231,
+    "enName": "shadow-shield",
+    "chName": "幻影防守"
+  },
+  {
+    "id": 232,
+    "enName": "prism-armor",
+    "chName": "稜鏡裝甲"
+  },
+  {
+    "id": 233,
+    "enName": "neuroforce",
+    "chName": "腦核之力"
+  },
+  {
+    "id": 234,
+    "enName": "intrepid-sword",
+    "chName": "不撓之劍"
+  },
+  {
+    "id": 235,
+    "enName": "dauntless-shield",
+    "chName": "不屈之盾"
+  },
+  {
+    "id": 236,
+    "enName": "libero",
+    "chName": "自由者"
+  },
+  {
+    "id": 237,
+    "enName": "ball-fetch",
+    "chName": "撿球"
+  },
+  {
+    "id": 238,
+    "enName": "cotton-down",
+    "chName": "棉絮"
+  },
+  {
+    "id": 239,
+    "enName": "propeller-tail",
+    "chName": "螺旋尾鰭"
+  },
+  {
+    "id": 240,
+    "enName": "mirror-armor",
+    "chName": "鏡甲"
+  },
+  {
+    "id": 241,
+    "enName": "gulp-missile",
+    "chName": "一口飛彈"
+  },
+  {
+    "id": 242,
+    "enName": "stalwart",
+    "chName": "堅毅"
+  },
+  {
+    "id": 243,
+    "enName": "steam-engine",
+    "chName": "蒸汽機"
+  },
+  {
+    "id": 244,
+    "enName": "punk-rock",
+    "chName": "龐克搖滾"
+  },
+  {
+    "id": 245,
+    "enName": "sand-spit",
+    "chName": "吐沙"
+  },
+  {
+    "id": 246,
+    "enName": "ice-scales",
+    "chName": "冰鱗粉"
+  },
+  {
+    "id": 247,
+    "enName": "ripen",
+    "chName": "熟成"
+  },
+  {
+    "id": 248,
+    "enName": "ice-face",
+    "chName": "結凍頭"
+  },
+  {
+    "id": 249,
+    "enName": "power-spot",
+    "chName": "能量點"
+  },
+  {
+    "id": 250,
+    "enName": "mimicry",
+    "chName": "擬態"
+  },
+  {
+    "id": 251,
+    "enName": "screen-cleaner",
+    "chName": "除障"
+  },
+  {
+    "id": 252,
+    "enName": "steely-spirit",
+    "chName": "鋼之意志"
+  },
+  {
+    "id": 253,
+    "enName": "perish-body",
+    "chName": "滅亡之軀"
+  },
+  {
+    "id": 254,
+    "enName": "wandering-spirit",
+    "chName": "遊魂"
+  },
+  {
+    "id": 255,
+    "enName": "gorilla-tactics",
+    "chName": "一猩一意"
+  },
+  {
+    "id": 256,
+    "enName": "neutralizing-gas",
+    "chName": "化學變化氣體"
+  },
+  {
+    "id": 257,
+    "enName": "pastel-veil",
+    "chName": "粉彩護幕"
+  },
+  {
+    "id": 258,
+    "enName": "hunger-switch",
+    "chName": "飽了又餓"
+  },
+  {
+    "id": 259,
+    "enName": "quick-draw",
+    "chName": "速擊"
+  },
+  {
+    "id": 260,
+    "enName": "unseen-fist",
+    "chName": "無形拳"
+  },
+  {
+    "id": 261,
+    "enName": "curious-medicine",
+    "chName": "怪藥"
+  },
+  {
+    "id": 262,
+    "enName": "transistor",
+    "chName": "電晶體"
+  },
+  {
+    "id": 263,
+    "enName": "dragons-maw",
+    "chName": "龍顎"
+  },
+  {
+    "id": 264,
+    "enName": "chilling-neigh",
+    "chName": "蒼白嘶鳴"
+  },
+  {
+    "id": 265,
+    "enName": "grim-neigh",
+    "chName": "漆黑嘶鳴"
+  },
+  {
+    "id": 266,
+    "enName": "as-one-glastrier",
+    "chName": "人馬一體"
+  },
+  {
+    "id": 267,
+    "enName": "as-one-spectrier",
+    "chName": "人馬一體"
+  },
+  {
+    "id": 268,
+    "enName": "lingering-aroma",
+    "chName": "lingering-aroma"
+  },
+  {
+    "id": 269,
+    "enName": "seed-sower",
+    "chName": "seed-sower"
+  },
+  {
+    "id": 270,
+    "enName": "thermal-exchange",
+    "chName": "thermal-exchange"
+  },
+  {
+    "id": 271,
+    "enName": "anger-shell",
+    "chName": "anger-shell"
+  },
+  {
+    "id": 272,
+    "enName": "purifying-salt",
+    "chName": "purifying-salt"
+  },
+  {
+    "id": 273,
+    "enName": "well-baked-body",
+    "chName": "well-baked-body"
+  },
+  {
+    "id": 274,
+    "enName": "wind-rider",
+    "chName": "wind-rider"
+  },
+  {
+    "id": 275,
+    "enName": "guard-dog",
+    "chName": "guard-dog"
+  },
+  {
+    "id": 276,
+    "enName": "rocky-payload",
+    "chName": "rocky-payload"
+  },
+  {
+    "id": 277,
+    "enName": "wind-power",
+    "chName": "wind-power"
+  },
+  {
+    "id": 278,
+    "enName": "zero-to-hero",
+    "chName": "zero-to-hero"
+  },
+  {
+    "id": 279,
+    "enName": "commander",
+    "chName": "commander"
+  },
+  {
+    "id": 280,
+    "enName": "electromorphosis",
+    "chName": "electromorphosis"
+  },
+  {
+    "id": 281,
+    "enName": "protosynthesis",
+    "chName": "protosynthesis"
+  },
+  {
+    "id": 282,
+    "enName": "quark-drive",
+    "chName": "quark-drive"
+  },
+  {
+    "id": 283,
+    "enName": "good-as-gold",
+    "chName": "good-as-gold"
+  },
+  {
+    "id": 284,
+    "enName": "vessel-of-ruin",
+    "chName": "vessel-of-ruin"
+  },
+  {
+    "id": 285,
+    "enName": "sword-of-ruin",
+    "chName": "sword-of-ruin"
+  },
+  {
+    "id": 286,
+    "enName": "tablets-of-ruin",
+    "chName": "tablets-of-ruin"
+  },
+  {
+    "id": 287,
+    "enName": "beads-of-ruin",
+    "chName": "beads-of-ruin"
+  },
+  {
+    "id": 288,
+    "enName": "orichalcum-pulse",
+    "chName": "orichalcum-pulse"
+  },
+  {
+    "id": 289,
+    "enName": "hadron-engine",
+    "chName": "hadron-engine"
+  },
+  {
+    "id": 290,
+    "enName": "opportunist",
+    "chName": "opportunist"
+  },
+  {
+    "id": 291,
+    "enName": "cud-chew",
+    "chName": "cud-chew"
+  },
+  {
+    "id": 292,
+    "enName": "sharpness",
+    "chName": "sharpness"
+  },
+  {
+    "id": 293,
+    "enName": "supreme-overlord",
+    "chName": "supreme-overlord"
+  },
+  {
+    "id": 294,
+    "enName": "costar",
+    "chName": "costar"
+  },
+  {
+    "id": 295,
+    "enName": "toxic-debris",
+    "chName": "toxic-debris"
+  },
+  {
+    "id": 296,
+    "enName": "armor-tail",
+    "chName": "armor-tail"
+  },
+  {
+    "id": 297,
+    "enName": "earth-eater",
+    "chName": "earth-eater"
+  },
+  {
+    "id": 298,
+    "enName": "mycelium-might",
+    "chName": "mycelium-might"
+  },
+  {
+    "id": 299,
+    "enName": "minds-eye",
+    "chName": "心眼"
+  },
+  {
+    "id": 300,
+    "enName": "supersweet-syrup",
+    "chName": "甘露之蜜"
+  },
+  {
+    "id": 301,
+    "enName": "hospitality",
+    "chName": "款待"
+  },
+  {
+    "id": 302,
+    "enName": "toxic-chain",
+    "chName": "毒鎖鏈"
+  },
+  {
+    "id": 303,
+    "enName": "embody-aspect",
+    "chName": "面影輝映"
+  },
+  {
+    "id": 304,
+    "enName": "tera-shift",
+    "chName": "太晶變形"
+  },
+  {
+    "id": 305,
+    "enName": "tera-shell",
+    "chName": "太晶甲殼"
+  },
+  {
+    "id": 306,
+    "enName": "teraform-zero",
+    "chName": "歸零化境"
+  },
+  {
+    "id": 307,
+    "enName": "poison-puppeteer",
+    "chName": "毒傀儡"
+  },
+  {
+    "id": 10001,
+    "enName": "mountaineer",
+    "chName": "mountaineer"
+  },
+  {
+    "id": 10002,
+    "enName": "wave-rider",
+    "chName": "wave-rider"
+  },
+  {
+    "id": 10003,
+    "enName": "skater",
+    "chName": "skater"
+  },
+  {
+    "id": 10004,
+    "enName": "thrust",
+    "chName": "thrust"
+  },
+  {
+    "id": 10005,
+    "enName": "perception",
+    "chName": "perception"
+  },
+  {
+    "id": 10006,
+    "enName": "parry",
+    "chName": "parry"
+  },
+  {
+    "id": 10007,
+    "enName": "instinct",
+    "chName": "instinct"
+  },
+  {
+    "id": 10008,
+    "enName": "dodge",
+    "chName": "dodge"
+  },
+  {
+    "id": 10009,
+    "enName": "jagged-edge",
+    "chName": "jagged-edge"
+  },
+  {
+    "id": 10010,
+    "enName": "frostbite",
+    "chName": "frostbite"
+  },
+  {
+    "id": 10011,
+    "enName": "tenacity",
+    "chName": "tenacity"
+  },
+  {
+    "id": 10012,
+    "enName": "pride",
+    "chName": "pride"
+  },
+  {
+    "id": 10013,
+    "enName": "deep-sleep",
+    "chName": "deep-sleep"
+  },
+  {
+    "id": 10014,
+    "enName": "power-nap",
+    "chName": "power-nap"
+  },
+  {
+    "id": 10015,
+    "enName": "spirit",
+    "chName": "spirit"
+  },
+  {
+    "id": 10016,
+    "enName": "warm-blanket",
+    "chName": "warm-blanket"
+  },
+  {
+    "id": 10017,
+    "enName": "gulp",
+    "chName": "gulp"
+  },
+  {
+    "id": 10018,
+    "enName": "herbivore",
+    "chName": "herbivore"
+  },
+  {
+    "id": 10019,
+    "enName": "sandpit",
+    "chName": "sandpit"
+  },
+  {
+    "id": 10020,
+    "enName": "hot-blooded",
+    "chName": "hot-blooded"
+  },
+  {
+    "id": 10021,
+    "enName": "medic",
+    "chName": "medic"
+  },
+  {
+    "id": 10022,
+    "enName": "life-force",
+    "chName": "life-force"
+  },
+  {
+    "id": 10023,
+    "enName": "lunchbox",
+    "chName": "lunchbox"
+  },
+  {
+    "id": 10024,
+    "enName": "nurse",
+    "chName": "nurse"
+  },
+  {
+    "id": 10025,
+    "enName": "melee",
+    "chName": "melee"
+  },
+  {
+    "id": 10026,
+    "enName": "sponge",
+    "chName": "sponge"
+  },
+  {
+    "id": 10027,
+    "enName": "bodyguard",
+    "chName": "bodyguard"
+  },
+  {
+    "id": 10028,
+    "enName": "hero",
+    "chName": "hero"
+  },
+  {
+    "id": 10029,
+    "enName": "last-bastion",
+    "chName": "last-bastion"
+  },
+  {
+    "id": 10030,
+    "enName": "stealth",
+    "chName": "stealth"
+  },
+  {
+    "id": 10031,
+    "enName": "vanguard",
+    "chName": "vanguard"
+  },
+  {
+    "id": 10032,
+    "enName": "nomad",
+    "chName": "nomad"
+  },
+  {
+    "id": 10033,
+    "enName": "sequence",
+    "chName": "sequence"
+  },
+  {
+    "id": 10034,
+    "enName": "grass-cloak",
+    "chName": "grass-cloak"
+  },
+  {
+    "id": 10035,
+    "enName": "celebrate",
+    "chName": "celebrate"
+  },
+  {
+    "id": 10036,
+    "enName": "lullaby",
+    "chName": "lullaby"
+  },
+  {
+    "id": 10037,
+    "enName": "calming",
+    "chName": "calming"
+  },
+  {
+    "id": 10038,
+    "enName": "daze",
+    "chName": "daze"
+  },
+  {
+    "id": 10039,
+    "enName": "frighten",
+    "chName": "frighten"
+  },
+  {
+    "id": 10040,
+    "enName": "interference",
+    "chName": "interference"
+  },
+  {
+    "id": 10041,
+    "enName": "mood-maker",
+    "chName": "mood-maker"
+  },
+  {
+    "id": 10042,
+    "enName": "confidence",
+    "chName": "confidence"
+  },
+  {
+    "id": 10043,
+    "enName": "fortune",
+    "chName": "fortune"
+  },
+  {
+    "id": 10044,
+    "enName": "bonanza",
+    "chName": "bonanza"
+  },
+  {
+    "id": 10045,
+    "enName": "explode",
+    "chName": "explode"
+  },
+  {
+    "id": 10046,
+    "enName": "omnipotent",
+    "chName": "omnipotent"
+  },
+  {
+    "id": 10047,
+    "enName": "share",
+    "chName": "share"
+  },
+  {
+    "id": 10048,
+    "enName": "black-hole",
+    "chName": "black-hole"
+  },
+  {
+    "id": 10049,
+    "enName": "shadow-dash",
+    "chName": "shadow-dash"
+  },
+  {
+    "id": 10050,
+    "enName": "sprint",
+    "chName": "sprint"
+  },
+  {
+    "id": 10051,
+    "enName": "disgust",
+    "chName": "disgust"
+  },
+  {
+    "id": 10052,
+    "enName": "high-rise",
+    "chName": "high-rise"
+  },
+  {
+    "id": 10053,
+    "enName": "climber",
+    "chName": "climber"
+  },
+  {
+    "id": 10054,
+    "enName": "flame-boost",
+    "chName": "flame-boost"
+  },
+  {
+    "id": 10055,
+    "enName": "aqua-boost",
+    "chName": "aqua-boost"
+  },
+  {
+    "id": 10056,
+    "enName": "run-up",
+    "chName": "run-up"
+  },
+  {
+    "id": 10057,
+    "enName": "conqueror",
+    "chName": "conqueror"
+  },
+  {
+    "id": 10058,
+    "enName": "shackle",
+    "chName": "shackle"
+  },
+  {
+    "id": 10059,
+    "enName": "decoy",
+    "chName": "decoy"
+  },
+  {
+    "id": 10060,
+    "enName": "shield",
+    "chName": "shield"
+  }
+]

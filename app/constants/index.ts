@@ -61,7 +61,7 @@ export const DEFAULT_SEARCH_FORM: PokeSearchForm = {
   ids: [SLIDER_RANGE.min, SLIDER_RANGE.max],
   types: [],
   regions: [],
-  ability: undefined,
+  ability: "all",
 };
 
 export const POKE_MOVE_CATS = [

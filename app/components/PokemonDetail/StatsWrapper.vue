@@ -49,7 +49,7 @@
       <div class="label cosms-label mb-2">特性</div>
       <div class="flex flex-wrap gap-2">
         <Tag
-          v-for="(ability, index) in abilityList"
+          v-for="ability in abilityList"
           class="w-auto"
           :key="ability.label"
           :read-only="true"
@@ -73,22 +73,15 @@ const props = defineProps<{
   entryText: PokeDetailRes["entryText"];
 }>();
 
-const store = usePokeStore();
+const pokeStore = usePokeStore();
+
 const abilityList = computed(() => {
-  return props.abilities.flatMap((enName) => {
-    const data = store.abilities.find((item) => item.value === enName);
-    if (data && data.value !== undefined && data.id !== 0) {
-      return [
-        {
-          value: data.value,
-          label: data.label,
-        },
-      ];
-    }
-    return [];
+  return props.abilities.map((enName) => {
+    const ability = pokeStore.abilities.find((item) => item.value === enName)!;
+    return ability;
   });
 });
 onMounted(() => {
-  store.fetchAbilities();
+  pokeStore.setAbilities();
 });
 </script>

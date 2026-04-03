@@ -41,10 +41,8 @@
         />
       </div>
     </div>
-    <div
-      v-if="searchForm.ability && getAbility"
-      class="flex items-start gap-4 z-10"
-    >
+    {{ getAbility }}
+    <div v-if="getAbility" class="flex items-start gap-4 z-10">
       <span class="search-key">特性：</span>
       <div class="text-primary/90 text-sm font-medium tracking-wide font-mono">
         {{ getAbility.label }}
@@ -71,23 +69,23 @@ import { usePokeStore } from "~/store/pokeStore";
 const { searchForm } = inject(SearchContextKey)!;
 
 const pokeStore = usePokeStore();
+
 const getAbility = computed(() => {
+  if (searchForm.value.ability === "all") return;
   return pokeStore.abilities.find((i) =>
-    i.value?.includes(String(searchForm.value.ability)),
+    i.value?.includes(String(searchForm.value.ability))
   );
 });
 
 const typesOptions = computed(() => {
-  // 遍歷所有屬性，只保留「存在於 searchForm.types 陣列中」的物件
   return POKEMON_TYPES.filter((type) =>
-    searchForm.value.types.includes(type.value),
+    searchForm.value.types.includes(type.value)
   );
 });
 
 const regionsOptions = computed(() => {
-  // 遍歷所有屬性，只保留「存在於 searchForm.types 陣列中」的物件
   return POKEMON_REGIONS.filter((region) =>
-    searchForm.value.regions.includes(region.value),
+    searchForm.value.regions.includes(region.value)
   );
 });
 const isShowIdsRange = computed(() => {
@@ -99,12 +97,12 @@ const isShowIdsRange = computed(() => {
 });
 
 const isShowWrapper = computed(() => {
-  const { keywords, types, regions, ability } = searchForm.value;
+  const { keywords, types, regions } = searchForm.value;
   return (
     keywords ||
     types.length ||
     regions.length ||
-    ability ||
+    getAbility.value ||
     isShowIdsRange.value
   );
 });

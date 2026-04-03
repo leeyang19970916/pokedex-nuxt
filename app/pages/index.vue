@@ -137,7 +137,7 @@ const fetchUpdatedList = async (
     keywords: searchForm.keywords.trim() || undefined,
     types: searchForm.types || undefined,
     regions: searchForm.regions || undefined,
-    ability: searchForm.ability || undefined,
+    ability: searchForm.ability === "all" ? undefined : searchForm.ability,
     ...getRange(searchForm.ids),
   };
   try {
@@ -170,6 +170,6 @@ const getRange = (ids: PokeSearchForm["ids"]) => {
 };
 
 onMounted(() => {
-  pokeStore.fetchAbilities();
+  pokeStore.setAbilities();
 });
 </script>

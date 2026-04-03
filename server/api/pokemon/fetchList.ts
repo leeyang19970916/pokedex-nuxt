@@ -41,7 +41,7 @@ const filterBy = (list: PokeCard[], query: QueryFormat) => {
   }
   if (ability) {
     list = list.filter((poke) => {
-      return poke.abilities.includes(ability);
+      return poke.abilities.some((a) => a === ability);
     });
   }
   if (maxId && minId) {

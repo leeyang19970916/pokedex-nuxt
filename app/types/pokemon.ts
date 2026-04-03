@@ -40,8 +40,7 @@ export type PokeListQuery = {
 };
 export type PokeAbility = {
   label: string;
-  value: string | undefined;
-  id: Id;
+  value: string;
 };
 export type PokeSearchForm = {
   keywords: string;

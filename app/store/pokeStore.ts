@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
 import type { PokeCard, PokeAbility } from "../types/pokemon";
+import AbilitiesRawData from "~~/server/api/rawData/abilities.json";
 
 export const usePokeStore = defineStore("pokeStore", () => {
   const abilities = ref<PokeAbility[]>([]);
@@ -8,16 +9,14 @@ export const usePokeStore = defineStore("pokeStore", () => {
   const setList = async (newData: PokeCard[]) => {
     pokeList.value = newData;
   };
-  const fetchAbilities = async () => {
+
+  const setAbilities = async () => {
     if (abilities.value.length) return;
-    const res = await $fetch("/api/pokemon/ability/list", {
-      query: {
-        limit: 400,
-      },
-      immediate: true,
+    abilities.value = AbilitiesRawData.map((a) => {
+      return { value: a.enName, label: a.chName };
     });
-    const all = { label: "All", value: undefined, id: 0 };
-    abilities.value = [all, ...res];
+    const all = { label: "All", value: "all" };
+    abilities.value = [all, ...abilities.value];
   };
-  return { pokeList, setList, abilities, fetchAbilities };
+  return { pokeList, setList, setAbilities, abilities };
 });

@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@element-plus/nuxt",
     "@nuxt/eslint",
     "@vueuse/nuxt",
+    "@nuxt/image",
   ],
   // vite: {
   //   css: {

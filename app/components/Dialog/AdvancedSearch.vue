@@ -168,22 +168,15 @@ const { search, tempForm, clear, revert } = inject(SearchContextKey)!;
 const toggleSelect = (payload: TagPayload) => {
   const { option, type } = payload;
 
-  // 假設你的常數 TYPE 是字串 'type'
   const fieldKey = type === "type" ? "types" : "regions";
 
-  // 加上 `as string[]` 斷言。
-  // 這是告訴 TS：「閉嘴，我知道我拿出來的是一個字串陣列，我會為我的行為負責」
   const targetArray = tempForm.value[fieldKey] as string[];
 
-  // 使用 indexOf 尋找是否已存在 (效能比 some 好，且能順便拿到索引位置)
   const index = targetArray.indexOf(option.value);
 
   if (index !== -1) {
-    // index 不等於 -1，代表陣列裡有這個值 -> 把它移除
-    // splice 會直接修改 targetArray，不需要重新賦值
     targetArray.splice(index, 1);
   } else {
-    // 陣列裡沒有這個值 -> 把它加入
     targetArray.push(option.value);
   }
 };
@@ -195,32 +188,19 @@ const marks = shallowRef<Marks>({
 </script>
 
 <style>
-/* ⚠️ 這裡非常重要！
-    因為 el-dialog 預設會被 Teleport 到 body 底下，
-    所以不能加 `scoped`，否則樣式會吃不到！
-  */
 .tech-dialog {
-  /* 把預設的白底換成深色微透明，搭配毛玻璃效果 */
   background: rgba(10, 15, 30, 0.85) !important;
   backdrop-filter: blur(12px) !important;
-  /* 加上你專屬的 primary border 跟發光效果 */
   border: 1px solid rgba(179, 234, 254, 0.4) !important;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8),
     inset 0 0 20px rgba(179, 234, 254, 0.05) !important;
   border-radius: 12px !important;
-  /* 魔法在這裡：直接覆蓋 Element Plus 的預設變數 */
-  --el-color-primary: rgb(179, 234, 254); /* 把組件的主色替換成你的水藍色 */
-  --el-slider-main-bg-color: var(--el-color-primary); /* 線條跟圓圈的顏色 */
-  --el-slider-runway-bg-color: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* 底層未選取的軌道顏色 */
-  --el-slider-stop-bg-color: rgba(255, 255, 255, 0.2); /* 刻度點的顏色 */
+  --el-color-primary: rgb(179, 234, 254);
+  --el-slider-main-bg-color: var(--el-color-primary);
+  --el-slider-runway-bg-color: rgba(255, 255, 255, 0.1);
+  --el-slider-stop-bg-color: rgba(255, 255, 255, 0.2);
 }
 
-/* 隱藏 Element 預設的 padding 跟 header 背景，讓我們自己控制 */
 .tech-dialog .el-dialog__header,
 .tech-dialog .el-dialog__body,
 .tech-dialog .el-dialog__footer {
@@ -228,7 +208,6 @@ const marks = shallowRef<Marks>({
   margin-right: 0 !important;
 }
 
-/* 稍微調整過渡動畫，讓它打開時有科技感 */
 .el-overlay-dialog {
   backdrop-filter: blur(4px);
 }
