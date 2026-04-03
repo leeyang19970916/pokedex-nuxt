@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="hud-panel cosms-hud stats-bar-panel p-6 flex flex-col gap-4">
-      <div class="label cosms-label">AURA ENERGY CELLS</div>
+      <div class="label cosms-label">基礎能力參數 [BASE_STATS]</div>
 
       <div class="flex flex-col gap-3 mt-2">
         <div
@@ -39,14 +39,14 @@
       </div>
     </div>
     <div class="hud-panel cosms-hud entry-panel p-6 min-h-[200px]">
-      <div class="label cosms-label mb-2">描述</div>
+      <div class="label cosms-label mb-2">描述 [ARCHIVE_ENTRY]</div>
       <p class="value text-gray-200 font-mono text-md leading-relaxed">
         {{ entryText }}
       </p>
     </div>
 
     <div class="hud-panel cosms-hud ability-panel p-6">
-      <div class="label cosms-label mb-2">特性</div>
+      <div class="label cosms-label mb-2">特性 [ABILITIES]</div>
       <div class="flex flex-wrap gap-2">
         <template v-if="abilityList && abilityList.length">
           <template

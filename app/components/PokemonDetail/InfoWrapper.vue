@@ -1,35 +1,35 @@
 <template>
   <div>
     <div
-      class="hud-panel cosms-hud identity-panel p-6 flex flex-col gap-4 pb-[4rem]"
+      class="hud-panel cosms-hud identity-panel p-6 flex flex-col gap-6 pb-[4rem]"
     >
       <section class="flex flex-col gap-2">
-        <div class="label cosms-label">圖鑑編號</div>
+        <div class="label cosms-label">圖鑑編號 [INDEX_NO]</div>
         <div class="value font-bold text-5xl primary-neon-text"># {{ id }}</div>
       </section>
       <section class="flex flex-col gap-2">
-        <div class="label cosms-label">名字</div>
+        <div class="label cosms-label">名字 [NAME]</div>
         <div class="value font-extrabold text-4xl text-white tracking-tighter">
           {{ name.toUpperCase() }}
         </div>
       </section>
 
       <section class="flex flex-col gap-2" v-if="genus">
-        <div class="label cosms-label">分類</div>
+        <div class="label cosms-label">分類 [CATEGORY]</div>
         <div class="value text-white font-semibold">
           {{ genus }}
         </div>
       </section>
 
       <section class="flex flex-col gap-2" v-if="region">
-        <div class="label cosms-label">地區</div>
+        <div class="label cosms-label">地區 [REGION]</div>
         <div class="value text-white font-semibold">
           {{ region.label }}
         </div>
       </section>
 
       <section class="flex flex-col gap-2">
-        <div class="label cosms-label">屬性</div>
+        <div class="label cosms-label">屬性 [TYPE]</div>
         <div class="flex gap-2">
           <Tag
             v-for="options in typeOpts"
@@ -41,7 +41,7 @@
         </div>
       </section>
       <section class="flex flex-col gap-2">
-        <div class="label cosms-label">弱點</div>
+        <div class="label cosms-label">弱點 [WEAKNESS]</div>
         <div class="flex flex-wrap gap-2">
           <Tag
             v-for="options in weaknessOpts"
