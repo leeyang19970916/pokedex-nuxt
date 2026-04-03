@@ -15,8 +15,7 @@ for (let i = 0; i < pokemonList.length; i++) {
 
     // 找出繁體中文 (zh-Hant) 或 簡體中文 (zh-Hans)
     const twNameObj =
-      speciesData.names.find((n) => n.language.name === "zh-hant") ||
-      speciesData.names.find((n) => n.language.name === "zh-hans");
+      speciesData.names.find((n) => n.language.name === "zh-hant" || n.language.name === "zh-hans")
     const enNameObj =
       speciesData.names.find((n) => n.language.name === "en") || "none";
     if (twNameObj) {
@@ -27,7 +26,9 @@ for (let i = 0; i < pokemonList.length; i++) {
     } else {
       console.log(`[警告] #${p.id} 找不到中文，保留英文: ${p.name}`);
     }
-    delete p.enNmae;
+
+    const genus = getGenera(speciesData.genera)
+    p.genus = genus
     // ⚠️ 禮貌性延遲：每次打完 API 休息 50 毫秒，避免太頻繁被 PokéAPI 擋 IP
     await new Promise((resolve) => setTimeout(resolve, 50));
   } catch (err) {
@@ -42,3 +43,7 @@ await fs.writeFile(
   "utf-8",
 );
 console.log("🎉 升級完成！請查看 pokedex-zh.json");
+function getGenera(genera) {
+  return (genera.find(g => g.language.name === 'zh-hant' || g.language.name === 'zh-hans' || g.language.name === 'en')?.genus ||
+    '無分類')
+}

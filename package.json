@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "fetch-data": "node scripts/upgrade-abilities-json.mjs && node scripts/upgrade-moves-json.mjs && node scripts/upgrade-pokedex-json.mjs"
   },
   "dependencies": {
     "nuxt": "^4.3.1",

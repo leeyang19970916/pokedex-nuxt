@@ -1,11 +1,9 @@
 import fs from "fs/promises";
 
-// 1. 取得總表
 const res = await fetch('https://pokeapi.co/api/v2/move?limit=1000');
 const tempObj = await res.json();
 const moveListNewData = tempObj.results.map(i => i.url);
 
-console.log(`總共找到 ${moveListNewData.length} 個招式，為了避免被封鎖，啟動分批抓取模式...`);
 
 const moveDetail = [];
 const CHUNK_SIZE = 50; // 一次只並發 50 個請求
@@ -21,16 +19,13 @@ for (let i = 0; i < moveListNewData.length; i += CHUNK_SIZE) {
     const fetchPromises = chunk.map(url => fetch(url).then(r => r.json()));
     const chunkResults = await Promise.all(fetchPromises);
 
-    // 把結果塞進總陣列
     moveDetail.push(...chunkResults);
 
-    // 💡 關鍵防爆機制：當個有禮貌的爬蟲，每抓完 50 個就強制等待 0.5 秒
     await new Promise(resolve => setTimeout(resolve, 500));
 }
 
 console.log("資料下載完畢！正在啟動資料清洗與格式化...");
 
-// 3. 處理成 AURA ANALYZER 需要的字典格式
 const movesDictionary = {};
 
 moveDetail.forEach(move => {

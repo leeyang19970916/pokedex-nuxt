@@ -13,6 +13,13 @@
         {{ name.toUpperCase() }}
       </div>
 
+      <div>
+        <div class="label cosms-label">分類</div>
+        <div class="value text-white font-semibold mb-4">
+          {{ genus }}
+        </div>
+      </div>
+
       <div class="label cosms-label mb-2">屬性</div>
       <div class="flex gap-2 mb-6">
         <Tag
@@ -33,11 +40,6 @@
           :option="options"
           :readOnly="false"
         />
-      </div>
-
-      <div class="label cosms-label">分類</div>
-      <div class="value text-white font-semibold mb-4">
-        {{ "????" }}
       </div>
     </div>
 
@@ -71,6 +73,7 @@ const props = defineProps<{
   height: PokeDetailRes["height"];
   weight: PokeDetailRes["weight"];
   types: PokeDetailRes["types"];
+  genus: PokeDetailRes["genus"];
 }>();
 
 const typeOpts = computed(() => {

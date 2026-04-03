@@ -57,6 +57,7 @@
         :height="poke.height"
         :weight="poke.weight"
         :types="poke.types"
+        :genus="poke.genus"
       />
       <section class="flex justify-center items-center">
         <ImageWrapper
@@ -113,6 +114,7 @@ const poke = ref<PokeDetailRes | null>(null);
 
 const change = async (id: PokeDetailRes["id"]) => {
   const res = await $fetch<PokeDetailRes>(`/api/pokemon/variant/${id}`);
+  console.log(res, "res");
   if (poke.value && res) {
     poke.value.name = res.name;
     poke.value.height = res.height;

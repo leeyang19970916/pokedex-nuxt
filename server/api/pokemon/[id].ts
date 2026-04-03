@@ -39,6 +39,13 @@ export default defineEventHandler(async (event) => {
       const { name } = i.move;
       return (MovesRawData as any)[name];
     });
+    const genus =
+      speciesData.genera.find(
+        (g) =>
+          g.language.name === ZH_HANT ||
+          g.language.name === "zh-hans" ||
+          g.language.name === "en"
+      )?.genus || "";
 
     const result = {
       id: pokeData.id,
@@ -53,6 +60,7 @@ export default defineEventHandler(async (event) => {
       entryText,
       varieties,
       evolutionChains,
+      genus,
     };
     return result;
   } catch (e) {

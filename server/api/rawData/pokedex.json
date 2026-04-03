@@ -22,7 +22,8 @@
       "chlorophyll"
     ],
     "region": "kanto",
-    "enName": "Bulbasaur"
+    "enName": "Bulbasaur",
+    "genus": "種子寶可夢"
   },
   {
     "id": 2,
@@ -47,7 +48,8 @@
       "chlorophyll"
     ],
     "region": "kanto",
-    "enName": "Ivysaur"
+    "enName": "Ivysaur",
+    "genus": "種子寶可夢"
   },
   {
     "id": 3,
@@ -72,7 +74,8 @@
       "chlorophyll"
     ],
     "region": "kanto",
-    "enName": "Venusaur"
+    "enName": "Venusaur",
+    "genus": "種子寶可夢"
   },
   {
     "id": 4,
@@ -96,7 +99,8 @@
       "solar-power"
     ],
     "region": "kanto",
-    "enName": "Charmander"
+    "enName": "Charmander",
+    "genus": "蜥蜴寶可夢"
   },
   {
     "id": 5,
@@ -120,7 +124,8 @@
       "solar-power"
     ],
     "region": "kanto",
-    "enName": "Charmeleon"
+    "enName": "Charmeleon",
+    "genus": "火焰寶可夢"
   },
   {
     "id": 6,
@@ -145,7 +150,8 @@
       "solar-power"
     ],
     "region": "kanto",
-    "enName": "Charizard"
+    "enName": "Charizard",
+    "genus": "火焰寶可夢"
   },
   {
     "id": 7,
@@ -169,7 +175,8 @@
       "rain-dish"
     ],
     "region": "kanto",
-    "enName": "Squirtle"
+    "enName": "Squirtle",
+    "genus": "小龜寶可夢"
   },
   {
     "id": 8,
@@ -193,7 +200,8 @@
       "rain-dish"
     ],
     "region": "kanto",
-    "enName": "Wartortle"
+    "enName": "Wartortle",
+    "genus": "龜寶可夢"
   },
   {
     "id": 9,
@@ -217,7 +225,8 @@
       "rain-dish"
     ],
     "region": "kanto",
-    "enName": "Blastoise"
+    "enName": "Blastoise",
+    "genus": "甲殼寶可夢"
   },
   {
     "id": 10,
@@ -241,7 +250,8 @@
       "run-away"
     ],
     "region": "kanto",
-    "enName": "Caterpie"
+    "enName": "Caterpie",
+    "genus": "蟲寶寶寶可夢"
   },
   {
     "id": 11,
@@ -264,7 +274,8 @@
       "shed-skin"
     ],
     "region": "kanto",
-    "enName": "Metapod"
+    "enName": "Metapod",
+    "genus": "蛹寶可夢"
   },
   {
     "id": 12,
@@ -289,7 +300,8 @@
       "tinted-lens"
     ],
     "region": "kanto",
-    "enName": "Butterfree"
+    "enName": "Butterfree",
+    "genus": "蝴蝶寶可夢"
   },
   {
     "id": 13,
@@ -314,7 +326,8 @@
       "run-away"
     ],
     "region": "kanto",
-    "enName": "Weedle"
+    "enName": "Weedle",
+    "genus": "毛毛蟲寶可夢"
   },
   {
     "id": 14,
@@ -338,7 +351,8 @@
       "shed-skin"
     ],
     "region": "kanto",
-    "enName": "Kakuna"
+    "enName": "Kakuna",
+    "genus": "蛹寶可夢"
   },
   {
     "id": 15,
@@ -363,7 +377,8 @@
       "sniper"
     ],
     "region": "kanto",
-    "enName": "Beedrill"
+    "enName": "Beedrill",
+    "genus": "毒蜂寶可夢"
   },
   {
     "id": 16,
@@ -389,7 +404,8 @@
       "big-pecks"
     ],
     "region": "kanto",
-    "enName": "Pidgey"
+    "enName": "Pidgey",
+    "genus": "小鳥寶可夢"
   },
   {
     "id": 17,
@@ -415,7 +431,8 @@
       "big-pecks"
     ],
     "region": "kanto",
-    "enName": "Pidgeotto"
+    "enName": "Pidgeotto",
+    "genus": "鳥寶可夢"
   },
   {
     "id": 18,
@@ -441,7 +458,8 @@
       "big-pecks"
     ],
     "region": "kanto",
-    "enName": "Pidgeot"
+    "enName": "Pidgeot",
+    "genus": "鳥寶可夢"
   },
   {
     "id": 19,
@@ -466,7 +484,8 @@
       "hustle"
     ],
     "region": "kanto",
-    "enName": "Rattata"
+    "enName": "Rattata",
+    "genus": "鼠寶可夢"
   },
   {
     "id": 20,
@@ -491,7 +510,8 @@
       "hustle"
     ],
     "region": "kanto",
-    "enName": "Raticate"
+    "enName": "Raticate",
+    "genus": "鼠寶可夢"
   },
   {
     "id": 21,
@@ -516,7 +536,8 @@
       "sniper"
     ],
     "region": "kanto",
-    "enName": "Spearow"
+    "enName": "Spearow",
+    "genus": "小鳥寶可夢"
   },
   {
     "id": 22,
@@ -541,7 +562,8 @@
       "sniper"
     ],
     "region": "kanto",
-    "enName": "Fearow"
+    "enName": "Fearow",
+    "genus": "鳥嘴寶可夢"
   },
   {
     "id": 23,
@@ -566,7 +588,8 @@
       "unnerve"
     ],
     "region": "kanto",
-    "enName": "Ekans"
+    "enName": "Ekans",
+    "genus": "蛇寶可夢"
   },
   {
     "id": 24,
@@ -591,7 +614,8 @@
       "unnerve"
     ],
     "region": "kanto",
-    "enName": "Arbok"
+    "enName": "Arbok",
+    "genus": "眼鏡蛇寶可夢"
   },
   {
     "id": 25,
@@ -615,7 +639,8 @@
       "lightning-rod"
     ],
     "region": "kanto",
-    "enName": "Pikachu"
+    "enName": "Pikachu",
+    "genus": "鼠寶可夢"
   },
   {
     "id": 26,
@@ -639,7 +664,8 @@
       "lightning-rod"
     ],
     "region": "kanto",
-    "enName": "Raichu"
+    "enName": "Raichu",
+    "genus": "鼠寶可夢"
   },
   {
     "id": 27,
@@ -663,7 +689,8 @@
       "sand-rush"
     ],
     "region": "kanto",
-    "enName": "Sandshrew"
+    "enName": "Sandshrew",
+    "genus": "鼠寶可夢"
   },
   {
     "id": 28,
@@ -687,7 +714,8 @@
       "sand-rush"
     ],
     "region": "kanto",
-    "enName": "Sandslash"
+    "enName": "Sandslash",
+    "genus": "鼠寶可夢"
   },
   {
     "id": 29,
@@ -712,7 +740,8 @@
       "hustle"
     ],
     "region": "kanto",
-    "enName": "Nidoran♀"
+    "enName": "Nidoran♀",
+    "genus": "毒針寶可夢"
   },
   {
     "id": 30,
@@ -737,7 +766,8 @@
       "hustle"
     ],
     "region": "kanto",
-    "enName": "Nidorina"
+    "enName": "Nidorina",
+    "genus": "毒針寶可夢"
   },
   {
     "id": 31,
@@ -763,7 +793,8 @@
       "sheer-force"
     ],
     "region": "kanto",
-    "enName": "Nidoqueen"
+    "enName": "Nidoqueen",
+    "genus": "鑽錐寶可夢"
   },
   {
     "id": 32,
@@ -788,7 +819,8 @@
       "hustle"
     ],
     "region": "kanto",
-    "enName": "Nidoran♂"
+    "enName": "Nidoran♂",
+    "genus": "毒針寶可夢"
   },
   {
     "id": 33,
@@ -813,7 +845,8 @@
       "hustle"
     ],
     "region": "kanto",
-    "enName": "Nidorino"
+    "enName": "Nidorino",
+    "genus": "毒針寶可夢"
   },
   {
     "id": 34,
@@ -839,7 +872,8 @@
       "sheer-force"
     ],
     "region": "kanto",
-    "enName": "Nidoking"
+    "enName": "Nidoking",
+    "genus": "鑽錐寶可夢"
   },
   {
     "id": 35,
@@ -864,7 +898,8 @@
       "friend-guard"
     ],
     "region": "kanto",
-    "enName": "Clefairy"
+    "enName": "Clefairy",
+    "genus": "妖精寶可夢"
   },
   {
     "id": 36,
@@ -889,7 +924,8 @@
       "unaware"
     ],
     "region": "kanto",
-    "enName": "Clefable"
+    "enName": "Clefable",
+    "genus": "妖精寶可夢"
   },
   {
     "id": 37,
@@ -913,7 +949,8 @@
       "drought"
     ],
     "region": "kanto",
-    "enName": "Vulpix"
+    "enName": "Vulpix",
+    "genus": "狐狸寶可夢"
   },
   {
     "id": 38,
@@ -937,7 +974,8 @@
       "drought"
     ],
     "region": "kanto",
-    "enName": "Ninetales"
+    "enName": "Ninetales",
+    "genus": "狐狸寶可夢"
   },
   {
     "id": 39,
@@ -963,7 +1001,8 @@
       "friend-guard"
     ],
     "region": "kanto",
-    "enName": "Jigglypuff"
+    "enName": "Jigglypuff",
+    "genus": "氣球寶可夢"
   },
   {
     "id": 40,
@@ -989,7 +1028,8 @@
       "frisk"
     ],
     "region": "kanto",
-    "enName": "Wigglytuff"
+    "enName": "Wigglytuff",
+    "genus": "氣球寶可夢"
   },
   {
     "id": 41,
@@ -1014,7 +1054,8 @@
       "infiltrator"
     ],
     "region": "kanto",
-    "enName": "Zubat"
+    "enName": "Zubat",
+    "genus": "蝙蝠寶可夢"
   },
   {
     "id": 42,
@@ -1039,7 +1080,8 @@
       "infiltrator"
     ],
     "region": "kanto",
-    "enName": "Golbat"
+    "enName": "Golbat",
+    "genus": "蝙蝠寶可夢"
   },
   {
     "id": 43,
@@ -1064,7 +1106,8 @@
       "run-away"
     ],
     "region": "kanto",
-    "enName": "Oddish"
+    "enName": "Oddish",
+    "genus": "雜草寶可夢"
   },
   {
     "id": 44,
@@ -1089,7 +1132,8 @@
       "stench"
     ],
     "region": "kanto",
-    "enName": "Gloom"
+    "enName": "Gloom",
+    "genus": "雜草寶可夢"
   },
   {
     "id": 45,
@@ -1114,7 +1158,8 @@
       "effect-spore"
     ],
     "region": "kanto",
-    "enName": "Vileplume"
+    "enName": "Vileplume",
+    "genus": "花寶可夢"
   },
   {
     "id": 46,
@@ -1140,7 +1185,8 @@
       "damp"
     ],
     "region": "kanto",
-    "enName": "Paras"
+    "enName": "Paras",
+    "genus": "蘑菇寶可夢"
   },
   {
     "id": 47,
@@ -1166,7 +1212,8 @@
       "damp"
     ],
     "region": "kanto",
-    "enName": "Parasect"
+    "enName": "Parasect",
+    "genus": "蘑菇寶可夢"
   },
   {
     "id": 48,
@@ -1192,7 +1239,8 @@
       "run-away"
     ],
     "region": "kanto",
-    "enName": "Venonat"
+    "enName": "Venonat",
+    "genus": "昆蟲寶可夢"
   },
   {
     "id": 49,
@@ -1218,7 +1266,8 @@
       "wonder-skin"
     ],
     "region": "kanto",
-    "enName": "Venomoth"
+    "enName": "Venomoth",
+    "genus": "毒蛾寶可夢"
   },
   {
     "id": 50,
@@ -1243,7 +1292,8 @@
       "sand-force"
     ],
     "region": "kanto",
-    "enName": "Diglett"
+    "enName": "Diglett",
+    "genus": "鼴鼠寶可夢"
   },
   {
     "id": 51,
@@ -1268,7 +1318,8 @@
       "sand-force"
     ],
     "region": "kanto",
-    "enName": "Dugtrio"
+    "enName": "Dugtrio",
+    "genus": "鼴鼠寶可夢"
   },
   {
     "id": 52,
@@ -1293,7 +1344,8 @@
       "unnerve"
     ],
     "region": "kanto",
-    "enName": "Meowth"
+    "enName": "Meowth",
+    "genus": "妖怪貓寶可夢"
   },
   {
     "id": 53,
@@ -1318,7 +1370,8 @@
       "unnerve"
     ],
     "region": "kanto",
-    "enName": "Persian"
+    "enName": "Persian",
+    "genus": "暹羅貓寶可夢"
   },
   {
     "id": 54,
@@ -1343,7 +1396,8 @@
       "swift-swim"
     ],
     "region": "kanto",
-    "enName": "Psyduck"
+    "enName": "Psyduck",
+    "genus": "鴨寶可夢"
   },
   {
     "id": 55,
@@ -1368,7 +1422,8 @@
       "swift-swim"
     ],
     "region": "kanto",
-    "enName": "Golduck"
+    "enName": "Golduck",
+    "genus": "鴨寶可夢"
   },
   {
     "id": 56,
@@ -1393,7 +1448,8 @@
       "defiant"
     ],
     "region": "kanto",
-    "enName": "Mankey"
+    "enName": "Mankey",
+    "genus": "豬猴寶可夢"
   },
   {
     "id": 57,
@@ -1418,7 +1474,8 @@
       "defiant"
     ],
     "region": "kanto",
-    "enName": "Primeape"
+    "enName": "Primeape",
+    "genus": "豬猴寶可夢"
   },
   {
     "id": 58,
@@ -1443,7 +1500,8 @@
       "justified"
     ],
     "region": "kanto",
-    "enName": "Growlithe"
+    "enName": "Growlithe",
+    "genus": "小狗寶可夢"
   },
   {
     "id": 59,
@@ -1468,7 +1526,8 @@
       "justified"
     ],
     "region": "kanto",
-    "enName": "Arcanine"
+    "enName": "Arcanine",
+    "genus": "傳說寶可夢"
   },
   {
     "id": 60,
@@ -1493,7 +1552,8 @@
       "swift-swim"
     ],
     "region": "kanto",
-    "enName": "Poliwag"
+    "enName": "Poliwag",
+    "genus": "蝌蚪寶可夢"
   },
   {
     "id": 61,
@@ -1518,7 +1578,8 @@
       "swift-swim"
     ],
     "region": "kanto",
-    "enName": "Poliwhirl"
+    "enName": "Poliwhirl",
+    "genus": "蝌蚪寶可夢"
   },
   {
     "id": 62,
@@ -1544,7 +1605,8 @@
       "swift-swim"
     ],
     "region": "kanto",
-    "enName": "Poliwrath"
+    "enName": "Poliwrath",
+    "genus": "蝌蚪寶可夢"
   },
   {
     "id": 63,
@@ -1569,7 +1631,8 @@
       "magic-guard"
     ],
     "region": "kanto",
-    "enName": "Abra"
+    "enName": "Abra",
+    "genus": "念力寶可夢"
   },
   {
     "id": 64,
@@ -1594,7 +1657,8 @@
       "magic-guard"
     ],
     "region": "kanto",
-    "enName": "Kadabra"
+    "enName": "Kadabra",
+    "genus": "念力寶可夢"
   },
   {
     "id": 65,
@@ -1619,7 +1683,8 @@
       "magic-guard"
     ],
     "region": "kanto",
-    "enName": "Alakazam"
+    "enName": "Alakazam",
+    "genus": "念力寶可夢"
   },
   {
     "id": 66,
@@ -1644,7 +1709,8 @@
       "steadfast"
     ],
     "region": "kanto",
-    "enName": "Machop"
+    "enName": "Machop",
+    "genus": "怪力寶可夢"
   },
   {
     "id": 67,
@@ -1669,7 +1735,8 @@
       "steadfast"
     ],
     "region": "kanto",
-    "enName": "Machoke"
+    "enName": "Machoke",
+    "genus": "怪力寶可夢"
   },
   {
     "id": 68,
@@ -1694,7 +1761,8 @@
       "steadfast"
     ],
     "region": "kanto",
-    "enName": "Machamp"
+    "enName": "Machamp",
+    "genus": "怪力寶可夢"
   },
   {
     "id": 69,
@@ -1719,7 +1787,8 @@
       "gluttony"
     ],
     "region": "kanto",
-    "enName": "Bellsprout"
+    "enName": "Bellsprout",
+    "genus": "花寶可夢"
   },
   {
     "id": 70,
@@ -1744,7 +1813,8 @@
       "gluttony"
     ],
     "region": "kanto",
-    "enName": "Weepinbell"
+    "enName": "Weepinbell",
+    "genus": "捕蠅寶可夢"
   },
   {
     "id": 71,
@@ -1769,7 +1839,8 @@
       "gluttony"
     ],
     "region": "kanto",
-    "enName": "Victreebel"
+    "enName": "Victreebel",
+    "genus": "捕蠅寶可夢"
   },
   {
     "id": 72,
@@ -1795,7 +1866,8 @@
       "rain-dish"
     ],
     "region": "kanto",
-    "enName": "Tentacool"
+    "enName": "Tentacool",
+    "genus": "水母寶可夢"
   },
   {
     "id": 73,
@@ -1821,7 +1893,8 @@
       "rain-dish"
     ],
     "region": "kanto",
-    "enName": "Tentacruel"
+    "enName": "Tentacruel",
+    "genus": "水母寶可夢"
   },
   {
     "id": 74,
@@ -1847,7 +1920,8 @@
       "sand-veil"
     ],
     "region": "kanto",
-    "enName": "Geodude"
+    "enName": "Geodude",
+    "genus": "岩石寶可夢"
   },
   {
     "id": 75,
@@ -1873,7 +1947,8 @@
       "sand-veil"
     ],
     "region": "kanto",
-    "enName": "Graveler"
+    "enName": "Graveler",
+    "genus": "岩石寶可夢"
   },
   {
     "id": 76,
@@ -1899,7 +1974,8 @@
       "sand-veil"
     ],
     "region": "kanto",
-    "enName": "Golem"
+    "enName": "Golem",
+    "genus": "重量級寶可夢"
   },
   {
     "id": 77,
@@ -1924,7 +2000,8 @@
       "flame-body"
     ],
     "region": "kanto",
-    "enName": "Ponyta"
+    "enName": "Ponyta",
+    "genus": "火馬寶可夢"
   },
   {
     "id": 78,
@@ -1949,7 +2026,8 @@
       "flame-body"
     ],
     "region": "kanto",
-    "enName": "Rapidash"
+    "enName": "Rapidash",
+    "genus": "火馬寶可夢"
   },
   {
     "id": 79,
@@ -1975,7 +2053,8 @@
       "regenerator"
     ],
     "region": "kanto",
-    "enName": "Slowpoke"
+    "enName": "Slowpoke",
+    "genus": "憨憨寶可夢"
   },
   {
     "id": 80,
@@ -2001,7 +2080,8 @@
       "regenerator"
     ],
     "region": "kanto",
-    "enName": "Slowbro"
+    "enName": "Slowbro",
+    "genus": "寄居蟹寶可夢"
   },
   {
     "id": 81,
@@ -2027,7 +2107,8 @@
       "analytic"
     ],
     "region": "kanto",
-    "enName": "Magnemite"
+    "enName": "Magnemite",
+    "genus": "磁鐵寶可夢"
   },
   {
     "id": 82,
@@ -2053,7 +2134,8 @@
       "analytic"
     ],
     "region": "kanto",
-    "enName": "Magneton"
+    "enName": "Magneton",
+    "genus": "磁鐵寶可夢"
   },
   {
     "id": 83,
@@ -2079,7 +2161,8 @@
       "defiant"
     ],
     "region": "kanto",
-    "enName": "Farfetch’d"
+    "enName": "Farfetch’d",
+    "genus": "黃嘴鴨寶可夢"
   },
   {
     "id": 84,
@@ -2105,7 +2188,8 @@
       "tangled-feet"
     ],
     "region": "kanto",
-    "enName": "Doduo"
+    "enName": "Doduo",
+    "genus": "兩頭鳥寶可夢"
   },
   {
     "id": 85,
@@ -2131,7 +2215,8 @@
       "tangled-feet"
     ],
     "region": "kanto",
-    "enName": "Dodrio"
+    "enName": "Dodrio",
+    "genus": "三頭鳥寶可夢"
   },
   {
     "id": 86,
@@ -2156,7 +2241,8 @@
       "ice-body"
     ],
     "region": "kanto",
-    "enName": "Seel"
+    "enName": "Seel",
+    "genus": "海獅寶可夢"
   },
   {
     "id": 87,
@@ -2182,7 +2268,8 @@
       "ice-body"
     ],
     "region": "kanto",
-    "enName": "Dewgong"
+    "enName": "Dewgong",
+    "genus": "海獅寶可夢"
   },
   {
     "id": 88,
@@ -2207,7 +2294,8 @@
       "poison-touch"
     ],
     "region": "kanto",
-    "enName": "Grimer"
+    "enName": "Grimer",
+    "genus": "污泥寶可夢"
   },
   {
     "id": 89,
@@ -2232,7 +2320,8 @@
       "poison-touch"
     ],
     "region": "kanto",
-    "enName": "Muk"
+    "enName": "Muk",
+    "genus": "污泥寶可夢"
   },
   {
     "id": 90,
@@ -2257,7 +2346,8 @@
       "overcoat"
     ],
     "region": "kanto",
-    "enName": "Shellder"
+    "enName": "Shellder",
+    "genus": "雙殼貝寶可夢"
   },
   {
     "id": 91,
@@ -2283,7 +2373,8 @@
       "overcoat"
     ],
     "region": "kanto",
-    "enName": "Cloyster"
+    "enName": "Cloyster",
+    "genus": "雙殼貝寶可夢"
   },
   {
     "id": 92,
@@ -2307,7 +2398,8 @@
       "levitate"
     ],
     "region": "kanto",
-    "enName": "Gastly"
+    "enName": "Gastly",
+    "genus": "氣體狀寶可夢"
   },
   {
     "id": 93,
@@ -2331,7 +2423,8 @@
       "levitate"
     ],
     "region": "kanto",
-    "enName": "Haunter"
+    "enName": "Haunter",
+    "genus": "氣體狀寶可夢"
   },
   {
     "id": 94,
@@ -2355,7 +2448,8 @@
       "cursed-body"
     ],
     "region": "kanto",
-    "enName": "Gengar"
+    "enName": "Gengar",
+    "genus": "影子寶可夢"
   },
   {
     "id": 95,
@@ -2381,7 +2475,8 @@
       "weak-armor"
     ],
     "region": "kanto",
-    "enName": "Onix"
+    "enName": "Onix",
+    "genus": "岩蛇寶可夢"
   },
   {
     "id": 96,
@@ -2406,7 +2501,8 @@
       "inner-focus"
     ],
     "region": "kanto",
-    "enName": "Drowzee"
+    "enName": "Drowzee",
+    "genus": "催眠寶可夢"
   },
   {
     "id": 97,
@@ -2431,7 +2527,8 @@
       "inner-focus"
     ],
     "region": "kanto",
-    "enName": "Hypno"
+    "enName": "Hypno",
+    "genus": "催眠寶可夢"
   },
   {
     "id": 98,
@@ -2456,7 +2553,8 @@
       "sheer-force"
     ],
     "region": "kanto",
-    "enName": "Krabby"
+    "enName": "Krabby",
+    "genus": "清水蟹寶可夢"
   },
   {
     "id": 99,
@@ -2481,7 +2579,8 @@
       "sheer-force"
     ],
     "region": "kanto",
-    "enName": "Kingler"
+    "enName": "Kingler",
+    "genus": "鉗子寶可夢"
   },
   {
     "id": 100,
@@ -2506,7 +2605,8 @@
       "aftermath"
     ],
     "region": "kanto",
-    "enName": "Voltorb"
+    "enName": "Voltorb",
+    "genus": "球寶可夢"
   },
   {
     "id": 101,
@@ -2531,7 +2631,8 @@
       "aftermath"
     ],
     "region": "kanto",
-    "enName": "Electrode"
+    "enName": "Electrode",
+    "genus": "球寶可夢"
   },
   {
     "id": 102,
@@ -2556,7 +2657,8 @@
       "harvest"
     ],
     "region": "kanto",
-    "enName": "Exeggcute"
+    "enName": "Exeggcute",
+    "genus": "蛋寶可夢"
   },
   {
     "id": 103,
@@ -2581,7 +2683,8 @@
       "harvest"
     ],
     "region": "kanto",
-    "enName": "Exeggutor"
+    "enName": "Exeggutor",
+    "genus": "椰子寶可夢"
   },
   {
     "id": 104,
@@ -2606,7 +2709,8 @@
       "battle-armor"
     ],
     "region": "kanto",
-    "enName": "Cubone"
+    "enName": "Cubone",
+    "genus": "孤獨寶可夢"
   },
   {
     "id": 105,
@@ -2631,7 +2735,8 @@
       "battle-armor"
     ],
     "region": "kanto",
-    "enName": "Marowak"
+    "enName": "Marowak",
+    "genus": "愛骨寶可夢"
   },
   {
     "id": 106,
@@ -2656,7 +2761,8 @@
       "unburden"
     ],
     "region": "kanto",
-    "enName": "Hitmonlee"
+    "enName": "Hitmonlee",
+    "genus": "踢腿寶可夢"
   },
   {
     "id": 107,
@@ -2681,7 +2787,8 @@
       "inner-focus"
     ],
     "region": "kanto",
-    "enName": "Hitmonchan"
+    "enName": "Hitmonchan",
+    "genus": "拳擊寶可夢"
   },
   {
     "id": 108,
@@ -2706,7 +2813,8 @@
       "cloud-nine"
     ],
     "region": "kanto",
-    "enName": "Lickitung"
+    "enName": "Lickitung",
+    "genus": "舔舔寶可夢"
   },
   {
     "id": 109,
@@ -2731,7 +2839,8 @@
       "stench"
     ],
     "region": "kanto",
-    "enName": "Koffing"
+    "enName": "Koffing",
+    "genus": "毒氣寶可夢"
   },
   {
     "id": 110,
@@ -2756,7 +2865,8 @@
       "stench"
     ],
     "region": "kanto",
-    "enName": "Weezing"
+    "enName": "Weezing",
+    "genus": "毒氣寶可夢"
   },
   {
     "id": 111,
@@ -2782,7 +2892,8 @@
       "reckless"
     ],
     "region": "kanto",
-    "enName": "Rhyhorn"
+    "enName": "Rhyhorn",
+    "genus": "尖尖寶可夢"
   },
   {
     "id": 112,
@@ -2808,7 +2919,8 @@
       "reckless"
     ],
     "region": "kanto",
-    "enName": "Rhydon"
+    "enName": "Rhydon",
+    "genus": "鑽錐寶可夢"
   },
   {
     "id": 113,
@@ -2833,7 +2945,8 @@
       "healer"
     ],
     "region": "kanto",
-    "enName": "Chansey"
+    "enName": "Chansey",
+    "genus": "蛋寶可夢"
   },
   {
     "id": 114,
@@ -2858,7 +2971,8 @@
       "regenerator"
     ],
     "region": "kanto",
-    "enName": "Tangela"
+    "enName": "Tangela",
+    "genus": "藤蔓狀寶可夢"
   },
   {
     "id": 115,
@@ -2883,7 +2997,8 @@
       "inner-focus"
     ],
     "region": "kanto",
-    "enName": "Kangaskhan"
+    "enName": "Kangaskhan",
+    "genus": "親子寶可夢"
   },
   {
     "id": 116,
@@ -2908,7 +3023,8 @@
       "damp"
     ],
     "region": "kanto",
-    "enName": "Horsea"
+    "enName": "Horsea",
+    "genus": "龍寶可夢"
   },
   {
     "id": 117,
@@ -2933,7 +3049,8 @@
       "damp"
     ],
     "region": "kanto",
-    "enName": "Seadra"
+    "enName": "Seadra",
+    "genus": "龍寶可夢"
   },
   {
     "id": 118,
@@ -2958,7 +3075,8 @@
       "lightning-rod"
     ],
     "region": "kanto",
-    "enName": "Goldeen"
+    "enName": "Goldeen",
+    "genus": "金魚寶可夢"
   },
   {
     "id": 119,
@@ -2983,7 +3101,8 @@
       "lightning-rod"
     ],
     "region": "kanto",
-    "enName": "Seaking"
+    "enName": "Seaking",
+    "genus": "金魚寶可夢"
   },
   {
     "id": 120,
@@ -3008,7 +3127,8 @@
       "analytic"
     ],
     "region": "kanto",
-    "enName": "Staryu"
+    "enName": "Staryu",
+    "genus": "星形寶可夢"
   },
   {
     "id": 121,
@@ -3034,7 +3154,8 @@
       "analytic"
     ],
     "region": "kanto",
-    "enName": "Starmie"
+    "enName": "Starmie",
+    "genus": "謎寶可夢"
   },
   {
     "id": 122,
@@ -3060,7 +3181,8 @@
       "technician"
     ],
     "region": "kanto",
-    "enName": "Mr. Mime"
+    "enName": "Mr. Mime",
+    "genus": "屏障寶可夢"
   },
   {
     "id": 123,
@@ -3086,7 +3208,8 @@
       "steadfast"
     ],
     "region": "kanto",
-    "enName": "Scyther"
+    "enName": "Scyther",
+    "genus": "螳螂寶可夢"
   },
   {
     "id": 124,
@@ -3112,7 +3235,8 @@
       "dry-skin"
     ],
     "region": "kanto",
-    "enName": "Jynx"
+    "enName": "Jynx",
+    "genus": "人形寶可夢"
   },
   {
     "id": 125,
@@ -3136,7 +3260,8 @@
       "vital-spirit"
     ],
     "region": "kanto",
-    "enName": "Electabuzz"
+    "enName": "Electabuzz",
+    "genus": "電擊寶可夢"
   },
   {
     "id": 126,
@@ -3160,7 +3285,8 @@
       "vital-spirit"
     ],
     "region": "kanto",
-    "enName": "Magmar"
+    "enName": "Magmar",
+    "genus": "吐火寶可夢"
   },
   {
     "id": 127,
@@ -3185,7 +3311,8 @@
       "moxie"
     ],
     "region": "kanto",
-    "enName": "Pinsir"
+    "enName": "Pinsir",
+    "genus": "鍬形蟲寶可夢"
   },
   {
     "id": 128,
@@ -3210,7 +3337,8 @@
       "sheer-force"
     ],
     "region": "kanto",
-    "enName": "Tauros"
+    "enName": "Tauros",
+    "genus": "暴牛寶可夢"
   },
   {
     "id": 129,
@@ -3234,7 +3362,8 @@
       "rattled"
     ],
     "region": "kanto",
-    "enName": "Magikarp"
+    "enName": "Magikarp",
+    "genus": "魚寶可夢"
   },
   {
     "id": 130,
@@ -3259,7 +3388,8 @@
       "moxie"
     ],
     "region": "kanto",
-    "enName": "Gyarados"
+    "enName": "Gyarados",
+    "genus": "凶惡寶可夢"
   },
   {
     "id": 131,
@@ -3285,7 +3415,8 @@
       "hydration"
     ],
     "region": "kanto",
-    "enName": "Lapras"
+    "enName": "Lapras",
+    "genus": "乘載寶可夢"
   },
   {
     "id": 132,
@@ -3309,7 +3440,8 @@
       "imposter"
     ],
     "region": "kanto",
-    "enName": "Ditto"
+    "enName": "Ditto",
+    "genus": "變身寶可夢"
   },
   {
     "id": 133,
@@ -3334,7 +3466,8 @@
       "anticipation"
     ],
     "region": "kanto",
-    "enName": "Eevee"
+    "enName": "Eevee",
+    "genus": "進化寶可夢"
   },
   {
     "id": 134,
@@ -3358,7 +3491,8 @@
       "hydration"
     ],
     "region": "kanto",
-    "enName": "Vaporeon"
+    "enName": "Vaporeon",
+    "genus": "吐泡寶可夢"
   },
   {
     "id": 135,
@@ -3382,7 +3516,8 @@
       "quick-feet"
     ],
     "region": "kanto",
-    "enName": "Jolteon"
+    "enName": "Jolteon",
+    "genus": "雷寶可夢"
   },
   {
     "id": 136,
@@ -3406,7 +3541,8 @@
       "guts"
     ],
     "region": "kanto",
-    "enName": "Flareon"
+    "enName": "Flareon",
+    "genus": "火寶可夢"
   },
   {
     "id": 137,
@@ -3431,7 +3567,8 @@
       "analytic"
     ],
     "region": "kanto",
-    "enName": "Porygon"
+    "enName": "Porygon",
+    "genus": "虛擬寶可夢"
   },
   {
     "id": 138,
@@ -3457,7 +3594,8 @@
       "weak-armor"
     ],
     "region": "kanto",
-    "enName": "Omanyte"
+    "enName": "Omanyte",
+    "genus": "漩渦寶可夢"
   },
   {
     "id": 139,
@@ -3483,7 +3621,8 @@
       "weak-armor"
     ],
     "region": "kanto",
-    "enName": "Omastar"
+    "enName": "Omastar",
+    "genus": "漩渦寶可夢"
   },
   {
     "id": 140,
@@ -3509,7 +3648,8 @@
       "weak-armor"
     ],
     "region": "kanto",
-    "enName": "Kabuto"
+    "enName": "Kabuto",
+    "genus": "甲殼寶可夢"
   },
   {
     "id": 141,
@@ -3535,7 +3675,8 @@
       "weak-armor"
     ],
     "region": "kanto",
-    "enName": "Kabutops"
+    "enName": "Kabutops",
+    "genus": "甲殼寶可夢"
   },
   {
     "id": 142,
@@ -3561,7 +3702,8 @@
       "unnerve"
     ],
     "region": "kanto",
-    "enName": "Aerodactyl"
+    "enName": "Aerodactyl",
+    "genus": "化石寶可夢"
   },
   {
     "id": 143,
@@ -3586,7 +3728,8 @@
       "gluttony"
     ],
     "region": "kanto",
-    "enName": "Snorlax"
+    "enName": "Snorlax",
+    "genus": "瞌睡寶可夢"
   },
   {
     "id": 144,
@@ -3611,7 +3754,8 @@
       "snow-cloak"
     ],
     "region": "kanto",
-    "enName": "Articuno"
+    "enName": "Articuno",
+    "genus": "冰凍寶可夢"
   },
   {
     "id": 145,
@@ -3636,7 +3780,8 @@
       "static"
     ],
     "region": "kanto",
-    "enName": "Zapdos"
+    "enName": "Zapdos",
+    "genus": "電擊寶可夢"
   },
   {
     "id": 146,
@@ -3661,7 +3806,8 @@
       "flame-body"
     ],
     "region": "kanto",
-    "enName": "Moltres"
+    "enName": "Moltres",
+    "genus": "火焰寶可夢"
   },
   {
     "id": 147,
@@ -3685,7 +3831,8 @@
       "marvel-scale"
     ],
     "region": "kanto",
-    "enName": "Dratini"
+    "enName": "Dratini",
+    "genus": "龍寶可夢"
   },
   {
     "id": 148,
@@ -3709,7 +3856,8 @@
       "marvel-scale"
     ],
     "region": "kanto",
-    "enName": "Dragonair"
+    "enName": "Dragonair",
+    "genus": "龍寶可夢"
   },
   {
     "id": 149,
@@ -3734,7 +3882,8 @@
       "multiscale"
     ],
     "region": "kanto",
-    "enName": "Dragonite"
+    "enName": "Dragonite",
+    "genus": "龍寶可夢"
   },
   {
     "id": 150,
@@ -3758,7 +3907,8 @@
       "unnerve"
     ],
     "region": "kanto",
-    "enName": "Mewtwo"
+    "enName": "Mewtwo",
+    "genus": "基因寶可夢"
   },
   {
     "id": 151,
@@ -3781,7 +3931,8 @@
       "synchronize"
     ],
     "region": "kanto",
-    "enName": "Mew"
+    "enName": "Mew",
+    "genus": "新種寶可夢"
   },
   {
     "id": 152,
@@ -3805,7 +3956,8 @@
       "leaf-guard"
     ],
     "region": "johto",
-    "enName": "Chikorita"
+    "enName": "Chikorita",
+    "genus": "葉子寶可夢"
   },
   {
     "id": 153,
@@ -3829,7 +3981,8 @@
       "leaf-guard"
     ],
     "region": "johto",
-    "enName": "Bayleef"
+    "enName": "Bayleef",
+    "genus": "葉子寶可夢"
   },
   {
     "id": 154,
@@ -3853,7 +4006,8 @@
       "leaf-guard"
     ],
     "region": "johto",
-    "enName": "Meganium"
+    "enName": "Meganium",
+    "genus": "芳草寶可夢"
   },
   {
     "id": 155,
@@ -3877,7 +4031,8 @@
       "flash-fire"
     ],
     "region": "johto",
-    "enName": "Cyndaquil"
+    "enName": "Cyndaquil",
+    "genus": "火鼠寶可夢"
   },
   {
     "id": 156,
@@ -3901,7 +4056,8 @@
       "flash-fire"
     ],
     "region": "johto",
-    "enName": "Quilava"
+    "enName": "Quilava",
+    "genus": "火山寶可夢"
   },
   {
     "id": 157,
@@ -3925,7 +4081,8 @@
       "flash-fire"
     ],
     "region": "johto",
-    "enName": "Typhlosion"
+    "enName": "Typhlosion",
+    "genus": "火山寶可夢"
   },
   {
     "id": 158,
@@ -3949,7 +4106,8 @@
       "sheer-force"
     ],
     "region": "johto",
-    "enName": "Totodile"
+    "enName": "Totodile",
+    "genus": "大顎寶可夢"
   },
   {
     "id": 159,
@@ -3973,7 +4131,8 @@
       "sheer-force"
     ],
     "region": "johto",
-    "enName": "Croconaw"
+    "enName": "Croconaw",
+    "genus": "大顎寶可夢"
   },
   {
     "id": 160,
@@ -3997,7 +4156,8 @@
       "sheer-force"
     ],
     "region": "johto",
-    "enName": "Feraligatr"
+    "enName": "Feraligatr",
+    "genus": "大顎寶可夢"
   },
   {
     "id": 161,
@@ -4022,7 +4182,8 @@
       "frisk"
     ],
     "region": "johto",
-    "enName": "Sentret"
+    "enName": "Sentret",
+    "genus": "放哨寶可夢"
   },
   {
     "id": 162,
@@ -4047,7 +4208,8 @@
       "frisk"
     ],
     "region": "johto",
-    "enName": "Furret"
+    "enName": "Furret",
+    "genus": "長軀幹寶可夢"
   },
   {
     "id": 163,
@@ -4073,7 +4235,8 @@
       "tinted-lens"
     ],
     "region": "johto",
-    "enName": "Hoothoot"
+    "enName": "Hoothoot",
+    "genus": "貓頭鷹寶可夢"
   },
   {
     "id": 164,
@@ -4099,7 +4262,8 @@
       "tinted-lens"
     ],
     "region": "johto",
-    "enName": "Noctowl"
+    "enName": "Noctowl",
+    "genus": "貓頭鷹寶可夢"
   },
   {
     "id": 165,
@@ -4125,7 +4289,8 @@
       "rattled"
     ],
     "region": "johto",
-    "enName": "Ledyba"
+    "enName": "Ledyba",
+    "genus": "五星寶可夢"
   },
   {
     "id": 166,
@@ -4151,7 +4316,8 @@
       "iron-fist"
     ],
     "region": "johto",
-    "enName": "Ledian"
+    "enName": "Ledian",
+    "genus": "五星寶可夢"
   },
   {
     "id": 167,
@@ -4177,7 +4343,8 @@
       "sniper"
     ],
     "region": "johto",
-    "enName": "Spinarak"
+    "enName": "Spinarak",
+    "genus": "吐絲寶可夢"
   },
   {
     "id": 168,
@@ -4203,7 +4370,8 @@
       "sniper"
     ],
     "region": "johto",
-    "enName": "Ariados"
+    "enName": "Ariados",
+    "genus": "長腿寶可夢"
   },
   {
     "id": 169,
@@ -4228,7 +4396,8 @@
       "infiltrator"
     ],
     "region": "johto",
-    "enName": "Crobat"
+    "enName": "Crobat",
+    "genus": "蝙蝠寶可夢"
   },
   {
     "id": 170,
@@ -4254,7 +4423,8 @@
       "water-absorb"
     ],
     "region": "johto",
-    "enName": "Chinchou"
+    "enName": "Chinchou",
+    "genus": "琵琶魚寶可夢"
   },
   {
     "id": 171,
@@ -4280,7 +4450,8 @@
       "water-absorb"
     ],
     "region": "johto",
-    "enName": "Lanturn"
+    "enName": "Lanturn",
+    "genus": "燈寶可夢"
   },
   {
     "id": 172,
@@ -4304,7 +4475,8 @@
       "lightning-rod"
     ],
     "region": "johto",
-    "enName": "Pichu"
+    "enName": "Pichu",
+    "genus": "小鼠寶可夢"
   },
   {
     "id": 173,
@@ -4329,7 +4501,8 @@
       "friend-guard"
     ],
     "region": "johto",
-    "enName": "Cleffa"
+    "enName": "Cleffa",
+    "genus": "星形寶可夢"
   },
   {
     "id": 174,
@@ -4355,7 +4528,8 @@
       "friend-guard"
     ],
     "region": "johto",
-    "enName": "Igglybuff"
+    "enName": "Igglybuff",
+    "genus": "氣球寶可夢"
   },
   {
     "id": 175,
@@ -4380,7 +4554,8 @@
       "super-luck"
     ],
     "region": "johto",
-    "enName": "Togepi"
+    "enName": "Togepi",
+    "genus": "針球寶可夢"
   },
   {
     "id": 176,
@@ -4406,7 +4581,8 @@
       "super-luck"
     ],
     "region": "johto",
-    "enName": "Togetic"
+    "enName": "Togetic",
+    "genus": "幸福寶可夢"
   },
   {
     "id": 177,
@@ -4432,7 +4608,8 @@
       "magic-bounce"
     ],
     "region": "johto",
-    "enName": "Natu"
+    "enName": "Natu",
+    "genus": "小鳥寶可夢"
   },
   {
     "id": 178,
@@ -4458,7 +4635,8 @@
       "magic-bounce"
     ],
     "region": "johto",
-    "enName": "Xatu"
+    "enName": "Xatu",
+    "genus": "神秘寶可夢"
   },
   {
     "id": 179,
@@ -4482,7 +4660,8 @@
       "plus"
     ],
     "region": "johto",
-    "enName": "Mareep"
+    "enName": "Mareep",
+    "genus": "綿毛寶可夢"
   },
   {
     "id": 180,
@@ -4506,7 +4685,8 @@
       "plus"
     ],
     "region": "johto",
-    "enName": "Flaaffy"
+    "enName": "Flaaffy",
+    "genus": "綿毛寶可夢"
   },
   {
     "id": 181,
@@ -4530,7 +4710,8 @@
       "plus"
     ],
     "region": "johto",
-    "enName": "Ampharos"
+    "enName": "Ampharos",
+    "genus": "燈寶可夢"
   },
   {
     "id": 182,
@@ -4554,7 +4735,8 @@
       "healer"
     ],
     "region": "johto",
-    "enName": "Bellossom"
+    "enName": "Bellossom",
+    "genus": "花寶可夢"
   },
   {
     "id": 183,
@@ -4580,7 +4762,8 @@
       "sap-sipper"
     ],
     "region": "johto",
-    "enName": "Marill"
+    "enName": "Marill",
+    "genus": "水鼠寶可夢"
   },
   {
     "id": 184,
@@ -4606,7 +4789,8 @@
       "sap-sipper"
     ],
     "region": "johto",
-    "enName": "Azumarill"
+    "enName": "Azumarill",
+    "genus": "水兔寶可夢"
   },
   {
     "id": 185,
@@ -4631,7 +4815,8 @@
       "rattled"
     ],
     "region": "johto",
-    "enName": "Sudowoodo"
+    "enName": "Sudowoodo",
+    "genus": "模仿寶可夢"
   },
   {
     "id": 186,
@@ -4656,7 +4841,8 @@
       "drizzle"
     ],
     "region": "johto",
-    "enName": "Politoed"
+    "enName": "Politoed",
+    "genus": "蛙寶可夢"
   },
   {
     "id": 187,
@@ -4682,7 +4868,8 @@
       "infiltrator"
     ],
     "region": "johto",
-    "enName": "Hoppip"
+    "enName": "Hoppip",
+    "genus": "棉草寶可夢"
   },
   {
     "id": 188,
@@ -4708,7 +4895,8 @@
       "infiltrator"
     ],
     "region": "johto",
-    "enName": "Skiploom"
+    "enName": "Skiploom",
+    "genus": "棉草寶可夢"
   },
   {
     "id": 189,
@@ -4734,7 +4922,8 @@
       "infiltrator"
     ],
     "region": "johto",
-    "enName": "Jumpluff"
+    "enName": "Jumpluff",
+    "genus": "棉草寶可夢"
   },
   {
     "id": 190,
@@ -4759,7 +4948,8 @@
       "skill-link"
     ],
     "region": "johto",
-    "enName": "Aipom"
+    "enName": "Aipom",
+    "genus": "長尾寶可夢"
   },
   {
     "id": 191,
@@ -4784,7 +4974,8 @@
       "early-bird"
     ],
     "region": "johto",
-    "enName": "Sunkern"
+    "enName": "Sunkern",
+    "genus": "種子寶可夢"
   },
   {
     "id": 192,
@@ -4809,7 +5000,8 @@
       "early-bird"
     ],
     "region": "johto",
-    "enName": "Sunflora"
+    "enName": "Sunflora",
+    "genus": "太陽寶可夢"
   },
   {
     "id": 193,
@@ -4835,7 +5027,8 @@
       "frisk"
     ],
     "region": "johto",
-    "enName": "Yanma"
+    "enName": "Yanma",
+    "genus": "薄翼寶可夢"
   },
   {
     "id": 194,
@@ -4861,7 +5054,8 @@
       "unaware"
     ],
     "region": "johto",
-    "enName": "Wooper"
+    "enName": "Wooper",
+    "genus": "水魚寶可夢"
   },
   {
     "id": 195,
@@ -4887,7 +5081,8 @@
       "unaware"
     ],
     "region": "johto",
-    "enName": "Quagsire"
+    "enName": "Quagsire",
+    "genus": "水魚寶可夢"
   },
   {
     "id": 196,
@@ -4911,7 +5106,8 @@
       "magic-bounce"
     ],
     "region": "johto",
-    "enName": "Espeon"
+    "enName": "Espeon",
+    "genus": "太陽寶可夢"
   },
   {
     "id": 197,
@@ -4935,7 +5131,8 @@
       "inner-focus"
     ],
     "region": "johto",
-    "enName": "Umbreon"
+    "enName": "Umbreon",
+    "genus": "月光寶可夢"
   },
   {
     "id": 198,
@@ -4961,7 +5158,8 @@
       "prankster"
     ],
     "region": "johto",
-    "enName": "Murkrow"
+    "enName": "Murkrow",
+    "genus": "黑暗寶可夢"
   },
   {
     "id": 199,
@@ -4987,7 +5185,8 @@
       "regenerator"
     ],
     "region": "johto",
-    "enName": "Slowking"
+    "enName": "Slowking",
+    "genus": "王者寶可夢"
   },
   {
     "id": 200,
@@ -5010,7 +5209,8 @@
       "levitate"
     ],
     "region": "johto",
-    "enName": "Misdreavus"
+    "enName": "Misdreavus",
+    "genus": "夜啼寶可夢"
   },
   {
     "id": 201,
@@ -5033,7 +5233,8 @@
       "levitate"
     ],
     "region": "johto",
-    "enName": "Unown"
+    "enName": "Unown",
+    "genus": "象徵寶可夢"
   },
   {
     "id": 202,
@@ -5057,7 +5258,8 @@
       "telepathy"
     ],
     "region": "johto",
-    "enName": "Wobbuffet"
+    "enName": "Wobbuffet",
+    "genus": "忍耐寶可夢"
   },
   {
     "id": 203,
@@ -5083,7 +5285,8 @@
       "sap-sipper"
     ],
     "region": "johto",
-    "enName": "Girafarig"
+    "enName": "Girafarig",
+    "genus": "長頸寶可夢"
   },
   {
     "id": 204,
@@ -5107,7 +5310,8 @@
       "overcoat"
     ],
     "region": "johto",
-    "enName": "Pineco"
+    "enName": "Pineco",
+    "genus": "蓑衣蟲寶可夢"
   },
   {
     "id": 205,
@@ -5132,7 +5336,8 @@
       "overcoat"
     ],
     "region": "johto",
-    "enName": "Forretress"
+    "enName": "Forretress",
+    "genus": "蓑衣蟲寶可夢"
   },
   {
     "id": 206,
@@ -5157,7 +5362,8 @@
       "rattled"
     ],
     "region": "johto",
-    "enName": "Dunsparce"
+    "enName": "Dunsparce",
+    "genus": "地蛇寶可夢"
   },
   {
     "id": 207,
@@ -5183,7 +5389,8 @@
       "immunity"
     ],
     "region": "johto",
-    "enName": "Gligar"
+    "enName": "Gligar",
+    "genus": "飛蠍寶可夢"
   },
   {
     "id": 208,
@@ -5209,7 +5416,8 @@
       "sheer-force"
     ],
     "region": "johto",
-    "enName": "Steelix"
+    "enName": "Steelix",
+    "genus": "鐵蛇寶可夢"
   },
   {
     "id": 209,
@@ -5234,7 +5442,8 @@
       "rattled"
     ],
     "region": "johto",
-    "enName": "Snubbull"
+    "enName": "Snubbull",
+    "genus": "妖精寶可夢"
   },
   {
     "id": 210,
@@ -5259,7 +5468,8 @@
       "rattled"
     ],
     "region": "johto",
-    "enName": "Granbull"
+    "enName": "Granbull",
+    "genus": "妖精寶可夢"
   },
   {
     "id": 211,
@@ -5285,7 +5495,8 @@
       "intimidate"
     ],
     "region": "johto",
-    "enName": "Qwilfish"
+    "enName": "Qwilfish",
+    "genus": "氣球寶可夢"
   },
   {
     "id": 212,
@@ -5311,7 +5522,8 @@
       "light-metal"
     ],
     "region": "johto",
-    "enName": "Scizor"
+    "enName": "Scizor",
+    "genus": "鉗子寶可夢"
   },
   {
     "id": 213,
@@ -5337,7 +5549,8 @@
       "contrary"
     ],
     "region": "johto",
-    "enName": "Shuckle"
+    "enName": "Shuckle",
+    "genus": "發酵寶可夢"
   },
   {
     "id": 214,
@@ -5363,7 +5576,8 @@
       "moxie"
     ],
     "region": "johto",
-    "enName": "Heracross"
+    "enName": "Heracross",
+    "genus": "獨角寶可夢"
   },
   {
     "id": 215,
@@ -5389,7 +5603,8 @@
       "pickpocket"
     ],
     "region": "johto",
-    "enName": "Sneasel"
+    "enName": "Sneasel",
+    "genus": "鉤爪寶可夢"
   },
   {
     "id": 216,
@@ -5414,7 +5629,8 @@
       "honey-gather"
     ],
     "region": "johto",
-    "enName": "Teddiursa"
+    "enName": "Teddiursa",
+    "genus": "小熊寶可夢"
   },
   {
     "id": 217,
@@ -5439,7 +5655,8 @@
       "unnerve"
     ],
     "region": "johto",
-    "enName": "Ursaring"
+    "enName": "Ursaring",
+    "genus": "冬眠寶可夢"
   },
   {
     "id": 218,
@@ -5464,7 +5681,8 @@
       "weak-armor"
     ],
     "region": "johto",
-    "enName": "Slugma"
+    "enName": "Slugma",
+    "genus": "熔岩寶可夢"
   },
   {
     "id": 219,
@@ -5490,7 +5708,8 @@
       "weak-armor"
     ],
     "region": "johto",
-    "enName": "Magcargo"
+    "enName": "Magcargo",
+    "genus": "熔岩寶可夢"
   },
   {
     "id": 220,
@@ -5516,7 +5735,8 @@
       "thick-fat"
     ],
     "region": "johto",
-    "enName": "Swinub"
+    "enName": "Swinub",
+    "genus": "小豬寶可夢"
   },
   {
     "id": 221,
@@ -5542,7 +5762,8 @@
       "thick-fat"
     ],
     "region": "johto",
-    "enName": "Piloswine"
+    "enName": "Piloswine",
+    "genus": "野豬寶可夢"
   },
   {
     "id": 222,
@@ -5568,7 +5789,8 @@
       "regenerator"
     ],
     "region": "johto",
-    "enName": "Corsola"
+    "enName": "Corsola",
+    "genus": "珊瑚寶可夢"
   },
   {
     "id": 223,
@@ -5593,7 +5815,8 @@
       "moody"
     ],
     "region": "johto",
-    "enName": "Remoraid"
+    "enName": "Remoraid",
+    "genus": "噴射寶可夢"
   },
   {
     "id": 224,
@@ -5618,7 +5841,8 @@
       "moody"
     ],
     "region": "johto",
-    "enName": "Octillery"
+    "enName": "Octillery",
+    "genus": "噴射寶可夢"
   },
   {
     "id": 225,
@@ -5644,7 +5868,8 @@
       "insomnia"
     ],
     "region": "johto",
-    "enName": "Delibird"
+    "enName": "Delibird",
+    "genus": "搬運寶可夢"
   },
   {
     "id": 226,
@@ -5670,7 +5895,8 @@
       "water-veil"
     ],
     "region": "johto",
-    "enName": "Mantine"
+    "enName": "Mantine",
+    "genus": "風箏寶可夢"
   },
   {
     "id": 227,
@@ -5696,7 +5922,8 @@
       "weak-armor"
     ],
     "region": "johto",
-    "enName": "Skarmory"
+    "enName": "Skarmory",
+    "genus": "鋼甲鳥寶可夢"
   },
   {
     "id": 228,
@@ -5722,7 +5949,8 @@
       "unnerve"
     ],
     "region": "johto",
-    "enName": "Houndour"
+    "enName": "Houndour",
+    "genus": "陰暗寶可夢"
   },
   {
     "id": 229,
@@ -5748,7 +5976,8 @@
       "unnerve"
     ],
     "region": "johto",
-    "enName": "Houndoom"
+    "enName": "Houndoom",
+    "genus": "陰暗寶可夢"
   },
   {
     "id": 230,
@@ -5774,7 +6003,8 @@
       "damp"
     ],
     "region": "johto",
-    "enName": "Kingdra"
+    "enName": "Kingdra",
+    "genus": "龍寶可夢"
   },
   {
     "id": 231,
@@ -5798,7 +6028,8 @@
       "sand-veil"
     ],
     "region": "johto",
-    "enName": "Phanpy"
+    "enName": "Phanpy",
+    "genus": "長鼻寶可夢"
   },
   {
     "id": 232,
@@ -5822,7 +6053,8 @@
       "sand-veil"
     ],
     "region": "johto",
-    "enName": "Donphan"
+    "enName": "Donphan",
+    "genus": "鎧甲寶可夢"
   },
   {
     "id": 233,
@@ -5847,7 +6079,8 @@
       "analytic"
     ],
     "region": "johto",
-    "enName": "Porygon2"
+    "enName": "Porygon2",
+    "genus": "虛擬寶可夢"
   },
   {
     "id": 234,
@@ -5872,7 +6105,8 @@
       "sap-sipper"
     ],
     "region": "johto",
-    "enName": "Stantler"
+    "enName": "Stantler",
+    "genus": "大角寶可夢"
   },
   {
     "id": 235,
@@ -5897,7 +6131,8 @@
       "moody"
     ],
     "region": "johto",
-    "enName": "Smeargle"
+    "enName": "Smeargle",
+    "genus": "畫畫寶可夢"
   },
   {
     "id": 236,
@@ -5922,7 +6157,8 @@
       "vital-spirit"
     ],
     "region": "johto",
-    "enName": "Tyrogue"
+    "enName": "Tyrogue",
+    "genus": "打鬥寶可夢"
   },
   {
     "id": 237,
@@ -5947,7 +6183,8 @@
       "steadfast"
     ],
     "region": "johto",
-    "enName": "Hitmontop"
+    "enName": "Hitmontop",
+    "genus": "倒立寶可夢"
   },
   {
     "id": 238,
@@ -5973,7 +6210,8 @@
       "hydration"
     ],
     "region": "johto",
-    "enName": "Smoochum"
+    "enName": "Smoochum",
+    "genus": "親吻寶可夢"
   },
   {
     "id": 239,
@@ -5997,7 +6235,8 @@
       "vital-spirit"
     ],
     "region": "johto",
-    "enName": "Elekid"
+    "enName": "Elekid",
+    "genus": "電氣寶可夢"
   },
   {
     "id": 240,
@@ -6021,7 +6260,8 @@
       "vital-spirit"
     ],
     "region": "johto",
-    "enName": "Magby"
+    "enName": "Magby",
+    "genus": "火種寶可夢"
   },
   {
     "id": 241,
@@ -6046,7 +6286,8 @@
       "sap-sipper"
     ],
     "region": "johto",
-    "enName": "Miltank"
+    "enName": "Miltank",
+    "genus": "乳牛寶可夢"
   },
   {
     "id": 242,
@@ -6071,7 +6312,8 @@
       "healer"
     ],
     "region": "johto",
-    "enName": "Blissey"
+    "enName": "Blissey",
+    "genus": "幸福寶可夢"
   },
   {
     "id": 243,
@@ -6095,7 +6337,8 @@
       "inner-focus"
     ],
     "region": "johto",
-    "enName": "Raikou"
+    "enName": "Raikou",
+    "genus": "天雷寶可夢"
   },
   {
     "id": 244,
@@ -6119,7 +6362,8 @@
       "inner-focus"
     ],
     "region": "johto",
-    "enName": "Entei"
+    "enName": "Entei",
+    "genus": "火山寶可夢"
   },
   {
     "id": 245,
@@ -6143,7 +6387,8 @@
       "inner-focus"
     ],
     "region": "johto",
-    "enName": "Suicune"
+    "enName": "Suicune",
+    "genus": "極光寶可夢"
   },
   {
     "id": 246,
@@ -6168,7 +6413,8 @@
       "sand-veil"
     ],
     "region": "johto",
-    "enName": "Larvitar"
+    "enName": "Larvitar",
+    "genus": "岩石膚寶可夢"
   },
   {
     "id": 247,
@@ -6192,7 +6438,8 @@
       "shed-skin"
     ],
     "region": "johto",
-    "enName": "Pupitar"
+    "enName": "Pupitar",
+    "genus": "子彈寶可夢"
   },
   {
     "id": 248,
@@ -6217,7 +6464,8 @@
       "unnerve"
     ],
     "region": "johto",
-    "enName": "Tyranitar"
+    "enName": "Tyranitar",
+    "genus": "鎧甲寶可夢"
   },
   {
     "id": 249,
@@ -6242,7 +6490,8 @@
       "multiscale"
     ],
     "region": "johto",
-    "enName": "Lugia"
+    "enName": "Lugia",
+    "genus": "潛水寶可夢"
   },
   {
     "id": 250,
@@ -6267,7 +6516,8 @@
       "regenerator"
     ],
     "region": "johto",
-    "enName": "Ho-Oh"
+    "enName": "Ho-Oh",
+    "genus": "虹色寶可夢"
   },
   {
     "id": 251,
@@ -6291,7 +6541,8 @@
       "natural-cure"
     ],
     "region": "johto",
-    "enName": "Celebi"
+    "enName": "Celebi",
+    "genus": "時空穿越寶可夢"
   },
   {
     "id": 252,
@@ -6315,7 +6566,8 @@
       "unburden"
     ],
     "region": "hoenn",
-    "enName": "Treecko"
+    "enName": "Treecko",
+    "genus": "林蜥寶可夢"
   },
   {
     "id": 253,
@@ -6339,7 +6591,8 @@
       "unburden"
     ],
     "region": "hoenn",
-    "enName": "Grovyle"
+    "enName": "Grovyle",
+    "genus": "林蜥寶可夢"
   },
   {
     "id": 254,
@@ -6363,7 +6616,8 @@
       "unburden"
     ],
     "region": "hoenn",
-    "enName": "Sceptile"
+    "enName": "Sceptile",
+    "genus": "密林寶可夢"
   },
   {
     "id": 255,
@@ -6387,7 +6641,8 @@
       "speed-boost"
     ],
     "region": "hoenn",
-    "enName": "Torchic"
+    "enName": "Torchic",
+    "genus": "雛雞寶可夢"
   },
   {
     "id": 256,
@@ -6412,7 +6667,8 @@
       "speed-boost"
     ],
     "region": "hoenn",
-    "enName": "Combusken"
+    "enName": "Combusken",
+    "genus": "幼雞寶可夢"
   },
   {
     "id": 257,
@@ -6437,7 +6693,8 @@
       "speed-boost"
     ],
     "region": "hoenn",
-    "enName": "Blaziken"
+    "enName": "Blaziken",
+    "genus": "猛火寶可夢"
   },
   {
     "id": 258,
@@ -6461,7 +6718,8 @@
       "damp"
     ],
     "region": "hoenn",
-    "enName": "Mudkip"
+    "enName": "Mudkip",
+    "genus": "沼魚寶可夢"
   },
   {
     "id": 259,
@@ -6486,7 +6744,8 @@
       "damp"
     ],
     "region": "hoenn",
-    "enName": "Marshtomp"
+    "enName": "Marshtomp",
+    "genus": "沼魚寶可夢"
   },
   {
     "id": 260,
@@ -6511,7 +6770,8 @@
       "damp"
     ],
     "region": "hoenn",
-    "enName": "Swampert"
+    "enName": "Swampert",
+    "genus": "沼魚寶可夢"
   },
   {
     "id": 261,
@@ -6536,7 +6796,8 @@
       "rattled"
     ],
     "region": "hoenn",
-    "enName": "Poochyena"
+    "enName": "Poochyena",
+    "genus": "緊咬寶可夢"
   },
   {
     "id": 262,
@@ -6561,7 +6822,8 @@
       "moxie"
     ],
     "region": "hoenn",
-    "enName": "Mightyena"
+    "enName": "Mightyena",
+    "genus": "緊咬寶可夢"
   },
   {
     "id": 263,
@@ -6586,7 +6848,8 @@
       "quick-feet"
     ],
     "region": "hoenn",
-    "enName": "Zigzagoon"
+    "enName": "Zigzagoon",
+    "genus": "豆貍寶可夢"
   },
   {
     "id": 264,
@@ -6611,7 +6874,8 @@
       "quick-feet"
     ],
     "region": "hoenn",
-    "enName": "Linoone"
+    "enName": "Linoone",
+    "genus": "猛衝寶可夢"
   },
   {
     "id": 265,
@@ -6635,7 +6899,8 @@
       "run-away"
     ],
     "region": "hoenn",
-    "enName": "Wurmple"
+    "enName": "Wurmple",
+    "genus": "蟲寶寶寶可夢"
   },
   {
     "id": 266,
@@ -6658,7 +6923,8 @@
       "shed-skin"
     ],
     "region": "hoenn",
-    "enName": "Silcoon"
+    "enName": "Silcoon",
+    "genus": "蛹寶可夢"
   },
   {
     "id": 267,
@@ -6683,7 +6949,8 @@
       "rivalry"
     ],
     "region": "hoenn",
-    "enName": "Beautifly"
+    "enName": "Beautifly",
+    "genus": "蝴蝶寶可夢"
   },
   {
     "id": 268,
@@ -6706,7 +6973,8 @@
       "shed-skin"
     ],
     "region": "hoenn",
-    "enName": "Cascoon"
+    "enName": "Cascoon",
+    "genus": "蛹寶可夢"
   },
   {
     "id": 269,
@@ -6731,7 +6999,8 @@
       "compound-eyes"
     ],
     "region": "hoenn",
-    "enName": "Dustox"
+    "enName": "Dustox",
+    "genus": "毒蛾寶可夢"
   },
   {
     "id": 270,
@@ -6757,7 +7026,8 @@
       "own-tempo"
     ],
     "region": "hoenn",
-    "enName": "Lotad"
+    "enName": "Lotad",
+    "genus": "浮萍寶可夢"
   },
   {
     "id": 271,
@@ -6783,7 +7053,8 @@
       "own-tempo"
     ],
     "region": "hoenn",
-    "enName": "Lombre"
+    "enName": "Lombre",
+    "genus": "爽朗寶可夢"
   },
   {
     "id": 272,
@@ -6809,7 +7080,8 @@
       "own-tempo"
     ],
     "region": "hoenn",
-    "enName": "Ludicolo"
+    "enName": "Ludicolo",
+    "genus": "樂天寶可夢"
   },
   {
     "id": 273,
@@ -6834,7 +7106,8 @@
       "pickpocket"
     ],
     "region": "hoenn",
-    "enName": "Seedot"
+    "enName": "Seedot",
+    "genus": "橡實寶可夢"
   },
   {
     "id": 274,
@@ -6860,7 +7133,8 @@
       "pickpocket"
     ],
     "region": "hoenn",
-    "enName": "Nuzleaf"
+    "enName": "Nuzleaf",
+    "genus": "捉弄寶可夢"
   },
   {
     "id": 275,
@@ -6886,7 +7160,8 @@
       "pickpocket"
     ],
     "region": "hoenn",
-    "enName": "Shiftry"
+    "enName": "Shiftry",
+    "genus": "邪惡寶可夢"
   },
   {
     "id": 276,
@@ -6911,7 +7186,8 @@
       "scrappy"
     ],
     "region": "hoenn",
-    "enName": "Taillow"
+    "enName": "Taillow",
+    "genus": "幼燕寶可夢"
   },
   {
     "id": 277,
@@ -6936,7 +7212,8 @@
       "scrappy"
     ],
     "region": "hoenn",
-    "enName": "Swellow"
+    "enName": "Swellow",
+    "genus": "燕子寶可夢"
   },
   {
     "id": 278,
@@ -6962,7 +7239,8 @@
       "rain-dish"
     ],
     "region": "hoenn",
-    "enName": "Wingull"
+    "enName": "Wingull",
+    "genus": "海鷗寶可夢"
   },
   {
     "id": 279,
@@ -6988,7 +7266,8 @@
       "rain-dish"
     ],
     "region": "hoenn",
-    "enName": "Pelipper"
+    "enName": "Pelipper",
+    "genus": "水鳥寶可夢"
   },
   {
     "id": 280,
@@ -7014,7 +7293,8 @@
       "telepathy"
     ],
     "region": "hoenn",
-    "enName": "Ralts"
+    "enName": "Ralts",
+    "genus": "心情寶可夢"
   },
   {
     "id": 281,
@@ -7040,7 +7320,8 @@
       "telepathy"
     ],
     "region": "hoenn",
-    "enName": "Kirlia"
+    "enName": "Kirlia",
+    "genus": "感情寶可夢"
   },
   {
     "id": 282,
@@ -7066,7 +7347,8 @@
       "telepathy"
     ],
     "region": "hoenn",
-    "enName": "Gardevoir"
+    "enName": "Gardevoir",
+    "genus": "包容寶可夢"
   },
   {
     "id": 283,
@@ -7091,7 +7373,8 @@
       "rain-dish"
     ],
     "region": "hoenn",
-    "enName": "Surskit"
+    "enName": "Surskit",
+    "genus": "水黽寶可夢"
   },
   {
     "id": 284,
@@ -7116,7 +7399,8 @@
       "unnerve"
     ],
     "region": "hoenn",
-    "enName": "Masquerain"
+    "enName": "Masquerain",
+    "genus": "眼珠寶可夢"
   },
   {
     "id": 285,
@@ -7141,7 +7425,8 @@
       "quick-feet"
     ],
     "region": "hoenn",
-    "enName": "Shroomish"
+    "enName": "Shroomish",
+    "genus": "蘑菇寶可夢"
   },
   {
     "id": 286,
@@ -7167,7 +7452,8 @@
       "technician"
     ],
     "region": "hoenn",
-    "enName": "Breloom"
+    "enName": "Breloom",
+    "genus": "蘑菇寶可夢"
   },
   {
     "id": 287,
@@ -7190,7 +7476,8 @@
       "truant"
     ],
     "region": "hoenn",
-    "enName": "Slakoth"
+    "enName": "Slakoth",
+    "genus": "懶人寶可夢"
   },
   {
     "id": 288,
@@ -7213,7 +7500,8 @@
       "vital-spirit"
     ],
     "region": "hoenn",
-    "enName": "Vigoroth"
+    "enName": "Vigoroth",
+    "genus": "暴猿寶可夢"
   },
   {
     "id": 289,
@@ -7236,7 +7524,8 @@
       "truant"
     ],
     "region": "hoenn",
-    "enName": "Slaking"
+    "enName": "Slaking",
+    "genus": "怕麻煩寶可夢"
   },
   {
     "id": 290,
@@ -7261,7 +7550,8 @@
       "run-away"
     ],
     "region": "hoenn",
-    "enName": "Nincada"
+    "enName": "Nincada",
+    "genus": "入門寶可夢"
   },
   {
     "id": 291,
@@ -7286,7 +7576,8 @@
       "infiltrator"
     ],
     "region": "hoenn",
-    "enName": "Ninjask"
+    "enName": "Ninjask",
+    "genus": "忍者寶可夢"
   },
   {
     "id": 292,
@@ -7310,7 +7601,8 @@
       "wonder-guard"
     ],
     "region": "hoenn",
-    "enName": "Shedinja"
+    "enName": "Shedinja",
+    "genus": "空殼寶可夢"
   },
   {
     "id": 293,
@@ -7334,7 +7626,8 @@
       "rattled"
     ],
     "region": "hoenn",
-    "enName": "Whismur"
+    "enName": "Whismur",
+    "genus": "細語寶可夢"
   },
   {
     "id": 294,
@@ -7358,7 +7651,8 @@
       "scrappy"
     ],
     "region": "hoenn",
-    "enName": "Loudred"
+    "enName": "Loudred",
+    "genus": "大聲寶可夢"
   },
   {
     "id": 295,
@@ -7382,7 +7676,8 @@
       "scrappy"
     ],
     "region": "hoenn",
-    "enName": "Exploud"
+    "enName": "Exploud",
+    "genus": "噪音寶可夢"
   },
   {
     "id": 296,
@@ -7407,7 +7702,8 @@
       "sheer-force"
     ],
     "region": "hoenn",
-    "enName": "Makuhita"
+    "enName": "Makuhita",
+    "genus": "毅力寶可夢"
   },
   {
     "id": 297,
@@ -7432,7 +7728,8 @@
       "sheer-force"
     ],
     "region": "hoenn",
-    "enName": "Hariyama"
+    "enName": "Hariyama",
+    "genus": "猛推寶可夢"
   },
   {
     "id": 298,
@@ -7458,7 +7755,8 @@
       "sap-sipper"
     ],
     "region": "hoenn",
-    "enName": "Azurill"
+    "enName": "Azurill",
+    "genus": "水珠寶可夢"
   },
   {
     "id": 299,
@@ -7483,7 +7781,8 @@
       "sand-force"
     ],
     "region": "hoenn",
-    "enName": "Nosepass"
+    "enName": "Nosepass",
+    "genus": "羅盤寶可夢"
   },
   {
     "id": 300,
@@ -7508,7 +7807,8 @@
       "wonder-skin"
     ],
     "region": "hoenn",
-    "enName": "Skitty"
+    "enName": "Skitty",
+    "genus": "小貓寶可夢"
   },
   {
     "id": 301,
@@ -7533,7 +7833,8 @@
       "wonder-skin"
     ],
     "region": "hoenn",
-    "enName": "Delcatty"
+    "enName": "Delcatty",
+    "genus": "清高寶可夢"
   },
   {
     "id": 302,
@@ -7559,7 +7860,8 @@
       "prankster"
     ],
     "region": "hoenn",
-    "enName": "Sableye"
+    "enName": "Sableye",
+    "genus": "黑暗寶可夢"
   },
   {
     "id": 303,
@@ -7585,7 +7887,8 @@
       "sheer-force"
     ],
     "region": "hoenn",
-    "enName": "Mawile"
+    "enName": "Mawile",
+    "genus": "欺騙寶可夢"
   },
   {
     "id": 304,
@@ -7611,7 +7914,8 @@
       "heavy-metal"
     ],
     "region": "hoenn",
-    "enName": "Aron"
+    "enName": "Aron",
+    "genus": "鐵鎧寶可夢"
   },
   {
     "id": 305,
@@ -7637,7 +7941,8 @@
       "heavy-metal"
     ],
     "region": "hoenn",
-    "enName": "Lairon"
+    "enName": "Lairon",
+    "genus": "鐵鎧寶可夢"
   },
   {
     "id": 306,
@@ -7663,7 +7968,8 @@
       "heavy-metal"
     ],
     "region": "hoenn",
-    "enName": "Aggron"
+    "enName": "Aggron",
+    "genus": "鐵鎧寶可夢"
   },
   {
     "id": 307,
@@ -7688,7 +7994,8 @@
       "telepathy"
     ],
     "region": "hoenn",
-    "enName": "Meditite"
+    "enName": "Meditite",
+    "genus": "冥想寶可夢"
   },
   {
     "id": 308,
@@ -7713,7 +8020,8 @@
       "telepathy"
     ],
     "region": "hoenn",
-    "enName": "Medicham"
+    "enName": "Medicham",
+    "genus": "冥想寶可夢"
   },
   {
     "id": 309,
@@ -7738,7 +8046,8 @@
       "minus"
     ],
     "region": "hoenn",
-    "enName": "Electrike"
+    "enName": "Electrike",
+    "genus": "閃電寶可夢"
   },
   {
     "id": 310,
@@ -7763,7 +8072,8 @@
       "minus"
     ],
     "region": "hoenn",
-    "enName": "Manectric"
+    "enName": "Manectric",
+    "genus": "放電寶可夢"
   },
   {
     "id": 311,
@@ -7787,7 +8097,8 @@
       "lightning-rod"
     ],
     "region": "hoenn",
-    "enName": "Plusle"
+    "enName": "Plusle",
+    "genus": "加油寶可夢"
   },
   {
     "id": 312,
@@ -7811,7 +8122,8 @@
       "volt-absorb"
     ],
     "region": "hoenn",
-    "enName": "Minun"
+    "enName": "Minun",
+    "genus": "加油寶可夢"
   },
   {
     "id": 313,
@@ -7836,7 +8148,8 @@
       "prankster"
     ],
     "region": "hoenn",
-    "enName": "Volbeat"
+    "enName": "Volbeat",
+    "genus": "螢火蟲寶可夢"
   },
   {
     "id": 314,
@@ -7861,7 +8174,8 @@
       "prankster"
     ],
     "region": "hoenn",
-    "enName": "Illumise"
+    "enName": "Illumise",
+    "genus": "螢火蟲寶可夢"
   },
   {
     "id": 315,
@@ -7887,7 +8201,8 @@
       "leaf-guard"
     ],
     "region": "hoenn",
-    "enName": "Roselia"
+    "enName": "Roselia",
+    "genus": "荊棘寶可夢"
   },
   {
     "id": 316,
@@ -7912,7 +8227,8 @@
       "gluttony"
     ],
     "region": "hoenn",
-    "enName": "Gulpin"
+    "enName": "Gulpin",
+    "genus": "胃袋寶可夢"
   },
   {
     "id": 317,
@@ -7937,7 +8253,8 @@
       "gluttony"
     ],
     "region": "hoenn",
-    "enName": "Swalot"
+    "enName": "Swalot",
+    "genus": "毒袋寶可夢"
   },
   {
     "id": 318,
@@ -7962,7 +8279,8 @@
       "speed-boost"
     ],
     "region": "hoenn",
-    "enName": "Carvanha"
+    "enName": "Carvanha",
+    "genus": "凶猛寶可夢"
   },
   {
     "id": 319,
@@ -7987,7 +8305,8 @@
       "speed-boost"
     ],
     "region": "hoenn",
-    "enName": "Sharpedo"
+    "enName": "Sharpedo",
+    "genus": "凶暴寶可夢"
   },
   {
     "id": 320,
@@ -8012,7 +8331,8 @@
       "pressure"
     ],
     "region": "hoenn",
-    "enName": "Wailmer"
+    "enName": "Wailmer",
+    "genus": "球鯨寶可夢"
   },
   {
     "id": 321,
@@ -8037,7 +8357,8 @@
       "pressure"
     ],
     "region": "hoenn",
-    "enName": "Wailord"
+    "enName": "Wailord",
+    "genus": "浮鯨寶可夢"
   },
   {
     "id": 322,
@@ -8063,7 +8384,8 @@
       "own-tempo"
     ],
     "region": "hoenn",
-    "enName": "Numel"
+    "enName": "Numel",
+    "genus": "遲鈍寶可夢"
   },
   {
     "id": 323,
@@ -8089,7 +8411,8 @@
       "anger-point"
     ],
     "region": "hoenn",
-    "enName": "Camerupt"
+    "enName": "Camerupt",
+    "genus": "噴火寶可夢"
   },
   {
     "id": 324,
@@ -8114,7 +8437,8 @@
       "shell-armor"
     ],
     "region": "hoenn",
-    "enName": "Torkoal"
+    "enName": "Torkoal",
+    "genus": "煤炭寶可夢"
   },
   {
     "id": 325,
@@ -8139,7 +8463,8 @@
       "gluttony"
     ],
     "region": "hoenn",
-    "enName": "Spoink"
+    "enName": "Spoink",
+    "genus": "彈跳寶可夢"
   },
   {
     "id": 326,
@@ -8164,7 +8489,8 @@
       "gluttony"
     ],
     "region": "hoenn",
-    "enName": "Grumpig"
+    "enName": "Grumpig",
+    "genus": "操縱寶可夢"
   },
   {
     "id": 327,
@@ -8189,7 +8515,8 @@
       "contrary"
     ],
     "region": "hoenn",
-    "enName": "Spinda"
+    "enName": "Spinda",
+    "genus": "斑點熊貓寶可夢"
   },
   {
     "id": 328,
@@ -8214,7 +8541,8 @@
       "sheer-force"
     ],
     "region": "hoenn",
-    "enName": "Trapinch"
+    "enName": "Trapinch",
+    "genus": "蟻獅寶可夢"
   },
   {
     "id": 329,
@@ -8238,7 +8566,8 @@
       "levitate"
     ],
     "region": "hoenn",
-    "enName": "Vibrava"
+    "enName": "Vibrava",
+    "genus": "震動寶可夢"
   },
   {
     "id": 330,
@@ -8262,7 +8591,8 @@
       "levitate"
     ],
     "region": "hoenn",
-    "enName": "Flygon"
+    "enName": "Flygon",
+    "genus": "神秘寶可夢"
   },
   {
     "id": 331,
@@ -8286,7 +8616,8 @@
       "water-absorb"
     ],
     "region": "hoenn",
-    "enName": "Cacnea"
+    "enName": "Cacnea",
+    "genus": "仙人掌寶可夢"
   },
   {
     "id": 332,
@@ -8311,7 +8642,8 @@
       "water-absorb"
     ],
     "region": "hoenn",
-    "enName": "Cacturne"
+    "enName": "Cacturne",
+    "genus": "稻草人寶可夢"
   },
   {
     "id": 333,
@@ -8336,7 +8668,8 @@
       "cloud-nine"
     ],
     "region": "hoenn",
-    "enName": "Swablu"
+    "enName": "Swablu",
+    "genus": "綿鳥寶可夢"
   },
   {
     "id": 334,
@@ -8361,7 +8694,8 @@
       "cloud-nine"
     ],
     "region": "hoenn",
-    "enName": "Altaria"
+    "enName": "Altaria",
+    "genus": "哼唱寶可夢"
   },
   {
     "id": 335,
@@ -8385,7 +8719,8 @@
       "toxic-boost"
     ],
     "region": "hoenn",
-    "enName": "Zangoose"
+    "enName": "Zangoose",
+    "genus": "貓鼬寶可夢"
   },
   {
     "id": 336,
@@ -8409,7 +8744,8 @@
       "infiltrator"
     ],
     "region": "hoenn",
-    "enName": "Seviper"
+    "enName": "Seviper",
+    "genus": "牙蛇寶可夢"
   },
   {
     "id": 337,
@@ -8433,7 +8769,8 @@
       "levitate"
     ],
     "region": "hoenn",
-    "enName": "Lunatone"
+    "enName": "Lunatone",
+    "genus": "隕石寶可夢"
   },
   {
     "id": 338,
@@ -8457,7 +8794,8 @@
       "levitate"
     ],
     "region": "hoenn",
-    "enName": "Solrock"
+    "enName": "Solrock",
+    "genus": "隕石寶可夢"
   },
   {
     "id": 339,
@@ -8483,7 +8821,8 @@
       "hydration"
     ],
     "region": "hoenn",
-    "enName": "Barboach"
+    "enName": "Barboach",
+    "genus": "鬚魚寶可夢"
   },
   {
     "id": 340,
@@ -8509,7 +8848,8 @@
       "hydration"
     ],
     "region": "hoenn",
-    "enName": "Whiscash"
+    "enName": "Whiscash",
+    "genus": "鬚魚寶可夢"
   },
   {
     "id": 341,
@@ -8534,7 +8874,8 @@
       "adaptability"
     ],
     "region": "hoenn",
-    "enName": "Corphish"
+    "enName": "Corphish",
+    "genus": "無賴寶可夢"
   },
   {
     "id": 342,
@@ -8560,7 +8901,8 @@
       "adaptability"
     ],
     "region": "hoenn",
-    "enName": "Crawdaunt"
+    "enName": "Crawdaunt",
+    "genus": "流氓寶可夢"
   },
   {
     "id": 343,
@@ -8584,7 +8926,8 @@
       "levitate"
     ],
     "region": "hoenn",
-    "enName": "Baltoy"
+    "enName": "Baltoy",
+    "genus": "泥偶寶可夢"
   },
   {
     "id": 344,
@@ -8608,7 +8951,8 @@
       "levitate"
     ],
     "region": "hoenn",
-    "enName": "Claydol"
+    "enName": "Claydol",
+    "genus": "泥偶寶可夢"
   },
   {
     "id": 345,
@@ -8633,7 +8977,8 @@
       "storm-drain"
     ],
     "region": "hoenn",
-    "enName": "Lileep"
+    "enName": "Lileep",
+    "genus": "海百合寶可夢"
   },
   {
     "id": 346,
@@ -8658,7 +9003,8 @@
       "storm-drain"
     ],
     "region": "hoenn",
-    "enName": "Cradily"
+    "enName": "Cradily",
+    "genus": "藤壺寶可夢"
   },
   {
     "id": 347,
@@ -8683,7 +9029,8 @@
       "swift-swim"
     ],
     "region": "hoenn",
-    "enName": "Anorith"
+    "enName": "Anorith",
+    "genus": "古蝦寶可夢"
   },
   {
     "id": 348,
@@ -8708,7 +9055,8 @@
       "swift-swim"
     ],
     "region": "hoenn",
-    "enName": "Armaldo"
+    "enName": "Armaldo",
+    "genus": "甲胄寶可夢"
   },
   {
     "id": 349,
@@ -8733,7 +9081,8 @@
       "adaptability"
     ],
     "region": "hoenn",
-    "enName": "Feebas"
+    "enName": "Feebas",
+    "genus": "魚寶可夢"
   },
   {
     "id": 350,
@@ -8758,7 +9107,8 @@
       "cute-charm"
     ],
     "region": "hoenn",
-    "enName": "Milotic"
+    "enName": "Milotic",
+    "genus": "慈愛寶可夢"
   },
   {
     "id": 351,
@@ -8781,7 +9131,8 @@
       "forecast"
     ],
     "region": "hoenn",
-    "enName": "Castform"
+    "enName": "Castform",
+    "genus": "天氣寶可夢"
   },
   {
     "id": 352,
@@ -8805,7 +9156,8 @@
       "protean"
     ],
     "region": "hoenn",
-    "enName": "Kecleon"
+    "enName": "Kecleon",
+    "genus": "變色寶可夢"
   },
   {
     "id": 353,
@@ -8830,7 +9182,8 @@
       "cursed-body"
     ],
     "region": "hoenn",
-    "enName": "Shuppet"
+    "enName": "Shuppet",
+    "genus": "人偶寶可夢"
   },
   {
     "id": 354,
@@ -8855,7 +9208,8 @@
       "cursed-body"
     ],
     "region": "hoenn",
-    "enName": "Banette"
+    "enName": "Banette",
+    "genus": "布偶寶可夢"
   },
   {
     "id": 355,
@@ -8879,7 +9233,8 @@
       "frisk"
     ],
     "region": "hoenn",
-    "enName": "Duskull"
+    "enName": "Duskull",
+    "genus": "渡魂寶可夢"
   },
   {
     "id": 356,
@@ -8903,7 +9258,8 @@
       "frisk"
     ],
     "region": "hoenn",
-    "enName": "Dusclops"
+    "enName": "Dusclops",
+    "genus": "招手寶可夢"
   },
   {
     "id": 357,
@@ -8929,7 +9285,8 @@
       "harvest"
     ],
     "region": "hoenn",
-    "enName": "Tropius"
+    "enName": "Tropius",
+    "genus": "水果寶可夢"
   },
   {
     "id": 358,
@@ -8952,7 +9309,8 @@
       "levitate"
     ],
     "region": "hoenn",
-    "enName": "Chimecho"
+    "enName": "Chimecho",
+    "genus": "風鈴寶可夢"
   },
   {
     "id": 359,
@@ -8977,7 +9335,8 @@
       "justified"
     ],
     "region": "hoenn",
-    "enName": "Absol"
+    "enName": "Absol",
+    "genus": "災禍寶可夢"
   },
   {
     "id": 360,
@@ -9001,7 +9360,8 @@
       "telepathy"
     ],
     "region": "hoenn",
-    "enName": "Wynaut"
+    "enName": "Wynaut",
+    "genus": "開朗寶可夢"
   },
   {
     "id": 361,
@@ -9026,7 +9386,8 @@
       "moody"
     ],
     "region": "hoenn",
-    "enName": "Snorunt"
+    "enName": "Snorunt",
+    "genus": "雪笠寶可夢"
   },
   {
     "id": 362,
@@ -9051,7 +9412,8 @@
       "moody"
     ],
     "region": "hoenn",
-    "enName": "Glalie"
+    "enName": "Glalie",
+    "genus": "臉面寶可夢"
   },
   {
     "id": 363,
@@ -9077,7 +9439,8 @@
       "oblivious"
     ],
     "region": "hoenn",
-    "enName": "Spheal"
+    "enName": "Spheal",
+    "genus": "拍手寶可夢"
   },
   {
     "id": 364,
@@ -9103,7 +9466,8 @@
       "oblivious"
     ],
     "region": "hoenn",
-    "enName": "Sealeo"
+    "enName": "Sealeo",
+    "genus": "滾球寶可夢"
   },
   {
     "id": 365,
@@ -9129,7 +9493,8 @@
       "oblivious"
     ],
     "region": "hoenn",
-    "enName": "Walrein"
+    "enName": "Walrein",
+    "genus": "破冰寶可夢"
   },
   {
     "id": 366,
@@ -9153,7 +9518,8 @@
       "rattled"
     ],
     "region": "hoenn",
-    "enName": "Clamperl"
+    "enName": "Clamperl",
+    "genus": "雙殼貝寶可夢"
   },
   {
     "id": 367,
@@ -9177,7 +9543,8 @@
       "water-veil"
     ],
     "region": "hoenn",
-    "enName": "Huntail"
+    "enName": "Huntail",
+    "genus": "深海寶可夢"
   },
   {
     "id": 368,
@@ -9201,7 +9568,8 @@
       "hydration"
     ],
     "region": "hoenn",
-    "enName": "Gorebyss"
+    "enName": "Gorebyss",
+    "genus": "南海寶可夢"
   },
   {
     "id": 369,
@@ -9227,7 +9595,8 @@
       "sturdy"
     ],
     "region": "hoenn",
-    "enName": "Relicanth"
+    "enName": "Relicanth",
+    "genus": "長壽寶可夢"
   },
   {
     "id": 370,
@@ -9251,7 +9620,8 @@
       "hydration"
     ],
     "region": "hoenn",
-    "enName": "Luvdisc"
+    "enName": "Luvdisc",
+    "genus": "相隨寶可夢"
   },
   {
     "id": 371,
@@ -9275,7 +9645,8 @@
       "sheer-force"
     ],
     "region": "hoenn",
-    "enName": "Bagon"
+    "enName": "Bagon",
+    "genus": "堅硬腦袋寶可夢"
   },
   {
     "id": 372,
@@ -9299,7 +9670,8 @@
       "overcoat"
     ],
     "region": "hoenn",
-    "enName": "Shelgon"
+    "enName": "Shelgon",
+    "genus": "耐力寶可夢"
   },
   {
     "id": 373,
@@ -9324,7 +9696,8 @@
       "moxie"
     ],
     "region": "hoenn",
-    "enName": "Salamence"
+    "enName": "Salamence",
+    "genus": "龍寶可夢"
   },
   {
     "id": 374,
@@ -9349,7 +9722,8 @@
       "light-metal"
     ],
     "region": "hoenn",
-    "enName": "Beldum"
+    "enName": "Beldum",
+    "genus": "鐵球寶可夢"
   },
   {
     "id": 375,
@@ -9374,7 +9748,8 @@
       "light-metal"
     ],
     "region": "hoenn",
-    "enName": "Metang"
+    "enName": "Metang",
+    "genus": "鐵爪寶可夢"
   },
   {
     "id": 376,
@@ -9399,7 +9774,8 @@
       "light-metal"
     ],
     "region": "hoenn",
-    "enName": "Metagross"
+    "enName": "Metagross",
+    "genus": "鐵足寶可夢"
   },
   {
     "id": 377,
@@ -9423,7 +9799,8 @@
       "sturdy"
     ],
     "region": "hoenn",
-    "enName": "Regirock"
+    "enName": "Regirock",
+    "genus": "岩山寶可夢"
   },
   {
     "id": 378,
@@ -9447,7 +9824,8 @@
       "ice-body"
     ],
     "region": "hoenn",
-    "enName": "Regice"
+    "enName": "Regice",
+    "genus": "冰山寶可夢"
   },
   {
     "id": 379,
@@ -9471,7 +9849,8 @@
       "light-metal"
     ],
     "region": "hoenn",
-    "enName": "Registeel"
+    "enName": "Registeel",
+    "genus": "黑金寶可夢"
   },
   {
     "id": 380,
@@ -9495,7 +9874,8 @@
       "levitate"
     ],
     "region": "hoenn",
-    "enName": "Latias"
+    "enName": "Latias",
+    "genus": "無限寶可夢"
   },
   {
     "id": 381,
@@ -9519,7 +9899,8 @@
       "levitate"
     ],
     "region": "hoenn",
-    "enName": "Latios"
+    "enName": "Latios",
+    "genus": "無限寶可夢"
   },
   {
     "id": 382,
@@ -9542,7 +9923,8 @@
       "drizzle"
     ],
     "region": "hoenn",
-    "enName": "Kyogre"
+    "enName": "Kyogre",
+    "genus": "海底寶可夢"
   },
   {
     "id": 383,
@@ -9565,7 +9947,8 @@
       "drought"
     ],
     "region": "hoenn",
-    "enName": "Groudon"
+    "enName": "Groudon",
+    "genus": "大陸寶可夢"
   },
   {
     "id": 384,
@@ -9589,7 +9972,8 @@
       "air-lock"
     ],
     "region": "hoenn",
-    "enName": "Rayquaza"
+    "enName": "Rayquaza",
+    "genus": "天空寶可夢"
   },
   {
     "id": 385,
@@ -9613,7 +9997,8 @@
       "serene-grace"
     ],
     "region": "hoenn",
-    "enName": "Jirachi"
+    "enName": "Jirachi",
+    "genus": "祈願寶可夢"
   },
   {
     "id": 386,
@@ -9636,7 +10021,8 @@
       "pressure"
     ],
     "region": "hoenn",
-    "enName": "Deoxys"
+    "enName": "Deoxys",
+    "genus": "ＤＮＡ寶可夢"
   },
   {
     "id": 387,
@@ -9660,7 +10046,8 @@
       "shell-armor"
     ],
     "region": "sinnoh",
-    "enName": "Turtwig"
+    "enName": "Turtwig",
+    "genus": "嫩葉寶可夢"
   },
   {
     "id": 388,
@@ -9684,7 +10071,8 @@
       "shell-armor"
     ],
     "region": "sinnoh",
-    "enName": "Grotle"
+    "enName": "Grotle",
+    "genus": "樹叢寶可夢"
   },
   {
     "id": 389,
@@ -9709,7 +10097,8 @@
       "shell-armor"
     ],
     "region": "sinnoh",
-    "enName": "Torterra"
+    "enName": "Torterra",
+    "genus": "大陸寶可夢"
   },
   {
     "id": 390,
@@ -9733,7 +10122,8 @@
       "iron-fist"
     ],
     "region": "sinnoh",
-    "enName": "Chimchar"
+    "enName": "Chimchar",
+    "genus": "小猴寶可夢"
   },
   {
     "id": 391,
@@ -9758,7 +10148,8 @@
       "iron-fist"
     ],
     "region": "sinnoh",
-    "enName": "Monferno"
+    "enName": "Monferno",
+    "genus": "頑皮寶可夢"
   },
   {
     "id": 392,
@@ -9783,7 +10174,8 @@
       "iron-fist"
     ],
     "region": "sinnoh",
-    "enName": "Infernape"
+    "enName": "Infernape",
+    "genus": "火焰寶可夢"
   },
   {
     "id": 393,
@@ -9807,7 +10199,8 @@
       "competitive"
     ],
     "region": "sinnoh",
-    "enName": "Piplup"
+    "enName": "Piplup",
+    "genus": "企鵝寶可夢"
   },
   {
     "id": 394,
@@ -9831,7 +10224,8 @@
       "competitive"
     ],
     "region": "sinnoh",
-    "enName": "Prinplup"
+    "enName": "Prinplup",
+    "genus": "企鵝寶可夢"
   },
   {
     "id": 395,
@@ -9856,7 +10250,8 @@
       "competitive"
     ],
     "region": "sinnoh",
-    "enName": "Empoleon"
+    "enName": "Empoleon",
+    "genus": "皇帝寶可夢"
   },
   {
     "id": 396,
@@ -9881,7 +10276,8 @@
       "reckless"
     ],
     "region": "sinnoh",
-    "enName": "Starly"
+    "enName": "Starly",
+    "genus": "椋鳥寶可夢"
   },
   {
     "id": 397,
@@ -9906,7 +10302,8 @@
       "reckless"
     ],
     "region": "sinnoh",
-    "enName": "Staravia"
+    "enName": "Staravia",
+    "genus": "椋鳥寶可夢"
   },
   {
     "id": 398,
@@ -9931,7 +10328,8 @@
       "reckless"
     ],
     "region": "sinnoh",
-    "enName": "Staraptor"
+    "enName": "Staraptor",
+    "genus": "猛禽寶可夢"
   },
   {
     "id": 399,
@@ -9956,7 +10354,8 @@
       "moody"
     ],
     "region": "sinnoh",
-    "enName": "Bidoof"
+    "enName": "Bidoof",
+    "genus": "圓鼠寶可夢"
   },
   {
     "id": 400,
@@ -9982,7 +10381,8 @@
       "moody"
     ],
     "region": "sinnoh",
-    "enName": "Bibarel"
+    "enName": "Bibarel",
+    "genus": "河狸寶可夢"
   },
   {
     "id": 401,
@@ -10006,7 +10406,8 @@
       "run-away"
     ],
     "region": "sinnoh",
-    "enName": "Kricketot"
+    "enName": "Kricketot",
+    "genus": "蟋蟀寶可夢"
   },
   {
     "id": 402,
@@ -10030,7 +10431,8 @@
       "technician"
     ],
     "region": "sinnoh",
-    "enName": "Kricketune"
+    "enName": "Kricketune",
+    "genus": "蟋蟀寶可夢"
   },
   {
     "id": 403,
@@ -10055,7 +10457,8 @@
       "guts"
     ],
     "region": "sinnoh",
-    "enName": "Shinx"
+    "enName": "Shinx",
+    "genus": "閃光寶可夢"
   },
   {
     "id": 404,
@@ -10080,7 +10483,8 @@
       "guts"
     ],
     "region": "sinnoh",
-    "enName": "Luxio"
+    "enName": "Luxio",
+    "genus": "電光寶可夢"
   },
   {
     "id": 405,
@@ -10105,7 +10509,8 @@
       "guts"
     ],
     "region": "sinnoh",
-    "enName": "Luxray"
+    "enName": "Luxray",
+    "genus": "目光寶可夢"
   },
   {
     "id": 406,
@@ -10131,7 +10536,8 @@
       "leaf-guard"
     ],
     "region": "sinnoh",
-    "enName": "Budew"
+    "enName": "Budew",
+    "genus": "花苞寶可夢"
   },
   {
     "id": 407,
@@ -10157,7 +10563,8 @@
       "technician"
     ],
     "region": "sinnoh",
-    "enName": "Roserade"
+    "enName": "Roserade",
+    "genus": "花束寶可夢"
   },
   {
     "id": 408,
@@ -10181,7 +10588,8 @@
       "sheer-force"
     ],
     "region": "sinnoh",
-    "enName": "Cranidos"
+    "enName": "Cranidos",
+    "genus": "頭錘寶可夢"
   },
   {
     "id": 409,
@@ -10205,7 +10613,8 @@
       "sheer-force"
     ],
     "region": "sinnoh",
-    "enName": "Rampardos"
+    "enName": "Rampardos",
+    "genus": "頭錘寶可夢"
   },
   {
     "id": 410,
@@ -10230,7 +10639,8 @@
       "soundproof"
     ],
     "region": "sinnoh",
-    "enName": "Shieldon"
+    "enName": "Shieldon",
+    "genus": "護盾寶可夢"
   },
   {
     "id": 411,
@@ -10255,7 +10665,8 @@
       "soundproof"
     ],
     "region": "sinnoh",
-    "enName": "Bastiodon"
+    "enName": "Bastiodon",
+    "genus": "護盾寶可夢"
   },
   {
     "id": 412,
@@ -10279,7 +10690,8 @@
       "overcoat"
     ],
     "region": "sinnoh",
-    "enName": "Burmy"
+    "enName": "Burmy",
+    "genus": "蓑衣蟲寶可夢"
   },
   {
     "id": 413,
@@ -10304,7 +10716,8 @@
       "overcoat"
     ],
     "region": "sinnoh",
-    "enName": "Wormadam"
+    "enName": "Wormadam",
+    "genus": "蓑衣蟲寶可夢"
   },
   {
     "id": 414,
@@ -10329,7 +10742,8 @@
       "tinted-lens"
     ],
     "region": "sinnoh",
-    "enName": "Mothim"
+    "enName": "Mothim",
+    "genus": "蓑衣蛾寶可夢"
   },
   {
     "id": 415,
@@ -10354,7 +10768,8 @@
       "hustle"
     ],
     "region": "sinnoh",
-    "enName": "Combee"
+    "enName": "Combee",
+    "genus": "幼蜂寶可夢"
   },
   {
     "id": 416,
@@ -10379,7 +10794,8 @@
       "unnerve"
     ],
     "region": "sinnoh",
-    "enName": "Vespiquen"
+    "enName": "Vespiquen",
+    "genus": "蜂巢寶可夢"
   },
   {
     "id": 417,
@@ -10404,7 +10820,8 @@
       "volt-absorb"
     ],
     "region": "sinnoh",
-    "enName": "Pachirisu"
+    "enName": "Pachirisu",
+    "genus": "電松鼠寶可夢"
   },
   {
     "id": 418,
@@ -10428,7 +10845,8 @@
       "water-veil"
     ],
     "region": "sinnoh",
-    "enName": "Buizel"
+    "enName": "Buizel",
+    "genus": "海鼬寶可夢"
   },
   {
     "id": 419,
@@ -10452,7 +10870,8 @@
       "water-veil"
     ],
     "region": "sinnoh",
-    "enName": "Floatzel"
+    "enName": "Floatzel",
+    "genus": "海鼬寶可夢"
   },
   {
     "id": 420,
@@ -10475,7 +10894,8 @@
       "chlorophyll"
     ],
     "region": "sinnoh",
-    "enName": "Cherubi"
+    "enName": "Cherubi",
+    "genus": "櫻桃寶可夢"
   },
   {
     "id": 421,
@@ -10498,7 +10918,8 @@
       "flower-gift"
     ],
     "region": "sinnoh",
-    "enName": "Cherrim"
+    "enName": "Cherrim",
+    "genus": "櫻花寶可夢"
   },
   {
     "id": 422,
@@ -10523,7 +10944,8 @@
       "sand-force"
     ],
     "region": "sinnoh",
-    "enName": "Shellos"
+    "enName": "Shellos",
+    "genus": "海兔寶可夢"
   },
   {
     "id": 423,
@@ -10549,7 +10971,8 @@
       "sand-force"
     ],
     "region": "sinnoh",
-    "enName": "Gastrodon"
+    "enName": "Gastrodon",
+    "genus": "海兔寶可夢"
   },
   {
     "id": 424,
@@ -10574,7 +10997,8 @@
       "skill-link"
     ],
     "region": "sinnoh",
-    "enName": "Ambipom"
+    "enName": "Ambipom",
+    "genus": "長尾寶可夢"
   },
   {
     "id": 425,
@@ -10600,7 +11024,8 @@
       "flare-boost"
     ],
     "region": "sinnoh",
-    "enName": "Drifloon"
+    "enName": "Drifloon",
+    "genus": "氣球寶可夢"
   },
   {
     "id": 426,
@@ -10626,7 +11051,8 @@
       "flare-boost"
     ],
     "region": "sinnoh",
-    "enName": "Drifblim"
+    "enName": "Drifblim",
+    "genus": "熱氣球寶可夢"
   },
   {
     "id": 427,
@@ -10651,7 +11077,8 @@
       "limber"
     ],
     "region": "sinnoh",
-    "enName": "Buneary"
+    "enName": "Buneary",
+    "genus": "兔子寶可夢"
   },
   {
     "id": 428,
@@ -10676,7 +11103,8 @@
       "limber"
     ],
     "region": "sinnoh",
-    "enName": "Lopunny"
+    "enName": "Lopunny",
+    "genus": "兔子寶可夢"
   },
   {
     "id": 429,
@@ -10699,7 +11127,8 @@
       "levitate"
     ],
     "region": "sinnoh",
-    "enName": "Mismagius"
+    "enName": "Mismagius",
+    "genus": "魔法寶可夢"
   },
   {
     "id": 430,
@@ -10725,7 +11154,8 @@
       "moxie"
     ],
     "region": "sinnoh",
-    "enName": "Honchkrow"
+    "enName": "Honchkrow",
+    "genus": "大頭目寶可夢"
   },
   {
     "id": 431,
@@ -10750,7 +11180,8 @@
       "keen-eye"
     ],
     "region": "sinnoh",
-    "enName": "Glameow"
+    "enName": "Glameow",
+    "genus": "裝乖寶可夢"
   },
   {
     "id": 432,
@@ -10775,7 +11206,8 @@
       "defiant"
     ],
     "region": "sinnoh",
-    "enName": "Purugly"
+    "enName": "Purugly",
+    "genus": "虎斑貓寶可夢"
   },
   {
     "id": 433,
@@ -10798,7 +11230,8 @@
       "levitate"
     ],
     "region": "sinnoh",
-    "enName": "Chingling"
+    "enName": "Chingling",
+    "genus": "鈴鐺寶可夢"
   },
   {
     "id": 434,
@@ -10824,7 +11257,8 @@
       "keen-eye"
     ],
     "region": "sinnoh",
-    "enName": "Stunky"
+    "enName": "Stunky",
+    "genus": "臭鼬寶可夢"
   },
   {
     "id": 435,
@@ -10850,7 +11284,8 @@
       "keen-eye"
     ],
     "region": "sinnoh",
-    "enName": "Skuntank"
+    "enName": "Skuntank",
+    "genus": "臭鼬寶可夢"
   },
   {
     "id": 436,
@@ -10876,7 +11311,8 @@
       "heavy-metal"
     ],
     "region": "sinnoh",
-    "enName": "Bronzor"
+    "enName": "Bronzor",
+    "genus": "青銅寶可夢"
   },
   {
     "id": 437,
@@ -10902,7 +11338,8 @@
       "heavy-metal"
     ],
     "region": "sinnoh",
-    "enName": "Bronzong"
+    "enName": "Bronzong",
+    "genus": "銅鐘寶可夢"
   },
   {
     "id": 438,
@@ -10927,7 +11364,8 @@
       "rattled"
     ],
     "region": "sinnoh",
-    "enName": "Bonsly"
+    "enName": "Bonsly",
+    "genus": "盆栽寶可夢"
   },
   {
     "id": 439,
@@ -10953,7 +11391,8 @@
       "technician"
     ],
     "region": "sinnoh",
-    "enName": "Mime Jr."
+    "enName": "Mime Jr.",
+    "genus": "默劇寶可夢"
   },
   {
     "id": 440,
@@ -10978,7 +11417,8 @@
       "friend-guard"
     ],
     "region": "sinnoh",
-    "enName": "Happiny"
+    "enName": "Happiny",
+    "genus": "家家酒寶可夢"
   },
   {
     "id": 441,
@@ -11004,7 +11444,8 @@
       "big-pecks"
     ],
     "region": "sinnoh",
-    "enName": "Chatot"
+    "enName": "Chatot",
+    "genus": "音符寶可夢"
   },
   {
     "id": 442,
@@ -11029,7 +11470,8 @@
       "infiltrator"
     ],
     "region": "sinnoh",
-    "enName": "Spiritomb"
+    "enName": "Spiritomb",
+    "genus": "封印寶可夢"
   },
   {
     "id": 443,
@@ -11054,7 +11496,8 @@
       "rough-skin"
     ],
     "region": "sinnoh",
-    "enName": "Gible"
+    "enName": "Gible",
+    "genus": "陸鯊寶可夢"
   },
   {
     "id": 444,
@@ -11079,7 +11522,8 @@
       "rough-skin"
     ],
     "region": "sinnoh",
-    "enName": "Gabite"
+    "enName": "Gabite",
+    "genus": "洞穴寶可夢"
   },
   {
     "id": 445,
@@ -11104,7 +11548,8 @@
       "rough-skin"
     ],
     "region": "sinnoh",
-    "enName": "Garchomp"
+    "enName": "Garchomp",
+    "genus": "音速寶可夢"
   },
   {
     "id": 446,
@@ -11129,7 +11574,8 @@
       "gluttony"
     ],
     "region": "sinnoh",
-    "enName": "Munchlax"
+    "enName": "Munchlax",
+    "genus": "大胃王寶可夢"
   },
   {
     "id": 447,
@@ -11154,7 +11600,8 @@
       "prankster"
     ],
     "region": "sinnoh",
-    "enName": "Riolu"
+    "enName": "Riolu",
+    "genus": "波紋寶可夢"
   },
   {
     "id": 448,
@@ -11180,7 +11627,8 @@
       "justified"
     ],
     "region": "sinnoh",
-    "enName": "Lucario"
+    "enName": "Lucario",
+    "genus": "波導寶可夢"
   },
   {
     "id": 449,
@@ -11204,7 +11652,8 @@
       "sand-force"
     ],
     "region": "sinnoh",
-    "enName": "Hippopotas"
+    "enName": "Hippopotas",
+    "genus": "河馬寶可夢"
   },
   {
     "id": 450,
@@ -11228,7 +11677,8 @@
       "sand-force"
     ],
     "region": "sinnoh",
-    "enName": "Hippowdon"
+    "enName": "Hippowdon",
+    "genus": "重量寶可夢"
   },
   {
     "id": 451,
@@ -11254,7 +11704,8 @@
       "keen-eye"
     ],
     "region": "sinnoh",
-    "enName": "Skorupi"
+    "enName": "Skorupi",
+    "genus": "蠍子寶可夢"
   },
   {
     "id": 452,
@@ -11280,7 +11731,8 @@
       "keen-eye"
     ],
     "region": "sinnoh",
-    "enName": "Drapion"
+    "enName": "Drapion",
+    "genus": "蠍怪寶可夢"
   },
   {
     "id": 453,
@@ -11306,7 +11758,8 @@
       "poison-touch"
     ],
     "region": "sinnoh",
-    "enName": "Croagunk"
+    "enName": "Croagunk",
+    "genus": "毒擊寶可夢"
   },
   {
     "id": 454,
@@ -11332,7 +11785,8 @@
       "poison-touch"
     ],
     "region": "sinnoh",
-    "enName": "Toxicroak"
+    "enName": "Toxicroak",
+    "genus": "毒擊寶可夢"
   },
   {
     "id": 455,
@@ -11355,7 +11809,8 @@
       "levitate"
     ],
     "region": "sinnoh",
-    "enName": "Carnivine"
+    "enName": "Carnivine",
+    "genus": "捕蟲寶可夢"
   },
   {
     "id": 456,
@@ -11380,7 +11835,8 @@
       "water-veil"
     ],
     "region": "sinnoh",
-    "enName": "Finneon"
+    "enName": "Finneon",
+    "genus": "飛翅魚寶可夢"
   },
   {
     "id": 457,
@@ -11405,7 +11861,8 @@
       "water-veil"
     ],
     "region": "sinnoh",
-    "enName": "Lumineon"
+    "enName": "Lumineon",
+    "genus": "霓虹寶可夢"
   },
   {
     "id": 458,
@@ -11431,7 +11888,8 @@
       "water-veil"
     ],
     "region": "sinnoh",
-    "enName": "Mantyke"
+    "enName": "Mantyke",
+    "genus": "風箏寶可夢"
   },
   {
     "id": 459,
@@ -11456,7 +11914,8 @@
       "soundproof"
     ],
     "region": "sinnoh",
-    "enName": "Snover"
+    "enName": "Snover",
+    "genus": "樹冰寶可夢"
   },
   {
     "id": 460,
@@ -11481,7 +11940,8 @@
       "soundproof"
     ],
     "region": "sinnoh",
-    "enName": "Abomasnow"
+    "enName": "Abomasnow",
+    "genus": "樹冰寶可夢"
   },
   {
     "id": 461,
@@ -11506,7 +11966,8 @@
       "pickpocket"
     ],
     "region": "sinnoh",
-    "enName": "Weavile"
+    "enName": "Weavile",
+    "genus": "鉤爪寶可夢"
   },
   {
     "id": 462,
@@ -11532,7 +11993,8 @@
       "analytic"
     ],
     "region": "sinnoh",
-    "enName": "Magnezone"
+    "enName": "Magnezone",
+    "genus": "磁場寶可夢"
   },
   {
     "id": 463,
@@ -11557,7 +12019,8 @@
       "cloud-nine"
     ],
     "region": "sinnoh",
-    "enName": "Lickilicky"
+    "enName": "Lickilicky",
+    "genus": "舔舔寶可夢"
   },
   {
     "id": 464,
@@ -11583,7 +12046,8 @@
       "reckless"
     ],
     "region": "sinnoh",
-    "enName": "Rhyperior"
+    "enName": "Rhyperior",
+    "genus": "鑽錐寶可夢"
   },
   {
     "id": 465,
@@ -11608,7 +12072,8 @@
       "regenerator"
     ],
     "region": "sinnoh",
-    "enName": "Tangrowth"
+    "enName": "Tangrowth",
+    "genus": "藤蔓狀寶可夢"
   },
   {
     "id": 466,
@@ -11632,7 +12097,8 @@
       "vital-spirit"
     ],
     "region": "sinnoh",
-    "enName": "Electivire"
+    "enName": "Electivire",
+    "genus": "雷電寶可夢"
   },
   {
     "id": 467,
@@ -11656,7 +12122,8 @@
       "vital-spirit"
     ],
     "region": "sinnoh",
-    "enName": "Magmortar"
+    "enName": "Magmortar",
+    "genus": "爆炎寶可夢"
   },
   {
     "id": 468,
@@ -11682,7 +12149,8 @@
       "super-luck"
     ],
     "region": "sinnoh",
-    "enName": "Togekiss"
+    "enName": "Togekiss",
+    "genus": "祝福寶可夢"
   },
   {
     "id": 469,
@@ -11708,7 +12176,8 @@
       "frisk"
     ],
     "region": "sinnoh",
-    "enName": "Yanmega"
+    "enName": "Yanmega",
+    "genus": "勾蜓寶可夢"
   },
   {
     "id": 470,
@@ -11732,7 +12201,8 @@
       "chlorophyll"
     ],
     "region": "sinnoh",
-    "enName": "Leafeon"
+    "enName": "Leafeon",
+    "genus": "新綠寶可夢"
   },
   {
     "id": 471,
@@ -11756,7 +12226,8 @@
       "ice-body"
     ],
     "region": "sinnoh",
-    "enName": "Glaceon"
+    "enName": "Glaceon",
+    "genus": "新雪寶可夢"
   },
   {
     "id": 472,
@@ -11782,7 +12253,8 @@
       "poison-heal"
     ],
     "region": "sinnoh",
-    "enName": "Gliscor"
+    "enName": "Gliscor",
+    "genus": "牙蠍寶可夢"
   },
   {
     "id": 473,
@@ -11808,7 +12280,8 @@
       "thick-fat"
     ],
     "region": "sinnoh",
-    "enName": "Mamoswine"
+    "enName": "Mamoswine",
+    "genus": "雙牙寶可夢"
   },
   {
     "id": 474,
@@ -11833,7 +12306,8 @@
       "analytic"
     ],
     "region": "sinnoh",
-    "enName": "Porygon-Z"
+    "enName": "Porygon-Z",
+    "genus": "虛擬寶可夢"
   },
   {
     "id": 475,
@@ -11859,7 +12333,8 @@
       "justified"
     ],
     "region": "sinnoh",
-    "enName": "Gallade"
+    "enName": "Gallade",
+    "genus": "利刃寶可夢"
   },
   {
     "id": 476,
@@ -11885,7 +12360,8 @@
       "sand-force"
     ],
     "region": "sinnoh",
-    "enName": "Probopass"
+    "enName": "Probopass",
+    "genus": "羅盤寶可夢"
   },
   {
     "id": 477,
@@ -11909,7 +12385,8 @@
       "frisk"
     ],
     "region": "sinnoh",
-    "enName": "Dusknoir"
+    "enName": "Dusknoir",
+    "genus": "抓握寶可夢"
   },
   {
     "id": 478,
@@ -11934,7 +12411,8 @@
       "cursed-body"
     ],
     "region": "sinnoh",
-    "enName": "Froslass"
+    "enName": "Froslass",
+    "genus": "雪國寶可夢"
   },
   {
     "id": 479,
@@ -11958,7 +12436,8 @@
       "levitate"
     ],
     "region": "sinnoh",
-    "enName": "Rotom"
+    "enName": "Rotom",
+    "genus": "等離子寶可夢"
   },
   {
     "id": 480,
@@ -11981,7 +12460,8 @@
       "levitate"
     ],
     "region": "sinnoh",
-    "enName": "Uxie"
+    "enName": "Uxie",
+    "genus": "知識寶可夢"
   },
   {
     "id": 481,
@@ -12004,7 +12484,8 @@
       "levitate"
     ],
     "region": "sinnoh",
-    "enName": "Mesprit"
+    "enName": "Mesprit",
+    "genus": "感情寶可夢"
   },
   {
     "id": 482,
@@ -12027,7 +12508,8 @@
       "levitate"
     ],
     "region": "sinnoh",
-    "enName": "Azelf"
+    "enName": "Azelf",
+    "genus": "意志寶可夢"
   },
   {
     "id": 483,
@@ -12052,7 +12534,8 @@
       "telepathy"
     ],
     "region": "sinnoh",
-    "enName": "Dialga"
+    "enName": "Dialga",
+    "genus": "時間寶可夢"
   },
   {
     "id": 484,
@@ -12077,7 +12560,8 @@
       "telepathy"
     ],
     "region": "sinnoh",
-    "enName": "Palkia"
+    "enName": "Palkia",
+    "genus": "空間寶可夢"
   },
   {
     "id": 485,
@@ -12102,7 +12586,8 @@
       "flame-body"
     ],
     "region": "sinnoh",
-    "enName": "Heatran"
+    "enName": "Heatran",
+    "genus": "火山口寶可夢"
   },
   {
     "id": 486,
@@ -12125,7 +12610,8 @@
       "slow-start"
     ],
     "region": "sinnoh",
-    "enName": "Regigigas"
+    "enName": "Regigigas",
+    "genus": "巨大寶可夢"
   },
   {
     "id": 487,
@@ -12150,7 +12636,8 @@
       "telepathy"
     ],
     "region": "sinnoh",
-    "enName": "Giratina"
+    "enName": "Giratina",
+    "genus": "反抗寶可夢"
   },
   {
     "id": 488,
@@ -12173,7 +12660,8 @@
       "levitate"
     ],
     "region": "sinnoh",
-    "enName": "Cresselia"
+    "enName": "Cresselia",
+    "genus": "新月寶可夢"
   },
   {
     "id": 489,
@@ -12196,7 +12684,8 @@
       "hydration"
     ],
     "region": "sinnoh",
-    "enName": "Phione"
+    "enName": "Phione",
+    "genus": "海洋寶可夢"
   },
   {
     "id": 490,
@@ -12219,7 +12708,8 @@
       "hydration"
     ],
     "region": "sinnoh",
-    "enName": "Manaphy"
+    "enName": "Manaphy",
+    "genus": "洄游寶可夢"
   },
   {
     "id": 491,
@@ -12242,7 +12732,8 @@
       "bad-dreams"
     ],
     "region": "sinnoh",
-    "enName": "Darkrai"
+    "enName": "Darkrai",
+    "genus": "暗黑寶可夢"
   },
   {
     "id": 492,
@@ -12265,7 +12756,8 @@
       "natural-cure"
     ],
     "region": "sinnoh",
-    "enName": "Shaymin"
+    "enName": "Shaymin",
+    "genus": "感謝寶可夢"
   },
   {
     "id": 493,
@@ -12288,7 +12780,8 @@
       "multitype"
     ],
     "region": "sinnoh",
-    "enName": "Arceus"
+    "enName": "Arceus",
+    "genus": "創造寶可夢"
   },
   {
     "id": 494,
@@ -12312,7 +12805,8 @@
       "victory-star"
     ],
     "region": "unova",
-    "enName": "Victini"
+    "enName": "Victini",
+    "genus": "勝利寶可夢"
   },
   {
     "id": 495,
@@ -12336,7 +12830,8 @@
       "contrary"
     ],
     "region": "unova",
-    "enName": "Snivy"
+    "enName": "Snivy",
+    "genus": "草蛇寶可夢"
   },
   {
     "id": 496,
@@ -12360,7 +12855,8 @@
       "contrary"
     ],
     "region": "unova",
-    "enName": "Servine"
+    "enName": "Servine",
+    "genus": "草蛇寶可夢"
   },
   {
     "id": 497,
@@ -12384,7 +12880,8 @@
       "contrary"
     ],
     "region": "unova",
-    "enName": "Serperior"
+    "enName": "Serperior",
+    "genus": "皇家寶可夢"
   },
   {
     "id": 498,
@@ -12408,7 +12905,8 @@
       "thick-fat"
     ],
     "region": "unova",
-    "enName": "Tepig"
+    "enName": "Tepig",
+    "genus": "火豬寶可夢"
   },
   {
     "id": 499,
@@ -12433,7 +12931,8 @@
       "thick-fat"
     ],
     "region": "unova",
-    "enName": "Pignite"
+    "enName": "Pignite",
+    "genus": "火豬寶可夢"
   },
   {
     "id": 500,
@@ -12458,7 +12957,8 @@
       "reckless"
     ],
     "region": "unova",
-    "enName": "Emboar"
+    "enName": "Emboar",
+    "genus": "大火豬寶可夢"
   },
   {
     "id": 501,
@@ -12482,7 +12982,8 @@
       "shell-armor"
     ],
     "region": "unova",
-    "enName": "Oshawott"
+    "enName": "Oshawott",
+    "genus": "海獺寶可夢"
   },
   {
     "id": 502,
@@ -12506,7 +13007,8 @@
       "shell-armor"
     ],
     "region": "unova",
-    "enName": "Dewott"
+    "enName": "Dewott",
+    "genus": "修行寶可夢"
   },
   {
     "id": 503,
@@ -12530,7 +13032,8 @@
       "shell-armor"
     ],
     "region": "unova",
-    "enName": "Samurott"
+    "enName": "Samurott",
+    "genus": "威嚴寶可夢"
   },
   {
     "id": 504,
@@ -12555,7 +13058,8 @@
       "analytic"
     ],
     "region": "unova",
-    "enName": "Patrat"
+    "enName": "Patrat",
+    "genus": "放哨寶可夢"
   },
   {
     "id": 505,
@@ -12580,7 +13084,8 @@
       "analytic"
     ],
     "region": "unova",
-    "enName": "Watchog"
+    "enName": "Watchog",
+    "genus": "警戒寶可夢"
   },
   {
     "id": 506,
@@ -12605,7 +13110,8 @@
       "run-away"
     ],
     "region": "unova",
-    "enName": "Lillipup"
+    "enName": "Lillipup",
+    "genus": "小狗寶可夢"
   },
   {
     "id": 507,
@@ -12630,7 +13136,8 @@
       "scrappy"
     ],
     "region": "unova",
-    "enName": "Herdier"
+    "enName": "Herdier",
+    "genus": "忠犬寶可夢"
   },
   {
     "id": 508,
@@ -12655,7 +13162,8 @@
       "scrappy"
     ],
     "region": "unova",
-    "enName": "Stoutland"
+    "enName": "Stoutland",
+    "genus": "寬大寶可夢"
   },
   {
     "id": 509,
@@ -12680,7 +13188,8 @@
       "prankster"
     ],
     "region": "unova",
-    "enName": "Purrloin"
+    "enName": "Purrloin",
+    "genus": "壞心眼寶可夢"
   },
   {
     "id": 510,
@@ -12705,7 +13214,8 @@
       "prankster"
     ],
     "region": "unova",
-    "enName": "Liepard"
+    "enName": "Liepard",
+    "genus": "冷酷寶可夢"
   },
   {
     "id": 511,
@@ -12729,7 +13239,8 @@
       "overgrow"
     ],
     "region": "unova",
-    "enName": "Pansage"
+    "enName": "Pansage",
+    "genus": "草猴寶可夢"
   },
   {
     "id": 512,
@@ -12753,7 +13264,8 @@
       "overgrow"
     ],
     "region": "unova",
-    "enName": "Simisage"
+    "enName": "Simisage",
+    "genus": "刺猴寶可夢"
   },
   {
     "id": 513,
@@ -12777,7 +13289,8 @@
       "blaze"
     ],
     "region": "unova",
-    "enName": "Pansear"
+    "enName": "Pansear",
+    "genus": "高溫寶可夢"
   },
   {
     "id": 514,
@@ -12801,7 +13314,8 @@
       "blaze"
     ],
     "region": "unova",
-    "enName": "Simisear"
+    "enName": "Simisear",
+    "genus": "火花寶可夢"
   },
   {
     "id": 515,
@@ -12825,7 +13339,8 @@
       "torrent"
     ],
     "region": "unova",
-    "enName": "Panpour"
+    "enName": "Panpour",
+    "genus": "潑水寶可夢"
   },
   {
     "id": 516,
@@ -12849,7 +13364,8 @@
       "torrent"
     ],
     "region": "unova",
-    "enName": "Simipour"
+    "enName": "Simipour",
+    "genus": "放水寶可夢"
   },
   {
     "id": 517,
@@ -12874,7 +13390,8 @@
       "telepathy"
     ],
     "region": "unova",
-    "enName": "Munna"
+    "enName": "Munna",
+    "genus": "食夢寶可夢"
   },
   {
     "id": 518,
@@ -12899,7 +13416,8 @@
       "telepathy"
     ],
     "region": "unova",
-    "enName": "Musharna"
+    "enName": "Musharna",
+    "genus": "半夢半醒寶可夢"
   },
   {
     "id": 519,
@@ -12925,7 +13443,8 @@
       "rivalry"
     ],
     "region": "unova",
-    "enName": "Pidove"
+    "enName": "Pidove",
+    "genus": "小鴿寶可夢"
   },
   {
     "id": 520,
@@ -12951,7 +13470,8 @@
       "rivalry"
     ],
     "region": "unova",
-    "enName": "Tranquill"
+    "enName": "Tranquill",
+    "genus": "野鴿寶可夢"
   },
   {
     "id": 521,
@@ -12977,7 +13497,8 @@
       "rivalry"
     ],
     "region": "unova",
-    "enName": "Unfezant"
+    "enName": "Unfezant",
+    "genus": "自尊心寶可夢"
   },
   {
     "id": 522,
@@ -13002,7 +13523,8 @@
       "sap-sipper"
     ],
     "region": "unova",
-    "enName": "Blitzle"
+    "enName": "Blitzle",
+    "genus": "帶電寶可夢"
   },
   {
     "id": 523,
@@ -13027,7 +13549,8 @@
       "sap-sipper"
     ],
     "region": "unova",
-    "enName": "Zebstrika"
+    "enName": "Zebstrika",
+    "genus": "雷電寶可夢"
   },
   {
     "id": 524,
@@ -13052,7 +13575,8 @@
       "sand-force"
     ],
     "region": "unova",
-    "enName": "Roggenrola"
+    "enName": "Roggenrola",
+    "genus": "地幔寶可夢"
   },
   {
     "id": 525,
@@ -13077,7 +13601,8 @@
       "sand-force"
     ],
     "region": "unova",
-    "enName": "Boldore"
+    "enName": "Boldore",
+    "genus": "礦石寶可夢"
   },
   {
     "id": 526,
@@ -13102,7 +13627,8 @@
       "sand-force"
     ],
     "region": "unova",
-    "enName": "Gigalith"
+    "enName": "Gigalith",
+    "genus": "高壓寶可夢"
   },
   {
     "id": 527,
@@ -13128,7 +13654,8 @@
       "simple"
     ],
     "region": "unova",
-    "enName": "Woobat"
+    "enName": "Woobat",
+    "genus": "蝙蝠寶可夢"
   },
   {
     "id": 528,
@@ -13154,7 +13681,8 @@
       "simple"
     ],
     "region": "unova",
-    "enName": "Swoobat"
+    "enName": "Swoobat",
+    "genus": "求愛寶可夢"
   },
   {
     "id": 529,
@@ -13179,7 +13707,8 @@
       "mold-breaker"
     ],
     "region": "unova",
-    "enName": "Drilbur"
+    "enName": "Drilbur",
+    "genus": "鼴鼠寶可夢"
   },
   {
     "id": 530,
@@ -13205,7 +13734,8 @@
       "mold-breaker"
     ],
     "region": "unova",
-    "enName": "Excadrill"
+    "enName": "Excadrill",
+    "genus": "地底寶可夢"
   },
   {
     "id": 531,
@@ -13230,7 +13760,8 @@
       "klutz"
     ],
     "region": "unova",
-    "enName": "Audino"
+    "enName": "Audino",
+    "genus": "聽力寶可夢"
   },
   {
     "id": 532,
@@ -13255,7 +13786,8 @@
       "iron-fist"
     ],
     "region": "unova",
-    "enName": "Timburr"
+    "enName": "Timburr",
+    "genus": "筋骨寶可夢"
   },
   {
     "id": 533,
@@ -13280,7 +13812,8 @@
       "iron-fist"
     ],
     "region": "unova",
-    "enName": "Gurdurr"
+    "enName": "Gurdurr",
+    "genus": "筋骨寶可夢"
   },
   {
     "id": 534,
@@ -13305,7 +13838,8 @@
       "iron-fist"
     ],
     "region": "unova",
-    "enName": "Conkeldurr"
+    "enName": "Conkeldurr",
+    "genus": "筋骨寶可夢"
   },
   {
     "id": 535,
@@ -13330,7 +13864,8 @@
       "water-absorb"
     ],
     "region": "unova",
-    "enName": "Tympole"
+    "enName": "Tympole",
+    "genus": "蝌蚪寶可夢"
   },
   {
     "id": 536,
@@ -13356,7 +13891,8 @@
       "water-absorb"
     ],
     "region": "unova",
-    "enName": "Palpitoad"
+    "enName": "Palpitoad",
+    "genus": "震動寶可夢"
   },
   {
     "id": 537,
@@ -13382,7 +13918,8 @@
       "water-absorb"
     ],
     "region": "unova",
-    "enName": "Seismitoad"
+    "enName": "Seismitoad",
+    "genus": "震動寶可夢"
   },
   {
     "id": 538,
@@ -13407,7 +13944,8 @@
       "mold-breaker"
     ],
     "region": "unova",
-    "enName": "Throh"
+    "enName": "Throh",
+    "genus": "柔道寶可夢"
   },
   {
     "id": 539,
@@ -13432,7 +13970,8 @@
       "mold-breaker"
     ],
     "region": "unova",
-    "enName": "Sawk"
+    "enName": "Sawk",
+    "genus": "空手道寶可夢"
   },
   {
     "id": 540,
@@ -13458,7 +13997,8 @@
       "overcoat"
     ],
     "region": "unova",
-    "enName": "Sewaddle"
+    "enName": "Sewaddle",
+    "genus": "裁縫寶可夢"
   },
   {
     "id": 541,
@@ -13484,7 +14024,8 @@
       "overcoat"
     ],
     "region": "unova",
-    "enName": "Swadloon"
+    "enName": "Swadloon",
+    "genus": "足不出葉寶可夢"
   },
   {
     "id": 542,
@@ -13510,7 +14051,8 @@
       "overcoat"
     ],
     "region": "unova",
-    "enName": "Leavanny"
+    "enName": "Leavanny",
+    "genus": "育兒寶可夢"
   },
   {
     "id": 543,
@@ -13536,7 +14078,8 @@
       "speed-boost"
     ],
     "region": "unova",
-    "enName": "Venipede"
+    "enName": "Venipede",
+    "genus": "蜈蚣寶可夢"
   },
   {
     "id": 544,
@@ -13562,7 +14105,8 @@
       "speed-boost"
     ],
     "region": "unova",
-    "enName": "Whirlipede"
+    "enName": "Whirlipede",
+    "genus": "繭蜈蚣寶可夢"
   },
   {
     "id": 545,
@@ -13588,7 +14132,8 @@
       "speed-boost"
     ],
     "region": "unova",
-    "enName": "Scolipede"
+    "enName": "Scolipede",
+    "genus": "巨蜈蚣寶可夢"
   },
   {
     "id": 546,
@@ -13614,7 +14159,8 @@
       "chlorophyll"
     ],
     "region": "unova",
-    "enName": "Cottonee"
+    "enName": "Cottonee",
+    "genus": "棉球寶可夢"
   },
   {
     "id": 547,
@@ -13640,7 +14186,8 @@
       "chlorophyll"
     ],
     "region": "unova",
-    "enName": "Whimsicott"
+    "enName": "Whimsicott",
+    "genus": "風隱寶可夢"
   },
   {
     "id": 548,
@@ -13665,7 +14212,8 @@
       "leaf-guard"
     ],
     "region": "unova",
-    "enName": "Petilil"
+    "enName": "Petilil",
+    "genus": "根莖寶可夢"
   },
   {
     "id": 549,
@@ -13690,7 +14238,8 @@
       "leaf-guard"
     ],
     "region": "unova",
-    "enName": "Lilligant"
+    "enName": "Lilligant",
+    "genus": "花飾寶可夢"
   },
   {
     "id": 550,
@@ -13715,7 +14264,8 @@
       "mold-breaker"
     ],
     "region": "unova",
-    "enName": "Basculin"
+    "enName": "Basculin",
+    "genus": "粗暴寶可夢"
   },
   {
     "id": 551,
@@ -13741,7 +14291,8 @@
       "anger-point"
     ],
     "region": "unova",
-    "enName": "Sandile"
+    "enName": "Sandile",
+    "genus": "沙漠鱷魚寶可夢"
   },
   {
     "id": 552,
@@ -13767,7 +14318,8 @@
       "anger-point"
     ],
     "region": "unova",
-    "enName": "Krokorok"
+    "enName": "Krokorok",
+    "genus": "沙漠鱷魚寶可夢"
   },
   {
     "id": 553,
@@ -13793,7 +14345,8 @@
       "anger-point"
     ],
     "region": "unova",
-    "enName": "Krookodile"
+    "enName": "Krookodile",
+    "genus": "威嚇寶可夢"
   },
   {
     "id": 554,
@@ -13817,7 +14370,8 @@
       "inner-focus"
     ],
     "region": "unova",
-    "enName": "Darumaka"
+    "enName": "Darumaka",
+    "genus": "不倒翁寶可夢"
   },
   {
     "id": 555,
@@ -13841,7 +14395,8 @@
       "zen-mode"
     ],
     "region": "unova",
-    "enName": "Darmanitan"
+    "enName": "Darmanitan",
+    "genus": "爆燃寶可夢"
   },
   {
     "id": 556,
@@ -13866,7 +14421,8 @@
       "storm-drain"
     ],
     "region": "unova",
-    "enName": "Maractus"
+    "enName": "Maractus",
+    "genus": "仙人掌寶可夢"
   },
   {
     "id": 557,
@@ -13892,7 +14448,8 @@
       "weak-armor"
     ],
     "region": "unova",
-    "enName": "Dwebble"
+    "enName": "Dwebble",
+    "genus": "石居寶可夢"
   },
   {
     "id": 558,
@@ -13918,7 +14475,8 @@
       "weak-armor"
     ],
     "region": "unova",
-    "enName": "Crustle"
+    "enName": "Crustle",
+    "genus": "岩居寶可夢"
   },
   {
     "id": 559,
@@ -13944,7 +14502,8 @@
       "intimidate"
     ],
     "region": "unova",
-    "enName": "Scraggy"
+    "enName": "Scraggy",
+    "genus": "蛻皮寶可夢"
   },
   {
     "id": 560,
@@ -13970,7 +14529,8 @@
       "intimidate"
     ],
     "region": "unova",
-    "enName": "Scrafty"
+    "enName": "Scrafty",
+    "genus": "惡黨寶可夢"
   },
   {
     "id": 561,
@@ -13996,7 +14556,8 @@
       "tinted-lens"
     ],
     "region": "unova",
-    "enName": "Sigilyph"
+    "enName": "Sigilyph",
+    "genus": "似鳥寶可夢"
   },
   {
     "id": 562,
@@ -14019,7 +14580,8 @@
       "mummy"
     ],
     "region": "unova",
-    "enName": "Yamask"
+    "enName": "Yamask",
+    "genus": "魂寶可夢"
   },
   {
     "id": 563,
@@ -14042,7 +14604,8 @@
       "mummy"
     ],
     "region": "unova",
-    "enName": "Cofagrigus"
+    "enName": "Cofagrigus",
+    "genus": "棺木寶可夢"
   },
   {
     "id": 564,
@@ -14068,7 +14631,8 @@
       "swift-swim"
     ],
     "region": "unova",
-    "enName": "Tirtouga"
+    "enName": "Tirtouga",
+    "genus": "古代龜寶可夢"
   },
   {
     "id": 565,
@@ -14094,7 +14658,8 @@
       "swift-swim"
     ],
     "region": "unova",
-    "enName": "Carracosta"
+    "enName": "Carracosta",
+    "genus": "古代龜寶可夢"
   },
   {
     "id": 566,
@@ -14118,7 +14683,8 @@
       "defeatist"
     ],
     "region": "unova",
-    "enName": "Archen"
+    "enName": "Archen",
+    "genus": "遠古鳥寶可夢"
   },
   {
     "id": 567,
@@ -14142,7 +14708,8 @@
       "defeatist"
     ],
     "region": "unova",
-    "enName": "Archeops"
+    "enName": "Archeops",
+    "genus": "遠古鳥寶可夢"
   },
   {
     "id": 568,
@@ -14167,7 +14734,8 @@
       "aftermath"
     ],
     "region": "unova",
-    "enName": "Trubbish"
+    "enName": "Trubbish",
+    "genus": "垃圾袋寶可夢"
   },
   {
     "id": 569,
@@ -14192,7 +14760,8 @@
       "aftermath"
     ],
     "region": "unova",
-    "enName": "Garbodor"
+    "enName": "Garbodor",
+    "genus": "垃圾場寶可夢"
   },
   {
     "id": 570,
@@ -14215,7 +14784,8 @@
       "illusion"
     ],
     "region": "unova",
-    "enName": "Zorua"
+    "enName": "Zorua",
+    "genus": "惡狐寶可夢"
   },
   {
     "id": 571,
@@ -14238,7 +14808,8 @@
       "illusion"
     ],
     "region": "unova",
-    "enName": "Zoroark"
+    "enName": "Zoroark",
+    "genus": "妖狐寶可夢"
   },
   {
     "id": 572,
@@ -14263,7 +14834,8 @@
       "skill-link"
     ],
     "region": "unova",
-    "enName": "Minccino"
+    "enName": "Minccino",
+    "genus": "栗鼠寶可夢"
   },
   {
     "id": 573,
@@ -14288,7 +14860,8 @@
       "skill-link"
     ],
     "region": "unova",
-    "enName": "Cinccino"
+    "enName": "Cinccino",
+    "genus": "圍巾寶可夢"
   },
   {
     "id": 574,
@@ -14313,7 +14886,8 @@
       "shadow-tag"
     ],
     "region": "unova",
-    "enName": "Gothita"
+    "enName": "Gothita",
+    "genus": "凝視寶可夢"
   },
   {
     "id": 575,
@@ -14338,7 +14912,8 @@
       "shadow-tag"
     ],
     "region": "unova",
-    "enName": "Gothorita"
+    "enName": "Gothorita",
+    "genus": "操縱寶可夢"
   },
   {
     "id": 576,
@@ -14363,7 +14938,8 @@
       "shadow-tag"
     ],
     "region": "unova",
-    "enName": "Gothitelle"
+    "enName": "Gothitelle",
+    "genus": "天體寶可夢"
   },
   {
     "id": 577,
@@ -14388,7 +14964,8 @@
       "regenerator"
     ],
     "region": "unova",
-    "enName": "Solosis"
+    "enName": "Solosis",
+    "genus": "細胞寶可夢"
   },
   {
     "id": 578,
@@ -14413,7 +14990,8 @@
       "regenerator"
     ],
     "region": "unova",
-    "enName": "Duosion"
+    "enName": "Duosion",
+    "genus": "分割寶可夢"
   },
   {
     "id": 579,
@@ -14438,7 +15016,8 @@
       "regenerator"
     ],
     "region": "unova",
-    "enName": "Reuniclus"
+    "enName": "Reuniclus",
+    "genus": "增幅寶可夢"
   },
   {
     "id": 580,
@@ -14464,7 +15043,8 @@
       "hydration"
     ],
     "region": "unova",
-    "enName": "Ducklett"
+    "enName": "Ducklett",
+    "genus": "水鳥寶可夢"
   },
   {
     "id": 581,
@@ -14490,7 +15070,8 @@
       "hydration"
     ],
     "region": "unova",
-    "enName": "Swanna"
+    "enName": "Swanna",
+    "genus": "白鳥寶可夢"
   },
   {
     "id": 582,
@@ -14515,7 +15096,8 @@
       "weak-armor"
     ],
     "region": "unova",
-    "enName": "Vanillite"
+    "enName": "Vanillite",
+    "genus": "新雪寶可夢"
   },
   {
     "id": 583,
@@ -14540,7 +15122,8 @@
       "weak-armor"
     ],
     "region": "unova",
-    "enName": "Vanillish"
+    "enName": "Vanillish",
+    "genus": "冰雪寶可夢"
   },
   {
     "id": 584,
@@ -14565,7 +15148,8 @@
       "weak-armor"
     ],
     "region": "unova",
-    "enName": "Vanilluxe"
+    "enName": "Vanilluxe",
+    "genus": "暴風雪寶可夢"
   },
   {
     "id": 585,
@@ -14591,7 +15175,8 @@
       "serene-grace"
     ],
     "region": "unova",
-    "enName": "Deerling"
+    "enName": "Deerling",
+    "genus": "季節寶可夢"
   },
   {
     "id": 586,
@@ -14617,7 +15202,8 @@
       "serene-grace"
     ],
     "region": "unova",
-    "enName": "Sawsbuck"
+    "enName": "Sawsbuck",
+    "genus": "季節寶可夢"
   },
   {
     "id": 587,
@@ -14642,7 +15228,8 @@
       "motor-drive"
     ],
     "region": "unova",
-    "enName": "Emolga"
+    "enName": "Emolga",
+    "genus": "飛鼠寶可夢"
   },
   {
     "id": 588,
@@ -14667,7 +15254,8 @@
       "no-guard"
     ],
     "region": "unova",
-    "enName": "Karrablast"
+    "enName": "Karrablast",
+    "genus": "啃咬寶可夢"
   },
   {
     "id": 589,
@@ -14693,7 +15281,8 @@
       "overcoat"
     ],
     "region": "unova",
-    "enName": "Escavalier"
+    "enName": "Escavalier",
+    "genus": "騎兵寶可夢"
   },
   {
     "id": 590,
@@ -14718,7 +15307,8 @@
       "regenerator"
     ],
     "region": "unova",
-    "enName": "Foongus"
+    "enName": "Foongus",
+    "genus": "蘑菇寶可夢"
   },
   {
     "id": 591,
@@ -14743,7 +15333,8 @@
       "regenerator"
     ],
     "region": "unova",
-    "enName": "Amoonguss"
+    "enName": "Amoonguss",
+    "genus": "蘑菇寶可夢"
   },
   {
     "id": 592,
@@ -14769,7 +15360,8 @@
       "damp"
     ],
     "region": "unova",
-    "enName": "Frillish"
+    "enName": "Frillish",
+    "genus": "漂浮寶可夢"
   },
   {
     "id": 593,
@@ -14795,7 +15387,8 @@
       "damp"
     ],
     "region": "unova",
-    "enName": "Jellicent"
+    "enName": "Jellicent",
+    "genus": "漂浮寶可夢"
   },
   {
     "id": 594,
@@ -14820,7 +15413,8 @@
       "regenerator"
     ],
     "region": "unova",
-    "enName": "Alomomola"
+    "enName": "Alomomola",
+    "genus": "看護寶可夢"
   },
   {
     "id": 595,
@@ -14846,7 +15440,8 @@
       "swarm"
     ],
     "region": "unova",
-    "enName": "Joltik"
+    "enName": "Joltik",
+    "genus": "吸附寶可夢"
   },
   {
     "id": 596,
@@ -14872,7 +15467,8 @@
       "swarm"
     ],
     "region": "unova",
-    "enName": "Galvantula"
+    "enName": "Galvantula",
+    "genus": "電蜘蛛寶可夢"
   },
   {
     "id": 597,
@@ -14896,7 +15492,8 @@
       "iron-barbs"
     ],
     "region": "unova",
-    "enName": "Ferroseed"
+    "enName": "Ferroseed",
+    "genus": "刺果寶可夢"
   },
   {
     "id": 598,
@@ -14921,7 +15518,8 @@
       "anticipation"
     ],
     "region": "unova",
-    "enName": "Ferrothorn"
+    "enName": "Ferrothorn",
+    "genus": "刺球寶可夢"
   },
   {
     "id": 599,
@@ -14946,7 +15544,8 @@
       "clear-body"
     ],
     "region": "unova",
-    "enName": "Klink"
+    "enName": "Klink",
+    "genus": "齒輪寶可夢"
   },
   {
     "id": 600,
@@ -14971,7 +15570,8 @@
       "clear-body"
     ],
     "region": "unova",
-    "enName": "Klang"
+    "enName": "Klang",
+    "genus": "齒輪寶可夢"
   },
   {
     "id": 601,
@@ -14996,7 +15596,8 @@
       "clear-body"
     ],
     "region": "unova",
-    "enName": "Klinklang"
+    "enName": "Klinklang",
+    "genus": "齒輪寶可夢"
   },
   {
     "id": 602,
@@ -15019,7 +15620,8 @@
       "levitate"
     ],
     "region": "unova",
-    "enName": "Tynamo"
+    "enName": "Tynamo",
+    "genus": "電魚寶可夢"
   },
   {
     "id": 603,
@@ -15042,7 +15644,8 @@
       "levitate"
     ],
     "region": "unova",
-    "enName": "Eelektrik"
+    "enName": "Eelektrik",
+    "genus": "電魚寶可夢"
   },
   {
     "id": 604,
@@ -15065,7 +15668,8 @@
       "levitate"
     ],
     "region": "unova",
-    "enName": "Eelektross"
+    "enName": "Eelektross",
+    "genus": "電魚寶可夢"
   },
   {
     "id": 605,
@@ -15090,7 +15694,8 @@
       "analytic"
     ],
     "region": "unova",
-    "enName": "Elgyem"
+    "enName": "Elgyem",
+    "genus": "腦寶可夢"
   },
   {
     "id": 606,
@@ -15115,7 +15720,8 @@
       "analytic"
     ],
     "region": "unova",
-    "enName": "Beheeyem"
+    "enName": "Beheeyem",
+    "genus": "腦寶可夢"
   },
   {
     "id": 607,
@@ -15141,7 +15747,8 @@
       "infiltrator"
     ],
     "region": "unova",
-    "enName": "Litwick"
+    "enName": "Litwick",
+    "genus": "蠟燭寶可夢"
   },
   {
     "id": 608,
@@ -15167,7 +15774,8 @@
       "infiltrator"
     ],
     "region": "unova",
-    "enName": "Lampent"
+    "enName": "Lampent",
+    "genus": "油燈寶可夢"
   },
   {
     "id": 609,
@@ -15193,7 +15801,8 @@
       "infiltrator"
     ],
     "region": "unova",
-    "enName": "Chandelure"
+    "enName": "Chandelure",
+    "genus": "引誘寶可夢"
   },
   {
     "id": 610,
@@ -15218,7 +15827,8 @@
       "unnerve"
     ],
     "region": "unova",
-    "enName": "Axew"
+    "enName": "Axew",
+    "genus": "牙寶可夢"
   },
   {
     "id": 611,
@@ -15243,7 +15853,8 @@
       "unnerve"
     ],
     "region": "unova",
-    "enName": "Fraxure"
+    "enName": "Fraxure",
+    "genus": "顎斧寶可夢"
   },
   {
     "id": 612,
@@ -15268,7 +15879,8 @@
       "unnerve"
     ],
     "region": "unova",
-    "enName": "Haxorus"
+    "enName": "Haxorus",
+    "genus": "顎斧寶可夢"
   },
   {
     "id": 613,
@@ -15293,7 +15905,8 @@
       "rattled"
     ],
     "region": "unova",
-    "enName": "Cubchoo"
+    "enName": "Cubchoo",
+    "genus": "結冰寶可夢"
   },
   {
     "id": 614,
@@ -15318,7 +15931,8 @@
       "swift-swim"
     ],
     "region": "unova",
-    "enName": "Beartic"
+    "enName": "Beartic",
+    "genus": "凍結寶可夢"
   },
   {
     "id": 615,
@@ -15341,7 +15955,8 @@
       "levitate"
     ],
     "region": "unova",
-    "enName": "Cryogonal"
+    "enName": "Cryogonal",
+    "genus": "結晶寶可夢"
   },
   {
     "id": 616,
@@ -15366,7 +15981,8 @@
       "overcoat"
     ],
     "region": "unova",
-    "enName": "Shelmet"
+    "enName": "Shelmet",
+    "genus": "蝸牛寶可夢"
   },
   {
     "id": 617,
@@ -15391,7 +16007,8 @@
       "unburden"
     ],
     "region": "unova",
-    "enName": "Accelgor"
+    "enName": "Accelgor",
+    "genus": "脫殼寶可夢"
   },
   {
     "id": 618,
@@ -15417,7 +16034,8 @@
       "sand-veil"
     ],
     "region": "unova",
-    "enName": "Stunfisk"
+    "enName": "Stunfisk",
+    "genus": "陷阱寶可夢"
   },
   {
     "id": 619,
@@ -15442,7 +16060,8 @@
       "reckless"
     ],
     "region": "unova",
-    "enName": "Mienfoo"
+    "enName": "Mienfoo",
+    "genus": "武術寶可夢"
   },
   {
     "id": 620,
@@ -15467,7 +16086,8 @@
       "reckless"
     ],
     "region": "unova",
-    "enName": "Mienshao"
+    "enName": "Mienshao",
+    "genus": "武術寶可夢"
   },
   {
     "id": 621,
@@ -15492,7 +16112,8 @@
       "mold-breaker"
     ],
     "region": "unova",
-    "enName": "Druddigon"
+    "enName": "Druddigon",
+    "genus": "洞穴寶可夢"
   },
   {
     "id": 622,
@@ -15518,7 +16139,8 @@
       "no-guard"
     ],
     "region": "unova",
-    "enName": "Golett"
+    "enName": "Golett",
+    "genus": "魔像寶可夢"
   },
   {
     "id": 623,
@@ -15544,7 +16166,8 @@
       "no-guard"
     ],
     "region": "unova",
-    "enName": "Golurk"
+    "enName": "Golurk",
+    "genus": "魔像寶可夢"
   },
   {
     "id": 624,
@@ -15570,7 +16193,8 @@
       "pressure"
     ],
     "region": "unova",
-    "enName": "Pawniard"
+    "enName": "Pawniard",
+    "genus": "利器寶可夢"
   },
   {
     "id": 625,
@@ -15596,7 +16220,8 @@
       "pressure"
     ],
     "region": "unova",
-    "enName": "Bisharp"
+    "enName": "Bisharp",
+    "genus": "刀刃寶可夢"
   },
   {
     "id": 626,
@@ -15621,7 +16246,8 @@
       "soundproof"
     ],
     "region": "unova",
-    "enName": "Bouffalant"
+    "enName": "Bouffalant",
+    "genus": "頭錘牛寶可夢"
   },
   {
     "id": 627,
@@ -15647,7 +16273,8 @@
       "hustle"
     ],
     "region": "unova",
-    "enName": "Rufflet"
+    "enName": "Rufflet",
+    "genus": "雛鷹寶可夢"
   },
   {
     "id": 628,
@@ -15673,7 +16300,8 @@
       "defiant"
     ],
     "region": "unova",
-    "enName": "Braviary"
+    "enName": "Braviary",
+    "genus": "勇猛寶可夢"
   },
   {
     "id": 629,
@@ -15699,7 +16327,8 @@
       "weak-armor"
     ],
     "region": "unova",
-    "enName": "Vullaby"
+    "enName": "Vullaby",
+    "genus": "尿布寶可夢"
   },
   {
     "id": 630,
@@ -15725,7 +16354,8 @@
       "weak-armor"
     ],
     "region": "unova",
-    "enName": "Mandibuzz"
+    "enName": "Mandibuzz",
+    "genus": "骨鷹寶可夢"
   },
   {
     "id": 631,
@@ -15750,7 +16380,8 @@
       "white-smoke"
     ],
     "region": "unova",
-    "enName": "Heatmor"
+    "enName": "Heatmor",
+    "genus": "食蟻獸寶可夢"
   },
   {
     "id": 632,
@@ -15776,7 +16407,8 @@
       "truant"
     ],
     "region": "unova",
-    "enName": "Durant"
+    "enName": "Durant",
+    "genus": "鐵蟻寶可夢"
   },
   {
     "id": 633,
@@ -15800,7 +16432,8 @@
       "hustle"
     ],
     "region": "unova",
-    "enName": "Deino"
+    "enName": "Deino",
+    "genus": "粗魯寶可夢"
   },
   {
     "id": 634,
@@ -15824,7 +16457,8 @@
       "hustle"
     ],
     "region": "unova",
-    "enName": "Zweilous"
+    "enName": "Zweilous",
+    "genus": "粗暴寶可夢"
   },
   {
     "id": 635,
@@ -15848,7 +16482,8 @@
       "levitate"
     ],
     "region": "unova",
-    "enName": "Hydreigon"
+    "enName": "Hydreigon",
+    "genus": "凶暴寶可夢"
   },
   {
     "id": 636,
@@ -15873,7 +16508,8 @@
       "swarm"
     ],
     "region": "unova",
-    "enName": "Larvesta"
+    "enName": "Larvesta",
+    "genus": "火炬寶可夢"
   },
   {
     "id": 637,
@@ -15898,7 +16534,8 @@
       "swarm"
     ],
     "region": "unova",
-    "enName": "Volcarona"
+    "enName": "Volcarona",
+    "genus": "太陽寶可夢"
   },
   {
     "id": 638,
@@ -15922,7 +16559,8 @@
       "justified"
     ],
     "region": "unova",
-    "enName": "Cobalion"
+    "enName": "Cobalion",
+    "genus": "鐵心寶可夢"
   },
   {
     "id": 639,
@@ -15946,7 +16584,8 @@
       "justified"
     ],
     "region": "unova",
-    "enName": "Terrakion"
+    "enName": "Terrakion",
+    "genus": "岩窟寶可夢"
   },
   {
     "id": 640,
@@ -15970,7 +16609,8 @@
       "justified"
     ],
     "region": "unova",
-    "enName": "Virizion"
+    "enName": "Virizion",
+    "genus": "草原寶可夢"
   },
   {
     "id": 641,
@@ -15994,7 +16634,8 @@
       "defiant"
     ],
     "region": "unova",
-    "enName": "Tornadus"
+    "enName": "Tornadus",
+    "genus": "旋風寶可夢"
   },
   {
     "id": 642,
@@ -16019,7 +16660,8 @@
       "defiant"
     ],
     "region": "unova",
-    "enName": "Thundurus"
+    "enName": "Thundurus",
+    "genus": "雷擊寶可夢"
   },
   {
     "id": 643,
@@ -16043,7 +16685,8 @@
       "turboblaze"
     ],
     "region": "unova",
-    "enName": "Reshiram"
+    "enName": "Reshiram",
+    "genus": "白陽寶可夢"
   },
   {
     "id": 644,
@@ -16067,7 +16710,8 @@
       "teravolt"
     ],
     "region": "unova",
-    "enName": "Zekrom"
+    "enName": "Zekrom",
+    "genus": "黑陰寶可夢"
   },
   {
     "id": 645,
@@ -16092,7 +16736,8 @@
       "sheer-force"
     ],
     "region": "unova",
-    "enName": "Landorus"
+    "enName": "Landorus",
+    "genus": "豐饒寶可夢"
   },
   {
     "id": 646,
@@ -16116,7 +16761,8 @@
       "pressure"
     ],
     "region": "unova",
-    "enName": "Kyurem"
+    "enName": "Kyurem",
+    "genus": "境界寶可夢"
   },
   {
     "id": 647,
@@ -16140,7 +16786,8 @@
       "justified"
     ],
     "region": "unova",
-    "enName": "Keldeo"
+    "enName": "Keldeo",
+    "genus": "幼馬寶可夢"
   },
   {
     "id": 648,
@@ -16164,7 +16811,8 @@
       "serene-grace"
     ],
     "region": "unova",
-    "enName": "Meloetta"
+    "enName": "Meloetta",
+    "genus": "旋律寶可夢"
   },
   {
     "id": 649,
@@ -16188,7 +16836,8 @@
       "download"
     ],
     "region": "unova",
-    "enName": "Genesect"
+    "enName": "Genesect",
+    "genus": "古生代寶可夢"
   },
   {
     "id": 650,
@@ -16212,7 +16861,8 @@
       "bulletproof"
     ],
     "region": "kalos",
-    "enName": "Chespin"
+    "enName": "Chespin",
+    "genus": "刺栗寶可夢"
   },
   {
     "id": 651,
@@ -16236,7 +16886,8 @@
       "bulletproof"
     ],
     "region": "kalos",
-    "enName": "Quilladin"
+    "enName": "Quilladin",
+    "genus": "刺鎧寶可夢"
   },
   {
     "id": 652,
@@ -16261,7 +16912,8 @@
       "bulletproof"
     ],
     "region": "kalos",
-    "enName": "Chesnaught"
+    "enName": "Chesnaught",
+    "genus": "刺鎧寶可夢"
   },
   {
     "id": 653,
@@ -16285,7 +16937,8 @@
       "magician"
     ],
     "region": "kalos",
-    "enName": "Fennekin"
+    "enName": "Fennekin",
+    "genus": "狐狸寶可夢"
   },
   {
     "id": 654,
@@ -16309,7 +16962,8 @@
       "magician"
     ],
     "region": "kalos",
-    "enName": "Braixen"
+    "enName": "Braixen",
+    "genus": "狐狸寶可夢"
   },
   {
     "id": 655,
@@ -16334,7 +16988,8 @@
       "magician"
     ],
     "region": "kalos",
-    "enName": "Delphox"
+    "enName": "Delphox",
+    "genus": "狐狸寶可夢"
   },
   {
     "id": 656,
@@ -16358,7 +17013,8 @@
       "protean"
     ],
     "region": "kalos",
-    "enName": "Froakie"
+    "enName": "Froakie",
+    "genus": "泡蛙寶可夢"
   },
   {
     "id": 657,
@@ -16382,7 +17038,8 @@
       "protean"
     ],
     "region": "kalos",
-    "enName": "Frogadier"
+    "enName": "Frogadier",
+    "genus": "泡蛙寶可夢"
   },
   {
     "id": 658,
@@ -16407,7 +17064,8 @@
       "protean"
     ],
     "region": "kalos",
-    "enName": "Greninja"
+    "enName": "Greninja",
+    "genus": "忍者寶可夢"
   },
   {
     "id": 659,
@@ -16432,7 +17090,8 @@
       "huge-power"
     ],
     "region": "kalos",
-    "enName": "Bunnelby"
+    "enName": "Bunnelby",
+    "genus": "挖洞寶可夢"
   },
   {
     "id": 660,
@@ -16458,7 +17117,8 @@
       "huge-power"
     ],
     "region": "kalos",
-    "enName": "Diggersby"
+    "enName": "Diggersby",
+    "genus": "挖洞寶可夢"
   },
   {
     "id": 661,
@@ -16483,7 +17143,8 @@
       "gale-wings"
     ],
     "region": "kalos",
-    "enName": "Fletchling"
+    "enName": "Fletchling",
+    "genus": "知更鳥寶可夢"
   },
   {
     "id": 662,
@@ -16508,7 +17169,8 @@
       "gale-wings"
     ],
     "region": "kalos",
-    "enName": "Fletchinder"
+    "enName": "Fletchinder",
+    "genus": "火花寶可夢"
   },
   {
     "id": 663,
@@ -16533,7 +17195,8 @@
       "gale-wings"
     ],
     "region": "kalos",
-    "enName": "Talonflame"
+    "enName": "Talonflame",
+    "genus": "烈火寶可夢"
   },
   {
     "id": 664,
@@ -16558,7 +17221,8 @@
       "friend-guard"
     ],
     "region": "kalos",
-    "enName": "Scatterbug"
+    "enName": "Scatterbug",
+    "genus": "噴粉寶可夢"
   },
   {
     "id": 665,
@@ -16582,7 +17246,8 @@
       "friend-guard"
     ],
     "region": "kalos",
-    "enName": "Spewpa"
+    "enName": "Spewpa",
+    "genus": "噴粉寶可夢"
   },
   {
     "id": 666,
@@ -16608,7 +17273,8 @@
       "friend-guard"
     ],
     "region": "kalos",
-    "enName": "Vivillon"
+    "enName": "Vivillon",
+    "genus": "鱗粉寶可夢"
   },
   {
     "id": 667,
@@ -16634,7 +17300,8 @@
       "moxie"
     ],
     "region": "kalos",
-    "enName": "Litleo"
+    "enName": "Litleo",
+    "genus": "幼獅寶可夢"
   },
   {
     "id": 668,
@@ -16660,7 +17327,8 @@
       "moxie"
     ],
     "region": "kalos",
-    "enName": "Pyroar"
+    "enName": "Pyroar",
+    "genus": "王者寶可夢"
   },
   {
     "id": 669,
@@ -16684,7 +17352,8 @@
       "symbiosis"
     ],
     "region": "kalos",
-    "enName": "Flabébé"
+    "enName": "Flabébé",
+    "genus": "單朵寶可夢"
   },
   {
     "id": 670,
@@ -16708,7 +17377,8 @@
       "symbiosis"
     ],
     "region": "kalos",
-    "enName": "Floette"
+    "enName": "Floette",
+    "genus": "單朵寶可夢"
   },
   {
     "id": 671,
@@ -16732,7 +17402,8 @@
       "symbiosis"
     ],
     "region": "kalos",
-    "enName": "Florges"
+    "enName": "Florges",
+    "genus": "花園寶可夢"
   },
   {
     "id": 672,
@@ -16756,7 +17427,8 @@
       "grass-pelt"
     ],
     "region": "kalos",
-    "enName": "Skiddo"
+    "enName": "Skiddo",
+    "genus": "坐騎寶可夢"
   },
   {
     "id": 673,
@@ -16780,7 +17452,8 @@
       "grass-pelt"
     ],
     "region": "kalos",
-    "enName": "Gogoat"
+    "enName": "Gogoat",
+    "genus": "坐騎寶可夢"
   },
   {
     "id": 674,
@@ -16805,7 +17478,8 @@
       "scrappy"
     ],
     "region": "kalos",
-    "enName": "Pancham"
+    "enName": "Pancham",
+    "genus": "頑皮寶可夢"
   },
   {
     "id": 675,
@@ -16831,7 +17505,8 @@
       "scrappy"
     ],
     "region": "kalos",
-    "enName": "Pangoro"
+    "enName": "Pangoro",
+    "genus": "惡顏寶可夢"
   },
   {
     "id": 676,
@@ -16854,7 +17529,8 @@
       "fur-coat"
     ],
     "region": "kalos",
-    "enName": "Furfrou"
+    "enName": "Furfrou",
+    "genus": "貴賓犬寶可夢"
   },
   {
     "id": 677,
@@ -16879,7 +17555,8 @@
       "own-tempo"
     ],
     "region": "kalos",
-    "enName": "Espurr"
+    "enName": "Espurr",
+    "genus": "自制寶可夢"
   },
   {
     "id": 678,
@@ -16904,7 +17581,8 @@
       "prankster"
     ],
     "region": "kalos",
-    "enName": "Meowstic"
+    "enName": "Meowstic",
+    "genus": "抑制寶可夢"
   },
   {
     "id": 679,
@@ -16928,7 +17606,8 @@
       "no-guard"
     ],
     "region": "kalos",
-    "enName": "Honedge"
+    "enName": "Honedge",
+    "genus": "刀劍寶可夢"
   },
   {
     "id": 680,
@@ -16952,7 +17631,8 @@
       "no-guard"
     ],
     "region": "kalos",
-    "enName": "Doublade"
+    "enName": "Doublade",
+    "genus": "刀劍寶可夢"
   },
   {
     "id": 681,
@@ -16976,7 +17656,8 @@
       "stance-change"
     ],
     "region": "kalos",
-    "enName": "Aegislash"
+    "enName": "Aegislash",
+    "genus": "王劍寶可夢"
   },
   {
     "id": 682,
@@ -17000,7 +17681,8 @@
       "aroma-veil"
     ],
     "region": "kalos",
-    "enName": "Spritzee"
+    "enName": "Spritzee",
+    "genus": "香水寶可夢"
   },
   {
     "id": 683,
@@ -17024,7 +17706,8 @@
       "aroma-veil"
     ],
     "region": "kalos",
-    "enName": "Aromatisse"
+    "enName": "Aromatisse",
+    "genus": "芳香寶可夢"
   },
   {
     "id": 684,
@@ -17048,7 +17731,8 @@
       "unburden"
     ],
     "region": "kalos",
-    "enName": "Swirlix"
+    "enName": "Swirlix",
+    "genus": "棉花糖寶可夢"
   },
   {
     "id": 685,
@@ -17072,7 +17756,8 @@
       "unburden"
     ],
     "region": "kalos",
-    "enName": "Slurpuff"
+    "enName": "Slurpuff",
+    "genus": "泡沫奶油寶可夢"
   },
   {
     "id": 686,
@@ -17098,7 +17783,8 @@
       "infiltrator"
     ],
     "region": "kalos",
-    "enName": "Inkay"
+    "enName": "Inkay",
+    "genus": "回轉寶可夢"
   },
   {
     "id": 687,
@@ -17124,7 +17810,8 @@
       "infiltrator"
     ],
     "region": "kalos",
-    "enName": "Malamar"
+    "enName": "Malamar",
+    "genus": "倒轉寶可夢"
   },
   {
     "id": 688,
@@ -17150,7 +17837,8 @@
       "pickpocket"
     ],
     "region": "kalos",
-    "enName": "Binacle"
+    "enName": "Binacle",
+    "genus": "雙手寶可夢"
   },
   {
     "id": 689,
@@ -17176,7 +17864,8 @@
       "pickpocket"
     ],
     "region": "kalos",
-    "enName": "Barbaracle"
+    "enName": "Barbaracle",
+    "genus": "集合寶可夢"
   },
   {
     "id": 690,
@@ -17202,7 +17891,8 @@
       "adaptability"
     ],
     "region": "kalos",
-    "enName": "Skrelp"
+    "enName": "Skrelp",
+    "genus": "似草寶可夢"
   },
   {
     "id": 691,
@@ -17228,7 +17918,8 @@
       "adaptability"
     ],
     "region": "kalos",
-    "enName": "Dragalge"
+    "enName": "Dragalge",
+    "genus": "似草寶可夢"
   },
   {
     "id": 692,
@@ -17251,7 +17942,8 @@
       "mega-launcher"
     ],
     "region": "kalos",
-    "enName": "Clauncher"
+    "enName": "Clauncher",
+    "genus": "水槍寶可夢"
   },
   {
     "id": 693,
@@ -17274,7 +17966,8 @@
       "mega-launcher"
     ],
     "region": "kalos",
-    "enName": "Clawitzer"
+    "enName": "Clawitzer",
+    "genus": "發射器寶可夢"
   },
   {
     "id": 694,
@@ -17300,7 +17993,8 @@
       "solar-power"
     ],
     "region": "kalos",
-    "enName": "Helioptile"
+    "enName": "Helioptile",
+    "genus": "發電寶可夢"
   },
   {
     "id": 695,
@@ -17326,7 +18020,8 @@
       "solar-power"
     ],
     "region": "kalos",
-    "enName": "Heliolisk"
+    "enName": "Heliolisk",
+    "genus": "發電寶可夢"
   },
   {
     "id": 696,
@@ -17351,7 +18046,8 @@
       "sturdy"
     ],
     "region": "kalos",
-    "enName": "Tyrunt"
+    "enName": "Tyrunt",
+    "genus": "幼君寶可夢"
   },
   {
     "id": 697,
@@ -17376,7 +18072,8 @@
       "rock-head"
     ],
     "region": "kalos",
-    "enName": "Tyrantrum"
+    "enName": "Tyrantrum",
+    "genus": "暴君寶可夢"
   },
   {
     "id": 698,
@@ -17401,7 +18098,8 @@
       "snow-warning"
     ],
     "region": "kalos",
-    "enName": "Amaura"
+    "enName": "Amaura",
+    "genus": "凍原寶可夢"
   },
   {
     "id": 699,
@@ -17426,7 +18124,8 @@
       "snow-warning"
     ],
     "region": "kalos",
-    "enName": "Aurorus"
+    "enName": "Aurorus",
+    "genus": "凍原寶可夢"
   },
   {
     "id": 700,
@@ -17450,7 +18149,8 @@
       "pixilate"
     ],
     "region": "kalos",
-    "enName": "Sylveon"
+    "enName": "Sylveon",
+    "genus": "連結寶可夢"
   },
   {
     "id": 701,
@@ -17476,7 +18176,8 @@
       "mold-breaker"
     ],
     "region": "kalos",
-    "enName": "Hawlucha"
+    "enName": "Hawlucha",
+    "genus": "摔角寶可夢"
   },
   {
     "id": 702,
@@ -17502,7 +18203,8 @@
       "plus"
     ],
     "region": "kalos",
-    "enName": "Dedenne"
+    "enName": "Dedenne",
+    "genus": "天線寶可夢"
   },
   {
     "id": 703,
@@ -17527,7 +18229,8 @@
       "sturdy"
     ],
     "region": "kalos",
-    "enName": "Carbink"
+    "enName": "Carbink",
+    "genus": "寶石寶可夢"
   },
   {
     "id": 704,
@@ -17552,7 +18255,8 @@
       "gooey"
     ],
     "region": "kalos",
-    "enName": "Goomy"
+    "enName": "Goomy",
+    "genus": "軟體生物寶可夢"
   },
   {
     "id": 705,
@@ -17577,7 +18281,8 @@
       "gooey"
     ],
     "region": "kalos",
-    "enName": "Sliggoo"
+    "enName": "Sliggoo",
+    "genus": "軟體生物寶可夢"
   },
   {
     "id": 706,
@@ -17602,7 +18307,8 @@
       "gooey"
     ],
     "region": "kalos",
-    "enName": "Goodra"
+    "enName": "Goodra",
+    "genus": "龍寶可夢"
   },
   {
     "id": 707,
@@ -17627,7 +18333,8 @@
       "magician"
     ],
     "region": "kalos",
-    "enName": "Klefki"
+    "enName": "Klefki",
+    "genus": "鑰匙串寶可夢"
   },
   {
     "id": 708,
@@ -17653,7 +18360,8 @@
       "harvest"
     ],
     "region": "kalos",
-    "enName": "Phantump"
+    "enName": "Phantump",
+    "genus": "樹樁寶可夢"
   },
   {
     "id": 709,
@@ -17679,7 +18387,8 @@
       "harvest"
     ],
     "region": "kalos",
-    "enName": "Trevenant"
+    "enName": "Trevenant",
+    "genus": "老樹寶可夢"
   },
   {
     "id": 710,
@@ -17705,7 +18414,8 @@
       "insomnia"
     ],
     "region": "kalos",
-    "enName": "Pumpkaboo"
+    "enName": "Pumpkaboo",
+    "genus": "南瓜寶可夢"
   },
   {
     "id": 711,
@@ -17731,7 +18441,8 @@
       "insomnia"
     ],
     "region": "kalos",
-    "enName": "Gourgeist"
+    "enName": "Gourgeist",
+    "genus": "南瓜寶可夢"
   },
   {
     "id": 712,
@@ -17756,7 +18467,8 @@
       "sturdy"
     ],
     "region": "kalos",
-    "enName": "Bergmite"
+    "enName": "Bergmite",
+    "genus": "冰塊寶可夢"
   },
   {
     "id": 713,
@@ -17781,7 +18493,8 @@
       "sturdy"
     ],
     "region": "kalos",
-    "enName": "Avalugg"
+    "enName": "Avalugg",
+    "genus": "冰山寶可夢"
   },
   {
     "id": 714,
@@ -17807,7 +18520,8 @@
       "telepathy"
     ],
     "region": "kalos",
-    "enName": "Noibat"
+    "enName": "Noibat",
+    "genus": "音波寶可夢"
   },
   {
     "id": 715,
@@ -17833,7 +18547,8 @@
       "telepathy"
     ],
     "region": "kalos",
-    "enName": "Noivern"
+    "enName": "Noivern",
+    "genus": "音波寶可夢"
   },
   {
     "id": 716,
@@ -17856,7 +18571,8 @@
       "fairy-aura"
     ],
     "region": "kalos",
-    "enName": "Xerneas"
+    "enName": "Xerneas",
+    "genus": "生命寶可夢"
   },
   {
     "id": 717,
@@ -17880,7 +18596,8 @@
       "dark-aura"
     ],
     "region": "kalos",
-    "enName": "Yveltal"
+    "enName": "Yveltal",
+    "genus": "破壞寶可夢"
   },
   {
     "id": 718,
@@ -17904,7 +18621,8 @@
       "aura-break"
     ],
     "region": "kalos",
-    "enName": "Zygarde"
+    "enName": "Zygarde",
+    "genus": "秩序寶可夢"
   },
   {
     "id": 719,
@@ -17928,7 +18646,8 @@
       "clear-body"
     ],
     "region": "kalos",
-    "enName": "Diancie"
+    "enName": "Diancie",
+    "genus": "寶石寶可夢"
   },
   {
     "id": 720,
@@ -17952,7 +18671,8 @@
       "magician"
     ],
     "region": "kalos",
-    "enName": "Hoopa"
+    "enName": "Hoopa",
+    "genus": "頑童寶可夢"
   },
   {
     "id": 721,
@@ -17976,7 +18696,8 @@
       "water-absorb"
     ],
     "region": "kalos",
-    "enName": "Volcanion"
+    "enName": "Volcanion",
+    "genus": "蒸汽寶可夢"
   },
   {
     "id": 722,
@@ -18001,7 +18722,8 @@
       "long-reach"
     ],
     "region": "alola",
-    "enName": "Rowlet"
+    "enName": "Rowlet",
+    "genus": "草羽寶可夢"
   },
   {
     "id": 723,
@@ -18026,7 +18748,8 @@
       "long-reach"
     ],
     "region": "alola",
-    "enName": "Dartrix"
+    "enName": "Dartrix",
+    "genus": "刃羽寶可夢"
   },
   {
     "id": 724,
@@ -18051,7 +18774,8 @@
       "long-reach"
     ],
     "region": "alola",
-    "enName": "Decidueye"
+    "enName": "Decidueye",
+    "genus": "箭羽寶可夢"
   },
   {
     "id": 725,
@@ -18075,7 +18799,8 @@
       "intimidate"
     ],
     "region": "alola",
-    "enName": "Litten"
+    "enName": "Litten",
+    "genus": "火貓寶可夢"
   },
   {
     "id": 726,
@@ -18099,7 +18824,8 @@
       "intimidate"
     ],
     "region": "alola",
-    "enName": "Torracat"
+    "enName": "Torracat",
+    "genus": "火貓寶可夢"
   },
   {
     "id": 727,
@@ -18124,7 +18850,8 @@
       "intimidate"
     ],
     "region": "alola",
-    "enName": "Incineroar"
+    "enName": "Incineroar",
+    "genus": "反派寶可夢"
   },
   {
     "id": 728,
@@ -18148,7 +18875,8 @@
       "liquid-voice"
     ],
     "region": "alola",
-    "enName": "Popplio"
+    "enName": "Popplio",
+    "genus": "海獅寶可夢"
   },
   {
     "id": 729,
@@ -18172,7 +18900,8 @@
       "liquid-voice"
     ],
     "region": "alola",
-    "enName": "Brionne"
+    "enName": "Brionne",
+    "genus": "偶像寶可夢"
   },
   {
     "id": 730,
@@ -18197,7 +18926,8 @@
       "liquid-voice"
     ],
     "region": "alola",
-    "enName": "Primarina"
+    "enName": "Primarina",
+    "genus": "獨唱者寶可夢"
   },
   {
     "id": 731,
@@ -18223,7 +18953,8 @@
       "pickup"
     ],
     "region": "alola",
-    "enName": "Pikipek"
+    "enName": "Pikipek",
+    "genus": "啄木鳥寶可夢"
   },
   {
     "id": 732,
@@ -18249,7 +18980,8 @@
       "pickup"
     ],
     "region": "alola",
-    "enName": "Trumbeak"
+    "enName": "Trumbeak",
+    "genus": "喇叭喙寶可夢"
   },
   {
     "id": 733,
@@ -18275,7 +19007,8 @@
       "sheer-force"
     ],
     "region": "alola",
-    "enName": "Toucannon"
+    "enName": "Toucannon",
+    "genus": "銃炮寶可夢"
   },
   {
     "id": 734,
@@ -18300,7 +19033,8 @@
       "adaptability"
     ],
     "region": "alola",
-    "enName": "Yungoos"
+    "enName": "Yungoos",
+    "genus": "巡迴寶可夢"
   },
   {
     "id": 735,
@@ -18325,7 +19059,8 @@
       "adaptability"
     ],
     "region": "alola",
-    "enName": "Gumshoos"
+    "enName": "Gumshoos",
+    "genus": "監視寶可夢"
   },
   {
     "id": 736,
@@ -18348,7 +19083,8 @@
       "swarm"
     ],
     "region": "alola",
-    "enName": "Grubbin"
+    "enName": "Grubbin",
+    "genus": "幼蟲寶可夢"
   },
   {
     "id": 737,
@@ -18372,7 +19108,8 @@
       "battery"
     ],
     "region": "alola",
-    "enName": "Charjabug"
+    "enName": "Charjabug",
+    "genus": "蓄電池寶可夢"
   },
   {
     "id": 738,
@@ -18396,7 +19133,8 @@
       "levitate"
     ],
     "region": "alola",
-    "enName": "Vikavolt"
+    "enName": "Vikavolt",
+    "genus": "鍬形蟲寶可夢"
   },
   {
     "id": 739,
@@ -18421,7 +19159,8 @@
       "anger-point"
     ],
     "region": "alola",
-    "enName": "Crabrawler"
+    "enName": "Crabrawler",
+    "genus": "拳鬥寶可夢"
   },
   {
     "id": 740,
@@ -18447,7 +19186,8 @@
       "anger-point"
     ],
     "region": "alola",
-    "enName": "Crabominable"
+    "enName": "Crabominable",
+    "genus": "毛蟹寶可夢"
   },
   {
     "id": 741,
@@ -18471,7 +19211,8 @@
       "dancer"
     ],
     "region": "alola",
-    "enName": "Oricorio"
+    "enName": "Oricorio",
+    "genus": "舞蹈寶可夢"
   },
   {
     "id": 742,
@@ -18497,7 +19238,8 @@
       "sweet-veil"
     ],
     "region": "alola",
-    "enName": "Cutiefly"
+    "enName": "Cutiefly",
+    "genus": "蜂虻寶可夢"
   },
   {
     "id": 743,
@@ -18523,7 +19265,8 @@
       "sweet-veil"
     ],
     "region": "alola",
-    "enName": "Ribombee"
+    "enName": "Ribombee",
+    "genus": "蜂虻寶可夢"
   },
   {
     "id": 744,
@@ -18548,7 +19291,8 @@
       "steadfast"
     ],
     "region": "alola",
-    "enName": "Rockruff"
+    "enName": "Rockruff",
+    "genus": "小狗寶可夢"
   },
   {
     "id": 745,
@@ -18573,7 +19317,8 @@
       "steadfast"
     ],
     "region": "alola",
-    "enName": "Lycanroc"
+    "enName": "Lycanroc",
+    "genus": "狼寶可夢"
   },
   {
     "id": 746,
@@ -18596,7 +19341,8 @@
       "schooling"
     ],
     "region": "alola",
-    "enName": "Wishiwashi"
+    "enName": "Wishiwashi",
+    "genus": "小魚寶可夢"
   },
   {
     "id": 747,
@@ -18622,7 +19368,8 @@
       "regenerator"
     ],
     "region": "alola",
-    "enName": "Mareanie"
+    "enName": "Mareanie",
+    "genus": "非星寶可夢"
   },
   {
     "id": 748,
@@ -18648,7 +19395,8 @@
       "regenerator"
     ],
     "region": "alola",
-    "enName": "Toxapex"
+    "enName": "Toxapex",
+    "genus": "非星寶可夢"
   },
   {
     "id": 749,
@@ -18673,7 +19421,8 @@
       "inner-focus"
     ],
     "region": "alola",
-    "enName": "Mudbray"
+    "enName": "Mudbray",
+    "genus": "驢寶可夢"
   },
   {
     "id": 750,
@@ -18698,7 +19447,8 @@
       "inner-focus"
     ],
     "region": "alola",
-    "enName": "Mudsdale"
+    "enName": "Mudsdale",
+    "genus": "挽馬寶可夢"
   },
   {
     "id": 751,
@@ -18723,7 +19473,8 @@
       "water-absorb"
     ],
     "region": "alola",
-    "enName": "Dewpider"
+    "enName": "Dewpider",
+    "genus": "水泡寶可夢"
   },
   {
     "id": 752,
@@ -18748,7 +19499,8 @@
       "water-absorb"
     ],
     "region": "alola",
-    "enName": "Araquanid"
+    "enName": "Araquanid",
+    "genus": "水泡寶可夢"
   },
   {
     "id": 753,
@@ -18772,7 +19524,8 @@
       "contrary"
     ],
     "region": "alola",
-    "enName": "Fomantis"
+    "enName": "Fomantis",
+    "genus": "鐮草寶可夢"
   },
   {
     "id": 754,
@@ -18796,7 +19549,8 @@
       "contrary"
     ],
     "region": "alola",
-    "enName": "Lurantis"
+    "enName": "Lurantis",
+    "genus": "花鐮寶可夢"
   },
   {
     "id": 755,
@@ -18822,7 +19576,8 @@
       "rain-dish"
     ],
     "region": "alola",
-    "enName": "Morelull"
+    "enName": "Morelull",
+    "genus": "發光寶可夢"
   },
   {
     "id": 756,
@@ -18848,7 +19603,8 @@
       "rain-dish"
     ],
     "region": "alola",
-    "enName": "Shiinotic"
+    "enName": "Shiinotic",
+    "genus": "發光寶可夢"
   },
   {
     "id": 757,
@@ -18873,7 +19629,8 @@
       "oblivious"
     ],
     "region": "alola",
-    "enName": "Salandit"
+    "enName": "Salandit",
+    "genus": "毒蜥寶可夢"
   },
   {
     "id": 758,
@@ -18898,7 +19655,8 @@
       "oblivious"
     ],
     "region": "alola",
-    "enName": "Salazzle"
+    "enName": "Salazzle",
+    "genus": "毒蜥寶可夢"
   },
   {
     "id": 759,
@@ -18924,7 +19682,8 @@
       "cute-charm"
     ],
     "region": "alola",
-    "enName": "Stufful"
+    "enName": "Stufful",
+    "genus": "抓狂寶可夢"
   },
   {
     "id": 760,
@@ -18950,7 +19709,8 @@
       "unnerve"
     ],
     "region": "alola",
-    "enName": "Bewear"
+    "enName": "Bewear",
+    "genus": "強臂寶可夢"
   },
   {
     "id": 761,
@@ -18975,7 +19735,8 @@
       "sweet-veil"
     ],
     "region": "alola",
-    "enName": "Bounsweet"
+    "enName": "Bounsweet",
+    "genus": "水果寶可夢"
   },
   {
     "id": 762,
@@ -19000,7 +19761,8 @@
       "sweet-veil"
     ],
     "region": "alola",
-    "enName": "Steenee"
+    "enName": "Steenee",
+    "genus": "水果寶可夢"
   },
   {
     "id": 763,
@@ -19025,7 +19787,8 @@
       "sweet-veil"
     ],
     "region": "alola",
-    "enName": "Tsareena"
+    "enName": "Tsareena",
+    "genus": "水果寶可夢"
   },
   {
     "id": 764,
@@ -19050,7 +19813,8 @@
       "natural-cure"
     ],
     "region": "alola",
-    "enName": "Comfey"
+    "enName": "Comfey",
+    "genus": "摘花寶可夢"
   },
   {
     "id": 765,
@@ -19076,7 +19840,8 @@
       "symbiosis"
     ],
     "region": "alola",
-    "enName": "Oranguru"
+    "enName": "Oranguru",
+    "genus": "賢者寶可夢"
   },
   {
     "id": 766,
@@ -19100,7 +19865,8 @@
       "defiant"
     ],
     "region": "alola",
-    "enName": "Passimian"
+    "enName": "Passimian",
+    "genus": "配合寶可夢"
   },
   {
     "id": 767,
@@ -19124,7 +19890,8 @@
       "wimp-out"
     ],
     "region": "alola",
-    "enName": "Wimpod"
+    "enName": "Wimpod",
+    "genus": "疾行寶可夢"
   },
   {
     "id": 768,
@@ -19148,7 +19915,8 @@
       "emergency-exit"
     ],
     "region": "alola",
-    "enName": "Golisopod"
+    "enName": "Golisopod",
+    "genus": "裝甲寶可夢"
   },
   {
     "id": 769,
@@ -19173,7 +19941,8 @@
       "sand-veil"
     ],
     "region": "alola",
-    "enName": "Sandygast"
+    "enName": "Sandygast",
+    "genus": "沙丘寶可夢"
   },
   {
     "id": 770,
@@ -19198,7 +19967,8 @@
       "sand-veil"
     ],
     "region": "alola",
-    "enName": "Palossand"
+    "enName": "Palossand",
+    "genus": "沙堡寶可夢"
   },
   {
     "id": 771,
@@ -19222,7 +19992,8 @@
       "unaware"
     ],
     "region": "alola",
-    "enName": "Pyukumuku"
+    "enName": "Pyukumuku",
+    "genus": "海參寶可夢"
   },
   {
     "id": 772,
@@ -19245,7 +20016,8 @@
       "battle-armor"
     ],
     "region": "alola",
-    "enName": "Type: Null"
+    "enName": "Type: Null",
+    "genus": "人工寶可夢"
   },
   {
     "id": 773,
@@ -19268,7 +20040,8 @@
       "rks-system"
     ],
     "region": "alola",
-    "enName": "Silvally"
+    "enName": "Silvally",
+    "genus": "人工寶可夢"
   },
   {
     "id": 774,
@@ -19292,7 +20065,8 @@
       "shields-down"
     ],
     "region": "alola",
-    "enName": "Minior"
+    "enName": "Minior",
+    "genus": "流星寶可夢"
   },
   {
     "id": 775,
@@ -19315,7 +20089,8 @@
       "comatose"
     ],
     "region": "alola",
-    "enName": "Komala"
+    "enName": "Komala",
+    "genus": "半夢半醒寶可夢"
   },
   {
     "id": 776,
@@ -19339,7 +20114,8 @@
       "shell-armor"
     ],
     "region": "alola",
-    "enName": "Turtonator"
+    "enName": "Turtonator",
+    "genus": "爆炸龜寶可夢"
   },
   {
     "id": 777,
@@ -19365,7 +20141,8 @@
       "sturdy"
     ],
     "region": "alola",
-    "enName": "Togedemaru"
+    "enName": "Togedemaru",
+    "genus": "蜷縮寶可夢"
   },
   {
     "id": 778,
@@ -19389,7 +20166,8 @@
       "disguise"
     ],
     "region": "alola",
-    "enName": "Mimikyu"
+    "enName": "Mimikyu",
+    "genus": "畫皮寶可夢"
   },
   {
     "id": 779,
@@ -19415,7 +20193,8 @@
       "wonder-skin"
     ],
     "region": "alola",
-    "enName": "Bruxish"
+    "enName": "Bruxish",
+    "genus": "磨牙寶可夢"
   },
   {
     "id": 780,
@@ -19441,7 +20220,8 @@
       "cloud-nine"
     ],
     "region": "alola",
-    "enName": "Drampa"
+    "enName": "Drampa",
+    "genus": "悠遊寶可夢"
   },
   {
     "id": 781,
@@ -19465,7 +20245,8 @@
       "steelworker"
     ],
     "region": "alola",
-    "enName": "Dhelmise"
+    "enName": "Dhelmise",
+    "genus": "碎藻寶可夢"
   },
   {
     "id": 782,
@@ -19490,7 +20271,8 @@
       "overcoat"
     ],
     "region": "alola",
-    "enName": "Jangmo-o"
+    "enName": "Jangmo-o",
+    "genus": "鱗片寶可夢"
   },
   {
     "id": 783,
@@ -19516,7 +20298,8 @@
       "overcoat"
     ],
     "region": "alola",
-    "enName": "Hakamo-o"
+    "enName": "Hakamo-o",
+    "genus": "鱗片寶可夢"
   },
   {
     "id": 784,
@@ -19542,7 +20325,8 @@
       "overcoat"
     ],
     "region": "alola",
-    "enName": "Kommo-o"
+    "enName": "Kommo-o",
+    "genus": "鱗片寶可夢"
   },
   {
     "id": 785,
@@ -19567,7 +20351,8 @@
       "telepathy"
     ],
     "region": "alola",
-    "enName": "Tapu Koko"
+    "enName": "Tapu Koko",
+    "genus": "土地神寶可夢"
   },
   {
     "id": 786,
@@ -19592,7 +20377,8 @@
       "telepathy"
     ],
     "region": "alola",
-    "enName": "Tapu Lele"
+    "enName": "Tapu Lele",
+    "genus": "土地神寶可夢"
   },
   {
     "id": 787,
@@ -19617,7 +20403,8 @@
       "telepathy"
     ],
     "region": "alola",
-    "enName": "Tapu Bulu"
+    "enName": "Tapu Bulu",
+    "genus": "土地神寶可夢"
   },
   {
     "id": 788,
@@ -19642,7 +20429,8 @@
       "telepathy"
     ],
     "region": "alola",
-    "enName": "Tapu Fini"
+    "enName": "Tapu Fini",
+    "genus": "土地神寶可夢"
   },
   {
     "id": 789,
@@ -19665,7 +20453,8 @@
       "unaware"
     ],
     "region": "alola",
-    "enName": "Cosmog"
+    "enName": "Cosmog",
+    "genus": "星雲寶可夢"
   },
   {
     "id": 790,
@@ -19688,7 +20477,8 @@
       "sturdy"
     ],
     "region": "alola",
-    "enName": "Cosmoem"
+    "enName": "Cosmoem",
+    "genus": "原始星寶可夢"
   },
   {
     "id": 791,
@@ -19712,7 +20502,8 @@
       "full-metal-body"
     ],
     "region": "alola",
-    "enName": "Solgaleo"
+    "enName": "Solgaleo",
+    "genus": "日輪寶可夢"
   },
   {
     "id": 792,
@@ -19736,7 +20527,8 @@
       "shadow-shield"
     ],
     "region": "alola",
-    "enName": "Lunala"
+    "enName": "Lunala",
+    "genus": "月輪寶可夢"
   },
   {
     "id": 793,
@@ -19760,7 +20552,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Nihilego"
+    "enName": "Nihilego",
+    "genus": "寄生寶可夢"
   },
   {
     "id": 794,
@@ -19784,7 +20577,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Buzzwole"
+    "enName": "Buzzwole",
+    "genus": "膨脹寶可夢"
   },
   {
     "id": 795,
@@ -19808,7 +20602,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Pheromosa"
+    "enName": "Pheromosa",
+    "genus": "美艷寶可夢"
   },
   {
     "id": 796,
@@ -19831,7 +20626,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Xurkitree"
+    "enName": "Xurkitree",
+    "genus": "燈飾寶可夢"
   },
   {
     "id": 797,
@@ -19855,7 +20651,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Celesteela"
+    "enName": "Celesteela",
+    "genus": "發射寶可夢"
   },
   {
     "id": 798,
@@ -19879,7 +20676,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Kartana"
+    "enName": "Kartana",
+    "genus": "拔刀寶可夢"
   },
   {
     "id": 799,
@@ -19903,7 +20701,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Guzzlord"
+    "enName": "Guzzlord",
+    "genus": "異食寶可夢"
   },
   {
     "id": 800,
@@ -19926,7 +20725,8 @@
       "prism-armor"
     ],
     "region": "alola",
-    "enName": "Necrozma"
+    "enName": "Necrozma",
+    "genus": "稜鏡寶可夢"
   },
   {
     "id": 801,
@@ -19950,7 +20750,8 @@
       "soul-heart"
     ],
     "region": "alola",
-    "enName": "Magearna"
+    "enName": "Magearna",
+    "genus": "人造寶可夢"
   },
   {
     "id": 802,
@@ -19974,7 +20775,8 @@
       "technician"
     ],
     "region": "alola",
-    "enName": "Marshadow"
+    "enName": "Marshadow",
+    "genus": "棲影寶可夢"
   },
   {
     "id": 803,
@@ -19997,7 +20799,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Poipole"
+    "enName": "Poipole",
+    "genus": "毒針寶可夢"
   },
   {
     "id": 804,
@@ -20021,7 +20824,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Naganadel"
+    "enName": "Naganadel",
+    "genus": "毒針寶可夢"
   },
   {
     "id": 805,
@@ -20045,7 +20849,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Stakataka"
+    "enName": "Stakataka",
+    "genus": "石牆寶可夢"
   },
   {
     "id": 806,
@@ -20069,7 +20874,8 @@
       "beast-boost"
     ],
     "region": "alola",
-    "enName": "Blacephalon"
+    "enName": "Blacephalon",
+    "genus": "煙火寶可夢"
   },
   {
     "id": 807,
@@ -20092,7 +20898,8 @@
       "volt-absorb"
     ],
     "region": "alola",
-    "enName": "Zeraora"
+    "enName": "Zeraora",
+    "genus": "奔雷寶可夢"
   },
   {
     "id": 808,
@@ -20115,7 +20922,8 @@
       "magnet-pull"
     ],
     "region": "alola",
-    "enName": "Meltan"
+    "enName": "Meltan",
+    "genus": "螺帽寶可夢"
   },
   {
     "id": 809,
@@ -20138,7 +20946,8 @@
       "iron-fist"
     ],
     "region": "alola",
-    "enName": "Melmetal"
+    "enName": "Melmetal",
+    "genus": "螺帽寶可夢"
   },
   {
     "id": 810,
@@ -20162,7 +20971,8 @@
       "grassy-surge"
     ],
     "region": "galar",
-    "enName": "Grookey"
+    "enName": "Grookey",
+    "genus": "小猴寶可夢"
   },
   {
     "id": 811,
@@ -20186,7 +20996,8 @@
       "grassy-surge"
     ],
     "region": "galar",
-    "enName": "Thwackey"
+    "enName": "Thwackey",
+    "genus": "節拍寶可夢"
   },
   {
     "id": 812,
@@ -20210,7 +21021,8 @@
       "grassy-surge"
     ],
     "region": "galar",
-    "enName": "Rillaboom"
+    "enName": "Rillaboom",
+    "genus": "鼓手寶可夢"
   },
   {
     "id": 813,
@@ -20234,7 +21046,8 @@
       "libero"
     ],
     "region": "galar",
-    "enName": "Scorbunny"
+    "enName": "Scorbunny",
+    "genus": "兔子寶可夢"
   },
   {
     "id": 814,
@@ -20258,7 +21071,8 @@
       "libero"
     ],
     "region": "galar",
-    "enName": "Raboot"
+    "enName": "Raboot",
+    "genus": "兔子寶可夢"
   },
   {
     "id": 815,
@@ -20282,7 +21096,8 @@
       "libero"
     ],
     "region": "galar",
-    "enName": "Cinderace"
+    "enName": "Cinderace",
+    "genus": "前鋒寶可夢"
   },
   {
     "id": 816,
@@ -20306,7 +21121,8 @@
       "sniper"
     ],
     "region": "galar",
-    "enName": "Sobble"
+    "enName": "Sobble",
+    "genus": "水蜥寶可夢"
   },
   {
     "id": 817,
@@ -20330,7 +21146,8 @@
       "sniper"
     ],
     "region": "galar",
-    "enName": "Drizzile"
+    "enName": "Drizzile",
+    "genus": "水蜥寶可夢"
   },
   {
     "id": 818,
@@ -20354,7 +21171,8 @@
       "sniper"
     ],
     "region": "galar",
-    "enName": "Inteleon"
+    "enName": "Inteleon",
+    "genus": "特工寶可夢"
   },
   {
     "id": 819,
@@ -20378,7 +21196,8 @@
       "gluttony"
     ],
     "region": "galar",
-    "enName": "Skwovet"
+    "enName": "Skwovet",
+    "genus": "貪吃寶可夢"
   },
   {
     "id": 820,
@@ -20402,7 +21221,8 @@
       "gluttony"
     ],
     "region": "galar",
-    "enName": "Greedent"
+    "enName": "Greedent",
+    "genus": "貪慾寶可夢"
   },
   {
     "id": 821,
@@ -20427,7 +21247,8 @@
       "big-pecks"
     ],
     "region": "galar",
-    "enName": "Rookidee"
+    "enName": "Rookidee",
+    "genus": "小鳥寶可夢"
   },
   {
     "id": 822,
@@ -20452,7 +21273,8 @@
       "big-pecks"
     ],
     "region": "galar",
-    "enName": "Corvisquire"
+    "enName": "Corvisquire",
+    "genus": "烏鴉寶可夢"
   },
   {
     "id": 823,
@@ -20478,7 +21300,8 @@
       "mirror-armor"
     ],
     "region": "galar",
-    "enName": "Corviknight"
+    "enName": "Corviknight",
+    "genus": "烏鴉寶可夢"
   },
   {
     "id": 824,
@@ -20503,7 +21326,8 @@
       "telepathy"
     ],
     "region": "galar",
-    "enName": "Blipbug"
+    "enName": "Blipbug",
+    "genus": "幼蟲寶可夢"
   },
   {
     "id": 825,
@@ -20529,7 +21353,8 @@
       "telepathy"
     ],
     "region": "galar",
-    "enName": "Dottler"
+    "enName": "Dottler",
+    "genus": "天線罩寶可夢"
   },
   {
     "id": 826,
@@ -20555,7 +21380,8 @@
       "telepathy"
     ],
     "region": "galar",
-    "enName": "Orbeetle"
+    "enName": "Orbeetle",
+    "genus": "七星寶可夢"
   },
   {
     "id": 827,
@@ -20580,7 +21406,8 @@
       "stakeout"
     ],
     "region": "galar",
-    "enName": "Nickit"
+    "enName": "Nickit",
+    "genus": "狐狸寶可夢"
   },
   {
     "id": 828,
@@ -20605,7 +21432,8 @@
       "stakeout"
     ],
     "region": "galar",
-    "enName": "Thievul"
+    "enName": "Thievul",
+    "genus": "狐狸寶可夢"
   },
   {
     "id": 829,
@@ -20630,7 +21458,8 @@
       "effect-spore"
     ],
     "region": "galar",
-    "enName": "Gossifleur"
+    "enName": "Gossifleur",
+    "genus": "花飾寶可夢"
   },
   {
     "id": 830,
@@ -20655,7 +21484,8 @@
       "effect-spore"
     ],
     "region": "galar",
-    "enName": "Eldegoss"
+    "enName": "Eldegoss",
+    "genus": "棉飾寶可夢"
   },
   {
     "id": 831,
@@ -20680,7 +21510,8 @@
       "bulletproof"
     ],
     "region": "galar",
-    "enName": "Wooloo"
+    "enName": "Wooloo",
+    "genus": "綿羊寶可夢"
   },
   {
     "id": 832,
@@ -20705,7 +21536,8 @@
       "bulletproof"
     ],
     "region": "galar",
-    "enName": "Dubwool"
+    "enName": "Dubwool",
+    "genus": "綿羊寶可夢"
   },
   {
     "id": 833,
@@ -20730,7 +21562,8 @@
       "swift-swim"
     ],
     "region": "galar",
-    "enName": "Chewtle"
+    "enName": "Chewtle",
+    "genus": "咬住寶可夢"
   },
   {
     "id": 834,
@@ -20756,7 +21589,8 @@
       "swift-swim"
     ],
     "region": "galar",
-    "enName": "Drednaw"
+    "enName": "Drednaw",
+    "genus": "緊咬寶可夢"
   },
   {
     "id": 835,
@@ -20780,7 +21614,8 @@
       "rattled"
     ],
     "region": "galar",
-    "enName": "Yamper"
+    "enName": "Yamper",
+    "genus": "小狗寶可夢"
   },
   {
     "id": 836,
@@ -20804,7 +21639,8 @@
       "competitive"
     ],
     "region": "galar",
-    "enName": "Boltund"
+    "enName": "Boltund",
+    "genus": "狗寶可夢"
   },
   {
     "id": 837,
@@ -20829,7 +21665,8 @@
       "flash-fire"
     ],
     "region": "galar",
-    "enName": "Rolycoly"
+    "enName": "Rolycoly",
+    "genus": "煤炭寶可夢"
   },
   {
     "id": 838,
@@ -20855,7 +21692,8 @@
       "flash-fire"
     ],
     "region": "galar",
-    "enName": "Carkol"
+    "enName": "Carkol",
+    "genus": "煤炭寶可夢"
   },
   {
     "id": 839,
@@ -20881,7 +21719,8 @@
       "flash-fire"
     ],
     "region": "galar",
-    "enName": "Coalossal"
+    "enName": "Coalossal",
+    "genus": "煤炭寶可夢"
   },
   {
     "id": 840,
@@ -20907,7 +21746,8 @@
       "bulletproof"
     ],
     "region": "galar",
-    "enName": "Applin"
+    "enName": "Applin",
+    "genus": "蘋果居寶可夢"
   },
   {
     "id": 841,
@@ -20933,7 +21773,8 @@
       "hustle"
     ],
     "region": "galar",
-    "enName": "Flapple"
+    "enName": "Flapple",
+    "genus": "蘋果翅寶可夢"
   },
   {
     "id": 842,
@@ -20959,7 +21800,8 @@
       "thick-fat"
     ],
     "region": "galar",
-    "enName": "Appletun"
+    "enName": "Appletun",
+    "genus": "蘋果汁寶可夢"
   },
   {
     "id": 843,
@@ -20984,7 +21826,8 @@
       "sand-veil"
     ],
     "region": "galar",
-    "enName": "Silicobra"
+    "enName": "Silicobra",
+    "genus": "沙蛇寶可夢"
   },
   {
     "id": 844,
@@ -21009,7 +21852,8 @@
       "sand-veil"
     ],
     "region": "galar",
-    "enName": "Sandaconda"
+    "enName": "Sandaconda",
+    "genus": "沙蛇寶可夢"
   },
   {
     "id": 845,
@@ -21033,7 +21877,8 @@
       "gulp-missile"
     ],
     "region": "galar",
-    "enName": "Cramorant"
+    "enName": "Cramorant",
+    "genus": "一口吞寶可夢"
   },
   {
     "id": 846,
@@ -21057,7 +21902,8 @@
       "propeller-tail"
     ],
     "region": "galar",
-    "enName": "Arrokuda"
+    "enName": "Arrokuda",
+    "genus": "突擊寶可夢"
   },
   {
     "id": 847,
@@ -21081,7 +21927,8 @@
       "propeller-tail"
     ],
     "region": "galar",
-    "enName": "Barraskewda"
+    "enName": "Barraskewda",
+    "genus": "穿刺寶可夢"
   },
   {
     "id": 848,
@@ -21107,7 +21954,8 @@
       "klutz"
     ],
     "region": "galar",
-    "enName": "Toxel"
+    "enName": "Toxel",
+    "genus": "嬰兒寶可夢"
   },
   {
     "id": 849,
@@ -21133,7 +21981,8 @@
       "technician"
     ],
     "region": "galar",
-    "enName": "Toxtricity"
+    "enName": "Toxtricity",
+    "genus": "龐克寶可夢"
   },
   {
     "id": 850,
@@ -21159,7 +22008,8 @@
       "flame-body"
     ],
     "region": "galar",
-    "enName": "Sizzlipede"
+    "enName": "Sizzlipede",
+    "genus": "發熱寶可夢"
   },
   {
     "id": 851,
@@ -21185,7 +22035,8 @@
       "flame-body"
     ],
     "region": "galar",
-    "enName": "Centiskorch"
+    "enName": "Centiskorch",
+    "genus": "發熱寶可夢"
   },
   {
     "id": 852,
@@ -21209,7 +22060,8 @@
       "technician"
     ],
     "region": "galar",
-    "enName": "Clobbopus"
+    "enName": "Clobbopus",
+    "genus": "纏人寶可夢"
   },
   {
     "id": 853,
@@ -21233,7 +22085,8 @@
       "technician"
     ],
     "region": "galar",
-    "enName": "Grapploct"
+    "enName": "Grapploct",
+    "genus": "柔術寶可夢"
   },
   {
     "id": 854,
@@ -21257,7 +22110,8 @@
       "cursed-body"
     ],
     "region": "galar",
-    "enName": "Sinistea"
+    "enName": "Sinistea",
+    "genus": "紅茶寶可夢"
   },
   {
     "id": 855,
@@ -21281,7 +22135,8 @@
       "cursed-body"
     ],
     "region": "galar",
-    "enName": "Polteageist"
+    "enName": "Polteageist",
+    "genus": "紅茶寶可夢"
   },
   {
     "id": 856,
@@ -21306,7 +22161,8 @@
       "magic-bounce"
     ],
     "region": "galar",
-    "enName": "Hatenna"
+    "enName": "Hatenna",
+    "genus": "寧靜寶可夢"
   },
   {
     "id": 857,
@@ -21331,7 +22187,8 @@
       "magic-bounce"
     ],
     "region": "galar",
-    "enName": "Hattrem"
+    "enName": "Hattrem",
+    "genus": "肅靜寶可夢"
   },
   {
     "id": 858,
@@ -21357,7 +22214,8 @@
       "magic-bounce"
     ],
     "region": "galar",
-    "enName": "Hatterene"
+    "enName": "Hatterene",
+    "genus": "寂靜寶可夢"
   },
   {
     "id": 859,
@@ -21383,7 +22241,8 @@
       "pickpocket"
     ],
     "region": "galar",
-    "enName": "Impidimp"
+    "enName": "Impidimp",
+    "genus": "捉弄寶可夢"
   },
   {
     "id": 860,
@@ -21409,7 +22268,8 @@
       "pickpocket"
     ],
     "region": "galar",
-    "enName": "Morgrem"
+    "enName": "Morgrem",
+    "genus": "壞心眼寶可夢"
   },
   {
     "id": 861,
@@ -21435,7 +22295,8 @@
       "pickpocket"
     ],
     "region": "galar",
-    "enName": "Grimmsnarl"
+    "enName": "Grimmsnarl",
+    "genus": "健美寶可夢"
   },
   {
     "id": 862,
@@ -21461,7 +22322,8 @@
       "defiant"
     ],
     "region": "galar",
-    "enName": "Obstagoon"
+    "enName": "Obstagoon",
+    "genus": "停止寶可夢"
   },
   {
     "id": 863,
@@ -21486,7 +22348,8 @@
       "steely-spirit"
     ],
     "region": "galar",
-    "enName": "Perrserker"
+    "enName": "Perrserker",
+    "genus": "維京寶可夢"
   },
   {
     "id": 864,
@@ -21510,7 +22373,8 @@
       "perish-body"
     ],
     "region": "galar",
-    "enName": "Cursola"
+    "enName": "Cursola",
+    "genus": "珊瑚寶可夢"
   },
   {
     "id": 865,
@@ -21534,7 +22398,8 @@
       "scrappy"
     ],
     "region": "galar",
-    "enName": "Sirfetch’d"
+    "enName": "Sirfetch’d",
+    "genus": "黃嘴鴨寶可夢"
   },
   {
     "id": 866,
@@ -21560,7 +22425,8 @@
       "ice-body"
     ],
     "region": "galar",
-    "enName": "Mr. Rime"
+    "enName": "Mr. Rime",
+    "genus": "喜劇演員寶可夢"
   },
   {
     "id": 867,
@@ -21584,7 +22450,8 @@
       "wandering-spirit"
     ],
     "region": "galar",
-    "enName": "Runerigus"
+    "enName": "Runerigus",
+    "genus": "怨念寶可夢"
   },
   {
     "id": 868,
@@ -21608,7 +22475,8 @@
       "aroma-veil"
     ],
     "region": "galar",
-    "enName": "Milcery"
+    "enName": "Milcery",
+    "genus": "鮮奶油寶可夢"
   },
   {
     "id": 869,
@@ -21632,7 +22500,8 @@
       "aroma-veil"
     ],
     "region": "galar",
-    "enName": "Alcremie"
+    "enName": "Alcremie",
+    "genus": "鮮奶油寶可夢"
   },
   {
     "id": 870,
@@ -21656,7 +22525,8 @@
       "defiant"
     ],
     "region": "galar",
-    "enName": "Falinks"
+    "enName": "Falinks",
+    "genus": "陣形寶可夢"
   },
   {
     "id": 871,
@@ -21680,7 +22550,8 @@
       "electric-surge"
     ],
     "region": "galar",
-    "enName": "Pincurchin"
+    "enName": "Pincurchin",
+    "genus": "海膽寶可夢"
   },
   {
     "id": 872,
@@ -21705,7 +22576,8 @@
       "ice-scales"
     ],
     "region": "galar",
-    "enName": "Snom"
+    "enName": "Snom",
+    "genus": "蟲寶寶寶可夢"
   },
   {
     "id": 873,
@@ -21730,7 +22602,8 @@
       "ice-scales"
     ],
     "region": "galar",
-    "enName": "Frosmoth"
+    "enName": "Frosmoth",
+    "genus": "冰蛾寶可夢"
   },
   {
     "id": 874,
@@ -21753,7 +22626,8 @@
       "power-spot"
     ],
     "region": "galar",
-    "enName": "Stonjourner"
+    "enName": "Stonjourner",
+    "genus": "巨石寶可夢"
   },
   {
     "id": 875,
@@ -21776,7 +22650,8 @@
       "ice-face"
     ],
     "region": "galar",
-    "enName": "Eiscue"
+    "enName": "Eiscue",
+    "genus": "企鵝寶可夢"
   },
   {
     "id": 876,
@@ -21802,7 +22677,8 @@
       "psychic-surge"
     ],
     "region": "galar",
-    "enName": "Indeedee"
+    "enName": "Indeedee",
+    "genus": "感情寶可夢"
   },
   {
     "id": 877,
@@ -21826,7 +22702,8 @@
       "hunger-switch"
     ],
     "region": "galar",
-    "enName": "Morpeko"
+    "enName": "Morpeko",
+    "genus": "雙面寶可夢"
   },
   {
     "id": 878,
@@ -21850,7 +22727,8 @@
       "heavy-metal"
     ],
     "region": "galar",
-    "enName": "Cufant"
+    "enName": "Cufant",
+    "genus": "像銅寶可夢"
   },
   {
     "id": 879,
@@ -21874,7 +22752,8 @@
       "heavy-metal"
     ],
     "region": "galar",
-    "enName": "Copperajah"
+    "enName": "Copperajah",
+    "genus": "像銅寶可夢"
   },
   {
     "id": 880,
@@ -21900,7 +22779,8 @@
       "sand-rush"
     ],
     "region": "galar",
-    "enName": "Dracozolt"
+    "enName": "Dracozolt",
+    "genus": "化石寶可夢"
   },
   {
     "id": 881,
@@ -21926,7 +22806,8 @@
       "slush-rush"
     ],
     "region": "galar",
-    "enName": "Arctozolt"
+    "enName": "Arctozolt",
+    "genus": "化石寶可夢"
   },
   {
     "id": 882,
@@ -21952,7 +22833,8 @@
       "sand-rush"
     ],
     "region": "galar",
-    "enName": "Dracovish"
+    "enName": "Dracovish",
+    "genus": "化石寶可夢"
   },
   {
     "id": 883,
@@ -21978,7 +22860,8 @@
       "slush-rush"
     ],
     "region": "galar",
-    "enName": "Arctovish"
+    "enName": "Arctovish",
+    "genus": "化石寶可夢"
   },
   {
     "id": 884,
@@ -22004,7 +22887,8 @@
       "stalwart"
     ],
     "region": "galar",
-    "enName": "Duraludon"
+    "enName": "Duraludon",
+    "genus": "合金寶可夢"
   },
   {
     "id": 885,
@@ -22030,7 +22914,8 @@
       "cursed-body"
     ],
     "region": "galar",
-    "enName": "Dreepy"
+    "enName": "Dreepy",
+    "genus": "哀怨寶可夢"
   },
   {
     "id": 886,
@@ -22056,7 +22941,8 @@
       "cursed-body"
     ],
     "region": "galar",
-    "enName": "Drakloak"
+    "enName": "Drakloak",
+    "genus": "保姆寶可夢"
   },
   {
     "id": 887,
@@ -22082,7 +22968,8 @@
       "cursed-body"
     ],
     "region": "galar",
-    "enName": "Dragapult"
+    "enName": "Dragapult",
+    "genus": "隱形寶可夢"
   },
   {
     "id": 888,
@@ -22105,7 +22992,8 @@
       "intrepid-sword"
     ],
     "region": "galar",
-    "enName": "Zacian"
+    "enName": "Zacian",
+    "genus": "強者寶可夢"
   },
   {
     "id": 889,
@@ -22128,7 +23016,8 @@
       "dauntless-shield"
     ],
     "region": "galar",
-    "enName": "Zamazenta"
+    "enName": "Zamazenta",
+    "genus": "強者寶可夢"
   },
   {
     "id": 890,
@@ -22152,7 +23041,8 @@
       "pressure"
     ],
     "region": "galar",
-    "enName": "Eternatus"
+    "enName": "Eternatus",
+    "genus": "超極巨寶可夢"
   },
   {
     "id": 891,
@@ -22175,7 +23065,8 @@
       "inner-focus"
     ],
     "region": "galar",
-    "enName": "Kubfu"
+    "enName": "Kubfu",
+    "genus": "拳法寶可夢"
   },
   {
     "id": 892,
@@ -22199,7 +23090,8 @@
       "unseen-fist"
     ],
     "region": "galar",
-    "enName": "Urshifu"
+    "enName": "Urshifu",
+    "genus": "拳法寶可夢"
   },
   {
     "id": 893,
@@ -22223,7 +23115,8 @@
       "leaf-guard"
     ],
     "region": "galar",
-    "enName": "Zarude"
+    "enName": "Zarude",
+    "genus": "惡猿寶可夢"
   },
   {
     "id": 894,
@@ -22246,7 +23139,8 @@
       "transistor"
     ],
     "region": "galar",
-    "enName": "Regieleki"
+    "enName": "Regieleki",
+    "genus": "電子寶可夢"
   },
   {
     "id": 895,
@@ -22269,7 +23163,8 @@
       "dragons-maw"
     ],
     "region": "galar",
-    "enName": "Regidrago"
+    "enName": "Regidrago",
+    "genus": "龍玉寶可夢"
   },
   {
     "id": 896,
@@ -22292,7 +23187,8 @@
       "chilling-neigh"
     ],
     "region": "galar",
-    "enName": "Glastrier"
+    "enName": "Glastrier",
+    "genus": "烈馬寶可夢"
   },
   {
     "id": 897,
@@ -22315,7 +23211,8 @@
       "grim-neigh"
     ],
     "region": "galar",
-    "enName": "Spectrier"
+    "enName": "Spectrier",
+    "genus": "駿馬寶可夢"
   },
   {
     "id": 898,
@@ -22339,7 +23236,8 @@
       "unnerve"
     ],
     "region": "galar",
-    "enName": "Calyrex"
+    "enName": "Calyrex",
+    "genus": "國王寶可夢"
   },
   {
     "id": 899,
@@ -22365,7 +23263,8 @@
       "sap-sipper"
     ],
     "region": "galar",
-    "enName": "Wyrdeer"
+    "enName": "Wyrdeer",
+    "genus": "大角寶可夢"
   },
   {
     "id": 900,
@@ -22391,7 +23290,8 @@
       "sharpness"
     ],
     "region": "galar",
-    "enName": "Kleavor"
+    "enName": "Kleavor",
+    "genus": "斧鉞寶可夢"
   },
   {
     "id": 901,
@@ -22417,7 +23317,8 @@
       "unnerve"
     ],
     "region": "galar",
-    "enName": "Ursaluna"
+    "enName": "Ursaluna",
+    "genus": "泥炭寶可夢"
   },
   {
     "id": 902,
@@ -22443,7 +23344,8 @@
       "mold-breaker"
     ],
     "region": "galar",
-    "enName": "Basculegion"
+    "enName": "Basculegion",
+    "genus": "大魚寶可夢"
   },
   {
     "id": 903,
@@ -22469,7 +23371,8 @@
       "poison-touch"
     ],
     "region": "galar",
-    "enName": "Sneasler"
+    "enName": "Sneasler",
+    "genus": "攀崖寶可夢"
   },
   {
     "id": 904,
@@ -22495,7 +23398,8 @@
       "intimidate"
     ],
     "region": "galar",
-    "enName": "Overqwil"
+    "enName": "Overqwil",
+    "genus": "劍山寶可夢"
   },
   {
     "id": 905,
@@ -22520,7 +23424,8 @@
       "contrary"
     ],
     "region": "galar",
-    "enName": "Enamorus"
+    "enName": "Enamorus",
+    "genus": "愛憎寶可夢"
   },
   {
     "id": 906,
@@ -22544,7 +23449,8 @@
       "protean"
     ],
     "region": "paldea",
-    "enName": "Sprigatito"
+    "enName": "Sprigatito",
+    "genus": "草貓寶可夢"
   },
   {
     "id": 907,
@@ -22568,7 +23474,8 @@
       "protean"
     ],
     "region": "paldea",
-    "enName": "Floragato"
+    "enName": "Floragato",
+    "genus": "草貓寶可夢"
   },
   {
     "id": 908,
@@ -22593,7 +23500,8 @@
       "protean"
     ],
     "region": "paldea",
-    "enName": "Meowscarada"
+    "enName": "Meowscarada",
+    "genus": "魔術師寶可夢"
   },
   {
     "id": 909,
@@ -22617,7 +23525,8 @@
       "unaware"
     ],
     "region": "paldea",
-    "enName": "Fuecoco"
+    "enName": "Fuecoco",
+    "genus": "火鱷寶可夢"
   },
   {
     "id": 910,
@@ -22641,7 +23550,8 @@
       "unaware"
     ],
     "region": "paldea",
-    "enName": "Crocalor"
+    "enName": "Crocalor",
+    "genus": "火鱷寶可夢"
   },
   {
     "id": 911,
@@ -22666,7 +23576,8 @@
       "unaware"
     ],
     "region": "paldea",
-    "enName": "Skeledirge"
+    "enName": "Skeledirge",
+    "genus": "歌手寶可夢"
   },
   {
     "id": 912,
@@ -22690,7 +23601,8 @@
       "moxie"
     ],
     "region": "paldea",
-    "enName": "Quaxly"
+    "enName": "Quaxly",
+    "genus": "小鴨寶可夢"
   },
   {
     "id": 913,
@@ -22714,7 +23626,8 @@
       "moxie"
     ],
     "region": "paldea",
-    "enName": "Quaxwell"
+    "enName": "Quaxwell",
+    "genus": "習藝寶可夢"
   },
   {
     "id": 914,
@@ -22739,7 +23652,8 @@
       "moxie"
     ],
     "region": "paldea",
-    "enName": "Quaquaval"
+    "enName": "Quaquaval",
+    "genus": "舞者寶可夢"
   },
   {
     "id": 915,
@@ -22764,7 +23678,8 @@
       "thick-fat"
     ],
     "region": "paldea",
-    "enName": "Lechonk"
+    "enName": "Lechonk",
+    "genus": "豬寶可夢"
   },
   {
     "id": 916,
@@ -22789,7 +23704,8 @@
       "thick-fat"
     ],
     "region": "paldea",
-    "enName": "Oinkologne"
+    "enName": "Oinkologne",
+    "genus": "豬寶可夢"
   },
   {
     "id": 917,
@@ -22813,7 +23729,8 @@
       "stakeout"
     ],
     "region": "paldea",
-    "enName": "Tarountula"
+    "enName": "Tarountula",
+    "genus": "線球寶可夢"
   },
   {
     "id": 918,
@@ -22837,7 +23754,8 @@
       "stakeout"
     ],
     "region": "paldea",
-    "enName": "Spidops"
+    "enName": "Spidops",
+    "genus": "陷阱寶可夢"
   },
   {
     "id": 919,
@@ -22861,7 +23779,8 @@
       "tinted-lens"
     ],
     "region": "paldea",
-    "enName": "Nymble"
+    "enName": "Nymble",
+    "genus": "蝗蟲寶可夢"
   },
   {
     "id": 920,
@@ -22886,7 +23805,8 @@
       "tinted-lens"
     ],
     "region": "paldea",
-    "enName": "Lokix"
+    "enName": "Lokix",
+    "genus": "蝗蟲寶可夢"
   },
   {
     "id": 921,
@@ -22911,7 +23831,8 @@
       "iron-fist"
     ],
     "region": "paldea",
-    "enName": "Pawmi"
+    "enName": "Pawmi",
+    "genus": "鼠寶可夢"
   },
   {
     "id": 922,
@@ -22937,7 +23858,8 @@
       "iron-fist"
     ],
     "region": "paldea",
-    "enName": "Pawmo"
+    "enName": "Pawmo",
+    "genus": "鼠寶可夢"
   },
   {
     "id": 923,
@@ -22963,7 +23885,8 @@
       "iron-fist"
     ],
     "region": "paldea",
-    "enName": "Pawmot"
+    "enName": "Pawmot",
+    "genus": "押掌寶可夢"
   },
   {
     "id": 924,
@@ -22988,7 +23911,8 @@
       "own-tempo"
     ],
     "region": "paldea",
-    "enName": "Tandemaus"
+    "enName": "Tandemaus",
+    "genus": "成對寶可夢"
   },
   {
     "id": 925,
@@ -23013,7 +23937,8 @@
       "technician"
     ],
     "region": "paldea",
-    "enName": "Maushold"
+    "enName": "Maushold",
+    "genus": "家族寶可夢"
   },
   {
     "id": 926,
@@ -23037,7 +23962,8 @@
       "klutz"
     ],
     "region": "paldea",
-    "enName": "Fidough"
+    "enName": "Fidough",
+    "genus": "小狗寶可夢"
   },
   {
     "id": 927,
@@ -23061,7 +23987,8 @@
       "aroma-veil"
     ],
     "region": "paldea",
-    "enName": "Dachsbun"
+    "enName": "Dachsbun",
+    "genus": "狗寶可夢"
   },
   {
     "id": 928,
@@ -23086,7 +24013,8 @@
       "harvest"
     ],
     "region": "paldea",
-    "enName": "Smoliv"
+    "enName": "Smoliv",
+    "genus": "橄欖寶可夢"
   },
   {
     "id": 929,
@@ -23111,7 +24039,8 @@
       "harvest"
     ],
     "region": "paldea",
-    "enName": "Dolliv"
+    "enName": "Dolliv",
+    "genus": "橄欖寶可夢"
   },
   {
     "id": 930,
@@ -23136,7 +24065,8 @@
       "harvest"
     ],
     "region": "paldea",
-    "enName": "Arboliva"
+    "enName": "Arboliva",
+    "genus": "橄欖寶可夢"
   },
   {
     "id": 931,
@@ -23162,7 +24092,8 @@
       "guts"
     ],
     "region": "paldea",
-    "enName": "Squawkabilly"
+    "enName": "Squawkabilly",
+    "genus": "鸚鵡寶可夢"
   },
   {
     "id": 932,
@@ -23187,7 +24118,8 @@
       "clear-body"
     ],
     "region": "paldea",
-    "enName": "Nacli"
+    "enName": "Nacli",
+    "genus": "岩鹽寶可夢"
   },
   {
     "id": 933,
@@ -23212,7 +24144,8 @@
       "clear-body"
     ],
     "region": "paldea",
-    "enName": "Naclstack"
+    "enName": "Naclstack",
+    "genus": "岩鹽寶可夢"
   },
   {
     "id": 934,
@@ -23237,7 +24170,8 @@
       "clear-body"
     ],
     "region": "paldea",
-    "enName": "Garganacl"
+    "enName": "Garganacl",
+    "genus": "岩鹽寶可夢"
   },
   {
     "id": 935,
@@ -23261,7 +24195,8 @@
       "flame-body"
     ],
     "region": "paldea",
-    "enName": "Charcadet"
+    "enName": "Charcadet",
+    "genus": "小火星寶可夢"
   },
   {
     "id": 936,
@@ -23286,7 +24221,8 @@
       "weak-armor"
     ],
     "region": "paldea",
-    "enName": "Armarouge"
+    "enName": "Armarouge",
+    "genus": "火戰士寶可夢"
   },
   {
     "id": 937,
@@ -23311,7 +24247,8 @@
       "weak-armor"
     ],
     "region": "paldea",
-    "enName": "Ceruledge"
+    "enName": "Ceruledge",
+    "genus": "火劍士寶可夢"
   },
   {
     "id": 938,
@@ -23336,7 +24273,8 @@
       "damp"
     ],
     "region": "paldea",
-    "enName": "Tadbulb"
+    "enName": "Tadbulb",
+    "genus": "電蝌蚪寶可夢"
   },
   {
     "id": 939,
@@ -23361,7 +24299,8 @@
       "damp"
     ],
     "region": "paldea",
-    "enName": "Bellibolt"
+    "enName": "Bellibolt",
+    "genus": "電蛙寶可夢"
   },
   {
     "id": 940,
@@ -23387,7 +24326,8 @@
       "competitive"
     ],
     "region": "paldea",
-    "enName": "Wattrel"
+    "enName": "Wattrel",
+    "genus": "海燕寶可夢"
   },
   {
     "id": 941,
@@ -23413,7 +24353,8 @@
       "competitive"
     ],
     "region": "paldea",
-    "enName": "Kilowattrel"
+    "enName": "Kilowattrel",
+    "genus": "軍艦鳥寶可夢"
   },
   {
     "id": 942,
@@ -23438,7 +24379,8 @@
       "stakeout"
     ],
     "region": "paldea",
-    "enName": "Maschiff"
+    "enName": "Maschiff",
+    "genus": "小輩寶可夢"
   },
   {
     "id": 943,
@@ -23463,7 +24405,8 @@
       "stakeout"
     ],
     "region": "paldea",
-    "enName": "Mabosstiff"
+    "enName": "Mabosstiff",
+    "genus": "大佬寶可夢"
   },
   {
     "id": 944,
@@ -23489,7 +24432,8 @@
       "prankster"
     ],
     "region": "paldea",
-    "enName": "Shroodle"
+    "enName": "Shroodle",
+    "genus": "毒鼠寶可夢"
   },
   {
     "id": 945,
@@ -23515,7 +24459,8 @@
       "prankster"
     ],
     "region": "paldea",
-    "enName": "Grafaiai"
+    "enName": "Grafaiai",
+    "genus": "毒猴寶可夢"
   },
   {
     "id": 946,
@@ -23540,7 +24485,8 @@
       "infiltrator"
     ],
     "region": "paldea",
-    "enName": "Bramblin"
+    "enName": "Bramblin",
+    "genus": "滾草寶可夢"
   },
   {
     "id": 947,
@@ -23565,7 +24511,8 @@
       "infiltrator"
     ],
     "region": "paldea",
-    "enName": "Brambleghast"
+    "enName": "Brambleghast",
+    "genus": "滾草寶可夢"
   },
   {
     "id": 948,
@@ -23590,7 +24537,8 @@
       "mycelium-might"
     ],
     "region": "paldea",
-    "enName": "Toedscool"
+    "enName": "Toedscool",
+    "genus": "木耳寶可夢"
   },
   {
     "id": 949,
@@ -23615,7 +24563,8 @@
       "mycelium-might"
     ],
     "region": "paldea",
-    "enName": "Toedscruel"
+    "enName": "Toedscruel",
+    "genus": "木耳寶可夢"
   },
   {
     "id": 950,
@@ -23640,7 +24589,8 @@
       "regenerator"
     ],
     "region": "paldea",
-    "enName": "Klawf"
+    "enName": "Klawf",
+    "genus": "埋伏寶可夢"
   },
   {
     "id": 951,
@@ -23665,7 +24615,8 @@
       "klutz"
     ],
     "region": "paldea",
-    "enName": "Capsakid"
+    "enName": "Capsakid",
+    "genus": "熱辣寶可夢"
   },
   {
     "id": 952,
@@ -23691,7 +24642,8 @@
       "moody"
     ],
     "region": "paldea",
-    "enName": "Scovillain"
+    "enName": "Scovillain",
+    "genus": "熱辣寶可夢"
   },
   {
     "id": 953,
@@ -23715,7 +24667,8 @@
       "shed-skin"
     ],
     "region": "paldea",
-    "enName": "Rellor"
+    "enName": "Rellor",
+    "genus": "滾動寶可夢"
   },
   {
     "id": 954,
@@ -23740,7 +24693,8 @@
       "telepathy"
     ],
     "region": "paldea",
-    "enName": "Rabsca"
+    "enName": "Rabsca",
+    "genus": "滾動寶可夢"
   },
   {
     "id": 955,
@@ -23765,7 +24719,8 @@
       "speed-boost"
     ],
     "region": "paldea",
-    "enName": "Flittle"
+    "enName": "Flittle",
+    "genus": "褶邊寶可夢"
   },
   {
     "id": 956,
@@ -23790,7 +24745,8 @@
       "speed-boost"
     ],
     "region": "paldea",
-    "enName": "Espathra"
+    "enName": "Espathra",
+    "genus": "鴕鳥寶可夢"
   },
   {
     "id": 957,
@@ -23816,7 +24772,8 @@
       "pickpocket"
     ],
     "region": "paldea",
-    "enName": "Tinkatink"
+    "enName": "Tinkatink",
+    "genus": "錘鍊寶可夢"
   },
   {
     "id": 958,
@@ -23842,7 +24799,8 @@
       "pickpocket"
     ],
     "region": "paldea",
-    "enName": "Tinkatuff"
+    "enName": "Tinkatuff",
+    "genus": "錘子寶可夢"
   },
   {
     "id": 959,
@@ -23868,7 +24826,8 @@
       "pickpocket"
     ],
     "region": "paldea",
-    "enName": "Tinkaton"
+    "enName": "Tinkaton",
+    "genus": "錘子寶可夢"
   },
   {
     "id": 960,
@@ -23893,7 +24852,8 @@
       "sand-veil"
     ],
     "region": "paldea",
-    "enName": "Wiglett"
+    "enName": "Wiglett",
+    "genus": "糯鰻寶可夢"
   },
   {
     "id": 961,
@@ -23918,7 +24878,8 @@
       "sand-veil"
     ],
     "region": "paldea",
-    "enName": "Wugtrio"
+    "enName": "Wugtrio",
+    "genus": "糯鰻寶可夢"
   },
   {
     "id": 962,
@@ -23944,7 +24905,8 @@
       "rocky-payload"
     ],
     "region": "paldea",
-    "enName": "Bombirdier"
+    "enName": "Bombirdier",
+    "genus": "掉東西寶可夢"
   },
   {
     "id": 963,
@@ -23968,7 +24930,8 @@
       "water-veil"
     ],
     "region": "paldea",
-    "enName": "Finizen"
+    "enName": "Finizen",
+    "genus": "海豚寶可夢"
   },
   {
     "id": 964,
@@ -23992,7 +24955,8 @@
       "zero-to-hero"
     ],
     "region": "paldea",
-    "enName": "Palafin"
+    "enName": "Palafin",
+    "genus": "海豚寶可夢"
   },
   {
     "id": 965,
@@ -24017,7 +24981,8 @@
       "slow-start"
     ],
     "region": "paldea",
-    "enName": "Varoom"
+    "enName": "Varoom",
+    "genus": "單汽缸寶可夢"
   },
   {
     "id": 966,
@@ -24042,7 +25007,8 @@
       "filter"
     ],
     "region": "paldea",
-    "enName": "Revavroom"
+    "enName": "Revavroom",
+    "genus": "多汽缸寶可夢"
   },
   {
     "id": 967,
@@ -24067,7 +25033,8 @@
       "regenerator"
     ],
     "region": "paldea",
-    "enName": "Cyclizar"
+    "enName": "Cyclizar",
+    "genus": "坐騎寶可夢"
   },
   {
     "id": 968,
@@ -24091,7 +25058,8 @@
       "sand-veil"
     ],
     "region": "paldea",
-    "enName": "Orthworm"
+    "enName": "Orthworm",
+    "genus": "蚯蚓寶可夢"
   },
   {
     "id": 969,
@@ -24116,7 +25084,8 @@
       "corrosion"
     ],
     "region": "paldea",
-    "enName": "Glimmet"
+    "enName": "Glimmet",
+    "genus": "礦石寶可夢"
   },
   {
     "id": 970,
@@ -24141,7 +25110,8 @@
       "corrosion"
     ],
     "region": "paldea",
-    "enName": "Glimmora"
+    "enName": "Glimmora",
+    "genus": "礦石寶可夢"
   },
   {
     "id": 971,
@@ -24165,7 +25135,8 @@
       "fluffy"
     ],
     "region": "paldea",
-    "enName": "Greavard"
+    "enName": "Greavard",
+    "genus": "鬼犬寶可夢"
   },
   {
     "id": 972,
@@ -24189,7 +25160,8 @@
       "fluffy"
     ],
     "region": "paldea",
-    "enName": "Houndstone"
+    "enName": "Houndstone",
+    "genus": "鬼犬寶可夢"
   },
   {
     "id": 973,
@@ -24215,7 +25187,8 @@
       "costar"
     ],
     "region": "paldea",
-    "enName": "Flamigo"
+    "enName": "Flamigo",
+    "genus": "同步寶可夢"
   },
   {
     "id": 974,
@@ -24240,7 +25213,8 @@
       "sheer-force"
     ],
     "region": "paldea",
-    "enName": "Cetoddle"
+    "enName": "Cetoddle",
+    "genus": "陸鯨寶可夢"
   },
   {
     "id": 975,
@@ -24265,7 +25239,8 @@
       "sheer-force"
     ],
     "region": "paldea",
-    "enName": "Cetitan"
+    "enName": "Cetitan",
+    "genus": "陸鯨寶可夢"
   },
   {
     "id": 976,
@@ -24290,7 +25265,8 @@
       "sharpness"
     ],
     "region": "paldea",
-    "enName": "Veluza"
+    "enName": "Veluza",
+    "genus": "卸除寶可夢"
   },
   {
     "id": 977,
@@ -24315,7 +25291,8 @@
       "water-veil"
     ],
     "region": "paldea",
-    "enName": "Dondozo"
+    "enName": "Dondozo",
+    "genus": "大鯰寶可夢"
   },
   {
     "id": 978,
@@ -24340,7 +25317,8 @@
       "storm-drain"
     ],
     "region": "paldea",
-    "enName": "Tatsugiri"
+    "enName": "Tatsugiri",
+    "genus": "擬態寶可夢"
   },
   {
     "id": 979,
@@ -24366,7 +25344,8 @@
       "defiant"
     ],
     "region": "paldea",
-    "enName": "Annihilape"
+    "enName": "Annihilape",
+    "genus": "憤怒猴寶可夢"
   },
   {
     "id": 980,
@@ -24392,7 +25371,8 @@
       "unaware"
     ],
     "region": "paldea",
-    "enName": "Clodsire"
+    "enName": "Clodsire",
+    "genus": "刺魚寶可夢"
   },
   {
     "id": 981,
@@ -24418,7 +25398,8 @@
       "sap-sipper"
     ],
     "region": "paldea",
-    "enName": "Farigiraf"
+    "enName": "Farigiraf",
+    "genus": "長頸寶可夢"
   },
   {
     "id": 982,
@@ -24443,7 +25424,8 @@
       "rattled"
     ],
     "region": "paldea",
-    "enName": "Dudunsparce"
+    "enName": "Dudunsparce",
+    "genus": "地蛇寶可夢"
   },
   {
     "id": 983,
@@ -24469,7 +25451,8 @@
       "pressure"
     ],
     "region": "paldea",
-    "enName": "Kingambit"
+    "enName": "Kingambit",
+    "genus": "大刀寶可夢"
   },
   {
     "id": 984,
@@ -24493,7 +25476,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Great Tusk"
+    "enName": "Great Tusk",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 985,
@@ -24517,7 +25501,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Scream Tail"
+    "enName": "Scream Tail",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 986,
@@ -24541,7 +25526,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Brute Bonnet"
+    "enName": "Brute Bonnet",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 987,
@@ -24565,7 +25551,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Flutter Mane"
+    "enName": "Flutter Mane",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 988,
@@ -24589,7 +25576,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Slither Wing"
+    "enName": "Slither Wing",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 989,
@@ -24613,7 +25601,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Sandy Shocks"
+    "enName": "Sandy Shocks",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 990,
@@ -24637,7 +25626,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Treads"
+    "enName": "Iron Treads",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 991,
@@ -24661,7 +25651,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Bundle"
+    "enName": "Iron Bundle",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 992,
@@ -24685,7 +25676,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Hands"
+    "enName": "Iron Hands",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 993,
@@ -24709,7 +25701,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Jugulis"
+    "enName": "Iron Jugulis",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 994,
@@ -24733,7 +25726,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Moth"
+    "enName": "Iron Moth",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 995,
@@ -24757,7 +25751,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Thorns"
+    "enName": "Iron Thorns",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 996,
@@ -24782,7 +25777,8 @@
       "ice-body"
     ],
     "region": "paldea",
-    "enName": "Frigibax"
+    "enName": "Frigibax",
+    "genus": "冰鰭寶可夢"
   },
   {
     "id": 997,
@@ -24807,7 +25803,8 @@
       "ice-body"
     ],
     "region": "paldea",
-    "enName": "Arctibax"
+    "enName": "Arctibax",
+    "genus": "冰鰭寶可夢"
   },
   {
     "id": 998,
@@ -24832,7 +25829,8 @@
       "ice-body"
     ],
     "region": "paldea",
-    "enName": "Baxcalibur"
+    "enName": "Baxcalibur",
+    "genus": "冰龍寶可夢"
   },
   {
     "id": 999,
@@ -24855,7 +25853,8 @@
       "rattled"
     ],
     "region": "paldea",
-    "enName": "Gimmighoul"
+    "enName": "Gimmighoul",
+    "genus": "寶箱寶可夢"
   },
   {
     "id": 1000,
@@ -24879,7 +25878,8 @@
       "good-as-gold"
     ],
     "region": "paldea",
-    "enName": "Gholdengo"
+    "enName": "Gholdengo",
+    "genus": "寶者寶可夢"
   },
   {
     "id": 1001,
@@ -24903,7 +25903,8 @@
       "tablets-of-ruin"
     ],
     "region": "paldea",
-    "enName": "Wo-Chien"
+    "enName": "Wo-Chien",
+    "genus": "災厄寶可夢"
   },
   {
     "id": 1002,
@@ -24927,7 +25928,8 @@
       "sword-of-ruin"
     ],
     "region": "paldea",
-    "enName": "Chien-Pao"
+    "enName": "Chien-Pao",
+    "genus": "災厄寶可夢"
   },
   {
     "id": 1003,
@@ -24951,7 +25953,8 @@
       "vessel-of-ruin"
     ],
     "region": "paldea",
-    "enName": "Ting-Lu"
+    "enName": "Ting-Lu",
+    "genus": "災厄寶可夢"
   },
   {
     "id": 1004,
@@ -24975,7 +25978,8 @@
       "beads-of-ruin"
     ],
     "region": "paldea",
-    "enName": "Chi-Yu"
+    "enName": "Chi-Yu",
+    "genus": "災厄寶可夢"
   },
   {
     "id": 1005,
@@ -24999,7 +26003,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Roaring Moon"
+    "enName": "Roaring Moon",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 1006,
@@ -25023,7 +26028,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Valiant"
+    "enName": "Iron Valiant",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 1007,
@@ -25047,7 +26053,8 @@
       "orichalcum-pulse"
     ],
     "region": "paldea",
-    "enName": "Koraidon"
+    "enName": "Koraidon",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 1008,
@@ -25071,7 +26078,8 @@
       "hadron-engine"
     ],
     "region": "paldea",
-    "enName": "Miraidon"
+    "enName": "Miraidon",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 1009,
@@ -25095,7 +26103,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Walking Wake"
+    "enName": "Walking Wake",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 1010,
@@ -25119,7 +26128,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Leaves"
+    "enName": "Iron Leaves",
+    "genus": "悖謬寶可夢"
   },
   {
     "id": 1011,
@@ -25145,7 +26155,8 @@
       "sticky-hold"
     ],
     "region": "paldea",
-    "enName": "Dipplin"
+    "enName": "Dipplin",
+    "genus": "Candy Apple Pokémon"
   },
   {
     "id": 1012,
@@ -25170,7 +26181,8 @@
       "heatproof"
     ],
     "region": "paldea",
-    "enName": "Poltchageist"
+    "enName": "Poltchageist",
+    "genus": "Matcha Pokémon"
   },
   {
     "id": 1013,
@@ -25195,7 +26207,8 @@
       "heatproof"
     ],
     "region": "paldea",
-    "enName": "Sinistcha"
+    "enName": "Sinistcha",
+    "genus": "Matcha Pokémon"
   },
   {
     "id": 1014,
@@ -25220,7 +26233,8 @@
       "guard-dog"
     ],
     "region": "paldea",
-    "enName": "Okidogi"
+    "enName": "Okidogi",
+    "genus": "Retainer Pokémon"
   },
   {
     "id": 1015,
@@ -25245,7 +26259,8 @@
       "frisk"
     ],
     "region": "paldea",
-    "enName": "Munkidori"
+    "enName": "Munkidori",
+    "genus": "Retainer Pokémon"
   },
   {
     "id": 1016,
@@ -25270,7 +26285,8 @@
       "technician"
     ],
     "region": "paldea",
-    "enName": "Fezandipiti"
+    "enName": "Fezandipiti",
+    "genus": "Retainer Pokémon"
   },
   {
     "id": 1017,
@@ -25293,7 +26309,8 @@
       "defiant"
     ],
     "region": "paldea",
-    "enName": "Ogerpon"
+    "enName": "Ogerpon",
+    "genus": "Mask Pokémon"
   },
   {
     "id": 1018,
@@ -25319,7 +26336,8 @@
       "stalwart"
     ],
     "region": "paldea",
-    "enName": "Archaludon"
+    "enName": "Archaludon",
+    "genus": "Alloy Pokémon"
   },
   {
     "id": 1019,
@@ -25345,7 +26363,8 @@
       "sticky-hold"
     ],
     "region": "paldea",
-    "enName": "Hydrapple"
+    "enName": "Hydrapple",
+    "genus": "Apple Hydra Pokémon"
   },
   {
     "id": 1020,
@@ -25369,7 +26388,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Gouging Fire"
+    "enName": "Gouging Fire",
+    "genus": "Paradox Pokémon"
   },
   {
     "id": 1021,
@@ -25393,7 +26413,8 @@
       "protosynthesis"
     ],
     "region": "paldea",
-    "enName": "Raging Bolt"
+    "enName": "Raging Bolt",
+    "genus": "Paradox Pokémon"
   },
   {
     "id": 1022,
@@ -25417,7 +26438,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Boulder"
+    "enName": "Iron Boulder",
+    "genus": "Paradox Pokémon"
   },
   {
     "id": 1023,
@@ -25441,7 +26463,8 @@
       "quark-drive"
     ],
     "region": "paldea",
-    "enName": "Iron Crown"
+    "enName": "Iron Crown",
+    "genus": "Paradox Pokémon"
   },
   {
     "id": 1024,
@@ -25464,7 +26487,8 @@
       "tera-shift"
     ],
     "region": "paldea",
-    "enName": "Terapagos"
+    "enName": "Terapagos",
+    "genus": "Tera Pokémon"
   },
   {
     "id": 1025,
@@ -25488,6 +26512,7 @@
       "poison-puppeteer"
     ],
     "region": "paldea",
-    "enName": "Pecharunt"
+    "enName": "Pecharunt",
+    "genus": "Subjugation Pokémon"
   }
 ]

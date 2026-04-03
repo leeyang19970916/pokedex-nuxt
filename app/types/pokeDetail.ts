@@ -40,6 +40,7 @@ export interface PokeDetailRes {
     id: Id;
     stage: 1 | 2 | 3;
   }[];
+  genus: string;
 }
 
 export interface PokemonOriginalAPIRes {
