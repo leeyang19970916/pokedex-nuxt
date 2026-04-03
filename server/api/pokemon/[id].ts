@@ -41,11 +41,26 @@ export default defineEventHandler(async (event) => {
           url: speciesData.evolution_chain.url,
         },
       })) || [];
+    const types = pokeData.types.map((t) => t.type.name);
 
-    const moves = pokeData.moves.map((i) => {
-      const { name } = i.move;
-      return (MovesRawData as any)[name];
-    });
+    const moves = pokeData.moves
+      .map((i) => {
+        const { name } = i.move;
+        return (MovesRawData as any)[name];
+      })
+      .sort((a, b) => {
+        const isTypeA = types.includes(a.type);
+        const isTypeB = types.includes(b.type);
+
+        if (isTypeA && !isTypeB) {
+          return -1; //a前面
+        }
+        if (!isTypeA && isTypeB) {
+          return 1; //a退後
+        }
+
+        return 0;
+      });
     const genus =
       speciesData.genera.find(
         (g) =>
@@ -63,7 +78,7 @@ export default defineEventHandler(async (event) => {
       name: translateVariantName(pokeData.name),
       height: pokeData.height,
       weight: pokeData.weight,
-      types: pokeData.types.map((t) => t.type.name),
+      types,
       image: pokeData.sprites.other["official-artwork"].front_default,
       abilities: pokeData.abilities.map((a) => a.ability.name),
       stats,

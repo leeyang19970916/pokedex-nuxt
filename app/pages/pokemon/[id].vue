@@ -151,6 +151,9 @@ watch(
   },
   { immediate: true }
 );
+useHead({
+  title: () => poke.value?.name,
+});
 </script>
 
 <style lang="scss">

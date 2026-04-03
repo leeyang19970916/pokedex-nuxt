@@ -9,7 +9,14 @@
         class="cosms-el-table w-full"
         :lazy="true"
       >
-        <el-table-column fixed label="招式屬性" min-width="120" align="center">
+        <el-table-column
+          fixed
+          label="招式屬性"
+          min-width="120"
+          align="center"
+          sortable
+          prop="type"
+        >
           <template #default="{ row }">
             <Tag
               class="custom-tag"
@@ -21,7 +28,7 @@
           </template>
         </el-table-column>
 
-        <el-table-column prop="name" label="招式名稱" min-width="120">
+        <el-table-column prop="name" label="招式名稱" min-width="120" sortable>
           <template #default="{ row }">
             <span class="font-bold text-gray-200 uppercase tracking-wide">{{
               row.name
@@ -29,7 +36,13 @@
           </template>
         </el-table-column>
 
-        <el-table-column label="招式類型" min-width="120" align="center">
+        <el-table-column
+          label="招式類型"
+          min-width="120"
+          align="center"
+          prop="category"
+          sortable
+        >
           <template #default="{ row }">
             <Tag
               class="custom-tag !px-0"
@@ -46,6 +59,7 @@
           label="攻擊力"
           min-width="120"
           align="center"
+          sortable
         >
           <template #default="{ row }">
             <span class="text-orange-400 font-mono">{{ row.power }}</span>
@@ -57,6 +71,7 @@
           label="命中率"
           min-width="120"
           align="center"
+          sortable
         >
           <template #default="{ row }">
             <span class="text-cyan-400 font-mono">{{ row.accuracy }}</span>
