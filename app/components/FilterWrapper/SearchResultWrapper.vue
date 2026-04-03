@@ -53,7 +53,9 @@
       <span class="search-key">圖鑑編號：</span>
       <div class="text-primary/90 text-sm font-medium tracking-wide font-mono">
         No.{{ searchForm.ids[0] }}
-        <span class="text-primary/40 mx-2">~</span> No.{{ searchForm.ids[1] }}
+        <template v-if="searchForm.ids[0] !== searchForm.ids[1]">
+          <span class="text-primary/40 mx-2">~</span> No.{{ searchForm.ids[1] }}
+        </template>
       </div>
     </div>
   </div>
