@@ -56,7 +56,6 @@
     </div>
 
     <SearchResultWrapper />
-
     <AdvancedSearchDialog v-model="visible" />
   </div>
 </template>
@@ -80,12 +79,14 @@ const emit = defineEmits<{
 
 const visible = ref(false);
 
-const tempForm = ref<PokeSearchForm>(deepClone(DEFAULT_SEARCH_FORM));
-const searchForm = ref<PokeSearchForm>(deepClone(tempForm.value));
+const tempForm = ref<PokeSearchForm>({ ...DEFAULT_SEARCH_FORM });
+const searchForm = ref<PokeSearchForm>({ ...tempForm.value });
 
 const search = () => {
   searchForm.value = deepClone(tempForm.value);
-  emit("search", searchForm.value);
+  if (searchForm.value) {
+    emit("search", searchForm.value);
+  }
 };
 const revert = () => {
   tempForm.value = deepClone(searchForm.value);
@@ -102,6 +103,7 @@ provide(SearchContextKey, {
   clear,
 });
 onMounted(() => {
-  tempForm.value = props.searchForm;
+  tempForm.value = deepClone(props.searchForm);
+  searchForm.value = deepClone(tempForm.value);
 });
 </script>
