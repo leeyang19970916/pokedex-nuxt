@@ -82,5 +82,4 @@ export type QueryFormat = {
 export interface PokedexCache extends PokeListQuery {
   total: number;
   list: PokeCard[];
-  scrollY: number;
 }

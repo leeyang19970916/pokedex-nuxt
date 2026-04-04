@@ -10,21 +10,24 @@
     >
       <FilterWrapper @search="handleFilter" :searchForm="state.searchForm" />
       <SortWrapper v-model="state.sort" @search="handleSort" />
-      <template v-if="!state.isLoading">
-        <div v-if="state.list.length" class="grid grid-cols-4 gap-4">
-          <PokemonCard
-            v-for="poke in state.list"
-            :key="`${poke.id}-${poke.name}`"
-            :poke
-          />
-        </div>
-        <div v-else class="m-[0_auto]">查無資料</div>
-      </template>
+      <div v-if="state.list.length" class="grid grid-cols-4 gap-4">
+        <PokemonCard
+          v-for="poke in state.list"
+          :key="`${poke.id}-${poke.name}`"
+          :poke
+        />
+      </div>
+      <div
+        v-if="!hasMore && !state.list.length"
+        class="text-center text-primary mt-5"
+      >
+        查無資料
+      </div>
       <div
         ref="loadMoreRef"
         class="w-full h-20 flex justify-center items-center mt-4"
       >
-        <LoadingBallIcon v-show="state.isLoading" class="rotate-ball" />
+        <LoadingBallIcon v-show="hasMore" class="rotate-ball" />
       </div>
     </div>
   </div>
@@ -48,11 +51,7 @@ import {
   SLIDER_RANGE,
 } from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
-import {
-  useIntersectionObserver,
-  useDebounceFn,
-  useWindowScroll,
-} from "@vueuse/core";
+import { useIntersectionObserver, useDebounceFn } from "@vueuse/core";
 
 interface State {
   total: number;
@@ -66,14 +65,15 @@ interface State {
 
 const pokeStore = usePokeStore();
 const loadMoreRef = shallowRef<HTMLElement | null>(null);
+const hasMore = computed(
+  () => state.value.isLoading || state.value.list.length < state.value.total
+);
 useIntersectionObserver(loadMoreRef, (entries) => {
   const isIntersecting = entries[0]?.isIntersecting;
-  const hasMore = state.value.list.length < state.value.total;
   if (isIntersecting && hasMore && !state.value.isLoading) {
     next();
   }
 });
-const { y } = useWindowScroll();
 const randomList = await useFetch("/api/pokemon/random", {
   query: {
     limit: 13,
@@ -83,7 +83,7 @@ const randomList = await useFetch("/api/pokemon/random", {
 const DEFAULT_LIST_QUERY: PokeListQuery = {
   limit: 20,
   offset: 0,
-  searchForm: DEFAULT_SEARCH_FORM,
+  searchForm: { ...DEFAULT_SEARCH_FORM },
   sort: POKEMON_SORT_OPTIONS[0].value,
 };
 
@@ -93,7 +93,7 @@ const state = ref<State>({
   limit: DEFAULT_LIST_QUERY.limit,
   offset: DEFAULT_LIST_QUERY.offset,
   isLoading: true,
-  searchForm: DEFAULT_LIST_QUERY.searchForm,
+  searchForm: { ...DEFAULT_LIST_QUERY.searchForm },
   sort: DEFAULT_LIST_QUERY.sort,
 });
 const fetchPokeList = async () => {
@@ -107,20 +107,14 @@ const fetchPokeList = async () => {
     state.value.sort = sort;
     state.value.total = total;
   } else {
-    try {
-      const { list, total } = await $fetch("/api/pokemon/fetchList");
-      state.value.total = total;
-      state.value.list = list;
-    } catch (e) {
-      console.error(e, "err");
-    }
+    await fetchUpdatedList(state.value);
   }
 };
 
-const next = () => {
+const next = useDebounceFn(() => {
   state.value.offset += state.value.limit;
   fetchUpdatedList(state.value, true);
-};
+}, 500);
 const handleFilter = useDebounceFn((searchForm: PokeSearchForm) => {
   state.value.offset = DEFAULT_LIST_QUERY.offset;
   const query: PokeListQuery = {
@@ -147,6 +141,7 @@ const fetchUpdatedList = async (
   isAppend: boolean = false
 ) => {
   state.value.isLoading = true;
+
   const { limit, offset, searchForm, sort } = query;
   let queryFormat: QueryFormat = {
     limit,
@@ -190,21 +185,21 @@ const getRange = (ids: PokeSearchForm["ids"]) => {
 onMounted(async () => {
   pokeStore.setAbilities();
   await fetchPokeList();
-  // await nextTick()
-
-  state.value.isLoading = false;
 });
-onBeforeUnmount(() => {
-  const { searchForm, sort, limit, list, offset, total } = state.value;
-  const caches: PokedexCache = {
-    searchForm,
-    sort,
-    limit,
-    offset,
-    list,
-    scrollY: y.value,
-    total,
-  };
-  pokeStore.setPokedexCache(caches);
+onBeforeRouteLeave((to) => {
+  if (to.path.includes("/pokemon/")) {
+    const { searchForm, sort, limit, list, offset, total } = state.value;
+    const caches: PokedexCache = {
+      searchForm,
+      sort,
+      limit,
+      offset,
+      list,
+      total,
+    };
+    pokeStore.setPokedexCache(caches);
+  } else {
+    pokeStore.setPokedexCache(null);
+  }
 });
 </script>
