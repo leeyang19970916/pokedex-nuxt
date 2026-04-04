@@ -78,3 +78,9 @@ export type QueryFormat = {
   maxId?: PokeSearchForm["ids"][1];
   minId?: PokeSearchForm["ids"][0];
 };
+
+export interface PokedexCache extends PokeListQuery {
+  total: number;
+  list: PokeCard[];
+  scrollY: number;
+}

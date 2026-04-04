@@ -71,13 +71,16 @@ import { SearchContextKey } from "~/types/pokemon";
 import { deepClone } from "~~/utils/deepClone";
 import { DEFAULT_SEARCH_FORM } from "~/constants";
 
+const props = defineProps<{
+  searchForm: PokeSearchForm;
+}>();
 const emit = defineEmits<{
   (e: "search", searchForm: PokeSearchForm): void;
 }>();
 
 const visible = ref(false);
 
-const tempForm = ref<PokeSearchForm>(structuredClone(DEFAULT_SEARCH_FORM));
+const tempForm = ref<PokeSearchForm>(deepClone(DEFAULT_SEARCH_FORM));
 const searchForm = ref<PokeSearchForm>(deepClone(tempForm.value));
 
 const search = () => {
@@ -97,5 +100,8 @@ provide(SearchContextKey, {
   search,
   revert,
   clear,
+});
+onMounted(() => {
+  tempForm.value = props.searchForm;
 });
 </script>

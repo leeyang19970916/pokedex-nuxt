@@ -1,16 +1,15 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import type { PokeCard, PokeAbility } from "../types/pokemon";
+import type { PokedexCache, PokeAbility } from "../types/pokemon";
 import AbilitiesRawData from "~~/server/api/rawData/abilities.json";
 
 export const usePokeStore = defineStore("pokeStore", () => {
   const abilities = ref<PokeAbility[]>([]);
+  const pokedexCache = ref<PokedexCache | null>(null);
 
-  // const cache
-  // const pokeList = ref<PokeCard[]>([]);
-  // const setList = async (newData: PokeCard[]) => {
-  //   pokeList.value = newData;
-  // };
+  const setPokedexCache = (cache: PokedexCache | null) => {
+    pokedexCache.value = cache;
+  };
 
   const setAbilities = async () => {
     if (abilities.value.length) return;
@@ -20,5 +19,5 @@ export const usePokeStore = defineStore("pokeStore", () => {
     const all = { label: "All", value: "all" };
     abilities.value = [all, ...abilities.value];
   };
-  return { setAbilities, abilities };
+  return { setAbilities, abilities, pokedexCache, setPokedexCache };
 });

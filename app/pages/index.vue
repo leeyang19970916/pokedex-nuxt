@@ -5,20 +5,21 @@
       :list="randomList.data.value"
     />
     <div
-      class="px-[3%] pb-[10%] flex flex-col gap-6"
+      class="px-[3%] pb-[10%] flex flex-col gap-6 min-h-[80vh]"
       :style="{ 'background-image': `url(${BottomBackground})` }"
     >
-      <FilterWrapper @search="handleFilter" />
-
+      <FilterWrapper @search="handleFilter" :searchForm="state.searchForm" />
       <SortWrapper v-model="state.sort" @search="handleSort" />
-      <div v-if="state.list.length" class="grid grid-cols-4 gap-4">
-        <PokemonCard
-          v-for="poke in state.list"
-          :key="`${poke.id}-${poke.name}`"
-          :poke
-        />
-      </div>
-      <div v-else class="m-[0_auto]">查無資料</div>
+      <template v-if="!state.isLoading">
+        <div v-if="state.list.length" class="grid grid-cols-4 gap-4">
+          <PokemonCard
+            v-for="poke in state.list"
+            :key="`${poke.id}-${poke.name}`"
+            :poke
+          />
+        </div>
+        <div v-else class="m-[0_auto]">查無資料</div>
+      </template>
       <div
         ref="loadMoreRef"
         class="w-full h-20 flex justify-center items-center mt-4"
@@ -39,6 +40,7 @@ import type {
   PokeCard,
   PokeSearchForm,
   QueryFormat,
+  PokedexCache,
 } from "~/types/pokemon";
 import {
   POKEMON_SORT_OPTIONS,
@@ -46,7 +48,11 @@ import {
   SLIDER_RANGE,
 } from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
-import { useIntersectionObserver, useDebounceFn } from "@vueuse/core";
+import {
+  useIntersectionObserver,
+  useDebounceFn,
+  useWindowScroll,
+} from "@vueuse/core";
 
 interface State {
   total: number;
@@ -57,6 +63,7 @@ interface State {
   searchForm: PokeListQuery["searchForm"];
   sort: PokeListQuery["sort"];
 }
+
 const pokeStore = usePokeStore();
 const loadMoreRef = shallowRef<HTMLElement | null>(null);
 useIntersectionObserver(loadMoreRef, (entries) => {
@@ -65,6 +72,12 @@ useIntersectionObserver(loadMoreRef, (entries) => {
   if (isIntersecting && hasMore && !state.value.isLoading) {
     next();
   }
+});
+const { y } = useWindowScroll();
+const randomList = await useFetch("/api/pokemon/random", {
+  query: {
+    limit: 13,
+  },
 });
 
 const DEFAULT_LIST_QUERY: PokeListQuery = {
@@ -83,21 +96,26 @@ const state = ref<State>({
   searchForm: DEFAULT_LIST_QUERY.searchForm,
   sort: DEFAULT_LIST_QUERY.sort,
 });
-
-const randomList = await useFetch("/api/pokemon/random", {
-  query: {
-    limit: 13,
-  },
-});
-const { data, error, status } = await useFetch("/api/pokemon/fetchList");
-
-if (data.value && status.value === "success") {
-  state.value.isLoading = false;
-  state.value.list = data.value.list;
-  state.value.total = data.value.total;
-} else if (error.value) {
-  console.error("fetchList API 壞了：", error.value?.message);
-}
+const fetchPokeList = async () => {
+  if (pokeStore.pokedexCache) {
+    const { limit, list, searchForm, sort, total, offset } =
+      pokeStore.pokedexCache;
+    state.value.limit = limit;
+    state.value.list = list;
+    state.value.offset = offset;
+    state.value.searchForm = searchForm;
+    state.value.sort = sort;
+    state.value.total = total;
+  } else {
+    try {
+      const { list, total } = await $fetch("/api/pokemon/fetchList");
+      state.value.total = total;
+      state.value.list = list;
+    } catch (e) {
+      console.error(e, "err");
+    }
+  }
+};
 
 const next = () => {
   state.value.offset += state.value.limit;
@@ -169,7 +187,24 @@ const getRange = (ids: PokeSearchForm["ids"]) => {
   };
 };
 
-onMounted(() => {
+onMounted(async () => {
   pokeStore.setAbilities();
+  await fetchPokeList();
+  // await nextTick()
+
+  state.value.isLoading = false;
+});
+onBeforeUnmount(() => {
+  const { searchForm, sort, limit, list, offset, total } = state.value;
+  const caches: PokedexCache = {
+    searchForm,
+    sort,
+    limit,
+    offset,
+    list,
+    scrollY: y.value,
+    total,
+  };
+  pokeStore.setPokedexCache(caches);
 });
 </script>

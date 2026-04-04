@@ -41,7 +41,6 @@
         />
       </div>
     </div>
-    {{ getAbility }}
     <div v-if="getAbility" class="flex items-start gap-4 z-10">
       <span class="search-key">特性：</span>
       <div class="text-primary/90 text-sm font-medium tracking-wide font-mono">
