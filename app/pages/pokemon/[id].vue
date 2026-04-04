@@ -24,13 +24,13 @@
         class="relative flex flex-col justify-center items-center order-1 lg:order-2 min-h-[300px]"
       >
         <ImageWrapper
-          class="flex justify-center items-center w-full max-w-[400px] lg:max-w-full"
+          class="flex justify-center items-center w-full max-w-[400px] md:max-w-full"
           :image="poke.image"
           :name="poke.name"
         />
 
         <div
-          class="absolute bottom-0 left-0 w-full overflow-x-auto scrollbar-hide z-20"
+          class="md:absolute bottom-0 left-0 w-full overflow-x-auto scrollbar-hide z-20"
         >
           <div class="flex w-max min-w-full justify-center px-4 py-6">
             <VariantWrapper

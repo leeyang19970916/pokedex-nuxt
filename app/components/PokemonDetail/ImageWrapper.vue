@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex justify-center items-center w-full h-full overflow-hidden"
+    class="relative flex justify-center items-center w-full h-full overflow-auto md:overflow-hidden"
   >
     <div class="reactor-core-wrapper">
       <div v-for="i in 5" :key="i" :class="['core-ring', `ring-${i}`]"></div>

@@ -131,7 +131,11 @@ const fetchPokeList = async () => {
     state.value.searchForm = searchForm;
     state.value.sort = sort;
     state.value.total = total;
-    state.value.isLoading = false;
+    if (state.value.list.length === 0) {
+      await fetchUpdatedList(state.value);
+    } else {
+      state.value.isLoading = false;
+    }
   } else {
     await fetchUpdatedList(state.value);
   }

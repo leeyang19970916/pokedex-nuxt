@@ -39,6 +39,7 @@
             mode="solid"
             :option="options"
             :readOnly="false"
+            @click="(e) => redirectBy(e)"
           />
         </div>
       </section>
@@ -52,6 +53,7 @@
             mode="solid"
             :option="options"
             :readOnly="false"
+            @click="(e) => redirectBy(e)"
           />
         </div>
       </section>
@@ -79,8 +81,16 @@
 <script setup lang="ts">
 import type { PokeDetailRes } from "~/types/pokeDetail";
 import Tag from "~/components/Tags/index.vue";
-import { POKEMON_TYPES, POKEMON_REGIONS } from "~/constants";
+import {
+  POKEMON_TYPES,
+  POKEMON_REGIONS,
+  TYPE,
+  DEFAULT_SEARCH_FORM,
+  POKEMON_SORT_OPTIONS,
+} from "~/constants";
 import { getIdText } from "~~/utils/getIdText";
+import type { TagPayload, PokeType, PokedexCache } from "~/types/pokemon";
+import { usePokeStore } from "~/store/pokeStore";
 
 const props = defineProps<{
   name: PokeDetailRes["name"];
@@ -93,6 +103,7 @@ const props = defineProps<{
   region: PokeDetailRes["region"];
 }>();
 
+const pokeStore = usePokeStore();
 const typeOpts = computed(() => {
   return POKEMON_TYPES.filter((opt) => props.types.includes(opt.value));
 });
@@ -108,4 +119,17 @@ const weaknessOpts = computed(() => {
 const region = computed(() =>
   POKEMON_REGIONS.find((i) => i.value === props.region)
 );
+const redirectBy = (e: TagPayload) => {
+  const val = e.option.value as PokeType;
+  const payload: PokedexCache = {
+    total: 0,
+    limit: 20,
+    offset: 0,
+    list: [],
+    searchForm: { ...DEFAULT_SEARCH_FORM, types: [val] },
+    sort: POKEMON_SORT_OPTIONS[0].value,
+  };
+  pokeStore.setPokedexCache(payload);
+  navigateTo("/");
+};
 </script>
