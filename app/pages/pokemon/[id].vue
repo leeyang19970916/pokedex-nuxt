@@ -21,18 +21,18 @@
       />
 
       <section
-        class="relative flex flex-col justify-center items-center order-1 lg:order-2 min-h-[300px]"
+        class="relative flex flex-col justify-center items-center order-1 lg:order-2 min-h-[350px] md:min-h-[500px] md:pb-20 pt-4 :pt-0"
       >
         <ImageWrapper
-          class="flex justify-center items-center w-full max-w-[400px] md:max-w-full"
+          class="max-w-[250px] md:max-w-[400px] lg:max-w-full relative flex justify-center items-center w-full h-full overflow-visible lg:overflow-hidden"
           :image="poke.image"
           :name="poke.name"
         />
 
         <div
-          class="md:absolute bottom-0 left-0 w-full overflow-x-auto scrollbar-hide z-20"
+          class="relative md:absolute bottom-0 left-0 w-full overflow-x-auto scrollbar-hide z-20 mt-4 md:mt-0"
         >
-          <div class="flex w-max min-w-full justify-center px-4 py-6">
+          <div class="flex w-max min-w-full justify-center px-4 py-2 md:py-6">
             <VariantWrapper
               v-if="activeVariantId && poke.varieties.length > 1"
               :activeVariantId="activeVariantId"

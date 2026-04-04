@@ -1,8 +1,8 @@
 <template>
-  <div
-    class="relative flex justify-center items-center w-full h-full overflow-auto md:overflow-hidden"
-  >
-    <div class="reactor-core-wrapper">
+  <div>
+    <div
+      class="reactor-core-wrapper scale-[0.6] md:scale-100 transition-transform duration-300"
+    >
       <div v-for="i in 5" :key="i" :class="['core-ring', `ring-${i}`]"></div>
     </div>
 

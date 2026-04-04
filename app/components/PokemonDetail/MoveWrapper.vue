@@ -26,7 +26,6 @@
         :lazy="true"
       >
         <el-table-column
-          fixed
           label="招式屬性"
           min-width="120"
           align="center"
