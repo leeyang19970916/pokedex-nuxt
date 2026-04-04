@@ -37,7 +37,6 @@ export default {
   safelist: [
     {
       pattern: /^(bg|text|border|shadow)-poke-(.*)-(400|500)$/,
-      // 告訴 Tailwind：這些顏色我可能會加上 hover 效果喔
       variants: ["hover"],
     },
   ],

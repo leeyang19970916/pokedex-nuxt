@@ -16,15 +16,21 @@
         />
         <div
           v-else
-          class="w-full p-6 rounded-xl bg-black/50 backdrop-blur-md border border-primary/50 shadow-[0_0_25px_rgba(179,234,254,0.15)] flex flex-col gap-6 h-[96px]"
+          class="w-full p-6 rounded-xl bg-black/50 backdrop-blur-md border border-primary/50 shadow-[0_0_25px_rgba(179,234,254,0.15)] flex flex-col gap-6"
         >
-          <div class="flex items-center gap-4 w-full animate-pulse">
-            <div class="flex-grow h-[42px] bg-primary/20 rounded-md"></div>
-
-            <div class="w-[100px] h-[42px] bg-primary/20 rounded-md"></div>
+          <div
+            class="flex flex-col md:flex-row md:items-center gap-4 w-full animate-pulse"
+          >
+            <div
+              class="flex-grow h-[42px] bg-primary/20 rounded-md w-full"
+            ></div>
 
             <div
-              class="w-[120px] h-[42px] bg-primary/10 border border-primary/30 rounded-md"
+              class="w-full md:w-[100px] h-[42px] bg-primary/20 rounded-md"
+            ></div>
+
+            <div
+              class="w-full md:w-[120px] h-[42px] bg-primary/10 border border-primary/30 rounded-md"
             ></div>
           </div>
         </div>

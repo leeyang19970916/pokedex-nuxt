@@ -26,10 +26,9 @@ defineProps<{
 </script>
 
 <style scoped lang="scss">
-// 顏色層次定義
-$primary-cyan: rgba(179, 234, 254, 0.4); // 原本的淡青色 (框架感)
-$neon-cyan: rgba(0, 243, 255, 0.6); // 飽和的能量青 (核心感)
-$pulse-duration: 8s; // 深沈呼吸節奏
+$primary-cyan: rgba(179, 234, 254, 0.4);
+$neon-cyan: rgba(0, 243, 255, 0.6);
+$pulse-duration: 8s;
 
 .reactor-core-wrapper {
   position: absolute;
@@ -42,11 +41,9 @@ $pulse-duration: 8s; // 深沈呼吸節奏
     position: absolute;
     border-radius: 50%;
     border: 2px solid $primary-cyan;
-    // 基礎內發光
     box-shadow: 0 0 15px rgba(179, 234, 254, 0.1) inset;
     animation: reactor-pulse $pulse-duration infinite ease-in-out;
 
-    // 增加一個邊緣亮點，旋轉時會產生掃描感
     &::after {
       content: "";
       position: absolute;
@@ -58,9 +55,6 @@ $pulse-duration: 8s; // 深沈呼吸節奏
     }
   }
 
-  /* --- 各層獨特樣式與慢速旋轉 --- */
-
-  // Ring 1: 核心層 - 提高飽和度
   .ring-1 {
     width: 300px;
     height: 300px;
@@ -71,7 +65,6 @@ $pulse-duration: 8s; // 深沈呼吸節奏
       rotate-clockwise 20s linear infinite;
   }
 
-  // Ring 2: 中內層 - 粗虛線
   .ring-2 {
     width: 350px;
     height: 350px;
@@ -82,7 +75,6 @@ $pulse-duration: 8s; // 深沈呼吸節奏
       rotate-counter-clockwise 60s linear infinite;
   }
 
-  // Ring 3: 中層 - 靜止基準線 (保持最淡)
   .ring-3 {
     width: 400px;
     height: 400px;
@@ -91,19 +83,17 @@ $pulse-duration: 8s; // 深沈呼吸節奏
     animation: reactor-pulse $pulse-duration 2s infinite ease-in-out;
   }
 
-  // Ring 4: 視覺重心 - 強化顆粒感與霓虹光
   .ring-4 {
     width: 450px;
     height: 450px;
     border-style: dotted;
     border-width: 8px;
-    border-color: $neon-cyan; // 使用較亮的能量青
+    border-color: $neon-cyan;
     filter: drop-shadow(0 0 10px rgba(0, 243, 255, 0.3));
     animation: reactor-pulse $pulse-duration 3s infinite ease-in-out,
       rotate-clockwise 45s linear infinite;
   }
 
-  // Ring 5: 最外層 - 巨型框架 (極淡)
   .ring-5 {
     width: 500px;
     height: 500px;
@@ -113,8 +103,6 @@ $pulse-duration: 8s; // 深沈呼吸節奏
       rotate-counter-clockwise 120s linear infinite;
   }
 }
-
-/* --- 動畫定義 --- */
 
 @keyframes reactor-pulse {
   0%,
@@ -148,7 +136,6 @@ $pulse-duration: 8s; // 深沈呼吸節奏
   }
 }
 
-/* --- 寶可夢主圖 --- */
 .pokemon-feature-img {
   width: 80%;
   max-width: 450px;

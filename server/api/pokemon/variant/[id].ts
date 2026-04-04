@@ -1,5 +1,4 @@
 import { POKEMON_API_URL } from "~/constants";
-// 1. 修正型別：這裡是打 pokemon API，不是 species
 import type { PokemonOriginalAPIRes } from "~/types/pokeDetail";
 import { translateVariantName } from "~~/utils/translateVariantName";
 import { formattedStat } from "~~/utils/formattedStat";

@@ -13,7 +13,7 @@
 
       <button
         @click="search"
-        class="whitespace-nowrap flex items-center gap-2 px-6 py-2 rounded-md bg-primary/20 border border-primary text-primary font-bold tracking-widest hover:bg-primary hover:text-black transition-all shadow-[0_0_15px_rgba(179,234,254,0.4)] hover:shadow-[0_0_20px_rgba(179,234,254,0.8)]"
+        class="whitespace-nowrap flex items-center gap-2 px-6 py-2 rounded-md bg-primary/20 border border-primary text-primary font-bold tracking-widest hover:bg-primary hover:text-white transition-all shadow-[0_0_15px_rgba(179,234,254,0.4)] hover:shadow-[0_0_20px_rgba(179,234,254,0.8)]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

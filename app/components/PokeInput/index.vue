@@ -18,10 +18,8 @@
 </template>
 
 <script setup lang="ts">
-// 這是 Vue 3.4+ 最強的語法糖，直接搞定 v-model 雙向綁定！
 const model = defineModel<string | number>();
 
-// 定義外面可以傳進來的設定 (Props)
 withDefaults(
   defineProps<{
     label?: string;

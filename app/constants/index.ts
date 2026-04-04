@@ -26,7 +26,7 @@ export const POKEMON_TYPES = [
   { label: "惡", value: "dark" },
   { label: "鋼", value: "steel" },
   { label: "妖精", value: "fairy" },
-] as const; // 使用 as const 讓 TypeScript 記住精確的字串值
+] as const;
 
 export const POKEMON_REGIONS = [
   { label: "關都", value: "kanto" },
@@ -40,7 +40,6 @@ export const POKEMON_REGIONS = [
   { label: "帕底亞", value: "paldean" },
 ] as const;
 
-// constants/pokemon.ts
 export const POKEMON_SORT_OPTIONS = [
   { label: "圖鑑編號由小至大", value: "id_asc" },
   { label: "圖鑑編號由大至小", value: "id_desc" },

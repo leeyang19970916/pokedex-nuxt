@@ -94,15 +94,15 @@ const redirect = (id?: number) => {
   @apply relative flex flex-wrap gap-4 items-center justify-center h-full px-4;
 
   &:not(:last-child)::after {
-    content: "≫"; // 你的箭頭符號，也可以用 SVG 背景
+    content: "≫";
     position: absolute;
-    right: -1.25rem; // 剛好位在 grid gap 的中央 (gap-4 是 1rem)
+    right: -1.25rem;
     top: 50%;
     transform: translateY(-50%);
 
-    @apply text-cyan-500 font-bold text-xl animate-pulse; // 套用你的霓虹風格
+    @apply text-cyan-500 font-bold text-xl animate-pulse;
     z-index: 20;
-    pointer-events: none; // 確保箭頭不會擋到點擊
+    pointer-events: none;
   }
 }
 </style>

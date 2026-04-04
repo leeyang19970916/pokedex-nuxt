@@ -33,3 +33,5 @@ await fs.writeFile(
     JSON.stringify(result, null, 2),
     "utf-8"
 );
+
+console.log('ability done');

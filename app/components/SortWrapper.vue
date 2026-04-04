@@ -43,8 +43,8 @@
             class="w-full text-left px-4 py-2 text-sm transition-colors duration-200 flex items-center justify-between"
             :class="[
               model === option.value
-                ? 'bg-primary/20 text-primary font-bold' // 選中狀態
-                : 'text-gray-400 hover:bg-primary/10 hover:text-primary', // 未選中狀態
+                ? 'bg-primary/20 text-primary font-bold'
+                : 'text-gray-400 hover:bg-primary/10 hover:text-primary',
             ]"
           >
             {{ option.label }}
@@ -79,26 +79,22 @@ const emit = defineEmits<{
   (e: "search", val: PokeSort): void;
 }>();
 
-// 雙向綁定當前的排序值
 const model = defineModel<PokeSort>({ default: POKEMON_SORT_OPTIONS[0].value });
 
 const isOpen = ref(false);
 const dropdownRef = shallowRef<HTMLElement | null>(null);
 
-// 找出當前選中的 Label 顯示在按鈕上
 const currentLabel = computed(() => {
   const found = POKEMON_SORT_OPTIONS.find((opt) => opt.value === model.value);
   return found ? found.label : "預設排序";
 });
 
-// 選擇選項的動作
 const selectOption = (val: PokeSort) => {
   model.value = val;
-  isOpen.value = false; // 選完自動關閉
+  isOpen.value = false;
   emit("search", model.value);
 };
 
-// --- 以下是「點擊外面自動關閉」的貼心功能 ---
 const handleClickOutside = (event: MouseEvent) => {
   if (dropdownRef.value && !dropdownRef.value.contains(event.target as Node)) {
     isOpen.value = false;

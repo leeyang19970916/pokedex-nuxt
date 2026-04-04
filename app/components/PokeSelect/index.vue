@@ -45,7 +45,6 @@
 </template>
 
 <script setup lang="ts">
-// 定義傳入的屬性
 import type { PokeAbility } from "~/types/pokemon";
 
 const props = withDefaults(
@@ -56,7 +55,7 @@ const props = withDefaults(
   }>(),
   {
     disabled: false,
-  },
+  }
 );
 const model = defineModel<PokeAbility["value"]>({
   default: undefined,

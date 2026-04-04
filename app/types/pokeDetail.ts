@@ -55,15 +55,15 @@ export interface PokeDetailRes {
 export interface PokemonOriginalAPIRes {
   id: Id;
   name: PokeCard["name"];
-  abilities: Abilitiy[]; //能力
-  base_experience: number; //起始經驗？
+  abilities: Abilitiy[];
+  base_experience: number;
   cries: {
     latest: string;
     legacy: string;
-  }; //叫聲，不確定可以怎麼用
-  forms: Opt[]; //不曉得幹嘛的，好像是本人
-  game_indices: GameIndex[]; //???遊戲？
-  species: Opt; //極其重要 語系 描述
+  };
+  forms: Opt[];
+  game_indices: GameIndex[];
+  species: Opt;
   height: PokeCard["height"];
   held_items: any[];
   is_default: boolean;

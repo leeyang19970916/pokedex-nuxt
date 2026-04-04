@@ -117,10 +117,8 @@ const props = defineProps<{
   moves: PokeDetailRes["moves"];
 }>();
 
-// 控制動畫與遮罩的開關
 const isLoading = ref(true);
 
-// 💡 核心邏輯：如果正在讀取且沒有資料，給予 5 筆空資料來撐出 tr 結構
 const displayMoves = computed(() => {
   if (isLoading.value && (!props.moves || props.moves.length === 0)) {
     return Array(5).fill({});
@@ -136,7 +134,6 @@ const getStatusOpt = (status: PokeDetailRes["moves"][number]["category"]) => {
   return POKE_MOVE_CATS.find((m) => m.value === status) || POKE_MOVE_CATS[0];
 };
 
-// 💡 監聽資料變化
 watch(
   () => props.moves,
   (newVal) => {
@@ -157,7 +154,6 @@ watch(
   @apply w-3/4 m-[0_auto];
 }
 .moveset-table-wrapper {
-  /* 你的原版樣式一字不漏保留 */
   :deep(.cosms-el-table) {
     --el-table-bg-color: transparent;
     --el-table-tr-bg-color: transparent;
