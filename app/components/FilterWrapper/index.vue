@@ -2,7 +2,7 @@
   <div
     class="relative w-full p-6 rounded-xl bg-black/50 backdrop-blur-md border border-primary/50 shadow-[0_0_25px_rgba(179,234,254,0.15)] flex flex-col gap-6"
   >
-    <div class="flex items-center gap-4">
+    <div class="flex flex-col md:flex-row md:items-center gap-4">
       <div class="flex-grow">
         <PokeInput
           v-model="tempForm.keywords"

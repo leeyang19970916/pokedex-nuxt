@@ -1,57 +1,15 @@
 <template>
   <div
     v-if="poke && data && status === 'success'"
-    class="min-h-screen z-10"
+    class="min-h-screen z-10 flex flex-col"
     :style="{ 'background-image': `url(${BackgroundImage})` }"
   >
-    <header
-      class="terminal-banner cosms-border flex justify-between items-center h-20 relative overflow-hidden px-[3%]"
+    <Header :id="poke.id"></Header>
+    <main
+      class="relative flex-grow grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-8 z-10 p-[3%]"
     >
-      <div class="hologram-line z-0 absolute inset-0 pointer-events-none"></div>
-
-      <div
-        v-if="prevPoke"
-        class="nav-btn prev-btn z-10 flex items-center gap-3 cursor-pointer transition-all duration-300 hover:scale-105"
-        @click="() => navigateTo(`/pokemon/${prevPoke?.id}`)"
-      >
-        <div class="nav-arrow text-cyan-500 font-bold text-xl">≪</div>
-        <div class="nav-info hidden md:flex flex-col items-start">
-          <span class="text-[10px] text-cyan-600 font-mono leading-none">{{
-            getIdText(prevPoke.id, false)
-          }}</span>
-          <span class="text-sm text-cyan-100 font-bold tracking-wider">{{
-            prevPoke.name
-          }}</span>
-        </div>
-      </div>
-      <div v-else class="w-[120px]"></div>
-      <div
-        class="banner-content z-10 text-white font-mono tracking-widest text-2xl cursor-pointer text-center absolute left-1/2 -translate-x-1/2"
-        @click="() => navigateTo({ path: '/' })"
-      >
-        {{ POKEDEX }}
-      </div>
-
-      <div
-        v-if="nextPoke"
-        class="nav-btn next-btn z-10 flex items-center gap-3 cursor-pointer transition-all duration-300 hover:scale-105"
-        @click="() => navigateTo(`/pokemon/${nextPoke?.id}`)"
-      >
-        <div class="nav-info hidden md:flex flex-col items-end">
-          <span class="text-[10px] text-cyan-600 font-mono leading-none">{{
-            getIdText(nextPoke.id, false)
-          }}</span>
-          <span class="text-sm text-cyan-100 font-bold tracking-wider">{{
-            nextPoke.name
-          }}</span>
-        </div>
-        <div class="nav-arrow text-cyan-500 font-bold text-xl">≫</div>
-      </div>
-      <div v-else class="w-[120px]"></div>
-    </header>
-    <main class="relative grid grid-cols-[1fr_2fr_1fr] gap-6 z-10 p-[3%]">
       <InfoWrapper
-        class="left-panel flex flex-col gap-6"
+        class="left-panel flex flex-col gap-6 order-2 lg:order-1"
         :name="poke.name"
         :id="poke.id"
         :height="poke.height"
@@ -61,29 +19,41 @@
         :damageType="poke.damageType"
         :region="poke.region"
       />
-      <section class="flex justify-center items-center">
+
+      <section
+        class="relative flex flex-col justify-center items-center order-1 lg:order-2 min-h-[300px]"
+      >
         <ImageWrapper
-          class="relative flex justify-center items-center"
+          class="flex justify-center items-center w-full max-w-[400px] lg:max-w-full"
           :image="poke.image"
           :name="poke.name"
         />
-        <VariantWrapper
-          class="absolute bottom-0 left-1/2 -translate-x-1/2 z-10"
-          v-if="activeVariantId && poke.varieties.length > 1"
-          :activeVariantId="activeVariantId"
-          :varieties="poke.varieties"
-          @change="change"
-        />
+
+        <div
+          class="absolute bottom-0 left-0 w-full overflow-x-auto scrollbar-hide z-20"
+        >
+          <div class="flex w-max min-w-full justify-center px-4 py-6">
+            <VariantWrapper
+              v-if="activeVariantId && poke.varieties.length > 1"
+              :activeVariantId="activeVariantId"
+              :varieties="poke.varieties"
+              @change="change"
+            />
+          </div>
+        </div>
       </section>
+
       <StatsWrapper
-        class="right-panel flex flex-col gap-6"
+        class="right-panel flex flex-col gap-6 order-3 lg:order-3"
         :stats="poke.stats"
         :abilities="poke.abilities"
         :entryText="poke.entryText"
       />
     </main>
 
-    <footer class="z-10 relative grid grid-cols-[1fr_1.5fr] gap-6 p-[3%]">
+    <footer
+      class="z-10 relative grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-8 px-[3%] md:p-[3%] mb-8"
+    >
       <EvolutionChainWrapper
         :currentPokeId="poke.id"
         :evolutionChains="poke.evolutionChains"
@@ -102,9 +72,7 @@ import MoveWrapper from "~/components/PokemonDetail/MoveWrapper.vue";
 import EvolutionChainWrapper from "~/components/PokemonDetail/EvolutionChainWrapper.vue";
 import type { PokeDetailRes } from "~/types/pokeDetail";
 import VariantWrapper from "~/components/PokemonDetail/VariantWrapper.vue";
-import { POKEDEX, SLIDER_RANGE } from "~/constants";
-import PokedexData from "~~/server/api/rawData/pokedex.json";
-import { getIdText } from "~~/utils/getIdText";
+import Header from "~/components/PokemonDetail/Header.vue";
 
 const route = useRoute();
 
@@ -128,20 +96,7 @@ const change = async (id: PokeDetailRes["id"]) => {
     activeVariantId.value = res.id;
   }
 };
-const prevPoke = computed(() => {
-  const index = Number(poke.value?.id) - 1;
-  if (index === 0) return null;
 
-  return PokedexData.find((i) => i.id === index);
-});
-
-const nextPoke = computed(() => {
-  const index = Number(poke.value?.id) + 1;
-  if (index <= SLIDER_RANGE.max) {
-    return PokedexData.find((i) => i.id === index);
-  }
-  return null;
-});
 watch(
   () => data,
   (newData) => {
@@ -316,6 +271,14 @@ $box-shadow-neon: 0 0 15px rgba(179, 234, 254, 0.4);
       rgba(179, 234, 254, 0.1) 0%,
       transparent 100%
     );
+  }
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="start">
+    <div class="start hidden md:block">
       <PokemonBall
         v-for="(poke, index) in list.slice(0, 6)"
         :key="`${poke.id}+${index}`"
@@ -17,7 +17,7 @@
         :is-main="true"
       />
     </div>
-    <div class="end">
+    <div class="end hidden md:block">
       <PokemonBall
         v-for="(poke, index) in list.slice(7, 13)"
         :key="`${poke.id}+${index}`"

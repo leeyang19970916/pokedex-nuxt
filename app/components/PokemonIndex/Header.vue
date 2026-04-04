@@ -1,6 +1,6 @@
 <template>
   <div
-    class="m-[0_auto] top-background h-[450px] relative overflow-hidden"
+    class="m-[0_auto] top-background relative overflow-hidden h-[350px] md:h-[450px]"
     :style="{ 'background-image': `url(${TopBackground})` }"
   >
     <div
@@ -32,9 +32,8 @@ const props = defineProps<{
 
 <style scoped lang="scss">
 .top-background {
+  @apply bg-cover bg-no-repeat;
   background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   background-color: #0a141e;
   z-index: 10;
   animation: fade-in 0.5s ease-out forwards;

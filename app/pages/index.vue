@@ -31,7 +31,10 @@
       </transition>
 
       <SortWrapper v-model="state.sort" @search="handleSort" />
-      <div v-if="state.list.length" class="grid grid-cols-4 gap-4">
+      <div
+        v-if="state.list.length"
+        class="grid grid-cols-2 md:grid-cols-4 gap-4"
+      >
         <PokemonCard
           v-for="poke in state.list"
           :key="`${poke.id}-${poke.name}`"

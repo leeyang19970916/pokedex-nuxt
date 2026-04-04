@@ -2,7 +2,7 @@
   <div class="relative inline-block text-left" ref="dropdownRef">
     <button
       @click="isOpen = !isOpen"
-      class="w-1/4 m-[0_0_0_auto] flex items-center justify-between gap-2 px-4 py-2 rounded-lg bg-black/40 border border-primary/40 text-primary/90 hover:text-primary hover:border-primary hover:shadow-[0_0_10px_rgba(179,234,254,0.3)] transition-all font-medium text-sm tracking-wide"
+      class="w-2/3 md:w-1/4 m-[0_0_0_auto] flex items-center justify-between gap-2 px-4 py-2 rounded-lg bg-black/40 border border-primary/40 text-primary/90 hover:text-primary hover:border-primary hover:shadow-[0_0_10px_rgba(179,234,254,0.3)] transition-all font-medium text-sm tracking-wide"
     >
       <span>排序：{{ currentLabel }}</span>
 

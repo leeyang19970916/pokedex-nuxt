@@ -35,7 +35,7 @@
 [] fetchAbilities 型別錯誤修正
 
 2026/4/2 (sb 哭哭，不用頭腦戰了，專心搞他們，希望連假可以畢業)
-[] SearchForm 存快取 ，存 store
+[X] SearchForm 存快取 ，存 store
 [x] 上一頁、下一頁
 [x] 分類寶可夢、弱化屬性
 [] 哪裡需要轉轉轉，提升ＵＸ

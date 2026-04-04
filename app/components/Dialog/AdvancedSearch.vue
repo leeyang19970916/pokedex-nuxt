@@ -1,10 +1,9 @@
 <template>
   <el-dialog
     v-model="model"
-    width="50vw"
     top="15vh"
     :show-close="false"
-    class="tech-dialog"
+    class="tech-dialog !w-[90%] !md:w-[50vw]"
     :append-to-body="true"
   >
     <template #header="{ close }">
