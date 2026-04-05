@@ -27,7 +27,7 @@ export default defineEventHandler(async (event) => {
   } catch (e) {
     throw createError({
       status: 500,
-      message: "api error",
+      message: "PokedexList API is error",
     });
   }
 });

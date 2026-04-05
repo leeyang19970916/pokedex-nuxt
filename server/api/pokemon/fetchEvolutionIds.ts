@@ -30,7 +30,9 @@ export default defineEventHandler(async (event) => {
     traverse(res.chain, 1);
     return result;
   } catch (e) {
-    console.error(e, "error");
-    return [];
+    throw createError({
+      statusCode: 500,
+      message: "EvolutionChains API  is error",
+    });
   }
 });

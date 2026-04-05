@@ -1,6 +1,6 @@
 <template>
   <div
-    class="evo-ball relative w-20 h-20 flex justify-center items-center rounded-full primary-border cursor-pointer"
+    class="evo-ball relative md:w-20 md:h-20 flex justify-center items-center rounded-full primary-border cursor-pointer"
   >
     <NuxtImg
       loading="lazy"

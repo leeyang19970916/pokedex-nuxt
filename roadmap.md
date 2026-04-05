@@ -44,7 +44,7 @@
 [] useSEO
 [] middleware
 [X] ability 特性要怎麼歸納，怎麼秀
-[] createError 的機制真的就那樣寫？每一個 defineEventHandler 都重複丟？
-[] 導頁的 loading 取捨，init 要用 skeloten?
+[X] createError 的機制真的就那樣寫？每一個 defineEventHandler 都重複丟？
+[X] 導頁的 loading 取捨，init 要用 skeloten?
 [x] 解決 tailwind 讀兩次的問題
 [X] 招式表的合理性,sort 功能

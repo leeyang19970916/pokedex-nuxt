@@ -93,7 +93,7 @@ export default defineEventHandler(async (event) => {
     return result;
   } catch (e) {
     throw createError({
-      message: "get pokemonDetail is error",
+      message: "Fetch PokemonDetail API is error",
       status: 500,
     });
   }

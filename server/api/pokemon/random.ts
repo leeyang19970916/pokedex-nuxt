@@ -34,10 +34,9 @@ export default defineEventHandler(async (event) => {
     }));
     return result;
   } catch (e) {
-    console.error("Error fetching data:", e);
     throw createError({
       statusCode: 500,
-      message: "Failed to fetch data from the API",
+      message: "RandomList API is error",
     });
   }
 });

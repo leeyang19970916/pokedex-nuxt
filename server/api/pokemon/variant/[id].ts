@@ -24,7 +24,7 @@ export default defineEventHandler(async (event) => {
     return result;
   } catch (e) {
     throw createError({
-      message: "get variant is error",
+      message: "Fetch PokemonDetail's variant API is error",
       status: 500,
     });
   }

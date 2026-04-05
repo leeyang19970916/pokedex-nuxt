@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="poke && data && status === 'success'"
-    class="min-h-screen z-10 flex flex-col"
+    class="min-h-screen z-10 flex flex-col pb-[200px] md:pb-4"
     :style="{ 'background-image': `url(${BackgroundImage})` }"
   >
     <Header :id="poke.id"></Header>

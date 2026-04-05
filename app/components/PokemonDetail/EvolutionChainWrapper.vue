@@ -67,13 +67,14 @@ const customClass = computed(() => {
   };
   if (length === 1) {
     result.gridCol = `grid-cols-1`;
-    result.ballSize = "!w-full !h-full";
+    result.ballSize = "w-[100px] h-[100px] md:!w-full md:!h-full";
   } else if (length === 2) {
     const stage2Length = pokeStates.value[1]?.length;
     if (stage2Length && stage2Length > 1) {
       result.gridCol = `grid-cols-[2fr_8fr]`;
     } else {
-      result.ballSize = "!w-full !h-full !max-w-[125px] !max-h-[125px]";
+      result.ballSize =
+        "w-[100px] h-[100px] md:!w-full md:!h-full !max-w-[125px] !max-h-[125px]";
       result.gridCol = `grid-cols-[1fr_1fr]`;
     }
   } else {

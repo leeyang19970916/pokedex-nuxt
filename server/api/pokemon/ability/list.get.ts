@@ -38,10 +38,9 @@ export default defineEventHandler(async (event) => {
 
     return results;
   } catch (error) {
-    console.error("抓取特性 API 失敗：", error);
     throw createError({
       statusCode: 500,
-      message: "Failed to fetch ability",
+      message: "Fetch Ability list API is error",
     });
   }
 });

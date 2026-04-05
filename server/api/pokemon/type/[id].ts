@@ -16,7 +16,7 @@ export default defineEventHandler(async (event) => {
     };
   } catch (e) {
     throw createError({
-      message: "type detail is error",
+      message: "Fetch Damages by Type API is error",
     });
   }
 });
