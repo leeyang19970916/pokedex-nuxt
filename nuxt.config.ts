@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   srcDir: "app/",
   compatibilityDate: "2026-03-18",
-  // 讓 Nuxt 知道你要用這些超能力
   modules: [
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
@@ -11,6 +10,20 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/image",
   ],
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+
+      link: [
+        {
+          rel: "icon",
+          type: "image/svg+xml",
+          href: "/pokeball.svg",
+        },
+      ],
+    },
+  },
   // vite: {
   //   css: {
   //     preprocessorOptions: {
@@ -23,12 +36,10 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: ["~/assets/styles/tailwind.css", { injectPosition: "first" }],
     exposeConfig: true,
-    // config: "tailwind.config",
   },
 
-  // Element Plus 設定 (可選)
   elementPlus: {
-    icon: "ElIcon", // 自動引入 Icon
-    importStyle: "scss", // 讓 Element Plus 配合 SCSS
+    icon: "ElIcon",
+    importStyle: "scss",
   },
 });

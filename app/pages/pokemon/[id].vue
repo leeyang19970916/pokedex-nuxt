@@ -110,6 +110,13 @@ watch(
 useHead({
   title: () => poke.value?.name,
 });
+if (poke.value) {
+  useSeoMeta({
+    description: poke.value.entryText,
+    ogTitle: `${poke.value.name} 隱藏數值與進化圖`,
+    ogImage: poke.value.image,
+  });
+}
 </script>
 
 <style lang="scss">

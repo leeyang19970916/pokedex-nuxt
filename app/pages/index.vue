@@ -4,10 +4,13 @@
       v-if="randomList.status.value === 'success' && randomList.data.value"
       :list="randomList.data.value"
     />
+
     <div
       class="px-[3%] pb-[10%] flex flex-col gap-6 min-h-[80vh]"
       :style="{ 'background-image': `url(${BottomBackground})` }"
     >
+      <div ref="resultTopRef"></div>
+
       <transition name="fade" mode="out-in">
         <FilterWrapper
           v-if="isReadyCache"
@@ -37,6 +40,7 @@
       </transition>
 
       <SortWrapper v-model="state.sort" @search="handleSort" />
+
       <div
         v-if="state.list.length"
         class="grid grid-cols-2 md:grid-cols-4 gap-4"
@@ -79,6 +83,7 @@ import {
   POKEMON_SORT_OPTIONS,
   DEFAULT_SEARCH_FORM,
   SLIDER_RANGE,
+  POKEDEX,
 } from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
 import { useIntersectionObserver, useDebounceFn } from "@vueuse/core";
@@ -96,6 +101,7 @@ interface State {
 
 const pokeStore = usePokeStore();
 const loadMoreRef = shallowRef<HTMLElement | null>(null);
+const resultTopRef = shallowRef<HTMLElement | null>(null);
 const hasMore = computed(
   () => state.value.isLoading || state.value.list.length < state.value.total
 );
@@ -139,6 +145,7 @@ const fetchPokeList = async () => {
     state.value.total = total;
     if (state.value.list.length === 0) {
       await fetchUpdatedList(state.value);
+      scrollToResult();
     } else {
       state.value.isLoading = false;
     }
@@ -162,6 +169,7 @@ const handleFilter = useDebounceFn((searchForm: PokeSearchForm) => {
   };
   state.value.searchForm = searchForm;
   fetchUpdatedList(query);
+  scrollToResult();
 }, 300);
 const handleSort = () => {
   const { sort, offset, searchForm } = state.value;
@@ -172,6 +180,7 @@ const handleSort = () => {
     searchForm,
   };
   fetchUpdatedList(query);
+  scrollToResult();
 };
 const fetchUpdatedList = async (
   query: PokeListQuery,
@@ -218,6 +227,16 @@ const getRange = (ids: PokeSearchForm["ids"]) => {
     maxId,
   };
 };
+const scrollToResult = () => {
+  nextTick(() => {
+    if (resultTopRef.value) {
+      resultTopRef.value.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
+};
 
 onMounted(async () => {
   pokeStore.setAbilities();
@@ -243,7 +262,6 @@ onBeforeRouteLeave((to) => {
 </script>
 
 <style scoped>
-/* 💡 Vue 的淡入淡出動畫 CSS */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;
