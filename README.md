@@ -7,7 +7,7 @@
 
 > 一個基於 Nuxt 3 打造的現代化寶可夢圖鑑。結合 Glassmorphism (玻璃擬物化) 與科幻霓虹視覺風格，並透過 SSR 與精密的狀態快取機制，提供極致流暢的用戶體驗。
 
-[🌍 View Live Demo](https://pokedex-nuxt-pi.vercel.app/)
+### [🌍 View Live Demo: Pokédex 寶可夢圖鑑](https://pokedex-nuxt-pi.vercel.app/)
 
 ## ✨ 專案亮點 (Key Features)
 
