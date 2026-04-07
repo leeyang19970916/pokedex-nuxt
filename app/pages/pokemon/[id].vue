@@ -117,6 +117,10 @@ if (poke.value) {
     ogImage: poke.value.image,
   });
 }
+
+definePageMeta({
+  middleware: "02-poke-id-check",
+});
 </script>
 
 <style lang="scss">
