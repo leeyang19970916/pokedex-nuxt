@@ -83,7 +83,6 @@ import {
   POKEMON_SORT_OPTIONS,
   DEFAULT_SEARCH_FORM,
   SLIDER_RANGE,
-  POKEDEX,
 } from "~/constants";
 import { usePokeStore } from "~/store/pokeStore";
 import { useIntersectionObserver, useDebounceFn } from "@vueuse/core";
@@ -105,12 +104,18 @@ const resultTopRef = shallowRef<HTMLElement | null>(null);
 const hasMore = computed(
   () => state.value.isLoading || state.value.list.length < state.value.total
 );
-useIntersectionObserver(loadMoreRef, (entries) => {
-  const isIntersecting = entries[0]?.isIntersecting;
-  if (isIntersecting && hasMore.value && !state.value.isLoading) {
-    next();
+useIntersectionObserver(
+  loadMoreRef,
+  (entries) => {
+    const isIntersecting = entries[0]?.isIntersecting;
+    if (isIntersecting && hasMore.value && !state.value.isLoading) {
+      next();
+    }
+  },
+  {
+    rootMargin: "0px 0px 500px 0px",
   }
-});
+);
 const randomList = await useFetch("/api/pokemon/random", {
   query: {
     limit: 13,
