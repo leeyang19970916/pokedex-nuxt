@@ -216,7 +216,7 @@ const fetchUpdatedList = async (
     }
     state.value.total = total;
   } catch (error) {
-    console.error(error, "fetchUpdatedList() is error");
+    throw error;
   } finally {
     state.value.isLoading = false;
   }

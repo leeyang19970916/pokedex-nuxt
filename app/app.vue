@@ -1,16 +1,31 @@
 <template>
-  <NuxtLayout :name="'default'">
-    <button @click="testSentry">測試 Sentry 報錯</button>
-    <NuxtPage></NuxtPage>
-  </NuxtLayout>
+  <NuxtErrorBoundary @error="onGlobalError">
+    <template #default>
+      <NuxtLayout :name="'default'">
+        <NuxtPage></NuxtPage>
+      </NuxtLayout>
+    </template>
+    <template #error="{ error, clearError }">
+      <div class="p-4 border border-red-200 bg-red-50 rounded-lg text-center">
+        <p class="text-red-600 font-bold">資料暫時無法讀取</p>
+        <p class="text-sm text-red-400 mb-3">{{ error.message }}</p>
+
+        <button
+          @click="clearError"
+          class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
+        >
+          嘗試重新載入
+        </button>
+      </div>
+    </template>
+  </NuxtErrorBoundary>
 </template>
 <script setup lang="ts">
 import { POKEDEX } from "./constants";
+import * as Sentry from "@sentry/vue";
 
-const testSentry = () => {
-  console.log("正在發送測試錯誤到 Sentry...");
-  // 故意丟出一個錯誤
-  throw new Error("這是我的第一筆 Sentry 測試錯誤！");
+const onGlobalError = (e: Error) => {
+  Sentry.captureException(e);
 };
 
 useHead({
