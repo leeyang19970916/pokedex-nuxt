@@ -11,6 +11,7 @@
     "fetch-data": "node scripts/upgrade-abilities-json.mjs && node scripts/upgrade-moves-json.mjs && node scripts/upgrade-pokedex-json.mjs"
   },
   "dependencies": {
+    "@sentry/vue": "^10.50.0",
     "nuxt": "^4.3.1",
     "pinia": "^3.0.4",
     "scss": "^0.2.4",

@@ -42,4 +42,12 @@ export default defineNuxtConfig({
     icon: "ElIcon",
     importStyle: "scss",
   },
+  future: {
+    compatibilityVersion: 4,
+  },
+  runtimeConfig: {
+    public: {
+      sentryDsn: "",
+    },
+  },
 });
