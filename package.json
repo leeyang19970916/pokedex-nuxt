@@ -24,6 +24,8 @@
     "@nuxt/image": "^2.0.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@pinia/nuxt": "^0.11.3",
+    "@sentry/vite-plugin": "^5.2.0",
+    "@types/node": "^25.6.0",
     "@vueuse/core": "^14.2.1",
     "@vueuse/nuxt": "^14.2.1",
     "autoprefixer": "^10.4.27",

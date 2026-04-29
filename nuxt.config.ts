@@ -1,4 +1,6 @@
 // nuxt.config.ts
+import { sentryVitePlugin } from "@sentry/vite-plugin";
+
 export default defineNuxtConfig({
   srcDir: "app/",
   compatibilityDate: "2026-03-18",
@@ -24,15 +26,24 @@ export default defineNuxtConfig({
       ],
     },
   },
-  // vite: {
-  //   css: {
-  //     preprocessorOptions: {
-  //       scss: {
-  //         additionalData: '@use "~/assets/styles/main.scss" as *;',
-  //       },
-  //     },
-  //   },
-  // },
+  vite: {
+    build: {
+      sourcemap: true,
+    },
+    plugins: [
+      sentryVitePlugin({
+        org: "wits-rk",
+        project: "pokedex",
+        authToken: process.env.SENTRY_AUTH_TOKEN,
+        sourcemaps: {
+          filesToDeleteAfterUpload: [
+            ".output/public/**/*.map",
+            ".output/server/**/*.map",
+          ],
+        },
+      }) as any,
+    ],
+  },
   tailwindcss: {
     cssPath: ["~/assets/styles/tailwind.css", { injectPosition: "first" }],
     exposeConfig: true,
